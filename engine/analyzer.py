@@ -47,6 +47,86 @@ LEXICON_AR = {
     ]
 }
 
+import unicodedata
+
+def normalize_text(text: str) -> str:
+    """Elimina tildes y normaliza a minúsculas para matching léxico robusto."""
+    nfkd = unicodedata.normalize('NFKD', text)
+    return "".join([c for c in nfkd if not unicodedata.combining(c)]).lower()
+
+# Gramática de vectores direccionales: matrices de Sujeto x Dirección (Solución General)
+DIRECTIONAL_METRICS = {
+    # Métricas que al SUBIR generan CRISPACIÓN / ANGUSTIA y al BAJAR generan ALIVIO
+    "adverse_indicators": [
+        "inflacion", "mora", "morosidad", "pobreza", "indigencia", "desempleo", "despidos",
+        "tarifas", "riesgo pais", "dolar blue", "brecha cambiaria", "deuda", "deficit",
+        "inseguridad", "homicidios", "delitos", "embargo", "cheques rechazados", "precios"
+    ],
+    # Métricas que al SUBIR generan ESPERANZA / ALIVIO y al BAJAR generan ANGUSTIA
+    "virtuous_indicators": [
+        "salarios", "jubilaciones", "reservas", "superavit", "credito", "creditos",
+        "empleo", "inversion", "inversiones", "exportaciones", "produccion", "bonos",
+        "actividad economica", "consumo"
+    ],
+    # Vectores de suba / aumento / crecimiento
+    "up_vectors": [
+        "sub", "aument", "crec", "record", "dispar", "trep", "alza", "escalad", "alcanz", "escalo", "maximo"
+    ],
+    # Vectores de caída / desaceleración / freno
+    "down_vectors": [
+        "baj", "cae", "caen", "cayo", "cayeron", "caida", "desaceler", "perfor", "retroced", "fren", "desplom", "derrumb", "minimo"
+    ],
+    # Modificadores de negación / freno que invierten polaridad
+    "negation_modifiers": [
+        "no cede", "no baja", "no frena", "sin freno", "lejos de", "no alcanza", "freno a", "traba", "sin piso"
+    ]
+}
+
+def evaluate_headline_vector(title: str) -> tuple[float, str]:
+    """
+    Evalúa vectorialmente un titular aplicando álgebra de polaridad contextual:
+    - Indicador Adverso + Suba = Negativo (-1.0)
+    - Indicador Adverso + Baja = Positivo (+1.0)
+    - Indicador Virtuoso + Suba = Positivo (+1.0)
+    - Indicador Virtuoso + Baja = Negativo (-1.0)
+    - Inversiones por modificadores de negación ('no cede', 'sin freno').
+    Retorna: (impacto_neto_float, razon_o_categoria)
+    """
+    low = normalize_text(title)
+
+    # Caso especial: alerta de morosidad o endeudamiento en familias
+    if ("mora" in low or "morosidad" in low or "incumplimiento" in low) and ("credito" in low or "familia" in low or "banco" in low):
+        return -1.0, "alerta_financiera_familiar"
+
+    # Modificadores de negación
+    has_negation = any(neg in low for neg in DIRECTIONAL_METRICS["negation_modifiers"])
+
+    has_up = any(re.search(r"\b" + v, low) for v in DIRECTIONAL_METRICS["up_vectors"])
+    has_down = any(re.search(r"\b" + v, low) for v in DIRECTIONAL_METRICS["down_vectors"])
+
+    is_adverse = any(m in low for m in DIRECTIONAL_METRICS["adverse_indicators"])
+    is_virtuous = any(m in low for m in DIRECTIONAL_METRICS["virtuous_indicators"])
+
+    score = 0.0
+
+    # Conflicto mixto (ej. salarios vs inflación): la relación de caída prima
+    if is_virtuous and has_down:
+        return -1.0, "caida_de_variable_virtuosa"
+
+    if is_adverse:
+        if has_up or has_negation:
+            score = -1.0  # Sube la inflación, mora, pobreza o no cede
+        elif has_down:
+            score = 1.0   # Cae la inflación, mora, riesgo país
+
+    elif is_virtuous:
+        if has_up and not has_negation:
+            score = 1.0   # Suben los salarios, reservas, créditos
+        elif has_down or has_negation:
+            score = -1.0  # Caen los salarios, empleo, reservas
+
+    return score, "vectorial"
+
 # Palabras clave de relleno, trucos domésticos y clickbait que NO inciden en el humor social nacional
 JUNK_KEYWORDS = [
     "papel aluminio", "receta", "recetas", "truco casero", "trucos caseros", "cómo limpiar",
@@ -60,7 +140,7 @@ HIGH_IMPACT_KEYWORDS = [
     "milei", "gobierno", "dólar", "inflación", "jubilados", "salarios", "anses", "fmi",
     "congreso", "paso", "gobernadores", "precios", "tarifas", "justicia", "seguridad",
     "crimen", "colapinto", "fórmula 1", "selección", "pobreza", "bonos", "riesgo país",
-    "reservas", "recesión", "marcha", "paro", "veto", "malvinas"
+    "reservas", "recesión", "marcha", "paro", "veto", "malvinas", "mora"
 ]
 
 def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -92,7 +172,7 @@ def analyze_headlines_heuristic(
     source_name: str,
     headlines: List[Dict[str, Any]]
 ) -> SourceSentimentScore:
-    """Evalúa los titulares usando análisis léxico contextual argentino con filtro de relevancia."""
+    """Evalúa los titulares usando análisis léxico contextual y álgebra vectorial direccional argentina."""
     relevant_headlines = filter_relevant_headlines(headlines)
     if not relevant_headlines:
         relevant_headlines = headlines  # Fallback si todo fue filtrado
@@ -102,26 +182,49 @@ def analyze_headlines_heuristic(
     
     pos_drivers = []
     neg_drivers = []
-    
-    # Evaluar eje por eje
-    def evaluate_axis(pos_terms, neg_terms) -> float:
+
+    # Paso 1: Evaluación vectorial proposicional previa
+    for t in titles:
+        v_score, _ = evaluate_headline_vector(t)
+        if v_score < 0:
+            if t not in neg_drivers and len(neg_drivers) < 3:
+                neg_drivers.append(t)
+        elif v_score > 0:
+            if t not in pos_drivers and len(pos_drivers) < 3:
+                pos_drivers.append(t)
+
+    # Evaluar eje por eje complementando con vectores
+    def evaluate_axis(pos_terms, neg_terms, is_economic: bool = False) -> float:
         pos_count = 0
         neg_count = 0
+
+        # Sumar pesos de los vectores direccionales si es eje económico/confianza/optimismo
+        if is_economic:
+            for t in titles:
+                v_score, _ = evaluate_headline_vector(t)
+                if v_score > 0:
+                    pos_count += 2
+                elif v_score < 0:
+                    neg_count += 2
+
         for term in pos_terms:
             matches = [t for t in titles if term in t.lower()]
-            if matches:
-                pos_count += len(matches)
-                for m in matches[:1]:
-                    if m not in pos_drivers and len(pos_drivers) < 3:
-                        pos_drivers.append(m)
+            for m in matches:
+                # Evitar falso positivo si el vector determinó que es negativo (ej. "mora en crédito")
+                v_sc, _ = evaluate_headline_vector(m)
+                if v_sc < 0:
+                    neg_count += 1
+                    continue
+                pos_count += 1
+                if m not in pos_drivers and len(pos_drivers) < 3:
+                    pos_drivers.append(m)
                         
         for term in neg_terms:
             matches = [t for t in titles if term in t.lower()]
-            if matches:
-                neg_count += len(matches)
-                for m in matches[:1]:
-                    if m not in neg_drivers and len(neg_drivers) < 3:
-                        neg_drivers.append(m)
+            for m in matches:
+                neg_count += 1
+                if m not in neg_drivers and len(neg_drivers) < 3:
+                    neg_drivers.append(m)
 
         total = pos_count + neg_count
         if total == 0:
@@ -130,10 +233,10 @@ def analyze_headlines_heuristic(
         net = (pos_count - neg_count) / max(total, 2) * 10.0
         return max(-10.0, min(10.0, round(net, 1)))
 
-    opt = evaluate_axis(LEXICON_AR["optimismo_pos"], LEXICON_AR["optimismo_neg"])
-    cal = evaluate_axis(LEXICON_AR["calma_pos"], LEXICON_AR["calma_neg"])
-    conf = evaluate_axis(LEXICON_AR["confianza_pos"], LEXICON_AR["confianza_neg"])
-    ale = evaluate_axis(LEXICON_AR["alegria_pos"], LEXICON_AR["alegria_neg"])
+    opt = evaluate_axis(LEXICON_AR["optimismo_pos"], LEXICON_AR["optimismo_neg"], is_economic=True)
+    cal = evaluate_axis(LEXICON_AR["calma_pos"], LEXICON_AR["calma_neg"], is_economic=False)
+    conf = evaluate_axis(LEXICON_AR["confianza_pos"], LEXICON_AR["confianza_neg"], is_economic=True)
+    ale = evaluate_axis(LEXICON_AR["alegria_pos"], LEXICON_AR["alegria_neg"], is_economic=False)
 
     # Extraer temas clave (palabras más frecuentes significativas)
     words = re.findall(r"\b[a-záéíóúñ]{4,}\b", full_text)
