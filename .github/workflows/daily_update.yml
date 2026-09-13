@@ -1,0 +1,52 @@
+name: Medición Diaria del Humor Social Argentino (IHSA)
+
+on:
+  schedule:
+    # Ejecución 2 veces al día: 08:00 AM y 20:00 PM ART (11:00 y 23:00 UTC)
+    - cron: '0 11,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar Dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Recolección y Cálculo del Humor Social
+        run: |
+          python run_pipeline.py
+
+      - name: Compilación del Tablero Web
+        run: |
+          python build_html.py
+
+      - name: Commit y Publicación Automática
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add master_dataset.json index.html data/
+          if git diff --staged --quiet; then
+            echo "Sin cambios pendientes. Datos al día."
+          else
+            git commit -m "Auto-update: Medición diaria IHSA $(date -u +'%Y-%m-%d %H:%M:%S UTC') [skip ci]"
+            git push
+          fi
