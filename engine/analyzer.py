@@ -47,13 +47,57 @@ LEXICON_AR = {
     ]
 }
 
+# Palabras clave de relleno, trucos domésticos y clickbait que NO inciden en el humor social nacional
+JUNK_KEYWORDS = [
+    "papel aluminio", "receta", "recetas", "truco casero", "trucos caseros", "cómo limpiar",
+    "horóscopo", "signo", "zodíaco", "astrología", "viral", "look", "moda", "dieta",
+    "belleza", "consejos para", "cómo hacer para", "descuentos", "ofertas", "farándula",
+    "romance", "separación", "novia de", "novio de", "chimento", "astrológico"
+]
+
+# Palabras clave de alto impacto sociopolítico y económico
+HIGH_IMPACT_KEYWORDS = [
+    "milei", "gobierno", "dólar", "inflación", "jubilados", "salarios", "anses", "fmi",
+    "congreso", "paso", "gobernadores", "precios", "tarifas", "justicia", "seguridad",
+    "crimen", "colapinto", "fórmula 1", "selección", "pobreza", "bonos", "riesgo país",
+    "reservas", "recesión", "marcha", "paro", "veto", "malvinas"
+]
+
+def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Filtra titulares irrelevantes (recetas, trucos, horóscopos) y los ordena por relevancia de impacto."""
+    cleaned = []
+    for h in headlines:
+        title = h.get("title", "")
+        low = title.lower()
+        # Descartar ruido evidente
+        if any(junk in low for junk in JUNK_KEYWORDS):
+            continue
+        if len(title.strip()) < 22:
+            continue
+
+        # Asignar peso de relevancia
+        weight = 1
+        for kw in HIGH_IMPACT_KEYWORDS:
+            if kw in low:
+                weight += 2
+
+        cleaned.append((weight, h))
+
+    # Ordenar por mayor peso de impacto primero
+    cleaned.sort(key=lambda x: x[0], reverse=True)
+    return [item[1] for item in cleaned]
+
 def analyze_headlines_heuristic(
     source_id: str,
     source_name: str,
     headlines: List[Dict[str, Any]]
 ) -> SourceSentimentScore:
-    """Evalúa los titulares usando análisis léxico contextual argentino."""
-    titles = [h.get("title", "") for h in headlines]
+    """Evalúa los titulares usando análisis léxico contextual argentino con filtro de relevancia."""
+    relevant_headlines = filter_relevant_headlines(headlines)
+    if not relevant_headlines:
+        relevant_headlines = headlines  # Fallback si todo fue filtrado
+
+    titles = [h.get("title", "") for h in relevant_headlines]
     full_text = " ".join(titles).lower()
     
     pos_drivers = []
@@ -68,7 +112,7 @@ def analyze_headlines_heuristic(
             if matches:
                 pos_count += len(matches)
                 for m in matches[:1]:
-                    if m not in pos_drivers:
+                    if m not in pos_drivers and len(pos_drivers) < 3:
                         pos_drivers.append(m)
                         
         for term in neg_terms:
@@ -76,7 +120,7 @@ def analyze_headlines_heuristic(
             if matches:
                 neg_count += len(matches)
                 for m in matches[:1]:
-                    if m not in neg_drivers:
+                    if m not in neg_drivers and len(neg_drivers) < 3:
                         neg_drivers.append(m)
 
         total = pos_count + neg_count
