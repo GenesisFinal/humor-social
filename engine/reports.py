@@ -56,37 +56,25 @@ def generate_daily_report(
 **Diagnóstico:** **{snapshot.ihsa_category}**  
 **Variación 24h:** {delta_text}  
 {volatility_alert}
----
 
-## 📊 Ejes Emocionales del Día (Escala -10 a +10)
-
+### 📊 Ejes Emocionales del Día (Escala -10 a +10)
 - **🌱 Optimismo vs. Pesimismo:** `{snapshot.axes_averages.optimismo:+.1f}`
 - **🕊️ Calma vs. Conflicto / Bronca:** `{snapshot.axes_averages.calma:+.1f}`
 - **⚓ Confianza vs. Incertidumbre:** `{snapshot.axes_averages.confianza:+.1f}`
 - **☀️ Alegría vs. Tristeza / Duelo:** `{snapshot.axes_averages.alegria:+.1f}`
 
----
-
-## 💡 Diagnóstico y Síntesis Analítica
-
+### 💡 Diagnóstico y Síntesis Analítica
 {snapshot.summary_of_the_day}
 
----
-
-## 📰 Matriz Comparativa de Medios Monitoreados
-
+### 📰 Matriz Comparativa de Medios Monitoreados
 | Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |
 | :--- | :--- | :---: | :--- | :--- |
 {sources_table}
 
----
-
-## 🌐 Pulso Espontáneo en Redes y Búsquedas
-
+### 🌐 Pulso Espontáneo en Redes y Búsquedas
 - **Tendencias en X (Twitter Argentina):** {trends_x_str}
 - **Mayor Aceleración en Google Trends:** {trends_g_str}
 
----
 *Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*
 """
 
