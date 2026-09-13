@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice de Humor Social Argentino (IHSA) | Monitor Oficial</title>
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .gauge-needle {
+      transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: 150px 150px;
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .tab-btn.active {
+      background: #3b82f6;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header class="border-b border-slate-800 bg-slate-900/80 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🇦🇷</span>
+        <div>
+          <h1 class="text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
+            IHSA <span class="text-xs bg-blue-600/30 text-blue-400 px-2 py-0.5 rounded-full border border-blue-500/30">En Vivo</span>
+          </h1>
+          <p class="text-xs text-slate-400 hidden sm:block">Índice de Humor Social Argentino • Monitor Multifuente</p>
+        </div>
+      </div>
+
+      <!-- CONTROLES DERECHA: SELECTOR DE FECHA & DESCARGA -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-300">
+          <i data-lucide="calendar" class="w-4 h-4 mr-2 text-blue-400"></i>
+          <select id="dateSelect" class="bg-transparent outline-none cursor-pointer text-white font-medium">
+            <option value="">Cargando fechas...</option>
+          </select>
+        </div>
+
+        <button id="btnDownloadCsv" class="hidden sm:flex items-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg text-xs font-medium transition">
+          <i data-lucide="download" class="w-3.5 h-3.5 mr-1.5 text-emerald-400"></i> CSV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full space-y-6">
+
+    <!-- RESUMEN HERO: TACÓMETRO & EJES -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- COLUMNA TACÓMETRO GAUGE -->
+      <div class="lg:col-span-5 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <span class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Clima de Opinión Pública</span>
+        
+        <!-- SVG TACÓMETRO -->
+        <div class="relative w-72 h-44 flex items-center justify-center">
+          <svg viewBox="0 0 300 170" class="w-full h-full">
+            <!-- Arco de Fondo con Zonas -->
+            <!-- Alarma (-100 a -50): Rojo -->
+            <path d="M 30 150 A 120 120 0 0 1 75 65" fill="none" stroke="#ef4444" stroke-width="22" stroke-linecap="round"/>
+            <!-- Pesimismo (-50 a -10): Naranja -->
+            <path d="M 75 65 A 120 120 0 0 1 130 35" fill="none" stroke="#f97316" stroke-width="22"/>
+            <!-- Neutro (-10 a +10): Amarillo -->
+            <path d="M 130 35 A 120 120 0 0 1 170 35" fill="none" stroke="#eab308" stroke-width="22"/>
+            <!-- Esperanza (+10 a +50): Verde Claro -->
+            <path d="M 170 35 A 120 120 0 0 1 225 65" fill="none" stroke="#22c55e" stroke-width="22"/>
+            <!-- Optimismo (+50 a +100): Azul / Esmeralda -->
+            <path d="M 225 65 A 120 120 0 0 1 270 150" fill="none" stroke="#3b82f6" stroke-width="22" stroke-linecap="round"/>
+            
+            <!-- Centro del tacómetro -->
+            <circle cx="150" cy="150" r="12" fill="#0f172a" stroke="#475569" stroke-width="4"/>
+            <!-- Aguja -->
+            <line id="gaugeNeedle" x1="150" y1="150" x2="150" y2="48" stroke="#ffffff" stroke-width="4" stroke-linecap="round" class="gauge-needle" style="transform: rotate(0deg);"/>
+            <circle cx="150" cy="150" r="6" fill="#3b82f6"/>
+          </svg>
+        </div>
+
+        <div class="mt-1">
+          <div class="text-4xl font-black font-mono tracking-tight text-white flex items-center justify-center gap-1">
+            <span id="ihsaValue">+0.0</span>
+            <span class="text-sm font-sans text-slate-400 font-normal">/ 100</span>
+          </div>
+          <p id="ihsaCategory" class="text-sm font-bold text-emerald-400 mt-1">Cargando...</p>
+          <p id="ihsaDelta" class="text-xs text-slate-400 mt-1 font-mono">-- pts vs día anterior</p>
+        </div>
+      </div>
+
+      <!-- COLUMNA LOS 4 EJES EMOCIONALES & RADAR -->
+      <div class="lg:col-span-7 glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-sm uppercase tracking-wider font-bold text-slate-400 flex items-center gap-2">
+              <i data-lucide="activity" class="w-4 h-4 text-blue-400"></i> Ejes Emocionales Cuantificados
+            </h2>
+            <span class="text-xs font-mono text-slate-500">Escala -10.0 a +10.0</span>
+          </div>
+
+          <!-- 4 TARJETAS DE EJES -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-3 text-center">
+              <span class="text-xl">🌱</span>
+              <p class="text-xs text-slate-400 mt-1">Optimismo</p>
+              <p id="axisOpt" class="text-lg font-black font-mono text-white">0.0</p>
+            </div>
+            <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-3 text-center">
+              <span class="text-xl">🕊️</span>
+              <p class="text-xs text-slate-400 mt-1">Calma Social</p>
+              <p id="axisCal" class="text-lg font-black font-mono text-white">0.0</p>
+            </div>
+            <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-3 text-center">
+              <span class="text-xl">⚓</span>
+              <p class="text-xs text-slate-400 mt-1">Confianza</p>
+              <p id="axisConf" class="text-lg font-black font-mono text-white">0.0</p>
+            </div>
+            <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-3 text-center">
+              <span class="text-xl">☀️</span>
+              <p class="text-xs text-slate-400 mt-1">Alegría / Logro</p>
+              <p id="axisAle" class="text-lg font-black font-mono text-white">0.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SÍNTESIS DEL DÍA -->
+        <div class="mt-4 p-3.5 bg-blue-500/10 border border-blue-500/20 rounded-xl">
+          <p class="text-xs text-blue-300 font-medium flex items-center gap-1.5 mb-1">
+            <i data-lucide="info" class="w-3.5 h-3.5"></i> Diagnóstico del Día:
+          </p>
+          <p id="daySummary" class="text-xs text-slate-300 leading-relaxed">
+            Cargando síntesis analítica...
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TABS DE NAVEGACIÓN -->
+    <div class="border-b border-slate-800 flex space-x-2 overflow-x-auto pb-1 text-xs">
+      <button class="tab-btn active px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-media')">
+        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de 12 Medios
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-trends')">
+        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes & Búsquedas
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-history')">
+        <i data-lucide="line-chart" class="w-4 h-4"></i> Serie Histórica (30 Días)
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-audit')">
+        <i data-lucide="search" class="w-4 h-4"></i> Auditoría de Titulares
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-report')">
+        <i data-lucide="file-text" class="w-4 h-4"></i> Boletín Ejecutivo
+      </button>
+    </div>
+
+    <!-- TAB CONTENT: MATRIZ DE MEDIOS -->
+    <div id="tab-media" class="tab-content space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-sm font-bold text-slate-300 uppercase tracking-wider">
+          Enfoque y Clima Proyectado por cada Medio (-100 a +100)
+        </h3>
+        <span class="text-xs text-slate-500">Ordenado de mayor optimismo a mayor tono crítico</span>
+      </div>
+
+      <div id="mediaCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Generado dinámicamente -->
+      </div>
+    </div>
+
+    <!-- TAB CONTENT: REDES Y TENDENCIAS -->
+    <div id="tab-trends" class="tab-content hidden space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-lg">🐦</span>
+            <h4 class="text-sm font-bold text-white">Trending Topics en X (Twitter Argentina)</h4>
+          </div>
+          <div id="xTrendsList" class="flex flex-wrap gap-2">
+            <!-- X trends -->
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-lg">🔍</span>
+            <h4 class="text-sm font-bold text-white">Mayor Aceleración en Google Trends</h4>
+          </div>
+          <div id="googleTrendsList" class="flex flex-wrap gap-2">
+            <!-- Google trends -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB CONTENT: SERIE HISTÓRICA -->
+    <div id="tab-history" class="tab-content hidden space-y-4">
+      <div class="glass-card rounded-2xl p-6">
+        <h4 class="text-sm font-bold text-white mb-1">Trayectoria de los Últimos 30 Días</h4>
+        <p class="text-xs text-slate-400 mb-4">Evolución diaria del IHSA consolidado y niveles de referencia</p>
+        <div class="w-full h-80">
+          <canvas id="historyChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB CONTENT: AUDITORÍA DE TITULARES -->
+    <div id="tab-audit" class="tab-content hidden space-y-4">
+      <div class="glass-card rounded-2xl p-5">
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <div class="relative flex-1">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+            <input id="searchInput" type="text" placeholder="Filtrar titulares por palabra clave (ej. Milei, dólar, Colapinto, inflación)..." class="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 outline-none focus:border-blue-500">
+          </div>
+          <select id="filterMedia" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white outline-none">
+            <option value="ALL">Todos los medios</option>
+          </select>
+        </div>
+
+        <div class="overflow-x-auto max-h-96 rounded-lg border border-slate-800">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="bg-slate-800/80 text-slate-400 uppercase text-[10px] tracking-wider sticky top-0">
+              <tr>
+                <th class="p-3">Medio</th>
+                <th class="p-3">Titular Relevado</th>
+                <th class="p-3 text-right">Enlace</th>
+              </tr>
+            </thead>
+            <tbody id="headlinesTableBody" class="divide-y divide-slate-800/60 font-mono text-[11px]">
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB CONTENT: BOLETÍN EJECUTIVO -->
+    <div id="tab-report" class="tab-content hidden space-y-4">
+      <div class="glass-card rounded-2xl p-6">
+        <div id="reportContainer" class="prose prose-invert max-w-none text-xs leading-relaxed text-slate-300">
+          <!-- Reporte renderizado -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+    <p>Índice de Humor Social Argentino (IHSA) • Monitoreo de 12 Medios, X y Google Trends</p>
+    <p class="mt-1">Publicado automáticamente y de forma continua en GitHub Pages.</p>
+  </footer>
+
+  <!-- SCRIPT LÓGICA DASHBOARD -->
+  <script>
+    let DATASET = null;
+    let historyChartInstance = null;
+
+    async function loadDataset() {
+      try {
+        const res = await fetch('master_dataset.json?v=' + Date.now());
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        DATASET = await res.json();
+        initDashboard();
+      } catch (e) {
+        console.error("Error al cargar master_dataset.json:", e);
+        document.getElementById('daySummary').innerText = "Error cargando datos. Asegúrate de que master_dataset.json se encuentre en la raíz del repositorio.";
+      }
+    }
+
+    function initDashboard() {
+      const dates = DATASET.available_dates || [];
+      const select = document.getElementById('dateSelect');
+      select.innerHTML = '';
+      dates.forEach((d, idx) => {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.innerText = d + (idx === 0 ? " (Hoy / Último)" : "");
+        select.appendChild(opt);
+      });
+
+      // Rellenar select de filtro de medios
+      const mediaFilter = document.getElementById('filterMedia');
+      mediaFilter.innerHTML = '<option value="ALL">Todos los medios (12)</option>';
+      for (const [key, meta] of Object.entries(DATASET.media_catalog)) {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.innerText = meta.name;
+        mediaFilter.appendChild(opt);
+      }
+
+      select.addEventListener('change', () => renderDate(select.value));
+      document.getElementById('searchInput').addEventListener('input', () => renderHeadlinesTable(select.value));
+      mediaFilter.addEventListener('change', () => renderHeadlinesTable(select.value));
+      document.getElementById('btnDownloadCsv').addEventListener('click', downloadCsv);
+
+      if (dates.length > 0) {
+        renderDate(dates[0]);
+        renderHistoryChart();
+      }
+      lucide.createIcons();
+    }
+
+    function renderDate(dateStr) {
+      const snap = DATASET.snapshots[dateStr];
+      if (!snap) return;
+
+      const ihsa = snap.ihsa_score;
+      const valElem = document.getElementById('ihsaValue');
+      valElem.innerText = (ihsa >= 0 ? "+" : "") + ihsa.toFixed(1);
+
+      // Color del valor
+      if (ihsa >= 10) valElem.className = "text-4xl font-black font-mono tracking-tight text-emerald-400";
+      else if (ihsa >= -10) valElem.className = "text-4xl font-black font-mono tracking-tight text-amber-400";
+      else valElem.className = "text-4xl font-black font-mono tracking-tight text-rose-500";
+
+      document.getElementById('ihsaCategory').innerText = snap.ihsa_category;
+      document.getElementById('daySummary').innerText = snap.summary_of_the_day || snap.summary || "Sin observaciones.";
+
+      // Calcular ángulo aguja (-100 => -90deg, 0 => 0deg, +100 => +90deg)
+      const angle = (ihsa / 100) * 90;
+      document.getElementById('gaugeNeedle').style.transform = `rotate(${angle}deg)`;
+
+      // Ejes
+      const opt = snap.axes_averages ? snap.axes_averages.optimismo : snap.optimismo;
+      const cal = snap.axes_averages ? snap.axes_averages.calma : snap.calma;
+      const conf = snap.axes_averages ? snap.axes_averages.confianza : snap.confianza;
+      const ale = snap.axes_averages ? snap.axes_averages.alegria : snap.alegria;
+
+      document.getElementById('axisOpt').innerText = (opt >= 0 ? "+" : "") + opt.toFixed(1);
+      document.getElementById('axisCal').innerText = (cal >= 0 ? "+" : "") + cal.toFixed(1);
+      document.getElementById('axisConf').innerText = (conf >= 0 ? "+" : "") + conf.toFixed(1);
+      document.getElementById('axisAle').innerText = (ale >= 0 ? "+" : "") + ale.toFixed(1);
+
+      // Render matriz de medios
+      renderMediaCards(dateStr);
+      // Render trends
+      renderTrends(snap);
+      // Render titulares
+      renderHeadlinesTable(dateStr);
+      // Render reporte
+      renderReport(snap);
+
+      lucide.createIcons();
+    }
+
+    function renderMediaCards(dateStr) {
+      const evals = DATASET.evaluations[dateStr] || [];
+      const grid = document.getElementById('mediaCardsGrid');
+      grid.innerHTML = '';
+
+      evals.forEach(ev => {
+        const score = ev.composite_score;
+        let scoreBg = "bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+        if (score < -10) scoreBg = "bg-rose-500/20 text-rose-300 border-rose-500/30";
+        else if (score < 10) scoreBg = "bg-amber-500/20 text-amber-300 border-amber-500/30";
+
+        const card = document.createElement('div');
+        card.className = "glass-card rounded-xl p-4 border border-slate-700/60 hover:border-slate-600 transition flex flex-col justify-between";
+
+        const posText = ev.positive_drivers && ev.positive_drivers.length ? ev.positive_drivers[0] : "Sin foco positivo relevante";
+        const negText = ev.negative_drivers && ev.negative_drivers.length ? ev.negative_drivers[0] : "Sin foco negativo relevante";
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="font-bold text-white text-sm">${ev.source_name}</h4>
+              <span class="font-mono font-bold text-xs px-2 py-0.5 rounded border ${scoreBg}">
+                ${(score >= 0 ? "+" : "") + score.toFixed(1)}
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-400 mb-3 line-clamp-2">${ev.justification || ""}</p>
+          </div>
+          <div class="space-y-1.5 text-[11px] pt-2 border-t border-slate-800">
+            <div class="text-emerald-400 truncate"><span class="font-bold">🟢</span> ${posText}</div>
+            <div class="text-rose-400 truncate"><span class="font-bold">🔴</span> ${negText}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function renderTrends(snap) {
+      const xCont = document.getElementById('xTrendsList');
+      xCont.innerHTML = '';
+      const xItems = snap.top_trends_x || [];
+      xItems.forEach(t => {
+        const span = document.createElement('span');
+        span.className = "bg-slate-800 text-blue-300 border border-slate-700 px-2.5 py-1 rounded-md text-xs font-mono";
+        span.innerText = "#" + t;
+        xCont.appendChild(span);
+      });
+
+      const gCont = document.getElementById('googleTrendsList');
+      gCont.innerHTML = '';
+      const gItems = snap.top_trends_google || [];
+      gItems.forEach(t => {
+        const span = document.createElement('span');
+        span.className = "bg-slate-800 text-emerald-300 border border-slate-700 px-2.5 py-1 rounded-md text-xs font-mono";
+        span.innerText = t;
+        gCont.appendChild(span);
+      });
+    }
+
+    function renderHeadlinesTable(dateStr) {
+      const heads = DATASET.headlines[dateStr] || [];
+      const query = (document.getElementById('searchInput').value || "").toLowerCase();
+      const mediaFilter = document.getElementById('filterMedia').value;
+      const tbody = document.getElementById('headlinesTableBody');
+      tbody.innerHTML = '';
+
+      const filtered = heads.filter(h => {
+        const matchMedia = mediaFilter === "ALL" || h.s === mediaFilter;
+        const matchText = !query || h.t.toLowerCase().includes(query) || (h.n && h.n.toLowerCase().includes(query));
+        return matchMedia && matchText;
+      });
+
+      filtered.slice(0, 150).forEach(h => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40";
+        tr.innerHTML = `
+          <td class="p-3 text-slate-300 whitespace-nowrap font-bold">${h.n || h.s}</td>
+          <td class="p-3 text-slate-200">${h.t}</td>
+          <td class="p-3 text-right whitespace-nowrap">
+            ${h.u ? `<a href="${h.u}" target="_blank" class="text-blue-400 hover:underline">Ver</a>` : "-"}
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderReport(snap) {
+      const container = document.getElementById('reportContainer');
+      if (snap.report_md) {
+        // Render simple markdown a HTML básico
+        container.innerHTML = snap.report_md
+          .replace(/^# (.*$)/gim, '<h1 class="text-xl font-bold text-white mb-2">$1</h1>')
+          .replace(/^## (.*$)/gim, '<h2 class="text-base font-bold text-slate-200 mt-4 mb-2">$1</h2>')
+          .replace(/^> (.*$)/gim, '<blockquote class="border-l-2 border-blue-500 pl-3 text-blue-300 italic my-2">$1</blockquote>')
+          .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+          .replace(/`([^`]+)`/gim, '<code class="bg-slate-800 px-1 py-0.5 rounded text-blue-300">$1</code>')
+          .replace(/\n\n/gim, '<br><br>');
+      } else {
+        container.innerText = snap.summary_of_the_day || "Sin reporte disponible.";
+      }
+    }
+
+    function renderHistoryChart() {
+      const ctx = document.getElementById('historyChart');
+      if (!ctx) return;
+
+      const series = DATASET.history_series || [];
+      const labels = series.map(s => s.date);
+      const dataValues = series.map(s => s.ihsa_score);
+
+      if (historyChartInstance) {
+        historyChartInstance.destroy();
+      }
+
+      historyChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'IHSA Global (-100 a +100)',
+            data: dataValues,
+            borderColor: '#3b82f6',
+            backgroundColor: 'rgba(59, 130, 246, 0.15)',
+            borderWidth: 2,
+            fill: true,
+            tension: 0.35,
+            pointRadius: 3,
+            pointHoverRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: '#94a3b8' } }
+          },
+          scales: {
+            x: {
+              grid: { color: 'rgba(255, 255, 255, 0.05)' },
+              ticks: { color: '#64748b', maxTicksLimit: 12 }
+            },
+            y: {
+              min: -100,
+              max: 100,
+              grid: { color: 'rgba(255, 255, 255, 0.08)' },
+              ticks: { color: '#64748b' }
+            }
+          }
+        }
+      });
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+      event.currentTarget.classList.add('active');
+      document.getElementById(tabId).classList.remove('hidden');
+      if (tabId === 'tab-history') {
+        renderHistoryChart();
+      }
+      lucide.createIcons();
+    }
+
+    function downloadCsv() {
+      const series = DATASET.history_series || [];
+      if (!series.length) return;
+      const headers = ["date", "ihsa_score", "ihsa_category", "optimismo", "calma", "confianza", "alegria"];
+      const rows = series.map(s => [s.date, s.ihsa_score, `"${s.ihsa_category}"`, s.optimismo, s.calma, s.confianza, s.alegria].join(","));
+      const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows].join("\n");
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", `ihsa_historico_${new Date().toISOString().slice(0, 10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    window.addEventListener('DOMContentLoaded', loadDataset);
+  </script>
+</body>
+</html>
