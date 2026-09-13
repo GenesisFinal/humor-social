@@ -176,20 +176,23 @@
 
     <!-- TABS DE NAVEGACIÓN -->
     <div class="border-b border-slate-800 flex space-x-2 overflow-x-auto pb-1 text-xs">
-      <button class="tab-btn active px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-media')">
-        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de Medios (Temas Relevantes)
+      <button class="tab-btn active px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-media')">
+        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de Medios
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-trends')">
-        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes (Online en Vivo)
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-trends')">
+        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-history')">
-        <i data-lucide="line-chart" class="w-4 h-4"></i> Serie Histórica Interactiva (30 Días)
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-history')">
+        <i data-lucide="line-chart" class="w-4 h-4"></i> Serie Histórica (30D)
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-audit')">
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-report')">
+        <i data-lucide="pie-chart" class="w-4 h-4 text-blue-400"></i> Boletín Ejecutivo Avanzado
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-audit')">
         <i data-lucide="search" class="w-4 h-4"></i> Auditoría de Titulares
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2" onclick="switchTab('tab-report')">
-        <i data-lucide="file-text" class="w-4 h-4"></i> Boletín Ejecutivo
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-methodology')">
+        <i data-lucide="book-open" class="w-4 h-4 text-emerald-400"></i> Metodología Científica
       </button>
     </div>
 
@@ -310,12 +313,263 @@
       </div>
     </div>
 
-    <!-- TAB 5: BOLETÍN EJECUTIVO -->
-    <div id="tab-report" class="tab-content hidden space-y-4">
-      <div class="glass-card rounded-2xl p-6 shadow-lg">
-        <div id="reportContainer" class="text-xs leading-relaxed text-slate-300 space-y-4">
-          <!-- Reporte renderizado -->
+    <!-- TAB 5: BOLETÍN EJECUTIVO AVANZADO -->
+    <div id="tab-report" class="tab-content hidden space-y-6">
+      
+      <!-- HEADER EJECUTIVO CON KPIS ANALÍTICOS -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
+          <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
+            <span>IHSA Consolidado</span>
+            <i data-lucide="gauge" class="w-4 h-4 text-blue-400"></i>
+          </div>
+          <p id="kpiIhsaScore" class="text-2xl font-black font-mono text-white">+0.0</p>
+          <p id="kpiIhsaCategory" class="text-xs text-emerald-400 font-bold mt-0.5">Neutral</p>
         </div>
+
+        <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
+          <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
+            <span>Volatilidad 24h</span>
+            <i data-lucide="activity" class="w-4 h-4 text-amber-400"></i>
+          </div>
+          <p id="kpiVolatility" class="text-2xl font-black font-mono text-white">0.0 pts</p>
+          <p id="kpiVolStatus" class="text-xs text-slate-400 mt-0.5">Dentro de banda normal</p>
+        </div>
+
+        <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
+          <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
+            <span>Dispersión Editorial (σ)</span>
+            <i data-lucide="git-commit" class="w-4 h-4 text-purple-400"></i>
+          </div>
+          <p id="kpiDispersion" class="text-2xl font-black font-mono text-white">0.0 pts</p>
+          <p id="kpiDispStatus" class="text-xs text-purple-300 mt-0.5">Desviación estándar</p>
+        </div>
+
+        <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
+          <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
+            <span>Brecha de Polarización</span>
+            <i data-lucide="split" class="w-4 h-4 text-rose-400"></i>
+          </div>
+          <p id="kpiPolarization" class="text-2xl font-black font-mono text-white">0.0 pts</p>
+          <p id="kpiPolDetails" class="text-[11px] text-slate-400 mt-0.5 truncate">Diferencia Max - Min</p>
+        </div>
+      </div>
+
+      <!-- ALERTA DE VOLATILIDAD DINÁMICA -->
+      <div id="reportVolatilityBanner" class="hidden p-4 rounded-xl border border-amber-500/40 bg-amber-950/20 text-amber-200 text-xs shadow-md">
+        <div class="flex items-start gap-3">
+          <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-bold text-amber-300 text-sm">ALERTA METODOLÓGICA DE VOLATILIDAD ABRUPTA</h4>
+            <p id="reportVolatilityMsg" class="mt-1 text-slate-200 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN DUAL: GRÁFICO DE RADAR & BALANCE EDITORIAL -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- RADAR EMOCIONAL -->
+        <div class="lg:col-span-6 glass-card rounded-2xl p-5 shadow-xl flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                <i data-lucide="radar" class="w-4 h-4 text-blue-400"></i> Huella Psicosocial Multidimensional
+              </h4>
+              <p class="text-xs text-slate-400">Día seleccionado vs. Promedio histórico 30 días</p>
+            </div>
+            <span class="text-[10px] bg-blue-500/20 text-blue-300 font-mono font-bold px-2 py-0.5 rounded border border-blue-500/30">
+              Escala -10 a +10
+            </span>
+          </div>
+          <div class="relative w-full h-72 flex items-center justify-center">
+            <canvas id="radarChart"></canvas>
+          </div>
+          <div class="grid grid-cols-4 gap-2 pt-3 border-t border-slate-800 text-center text-[11px]">
+            <div><span class="text-slate-400">🌱 Opt:</span> <strong id="valOpt" class="font-mono text-white">0.0</strong></div>
+            <div><span class="text-slate-400">🕊️ Cal:</span> <strong id="valCal" class="font-mono text-white">0.0</strong></div>
+            <div><span class="text-slate-400">⚓ Conf:</span> <strong id="valConf" class="font-mono text-white">0.0</strong></div>
+            <div><span class="text-slate-400">☀️ Ale:</span> <strong id="valAle" class="font-mono text-white">0.0</strong></div>
+          </div>
+        </div>
+
+        <!-- BALANCE Y PROMEDIOS POR CATEGORÍA DE MEDIO -->
+        <div class="lg:col-span-6 glass-card rounded-2xl p-5 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-400"></i> Balance por Enfoque Mediático
+              </h4>
+              <span class="text-[10px] text-slate-400">Promedio IHSA ponderado</span>
+            </div>
+            <p class="text-xs text-slate-400 mb-4">Comportamiento del humor según el perfil de cobertura del medio.</p>
+
+            <div id="categoryBars" class="space-y-3.5">
+              <!-- Renderizado dinámico de barras de categoría -->
+            </div>
+          </div>
+
+          <!-- SÍNTESIS CUALITATIVA -->
+          <div class="mt-4 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
+            <span class="text-blue-400 font-bold flex items-center gap-1.5 mb-1">
+              <i data-lucide="file-check" class="w-3.5 h-3.5"></i> Veredicto del Modelo Analítico:
+            </span>
+            <p id="reportVerdictText" class="text-slate-300 leading-relaxed"></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TABLA EJECUTIVA DETALLADA DE LA CANASTA DE MEDIOS -->
+      <div class="glass-card rounded-2xl p-5 shadow-xl space-y-3">
+        <div class="flex items-center justify-between">
+          <h4 class="text-sm font-bold text-white flex items-center gap-2">
+            <i data-lucide="table" class="w-4 h-4 text-blue-400"></i> Matriz Ejecutiva de Medios Ponderados (Día Seleccionado)
+          </h4>
+          <span class="text-xs text-slate-400">12 Medios Monitoreados • Ponderación Total: 100%</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-lg border border-slate-800">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="bg-slate-900/90 text-slate-400 uppercase text-[10px] tracking-wider">
+              <tr>
+                <th class="p-3">Medio</th>
+                <th class="p-3">Enfoque</th>
+                <th class="p-3 text-center">Peso</th>
+                <th class="p-3 text-center">Score IHSA</th>
+                <th class="p-3">Principal Impulso Favorable (🟢)</th>
+                <th class="p-3">Principal Foco Crítico (🔴)</th>
+              </tr>
+            </thead>
+            <tbody id="reportTableBody" class="divide-y divide-slate-800 font-mono text-[11px]">
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TAB 6: MARCO METODOLÓGICO Y CIENTÍFICO -->
+    <div id="tab-methodology" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 shadow-xl space-y-6">
+        
+        <div class="border-b border-slate-800 pb-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-2xl">📐</span>
+            <h3 class="text-lg font-black text-white tracking-wide">Marco Metodológico del Índice de Humor Social Argentino (IHSA)</h3>
+          </div>
+          <p class="text-xs text-slate-400">
+            Fundamentos conceptuales, estructura de ponderaciones, taxonomía psicosocial y algoritmos de calibración del monitor.
+          </p>
+        </div>
+
+        <!-- FÓRMULA MATEMÁTICA CENTRAL -->
+        <div class="p-5 rounded-2xl bg-blue-950/30 border border-blue-500/30 space-y-3">
+          <h4 class="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="function-square" class="w-4 h-4 text-blue-400"></i> Modelo Matemático de Agregación
+          </h4>
+          <p class="text-xs text-slate-200 leading-relaxed">
+            El <strong>IHSA</strong> es un indicador compuesto de nivel macro calculado diariamente en una escala normalizada de <strong>-100 a +100</strong>, donde 0 representa una estricta neutralidad. La integración combina tres subíndices complementarios:
+          </p>
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 font-mono text-xs text-emerald-400 overflow-x-auto text-center font-bold">
+            IHSA_t = 0.50 × S_General + 0.20 × S_Economía + 0.30 × S_Digital
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-300 pt-2">
+            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+              <span class="font-bold text-blue-400 block mb-1">📰 Prensa General (50%)</span>
+              Monitoreo de tapas matutinas y portadas digitales de medios masivos de alcance nacional y federal.
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+              <span class="font-bold text-emerald-400 block mb-1">📈 Medios Económicos (20%)</span>
+              Especializados en finanzas, inflación, salarios, paritarias, dólar y expectativas empresarias.
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+              <span class="font-bold text-purple-400 block mb-1">🌐 Tendencias Digitales (30%)</span>
+              Pulso espontáneo de la opinión pública a través de Google Trends Argentina y X (Twitter).
+            </div>
+          </div>
+        </div>
+
+        <!-- LOS 4 EJES PSICOSOCIALES -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="compass" class="w-4 h-4 text-blue-400"></i> Los 4 Ejes Emocionales Cuantificados (Escala -10 a +10)
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-white text-xs flex items-center gap-2">
+                  <span>🌱</span> Optimismo vs. Pesimismo
+                </h5>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 font-bold px-2 py-0.5 rounded">Peso: 30%</span>
+              </div>
+              <p class="text-xs text-slate-300">
+                Evalúa la proyección de futuro y la percepción de resolución de problemas versus la sensación de decadencia o crisis estructural sin salida.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-white text-xs flex items-center gap-2">
+                  <span>🕊️</span> Calma vs. Conflicto / Crispación
+                </h5>
+                <span class="text-[10px] bg-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded">Peso: 25%</span>
+              </div>
+              <p class="text-xs text-slate-300">
+                Mide el nivel de crispación, conflictividad gremial, inseguridad y protestas versus la paz social y la estabilidad cívica.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-white text-xs flex items-center gap-2">
+                  <span>⚓</span> Confianza vs. Incertidumbre / Miedo
+                </h5>
+                <span class="text-[10px] bg-purple-500/20 text-purple-300 font-bold px-2 py-0.5 rounded">Peso: 30%</span>
+              </div>
+              <p class="text-xs text-slate-300">
+                Cuantifica la certidumbre sobre el empleo, la moneda, el rumbo de precios y la credibilidad institucional versus el temor o desconcierto.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="font-bold text-white text-xs flex items-center gap-2">
+                  <span>☀️</span> Alegría vs. Tristeza / Duelo
+                </h5>
+                <span class="text-[10px] bg-amber-500/20 text-amber-300 font-bold px-2 py-0.5 rounded">Peso: 15%</span>
+              </div>
+              <p class="text-xs text-slate-300">
+                Registra eventos de regocijo colectivo (logros deportivos como Colapinto o la Selección, cultura) versus dolor social, pérdidas o luto.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PROTOCOLOS DE CALIBRACIÓN Y ANTI-RUIDO -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h5 class="font-bold text-white text-xs flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Filtro Anti-Ruido y Relevancia
+            </h5>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              El motor aplica heurísticas de supresión que eliminan automáticamente artículos de estilo de vida, recetas, horóscopos, farándula y clickbait secundario, priorizando únicamente noticias con impacto real en la opinión pública.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h5 class="font-bold text-white text-xs flex items-center gap-2">
+              <i data-lucide="bell-ring" class="w-4 h-4 text-amber-400"></i> Protocolo de Alerta de Volatilidad
+            </h5>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Se dispara una alerta metodológica cuando el índice registra una oscilación mayor o igual a <strong>±15.0 puntos en 24 horas</strong>, indicando la irrupción de un acontecimiento de alto impacto político, económico o social.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -331,6 +585,7 @@
   <script>
     let DATASET = null;
     let historyChartInstance = null;
+    let radarChartInstance = null;
     let liveGoogleTrends = null;
 
     async function loadDataset() {
@@ -581,23 +836,282 @@
       lucide.createIcons();
     }
 
-    // 5) RENDER REPORTE LIMPIO SIN '---' AMBIGUOS
+    // 5) RENDER BOLETÍN EJECUTIVO AVANZADO CON RADAR, KPIS Y MATRIZ DETALLADA
     function renderReport(snap) {
-      const container = document.getElementById('reportContainer');
-      if (snap.report_md) {
-        let cleanMd = snap.report_md
-          .replace(/^# (.*$)/gim, '<h1 class="text-xl font-bold text-white mb-2 pb-2 border-b border-slate-800">$1</h1>')
-          .replace(/^### (.*$)/gim, '<h3 class="text-sm font-bold text-blue-300 mt-4 mb-2 flex items-center gap-1.5">$1</h3>')
-          .replace(/^## (.*$)/gim, '<h2 class="text-base font-bold text-slate-200 mt-4 mb-2">$1</h2>')
-          .replace(/^> (.*$)/gim, '<div class="border-l-4 border-amber-500 bg-amber-950/20 p-3 text-amber-200 rounded-r my-3">$1</div>')
-          .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
-          .replace(/`([^`]+)`/gim, '<code class="bg-slate-800 px-1 py-0.5 rounded text-blue-300 font-mono">$1</code>')
-          .replace(/---/gim, '')  // ELIMINAR CUALQUIER '---' RESIDUAL
-          .replace(/\n\n/gim, '<br>');
-        container.innerHTML = cleanMd;
+      const dateStr = snap.date;
+      const evals = DATASET.evaluations[dateStr] || [];
+
+      // 1. KPI: IHSA Score y Categoría
+      const score = snap.ihsa_score;
+      const scoreElem = document.getElementById('kpiIhsaScore');
+      scoreElem.innerText = (score >= 0 ? "+" : "") + score.toFixed(1);
+      if (score >= 10) scoreElem.className = "text-2xl font-black font-mono text-emerald-400";
+      else if (score >= -10) scoreElem.className = "text-2xl font-black font-mono text-amber-400";
+      else scoreElem.className = "text-2xl font-black font-mono text-rose-500";
+      document.getElementById('kpiIhsaCategory').innerText = snap.ihsa_category;
+
+      // 2. KPI: Volatilidad 24h
+      const dateIdx = DATASET.available_dates.indexOf(dateStr);
+      let diff = 0;
+      const volElem = document.getElementById('kpiVolatility');
+      const volStatus = document.getElementById('kpiVolStatus');
+      const banner = document.getElementById('reportVolatilityBanner');
+      const bannerMsg = document.getElementById('reportVolatilityMsg');
+
+      if (dateIdx >= 0 && dateIdx < DATASET.available_dates.length - 1) {
+        const prevDate = DATASET.available_dates[dateIdx + 1];
+        const prevSnap = DATASET.snapshots[prevDate];
+        if (prevSnap) {
+          diff = score - prevSnap.ihsa_score;
+          const absDiff = Math.abs(diff);
+          volElem.innerText = (diff >= 0 ? "+" : "") + diff.toFixed(1) + " pts";
+          
+          if (absDiff >= 15.0) {
+            volStatus.innerText = "⚠️ Volatilidad alta detectada";
+            volStatus.className = "text-xs text-amber-400 font-bold mt-0.5";
+            banner.classList.remove('hidden');
+            bannerMsg.innerText = `Se registró una oscilación brusca de ${absDiff.toFixed(1)} puntos respecto al día anterior (${prevDate}: ${prevSnap.ihsa_score >= 0 ? '+' : ''}${prevSnap.ihsa_score.toFixed(1)} pts). Este movimiento responde a un acontecimiento de alto impacto político, social o económico en la agenda nacional.`;
+          } else {
+            volStatus.innerText = "Banda de oscilación normal";
+            volStatus.className = "text-xs text-slate-400 mt-0.5";
+            banner.classList.add('hidden');
+          }
+        }
       } else {
-        container.innerText = snap.summary_of_the_day || "Sin reporte disponible.";
+        volElem.innerText = "Base";
+        volStatus.innerText = "Sin medición previa";
+        banner.classList.add('hidden');
       }
+
+      // 3. KPIs: Dispersión Editorial (Desviación estándar) y Polarización (Max - Min)
+      if (evals.length > 0) {
+        const scores = evals.map(e => e.composite_score);
+        const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
+        const variance = scores.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / scores.length;
+        const stdDev = Math.sqrt(variance);
+
+        const maxScore = Math.max(...scores);
+        const minScore = Math.min(...scores);
+        const maxOutlet = evals.find(e => e.composite_score === maxScore);
+        const minOutlet = evals.find(e => e.composite_score === minScore);
+        const polarizationGap = maxScore - minScore;
+
+        document.getElementById('kpiDispersion').innerText = stdDev.toFixed(1) + " pts";
+        const dispStatus = document.getElementById('kpiDispStatus');
+        if (stdDev > 25.0) {
+          dispStatus.innerText = "Fuerte divergencia editorial";
+          dispStatus.className = "text-xs text-rose-400 font-bold mt-0.5";
+        } else if (stdDev > 15.0) {
+          dispStatus.innerText = "Divergencia media";
+          dispStatus.className = "text-xs text-amber-400 font-bold mt-0.5";
+        } else {
+          dispStatus.innerText = "Consenso editorial general";
+          dispStatus.className = "text-xs text-emerald-400 font-bold mt-0.5";
+        }
+
+        document.getElementById('kpiPolarization').innerText = polarizationGap.toFixed(1) + " pts";
+        document.getElementById('kpiPolDetails').innerText = `${maxOutlet ? maxOutlet.source_name : 'Max'} (${maxScore >= 0 ? '+' : ''}${maxScore.toFixed(0)}) vs ${minOutlet ? minOutlet.source_name : 'Min'} (${minScore >= 0 ? '+' : ''}${minScore.toFixed(0)})`;
+      }
+
+      // 4. Ejes y Gráfico de Radar
+      const opt = snap.axes_averages ? snap.axes_averages.optimismo : snap.optimismo || 0;
+      const cal = snap.axes_averages ? snap.axes_averages.calma : snap.calma || 0;
+      const conf = snap.axes_averages ? snap.axes_averages.confianza : snap.confianza || 0;
+      const ale = snap.axes_averages ? snap.axes_averages.alegria : snap.alegria || 0;
+
+      document.getElementById('valOpt').innerText = (opt >= 0 ? "+" : "") + opt.toFixed(1);
+      document.getElementById('valCal').innerText = (cal >= 0 ? "+" : "") + cal.toFixed(1);
+      document.getElementById('valConf').innerText = (conf >= 0 ? "+" : "") + conf.toFixed(1);
+      document.getElementById('valAle').innerText = (ale >= 0 ? "+" : "") + ale.toFixed(1);
+
+      renderRadarChart(snap);
+
+      // 5. Desglose por Enfoque Editorial (Categorías)
+      renderCategoryBars(evals);
+
+      // 6. Veredicto Cualitativo
+      document.getElementById('reportVerdictText').innerText = snap.summary_of_the_day || snap.summary || "Jornada procesada de acuerdo al protocolo metodológico estándar.";
+
+      // 7. Tabla Ejecutiva de Medios
+      renderReportTable(evals);
+    }
+
+    // RENDER GRÁFICO DE RADAR PSICOSOCIAL
+    function renderRadarChart(snap) {
+      const ctx = document.getElementById('radarChart');
+      if (!ctx) return;
+
+      const opt = snap.axes_averages ? snap.axes_averages.optimismo : snap.optimismo || 0;
+      const cal = snap.axes_averages ? snap.axes_averages.calma : snap.calma || 0;
+      const conf = snap.axes_averages ? snap.axes_averages.confianza : snap.confianza || 0;
+      const ale = snap.axes_averages ? snap.axes_averages.alegria : snap.alegria || 0;
+
+      // Calcular promedios de los 30 días para referencia
+      let avgOpt = 0, avgCal = 0, avgConf = 0, avgAle = 0;
+      const series = DATASET.history_series || [];
+      if (series.length > 0) {
+        avgOpt = series.reduce((a, s) => a + (s.optimismo || 0), 0) / series.length;
+        avgCal = series.reduce((a, s) => a + (s.calma || 0), 0) / series.length;
+        avgConf = series.reduce((a, s) => a + (s.confianza || 0), 0) / series.length;
+        avgAle = series.reduce((a, s) => a + (s.alegria || 0), 0) / series.length;
+      }
+
+      if (radarChartInstance) {
+        radarChartInstance.destroy();
+      }
+
+      radarChartInstance = new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: ['🌱 Optimismo', '🕊️ Calma Social', '⚓ Confianza', '☀️ Alegría / Logro'],
+          datasets: [
+            {
+              label: `Día: ${snap.date}`,
+              data: [opt, cal, conf, ale],
+              backgroundColor: 'rgba(59, 130, 246, 0.25)',
+              borderColor: '#3b82f6',
+              borderWidth: 2.5,
+              pointBackgroundColor: '#3b82f6',
+              pointBorderColor: '#fff',
+              pointRadius: 4,
+              pointHoverRadius: 6
+            },
+            {
+              label: 'Promedio 30 Días',
+              data: [avgOpt, avgCal, avgConf, avgAle],
+              backgroundColor: 'rgba(148, 163, 184, 0.1)',
+              borderColor: '#94a3b8',
+              borderWidth: 1.5,
+              borderDash: [4, 4],
+              pointBackgroundColor: '#94a3b8',
+              pointRadius: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              min: -10,
+              max: 10,
+              ticks: {
+                stepSize: 5,
+                color: '#64748b',
+                backdropColor: 'transparent',
+                font: { size: 9, family: 'JetBrains Mono' }
+              },
+              grid: { color: 'rgba(255, 255, 255, 0.08)' },
+              angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
+              pointLabels: {
+                color: '#cbd5e1',
+                font: { size: 11, weight: 'bold', family: 'Plus Jakarta Sans' }
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              labels: { color: '#cbd5e1', font: { size: 11 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const val = context.raw;
+                  return ` ${context.dataset.label}: ${(val >= 0 ? '+' : '')}${val.toFixed(1)} / 10`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // BARRAS POR ENFOQUE MEDIÁTICO
+    function renderCategoryBars(evals) {
+      const catContainer = document.getElementById('categoryBars');
+      catContainer.innerHTML = '';
+
+      const catLabels = {
+        general: "Prensa Tradicional General",
+        economy: "Prensa Económica y de Negocios",
+        popular: "Prensa Popular y Masiva",
+        political_opposition: "Medios Críticos / Oposición",
+        political_left: "Prensa Crítica / Izquierda",
+        investigative_press: "Prensa de Análisis e Investigación",
+        federal: "Medios de Alcance Federal"
+      };
+
+      const groups = {};
+      evals.forEach(ev => {
+        const cat = ev.category || "general";
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(ev.composite_score);
+      });
+
+      for (const [catKey, scores] of Object.entries(groups)) {
+        const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+        const count = scores.length;
+        const label = catLabels[catKey] || catKey;
+
+        // Normalizar 0 a 100% para visualización (-100 => 0%, 0 => 50%, +100 => 100%)
+        const pct = Math.max(0, Math.min(100, ((avg + 100) / 200) * 100));
+        let colorClass = "bg-emerald-400";
+        if (avg < -10) colorClass = "bg-rose-500";
+        else if (avg < 10) colorClass = "bg-amber-400";
+
+        const div = document.createElement('div');
+        div.className = "space-y-1";
+        div.innerHTML = `
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-slate-300 font-medium">${label} <span class="text-slate-500 font-mono text-[10px]">(${count} ${count > 1 ? 'medios' : 'medio'})</span></span>
+            <span class="font-mono font-bold ${(avg >= 10 ? 'text-emerald-400' : (avg >= -10 ? 'text-amber-400' : 'text-rose-400'))}">
+              ${(avg >= 0 ? '+' : '')}${avg.toFixed(1)}
+            </span>
+          </div>
+          <div class="w-full bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-800">
+            <div class="${colorClass} h-full rounded-full transition-all duration-500" style="width: ${pct}%"></div>
+          </div>
+        `;
+        catContainer.appendChild(div);
+      }
+    }
+
+    // TABLA EJECUTIVA DETALLADA
+    function renderReportTable(evals) {
+      const tbody = document.getElementById('reportTableBody');
+      tbody.innerHTML = '';
+
+      // Ordenar por score descendente
+      const sorted = [...evals].sort((a, b) => b.composite_score - a.composite_score);
+
+      sorted.forEach(ev => {
+        const score = ev.composite_score;
+        let scoreBadge = "bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+        if (score < -10) scoreBadge = "bg-rose-500/20 text-rose-300 border-rose-500/30";
+        else if (score < 10) scoreBadge = "bg-amber-500/20 text-amber-300 border-amber-500/30";
+
+        const meta = DATASET.media_catalog[ev.source_id] || {};
+        const weightPct = meta.weight ? `${(meta.weight * 100).toFixed(0)}%` : "8%";
+
+        const posText = ev.positive_drivers && ev.positive_drivers.length ? ev.positive_drivers[0] : "Sin foco positivo destacado";
+        const negText = ev.negative_drivers && ev.negative_drivers.length ? ev.negative_drivers[0] : "Sin foco crítico destacado";
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40 transition";
+        tr.innerHTML = `
+          <td class="p-3 text-white font-bold whitespace-nowrap">${ev.source_name}</td>
+          <td class="p-3 text-slate-400 text-[10px] whitespace-nowrap"><span class="bg-slate-800 px-1.5 py-0.5 rounded border border-slate-700/60">${ev.category}</span></td>
+          <td class="p-3 text-center text-slate-400 font-mono">${weightPct}</td>
+          <td class="p-3 text-center whitespace-nowrap">
+            <span class="px-2 py-0.5 rounded border font-bold text-xs ${scoreBadge}">
+              ${(score >= 0 ? "+" : "") + score.toFixed(1)}
+            </span>
+          </td>
+          <td class="p-3 text-emerald-300 max-w-xs truncate">${posText}</td>
+          <td class="p-3 text-rose-300 max-w-xs truncate">${negText}</td>
+        `;
+        tbody.appendChild(tr);
+      });
     }
 
     // 1) GRÁFICO INTERACTIVO: CLIC EN UN PUNTO VIAJA A ESE DÍA
@@ -686,6 +1200,10 @@
       document.getElementById(tabId).classList.remove('hidden');
       if (tabId === 'tab-history') {
         renderHistoryChart();
+      } else if (tabId === 'tab-report' && DATASET) {
+        const currentDate = document.getElementById('dateSelect').value;
+        const snap = DATASET.snapshots[currentDate];
+        if (snap) renderReport(snap);
       }
       lucide.createIcons();
     }
