@@ -195,11 +195,23 @@
 
     <!-- TAB 1: MATRIZ DE MEDIOS -->
     <div id="tab-media" class="tab-content space-y-4">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <h3 class="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-          <i data-lucide="newspaper" class="w-4 h-4 text-blue-400"></i> Temas Más Relevantes e Incidencia en el Humor Social
-        </h3>
-        <span class="text-xs text-slate-400">Filtrado estricto de noticias nacionales (sin relleno ni clickbait)</span>
+      <div class="glass-card p-4 rounded-xl border border-slate-700/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md">
+        <div>
+          <div class="flex items-center gap-2">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="newspaper" class="w-4 h-4 text-blue-400"></i> Temas Más Relevantes e Incidencia en el Humor Social
+            </h3>
+            <span id="lblMediaBadge" class="text-[10px] bg-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded border border-blue-500/30">
+              Día Seleccionado: <span id="lblMediaDate" class="font-mono text-white"></span>
+            </span>
+          </div>
+          <p id="lblMediaSummary" class="text-xs text-slate-300 mt-1 line-clamp-2">
+            Filtrado estricto de noticias nacionales (prioridad a economía, política y sociedad).
+          </p>
+        </div>
+        <div class="text-xs text-slate-400 shrink-0">
+          <span class="text-emerald-400 font-bold">🟢</span> Impulso Favorable &nbsp;|&nbsp; <span class="text-rose-400 font-bold">🔴</span> Foco Crítico
+        </div>
       </div>
 
       <div id="mediaCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -455,9 +467,24 @@
 
     // 4) MATRIZ DE MEDIOS CON LOS 2 O 3 TEMAS MÁS RELEVANTES Y DE MAYOR IMPACTO
     function renderMediaCards(dateStr) {
+      const snap = DATASET.snapshots[dateStr];
       const evals = DATASET.evaluations[dateStr] || [];
       const grid = document.getElementById('mediaCardsGrid');
+      
+      // Actualizar cabecera de la matriz
+      const lblDate = document.getElementById('lblMediaDate');
+      if (lblDate) lblDate.innerText = dateStr;
+      const lblSummary = document.getElementById('lblMediaSummary');
+      if (lblSummary && snap) {
+        lblSummary.innerText = snap.summary_of_the_day || snap.summary || "Titulares y noticias de mayor trascendencia analizados para esta jornada.";
+      }
+
       grid.innerHTML = '';
+
+      if (evals.length === 0) {
+        grid.innerHTML = `<div class="col-span-full text-center py-8 text-slate-400">No hay evaluaciones registradas para la fecha ${dateStr}</div>`;
+        return;
+      }
 
       evals.forEach(ev => {
         const score = ev.composite_score;
@@ -469,8 +496,8 @@
         card.className = "glass-card rounded-xl p-4 border border-slate-700/60 hover:border-slate-500 transition flex flex-col justify-between shadow-md";
 
         // Obtener 2 o 3 titulares de impacto positivo y negativo
-        const posItems = ev.positive_drivers && ev.positive_drivers.length ? ev.positive_drivers.slice(0, 2) : ["Sin foco constructivo destacado"];
-        const negItems = ev.negative_drivers && ev.negative_drivers.length ? ev.negative_drivers.slice(0, 2) : ["Sin foco crítico destacado"];
+        const posItems = ev.positive_drivers && ev.positive_drivers.length ? ev.positive_drivers.slice(0, 3) : ["Sin foco constructivo destacado"];
+        const negItems = ev.negative_drivers && ev.negative_drivers.length ? ev.negative_drivers.slice(0, 3) : ["Sin foco crítico destacado"];
 
         const posHtml = posItems.map(p => `<div class="text-emerald-400 text-[11px] leading-snug flex items-start gap-1.5"><span class="font-bold text-xs shrink-0">🟢</span><span>${p}</span></div>`).join('');
         const negHtml = negItems.map(n => `<div class="text-rose-400 text-[11px] leading-snug flex items-start gap-1.5"><span class="font-bold text-xs shrink-0">🔴</span><span>${n}</span></div>`).join('');
