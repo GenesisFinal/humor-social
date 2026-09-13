@@ -127,6 +127,106 @@ def evaluate_headline_vector(title: str) -> tuple[float, str]:
 
     return score, "vectorial"
 
+# Clubes y torneos de fútbol local (Juegos de suma cero: alegría de unos es tristeza de otros)
+LOCAL_SPORTS_CLUBS = [
+    "boca", "river", "independiente", "racing", "san lorenzo", "rosario central",
+    "newell's", "newells", "talleres", "belgrano", "instituto", "velez", "estudiantes",
+    "gimnasia", "huracan", "lanus", "banfield", "argentinos juniors", "tigre", "platense",
+    "union", "colon", "godoy cruz", "central cordoba", "barracas", "riestra", "defensa y justicia",
+    "liga profesional", "copa argentina", "nacional b", "primera nacional", "federal a"
+]
+
+# Logros patrios / Hitos de representación nacional unívoca (Unen a todo el país)
+NATIONAL_SPORTS_REPRESENTATION = [
+    "colapinto", "franco colapinto", "fórmula 1", "formula 1", "williams",
+    "selección argentina", "seleccion argentina", "la scaloneta", "messi", "lionel messi",
+    "leonas", "gladiadores", "oro olímpico", "medalla olímpica", "campeón del mundo", "copa américa"
+]
+
+# Matriz jerárquica de impacto y severidad poblacional (Weighting Tiers)
+HIERARCHICAL_IMPACT_TIERS = {
+    # TIER 1: Catástrofes masivas, atentados, crisis institucional extrema (Afectación existencial / duelo nacional)
+    "tier_1_catastrophes": {
+        "weight": 5.0,
+        "keywords": [
+            "explosión", "explosion", "atentado", "masacre", "tragedia aérea", "derrumbe",
+            "terremoto", "inundación masiva", "decenas de muertos", "múltiples víctimas",
+            "golpe de estado", "estado de sitio", "corrida bancaria", "hiperinflación"
+        ]
+    },
+    # TIER 2: Bolsillo directo y subsistencia familiar (Afecta al 100% de la población)
+    "tier_2_pocket_economy": {
+        "weight": 3.5,
+        "keywords": [
+            "inflación", "inflacion", "precios", "alimentos", "jubilaciones", "jubilados", "anses",
+            "salarios", "sueldos", "paritarias", "tarifas", "luz y gas", "boleto", "transporte",
+            "mora", "morosidad", "endeudamiento", "pobreza", "desempleo", "despidos masivos",
+            "dólar", "dolar blue", "alquileres"
+        ]
+    },
+    # TIER 3: Macroeconomía y política nacional de alto nivel (Incidencia institucional)
+    "tier_3_macro_politics": {
+        "weight": 2.2,
+        "keywords": [
+            "milei", "gobierno", "fmi", "congreso", "senado", "diputados", "veto", "ley",
+            "presupuesto", "reservas", "banco central", "bcra", "riesgo país", "bonos",
+            "superávit", "gobernadores", "corte suprema", "justicia"
+        ]
+    },
+    # TIER 4: Deportes de representación nacional
+    "tier_4_national_pride": {
+        "weight": 1.8,
+        "keywords": NATIONAL_SPORTS_REPRESENTATION
+    }
+}
+
+def is_local_sports_headline(title: str) -> bool:
+    """Detecta si un titular refiere a resultados o partidos de fútbol doméstico (suma cero)."""
+    low = normalize_text(title)
+    
+    # Si menciona un hito de representación nacional (ej. Selección o Colapinto), NO se descarta
+    if any(p in low for p in NATIONAL_SPORTS_REPRESENTATION):
+        return False
+        
+    # Verificar si refiere a clubes locales en contexto de partido/torneo
+    matches_club = any(c in low for c in LOCAL_SPORTS_CLUBS)
+    has_match_context = any(w in low for w in [
+        "gol", "goles", "triunfo", "derrota", "empate", "vencio", "gano", "perdio",
+        "campeonato", "partido", "kempes", "clasico", "penal", "fecha", "tabla", "puntos"
+    ])
+    return matches_club and has_match_context
+
+def compute_headline_significance_weight(title: str) -> float:
+    """Calcula el peso de impacto relativo de la noticia según su severidad social."""
+    low = normalize_text(title)
+
+    # Deporte local de suma cero: peso atenuado a casi cero
+    if is_local_sports_headline(title):
+        return 0.1
+
+    # Tier 1: Catástrofe / Duelo Masivo
+    for kw in HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["keywords"]:
+        if kw in low:
+            return HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["weight"]
+
+    # Tier 2: Economía de Bolsillo Directo
+    for kw in HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["keywords"]:
+        if kw in low:
+            return HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["weight"]
+
+    # Tier 3: Macroeconomía y Política Institucional
+    for kw in HIERARCHICAL_IMPACT_TIERS["tier_3_macro_politics"]["keywords"]:
+        if kw in low:
+            return HIERARCHICAL_IMPACT_TIERS["tier_3_macro_politics"]["weight"]
+
+    # Tier 4: Orgullo Deportivo / Cultural Nacional
+    for kw in HIERARCHICAL_IMPACT_TIERS["tier_4_national_pride"]["keywords"]:
+        if kw in low:
+            return HIERARCHICAL_IMPACT_TIERS["tier_4_national_pride"]["weight"]
+
+    # Peso base para sucesos ordinarios o incidentes menores
+    return 1.0
+
 # Palabras clave de relleno, trucos domésticos y clickbait que NO inciden en el humor social nacional
 JUNK_KEYWORDS = [
     "papel aluminio", "receta", "recetas", "truco casero", "trucos caseros", "cómo limpiar",
@@ -135,35 +235,29 @@ JUNK_KEYWORDS = [
     "romance", "separación", "novia de", "novio de", "chimento", "astrológico"
 ]
 
-# Palabras clave de alto impacto sociopolítico y económico
-HIGH_IMPACT_KEYWORDS = [
-    "milei", "gobierno", "dólar", "inflación", "jubilados", "salarios", "anses", "fmi",
-    "congreso", "paso", "gobernadores", "precios", "tarifas", "justicia", "seguridad",
-    "crimen", "colapinto", "fórmula 1", "selección", "pobreza", "bonos", "riesgo país",
-    "reservas", "recesión", "marcha", "paro", "veto", "malvinas", "mora"
-]
-
 def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Filtra titulares irrelevantes (recetas, trucos, horóscopos) y los ordena por relevancia de impacto."""
+    """Filtra titulares irrelevantes y los ordena estrictamente por jerarquía de severidad e impacto nacional."""
     cleaned = []
     for h in headlines:
         title = h.get("title", "")
         low = title.lower()
-        # Descartar ruido evidente
+
+        # 1. Descartar basura evidente (recetas, trucos caseros, farándula secundaria)
         if any(junk in low for junk in JUNK_KEYWORDS):
             continue
         if len(title.strip()) < 22:
             continue
 
-        # Asignar peso de relevancia
-        weight = 1
-        for kw in HIGH_IMPACT_KEYWORDS:
-            if kw in low:
-                weight += 2
+        # 2. Asignar peso jerárquico según severidad y alcance social
+        weight = compute_headline_significance_weight(title)
+
+        # 3. Excluir como foco prioritario el fútbol de clubes local
+        if is_local_sports_headline(title):
+            weight = 0.2  # Relegado al fondo de la canasta
 
         cleaned.append((weight, h))
 
-    # Ordenar por mayor peso de impacto primero
+    # Ordenar de mayor a menor impacto social real
     cleaned.sort(key=lambda x: x[0], reverse=True)
     return [item[1] for item in cleaned]
 
@@ -172,7 +266,7 @@ def analyze_headlines_heuristic(
     source_name: str,
     headlines: List[Dict[str, Any]]
 ) -> SourceSentimentScore:
-    """Evalúa los titulares usando análisis léxico contextual y álgebra vectorial direccional argentina."""
+    """Evalúa los titulares usando análisis léxico contextual, ponderación jerárquica y álgebra vectorial direccional argentina."""
     relevant_headlines = filter_relevant_headlines(headlines)
     if not relevant_headlines:
         relevant_headlines = headlines  # Fallback si todo fue filtrado
@@ -183,60 +277,74 @@ def analyze_headlines_heuristic(
     pos_drivers = []
     neg_drivers = []
 
-    # Paso 1: Evaluación vectorial proposicional previa
+    # Paso 1: Evaluación vectorial proposicional previa con ponderación de impacto
     for t in titles:
+        # Omitir resultados de liga local de fútbol en los drivers
+        if is_local_sports_headline(t):
+            continue
+
         v_score, _ = evaluate_headline_vector(t)
-        if v_score < 0:
+        weight = compute_headline_significance_weight(t)
+
+        if v_score < 0 and weight >= 1.0:
             if t not in neg_drivers and len(neg_drivers) < 3:
                 neg_drivers.append(t)
-        elif v_score > 0:
+        elif v_score > 0 and weight >= 1.0:
             if t not in pos_drivers and len(pos_drivers) < 3:
                 pos_drivers.append(t)
 
-    # Evaluar eje por eje complementando con vectores
-    def evaluate_axis(pos_terms, neg_terms, is_economic: bool = False) -> float:
-        pos_count = 0
-        neg_count = 0
+    # Evaluar eje por eje complementando con vectores y severidad
+    def evaluate_axis(pos_terms, neg_terms, is_economic: bool = False, is_joy: bool = False) -> float:
+        pos_weighted = 0.0
+        neg_weighted = 0.0
 
-        # Sumar pesos de los vectores direccionales si es eje económico/confianza/optimismo
+        # Sumar pesos de los vectores direccionales ponderados por severidad
         if is_economic:
             for t in titles:
                 v_score, _ = evaluate_headline_vector(t)
+                w = compute_headline_significance_weight(t)
                 if v_score > 0:
-                    pos_count += 2
+                    pos_weighted += 2.0 * w
                 elif v_score < 0:
-                    neg_count += 2
+                    neg_weighted += 2.0 * w
 
         for term in pos_terms:
             matches = [t for t in titles if term in t.lower()]
             for m in matches:
-                # Evitar falso positivo si el vector determinó que es negativo (ej. "mora en crédito")
+                # Regla deportiva: no computar fútbol local como alegría nacional
+                if is_joy and is_local_sports_headline(m):
+                    continue
+
+                w = compute_headline_significance_weight(m)
+                # Evitar falso positivo si el vector determinó que es negativo
                 v_sc, _ = evaluate_headline_vector(m)
                 if v_sc < 0:
-                    neg_count += 1
+                    neg_weighted += 1.0 * w
                     continue
-                pos_count += 1
-                if m not in pos_drivers and len(pos_drivers) < 3:
+
+                pos_weighted += 1.0 * w
+                if w >= 1.5 and m not in pos_drivers and len(pos_drivers) < 3 and not is_local_sports_headline(m):
                     pos_drivers.append(m)
                         
         for term in neg_terms:
             matches = [t for t in titles if term in t.lower()]
             for m in matches:
-                neg_count += 1
-                if m not in neg_drivers and len(neg_drivers) < 3:
+                w = compute_headline_significance_weight(m)
+                neg_weighted += 1.0 * w
+                if w >= 1.5 and m not in neg_drivers and len(neg_drivers) < 3:
                     neg_drivers.append(m)
 
-        total = pos_count + neg_count
-        if total == 0:
+        total_weight = pos_weighted + neg_weighted
+        if total_weight == 0:
             return 0.0
-        # Balance neto escalado a [-10, 10]
-        net = (pos_count - neg_count) / max(total, 2) * 10.0
+        # Balance neto ponderado escalado a [-10, 10]
+        net = (pos_weighted - neg_weighted) / max(total_weight, 3.0) * 10.0
         return max(-10.0, min(10.0, round(net, 1)))
 
     opt = evaluate_axis(LEXICON_AR["optimismo_pos"], LEXICON_AR["optimismo_neg"], is_economic=True)
     cal = evaluate_axis(LEXICON_AR["calma_pos"], LEXICON_AR["calma_neg"], is_economic=False)
     conf = evaluate_axis(LEXICON_AR["confianza_pos"], LEXICON_AR["confianza_neg"], is_economic=True)
-    ale = evaluate_axis(LEXICON_AR["alegria_pos"], LEXICON_AR["alegria_neg"], is_economic=False)
+    ale = evaluate_axis(LEXICON_AR["alegria_pos"], LEXICON_AR["alegria_neg"], is_economic=False, is_joy=True)
 
     # Extraer temas clave (palabras más frecuentes significativas)
     words = re.findall(r"\b[a-záéíóúñ]{4,}\b", full_text)
@@ -289,11 +397,19 @@ Debes evaluar con máxima neutralidad, rigor y objetividad el HUMOR SOCIAL que t
 Titulares a evaluar:
 {titles_text}
 
-Rúbrica de evaluación rigurosa:
+Rúbrica de evaluación rigurosa y reglas metodológicas:
 1. Optimismo vs. Pesimismo (-10.0 a +10.0): Esperanza, futuro, reactivación (+10) vs crisis sin salida, decadencia (-10).
 2. Calma vs. Conflicto / Bronca (-10.0 a +10.0): Paz, acuerdos (+10) vs marchas, tensión, crispación, inseguridad (-10).
 3. Confianza vs. Incertidumbre (-10.0 a +10.0): Previsibilidad, estabilidad (+10) vs miedo al dólar, devaluación, quiebra (-10).
-4. Alegría vs. Tristeza (-10.0 a +10.0): Triunfos colectivos, orgullo (+10) vs duelo colectivo, tragedias, pérdidas (-10).
+4. Alegría vs. Tristeza (-10.0 a +10.0): Triunfos de representación patrios/colectivos (+10) vs duelo colectivo, tragedias, pérdidas (-10).
+
+REGLAS SOCIOLÓGICAS DE PONDERACIÓN:
+A. JERARQUÍA DE IMPACTO: 
+   - Pondera con máxima prioridad las noticias que afectan el BOLSILLO DIRECTO del 100% de la ciudadanía (inflación de alimentos, tarifas, salarios, jubilaciones, mora crediticia) y las TRAGEDIAS HUMANAS MASIVAS.
+   - Un choque vial ordinario o una discusión menor tienen peso reducido; una catástrofe o una medida de poder adquisitivo mueven la aguja nacional.
+B. TRATAMIENTO DEL FÚTBOL LOCAL (SUMA CERO):
+   - El resultado de un partido de la liga local (ej. Boca, River, Central, Independiente) NO altera el humor social nacional porque la alegría de una hinchada se cancela con la tristeza o indiferencia del resto. Es un juego de suma cero. NUNCA lo elijas como "positive_driver" del humor nacional.
+   - Solo los hitos deportivos internacionales que unen unívocamente a toda la nación (ej. Selección Argentina, Colapinto en F1, medallas olímpicas) computan como alegría colectiva genuina.
 
 Responde EXCLUSIVAMENTE con un JSON válido con este formato exacto:
 {{
@@ -302,8 +418,8 @@ Responde EXCLUSIVAMENTE con un JSON válido con este formato exacto:
   "confianza": <float entre -10.0 y 10.0>,
   "alegria": <float entre -10.0 y 10.0>,
   "key_themes": ["tema 1", "tema 2", "tema 3"],
-  "positive_drivers": ["titular positivo 1"],
-  "negative_drivers": ["titular negativo 1"],
+  "positive_drivers": ["titular positivo de impacto nacional 1"],
+  "negative_drivers": ["titular crítico o de preocupación real 1"],
   "editorial_bias_detected": "breve descripción del enfoque",
   "justification": "análisis conciso y fundamentado del humor transmitido"
 }}
