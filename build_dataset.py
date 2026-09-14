@@ -26,6 +26,9 @@ def build_dataset() -> Path:
 
     for d in dates:
         snap = get_snapshot_by_date(d)
+        evals = get_source_evaluations(d)
+        evaluations_map[d] = evals
+
         if snap:
             # Parsear JSONs de trends si vienen serializados
             try:
@@ -37,6 +40,24 @@ def build_dataset() -> Path:
             except Exception:
                 pass
 
+            # Calcular brecha editorial y amortiguador patriótico retroactivamente si no existen
+            trad_ids = {"lanacion", "clarin", "infobae"}
+            crit_ids = {"pagina12", "eldestape", "c5n"}
+            trad_scores = [e["composite_score"] for e in evals if e.get("source_id") in trad_ids]
+            crit_scores = [e["composite_score"] for e in evals if e.get("source_id") in crit_ids]
+            gap = 0.0
+            if trad_scores and crit_scores:
+                gap = round(abs((sum(trad_scores)/len(trad_scores)) - (sum(crit_scores)/len(crit_scores))), 1)
+
+            opt = snap.get("optimismo", 0.0)
+            conf = snap.get("confianza", 0.0)
+            ale = snap.get("alegria", 0.0)
+            base_socio = (opt + conf) / 2.0
+            buff = round(max(0.0, ale - base_socio), 1)
+
+            snap["editorial_divergence"] = gap
+            snap["decompression_buffer"] = buff
+
             # Adjuntar reporte diario en markdown si existe
             rep_file = REPORTS_DIR / f"informe_{d}.md"
             if rep_file.exists():
@@ -46,9 +67,6 @@ def build_dataset() -> Path:
                 snap["report_md"] = ""
 
             snapshots_map[d] = snap
-
-        evals = get_source_evaluations(d)
-        evaluations_map[d] = evals
 
         # Guardar titulares para el buscador
         heads = get_raw_headlines_for_date(d)
