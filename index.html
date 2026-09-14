@@ -316,8 +316,8 @@
     <!-- TAB 5: BOLETÍN EJECUTIVO AVANZADO -->
     <div id="tab-report" class="tab-content hidden space-y-6">
       
-      <!-- HEADER EJECUTIVO CON KPIS ANALÍTICOS -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- HEADER EJECUTIVO CON KPIS ANALÍTICOS Y METODOLOGÍA INTERNACIONAL -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
         <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
           <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
             <span>IHSA Consolidado</span>
@@ -338,20 +338,29 @@
 
         <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
           <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
-            <span>Dispersión Editorial (σ)</span>
-            <i data-lucide="git-commit" class="w-4 h-4 text-purple-400"></i>
+            <span>Brecha de Grieta</span>
+            <i data-lucide="split" class="w-4 h-4 text-rose-400"></i>
           </div>
-          <p id="kpiDispersion" class="text-2xl font-black font-mono text-white">0.0 pts</p>
-          <p id="kpiDispStatus" class="text-xs text-purple-300 mt-0.5">Desviación estándar</p>
+          <p id="kpiGrietaScore" class="text-2xl font-black font-mono text-white">0.0 pts</p>
+          <p id="kpiGrietaStatus" class="text-xs text-slate-400 mt-0.5">Tradicional vs Crítica</p>
         </div>
 
         <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg">
           <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
-            <span>Brecha de Polarización</span>
-            <i data-lucide="split" class="w-4 h-4 text-rose-400"></i>
+            <span>Amortiguador Patrio</span>
+            <i data-lucide="shield" class="w-4 h-4 text-emerald-400"></i>
           </div>
-          <p id="kpiPolarization" class="text-2xl font-black font-mono text-white">0.0 pts</p>
-          <p id="kpiPolDetails" class="text-[11px] text-slate-400 mt-0.5 truncate">Diferencia Max - Min</p>
+          <p id="kpiBufferScore" class="text-2xl font-black font-mono text-emerald-400">+0.0 pts</p>
+          <p id="kpiBufferStatus" class="text-xs text-slate-400 mt-0.5">Decompression buffer</p>
+        </div>
+
+        <div class="glass-card rounded-xl p-4 border border-slate-700/70 shadow-lg col-span-2 sm:col-span-1">
+          <div class="flex items-center justify-between text-slate-400 text-xs mb-1">
+            <span>Dispersión (σ)</span>
+            <i data-lucide="git-commit" class="w-4 h-4 text-purple-400"></i>
+          </div>
+          <p id="kpiDispersion" class="text-2xl font-black font-mono text-white">0.0 pts</p>
+          <p id="kpiDispStatus" class="text-xs text-purple-300 mt-0.5">Desviación estándar</p>
         </div>
       </div>
 
@@ -362,6 +371,17 @@
           <div>
             <h4 class="font-bold text-amber-300 text-sm">ALERTA METODOLÓGICA DE VOLATILIDAD ABRUPTA</h4>
             <p id="reportVolatilityMsg" class="mt-1 text-slate-200 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALERTA DE BRECHA DE POLARIZACIÓN / GRIETA -->
+      <div id="reportGrietaBanner" class="hidden p-4 rounded-xl border border-rose-500/40 bg-rose-950/20 text-rose-200 text-xs shadow-md">
+        <div class="flex items-start gap-3">
+          <i data-lucide="zap" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-bold text-rose-300 text-sm">ALERTA DE ALTA POLARIZACIÓN EDITORIAL (GRIETA ACTIVA)</h4>
+            <p id="reportGrietaMsg" class="mt-1 text-slate-200 leading-relaxed"></p>
           </div>
         </div>
       </div>
@@ -615,6 +635,54 @@
             <p class="text-xs text-slate-300 leading-relaxed">
               Supresión algorítmica de clickbait, recetas y farándula secundaria. Protocolo de alerta metodológica automatizada cuando el IHSA registra una oscilación diaria de <strong>±15.0 puntos en 24h</strong>.
             </p>
+          </div>
+        </div>
+
+        <!-- METODOLOGÍAS CIENTÍFICAS INTERNACIONALES INCORPORADAS -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-blue-950/20 to-slate-900 border border-blue-500/30 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h4 class="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i> Estándares y Metodologías Científicas Internacionales
+            </h4>
+            <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-mono border border-blue-500/30">Stanford • Chicago • MIT</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-emerald-400 flex items-center gap-1.5">
+                <span>📐</span> Regla de Triple Intersección Baker-Bloom-Davis (EPU)
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                Inspirado en el <em>Economic Policy Uncertainty Index</em> (Stanford/Chicago), una noticia económica adquiere la máxima categoría de impacto cuando cumple el nexo triple: <strong>Término Económico (E)</strong> (salarios, mora, inflación) $\land$ <strong>Acción de Política/Gobierno (P)</strong> (veto, decreto, BCRA, ANSES) $\land$ <strong>Vector de Dirección/Incertidumbre (U)</strong> (suba récord, freno, caída).
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-blue-400 flex items-center gap-1.5">
+                <span>📰</span> Visual Salience Index (Saliencia de Portada)
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                Siguiendo estudios de fijación de agenda mediática (McCombs & Shaw / Reuters Institute), la penetración psicológica depende de la jerarquía visual: el <strong>Lead Story</strong> (titular central de apertura) pondera con factor <strong>2.0x</strong>, las <strong>noticias destacadas de apertura</strong> con <strong>1.4x</strong> y el <strong>grid estándar</strong> con <strong>1.0x</strong>.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-rose-400 flex items-center gap-1.5">
+                <span>⚡</span> Índice de Brecha Editorial ("Brecha de Grieta")
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                Cuantifica la polarización ideológica del ecosistema informativo midiendo la distancia matemática entre la prensa tradicional/liberal (<em>La Nación, Clarín, Infobae</em>) y la prensa crítica/oposición (<em>Página/12, El Destape, C5N</em>). Un diferencial superior a 40 puntos activa una alerta automática de polarización extrema en el informe.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-amber-400 flex items-center gap-1.5">
+                <span>🏎️</span> Sports Decompression Buffer Index (Alivio Patrio)
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                Mide el desacople positivo inyectado por gestas unívocas de representación nacional (Franco Colapinto en F1, Selección Argentina). Modela matemáticamente cómo la euforia deportiva colectiva amortigua transitoriamente la percepción de malestar socioeconómico.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -931,34 +999,70 @@
         banner.classList.add('hidden');
       }
 
-      // 3. KPIs: Dispersión Editorial (Desviación estándar) y Polarización (Max - Min)
+      // 3. KPIs: Brecha de Grieta y Amortiguador Deportivo Patriótico
+      const grietaVal = snap.editorial_divergence !== undefined ? snap.editorial_divergence : 0.0;
+      const grietaElem = document.getElementById('kpiGrietaScore');
+      const grietaStatus = document.getElementById('kpiGrietaStatus');
+      const grietaBanner = document.getElementById('reportGrietaBanner');
+      const grietaMsg = document.getElementById('reportGrietaMsg');
+
+      grietaElem.innerText = grietaVal.toFixed(1) + " pts";
+      if (grietaVal >= 40.0) {
+        grietaElem.className = "text-2xl font-black font-mono text-rose-500";
+        grietaStatus.innerText = "Polarización Extrema";
+        grietaStatus.className = "text-xs text-rose-400 font-bold mt-0.5";
+        grietaBanner.classList.remove('hidden');
+        grietaMsg.innerText = `Se registró una brecha editorial profunda de ${grietaVal.toFixed(1)} puntos entre la prensa tradicional (La Nación, Clarín, Infobae) y la prensa crítica/opositora (Página/12, El Destape, C5N). Esta divergencia refleja encuadres contrapuestos sobre la situación del país.`;
+      } else if (grietaVal >= 25.0) {
+        grietaElem.className = "text-2xl font-black font-mono text-amber-400";
+        grietaStatus.innerText = "Divergencia Moderada";
+        grietaStatus.className = "text-xs text-amber-300 mt-0.5";
+        grietaBanner.classList.add('hidden');
+      } else {
+        grietaElem.className = "text-2xl font-black font-mono text-emerald-400";
+        grietaStatus.innerText = "Consenso de Agenda";
+        grietaStatus.className = "text-xs text-emerald-300 mt-0.5";
+        grietaBanner.classList.add('hidden');
+      }
+
+      // 4. KPI: Amortiguador Patriótico
+      const bufferVal = snap.decompression_buffer !== undefined ? snap.decompression_buffer : 0.0;
+      const bufferElem = document.getElementById('kpiBufferScore');
+      const bufferStatus = document.getElementById('kpiBufferStatus');
+      bufferElem.innerText = (bufferVal > 0 ? "+" : "") + bufferVal.toFixed(1) + " pts";
+      if (bufferVal >= 2.0) {
+        bufferElem.className = "text-2xl font-black font-mono text-emerald-400";
+        bufferStatus.innerText = "Fuerte amortiguación patria";
+        bufferStatus.className = "text-xs text-emerald-300 font-bold mt-0.5";
+      } else if (bufferVal > 0) {
+        bufferElem.className = "text-2xl font-black font-mono text-blue-400";
+        bufferStatus.innerText = "Alivio anímico moderado";
+        bufferStatus.className = "text-xs text-blue-300 mt-0.5";
+      } else {
+        bufferElem.className = "text-2xl font-black font-mono text-slate-400";
+        bufferStatus.innerText = "Sin desacople anímico";
+        bufferStatus.className = "text-xs text-slate-500 mt-0.5";
+      }
+
+      // 5. KPI: Dispersión Editorial (Desviación estándar)
       if (evals.length > 0) {
         const scores = evals.map(e => e.composite_score);
         const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
         const variance = scores.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / scores.length;
         const stdDev = Math.sqrt(variance);
 
-        const maxScore = Math.max(...scores);
-        const minScore = Math.min(...scores);
-        const maxOutlet = evals.find(e => e.composite_score === maxScore);
-        const minOutlet = evals.find(e => e.composite_score === minScore);
-        const polarizationGap = maxScore - minScore;
-
         document.getElementById('kpiDispersion').innerText = stdDev.toFixed(1) + " pts";
         const dispStatus = document.getElementById('kpiDispStatus');
         if (stdDev > 25.0) {
-          dispStatus.innerText = "Fuerte divergencia editorial";
+          dispStatus.innerText = "Fuerte divergencia";
           dispStatus.className = "text-xs text-rose-400 font-bold mt-0.5";
         } else if (stdDev > 15.0) {
           dispStatus.innerText = "Divergencia media";
           dispStatus.className = "text-xs text-amber-400 font-bold mt-0.5";
         } else {
-          dispStatus.innerText = "Consenso editorial general";
+          dispStatus.innerText = "Consenso general";
           dispStatus.className = "text-xs text-emerald-400 font-bold mt-0.5";
         }
-
-        document.getElementById('kpiPolarization').innerText = polarizationGap.toFixed(1) + " pts";
-        document.getElementById('kpiPolDetails').innerText = `${maxOutlet ? maxOutlet.source_name : 'Max'} (${maxScore >= 0 ? '+' : ''}${maxScore.toFixed(0)}) vs ${minOutlet ? minOutlet.source_name : 'Min'} (${minScore >= 0 ? '+' : ''}${minScore.toFixed(0)})`;
       }
 
       // 4. Ejes y Gráfico de Radar
