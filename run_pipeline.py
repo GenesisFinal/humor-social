@@ -5,8 +5,11 @@ calcula el índice ponderado y almacena los resultados en la base de datos.
 """
 
 import argparse
-from datetime import date, datetime
+from datetime import date, datetime, timezone, timedelta
 from typing import Dict, List, Any
+
+# Zona horaria oficial de la República Argentina (ART = UTC-3)
+ART_TIMEZONE = timezone(timedelta(hours=-3))
 
 from config import MEDIA_SOURCES, DB_PATH
 from collectors.rss_collector import fetch_rss_feed
@@ -19,8 +22,12 @@ from engine.models import DailySnapshot, EmotionalAxesScores, SourceSentimentSco
 from storage.db import init_db, save_snapshot
 
 def run_pipeline(target_date_str: str = None) -> DailySnapshot:
-    """Ejecuta el ciclo diario completo del IHSA."""
-    today = date.today() if not target_date_str else datetime.strptime(target_date_str, "%Y-%m-%d").date()
+    """Ejecuta el ciclo diario completo del IHSA fijando siempre la hora oficial de Argentina."""
+    if target_date_str:
+        today = datetime.strptime(target_date_str, "%Y-%m-%d").date()
+    else:
+        # Calcular fecha en hora de Argentina independientemente del huso horario del servidor
+        today = datetime.now(ART_TIMEZONE).date()
     date_str = today.isoformat()
 
     print(f"\n=======================================================")
