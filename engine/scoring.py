@@ -107,3 +107,42 @@ def compute_daily_ihsa(
 
     category_label = classify_ihsa(ihsa_final)
     return ihsa_final, avg_axes, category_label
+
+def calculate_editorial_divergence(source_evaluations: List[SourceSentimentScore]) -> Tuple[float, str]:
+    """
+    Calcula el Índice de Brecha Editorial ("Brecha de Grieta"):
+    Diferencia absoluta entre medios de línea tradicional/liberal (La Nación, Clarín, Infobae)
+    y medios de línea crítica/oposición (Página/12, El Destape, C5N).
+    Retorna: (brecha_pts, descripcion_estado)
+    """
+    trad_ids = {"lanacion", "clarin", "infobae"}
+    crit_ids = {"pagina12", "eldestape", "c5n"}
+
+    trad_scores = [e.composite_score for e in source_evaluations if e.source_id in trad_ids]
+    crit_scores = [e.composite_score for e in source_evaluations if e.source_id in crit_ids]
+
+    if trad_scores and crit_scores:
+        avg_trad = sum(trad_scores) / len(trad_scores)
+        avg_crit = sum(crit_scores) / len(crit_scores)
+        gap = round(abs(avg_trad - avg_crit), 1)
+        if gap >= 45.0:
+            status = "Polarización Extrema (Grieta Activa)"
+        elif gap >= 25.0:
+            status = "Divergencia Editorial Moderada"
+        else:
+            status = "Consenso de Agenda General"
+        return gap, status
+    return 0.0, "Consenso de Agenda General"
+
+def calculate_sports_decompression_buffer(
+    axes_avg: EmotionalAxesScores,
+    source_evaluations: List[SourceSentimentScore]
+) -> float:
+    """
+    Calcula el Índice de Amortiguador Deportivo / Patriótico (Sports Decompression Buffer):
+    Mide cuántos puntos netos de amortiguación o alivio emocional inyectan los logros patrios
+    (ej. Colapinto en F1, Selección Argentina) respecto a la línea de base socioeconómica.
+    """
+    socioeconomic_baseline = (axes_avg.optimismo + axes_avg.confianza) / 2.0
+    buffer = max(0.0, axes_avg.alegria - socioeconomic_baseline)
+    return round(float(buffer), 1)
