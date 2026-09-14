@@ -196,36 +196,84 @@ def is_local_sports_headline(title: str) -> bool:
     ])
     return matches_club and has_match_context
 
-def compute_headline_significance_weight(title: str) -> float:
-    """Calcula el peso de impacto relativo de la noticia según su severidad social."""
+# Regla de Triple Intersección Baker-Bloom-Davis (EPU Stanford/Chicago) adaptada a Argentina
+EPU_ECONOMIC_TERMS = [
+    "inflacion", "precios", "dolar", "salarios", "sueldos", "jubilaciones", "jubilados",
+    "tarifas", "mora", "morosidad", "credito", "creditos", "empleo", "desempleo", "deuda",
+    "presupuesto", "reservas", "actividad economica", "pobreza", "consumo", "alquileres"
+]
+EPU_POLICY_TERMS = [
+    "gobierno", "milei", "caputo", "congreso", "senado", "diputados", "veto", "bcra",
+    "banco central", "anses", "decreto", "dnu", "justicia", "corte suprema", "ministerio",
+    "afip", "arca", "secretaria", "resolucion", "oficialismo", "oposicion"
+]
+EPU_UNCERTAINTY_DIRECTION_TERMS = [
+    "sube", "suba", "aumento", "dispara", "record", "cae", "caida", "baja", "freno",
+    "crisis", "ajuste", "acuerdo", "superavit", "deficit", "derrumbe", "desacelera",
+    "alza", "tension", "incertidumbre", "conflicto", "alerta", "mora"
+]
+
+def check_baker_bloom_davis_nexus(title: str) -> bool:
+    """Verifica si un titular cumple la triple intersección BBD: Economía (E) + Política (P) + Incertidumbre/Dirección (U)."""
+    low = normalize_text(title)
+    has_e = any(w in low for w in EPU_ECONOMIC_TERMS)
+    has_p = any(w in low for w in EPU_POLICY_TERMS)
+    has_u = any(w in low for w in EPU_UNCERTAINTY_DIRECTION_TERMS)
+    return has_e and has_p and has_u
+
+def compute_headline_significance_weight(title: str, position_rank: int = 4) -> float:
+    """
+    Calcula el peso de impacto relativo de la noticia según su severidad social,
+    el estándar Baker-Bloom-Davis (EPU) y su saliencia visual en portada (Visual Salience Index).
+    """
     low = normalize_text(title)
 
-    # Deporte local de suma cero: peso atenuado a casi cero
+    # Deporte local de suma cero: peso atenuado a casi cero sin importar la portada
     if is_local_sports_headline(title):
         return 0.1
+
+    # Multiplicador por ubicación visual en portada (Visual Salience Index)
+    if position_rank == 1:
+        salience_mult = 2.0   # Lead Story / Titular central de portada
+    elif position_rank in (2, 3):
+        salience_mult = 1.4   # Titulares secundarios de apertura
+    else:
+        salience_mult = 1.0   # Titulares regulares de parrilla
+
+    # Verificación de la triple intersección Baker-Bloom-Davis
+    is_epu = check_baker_bloom_davis_nexus(title)
 
     # Tier 1: Catástrofe / Duelo Masivo
     for kw in HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["keywords"]:
         if kw in low:
-            return HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["weight"]
+            base = HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["weight"]
+            return round(base * salience_mult, 2)
 
     # Tier 2: Economía de Bolsillo Directo
     for kw in HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["keywords"]:
         if kw in low:
-            return HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["weight"]
+            base = HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["weight"]
+            return round(base * salience_mult, 2)
+
+    # Nexo Baker-Bloom-Davis EPU: política con impacto directo en economía de bolsillo
+    if is_epu:
+        base = 3.5  # Elevado a nivel de impacto sistémico de bolsillo
+        return round(base * salience_mult, 2)
 
     # Tier 3: Macroeconomía y Política Institucional
     for kw in HIERARCHICAL_IMPACT_TIERS["tier_3_macro_politics"]["keywords"]:
         if kw in low:
-            return HIERARCHICAL_IMPACT_TIERS["tier_3_macro_politics"]["weight"]
+            base = HIERARCHICAL_IMPACT_TIERS["tier_3_macro_politics"]["weight"]
+            return round(base * salience_mult, 2)
 
     # Tier 4: Orgullo Deportivo / Cultural Nacional
     for kw in HIERARCHICAL_IMPACT_TIERS["tier_4_national_pride"]["keywords"]:
         if kw in low:
-            return HIERARCHICAL_IMPACT_TIERS["tier_4_national_pride"]["weight"]
+            base = HIERARCHICAL_IMPACT_TIERS["tier_4_national_pride"]["weight"]
+            return round(base * salience_mult, 2)
 
-    # Peso base para sucesos ordinarios o incidentes menores
-    return 1.0
+    # Peso base para sucesos ordinarios
+    return round(1.0 * salience_mult, 2)
 
 # Palabras clave de relleno, trucos domésticos y clickbait que NO inciden en el humor social nacional
 JUNK_KEYWORDS = [
@@ -236,10 +284,11 @@ JUNK_KEYWORDS = [
 ]
 
 def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Filtra titulares irrelevantes y los ordena estrictamente por jerarquía de severidad e impacto nacional."""
+    """Filtra titulares irrelevantes y los ordena estrictamente por jerarquía de severidad, nexo EPU y saliencia visual."""
     cleaned = []
-    for h in headlines:
+    for idx, h in enumerate(headlines):
         title = h.get("title", "")
+        pos_rank = h.get("position_rank", idx + 1)
         low = title.lower()
 
         # 1. Descartar basura evidente (recetas, trucos caseros, farándula secundaria)
@@ -248,12 +297,12 @@ def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str,
         if len(title.strip()) < 22:
             continue
 
-        # 2. Asignar peso jerárquico según severidad y alcance social
-        weight = compute_headline_significance_weight(title)
+        # 2. Asignar peso jerárquico según severidad, EPU y posición visual
+        weight = compute_headline_significance_weight(title, position_rank=pos_rank)
 
         # 3. Excluir como foco prioritario el fútbol de clubes local
         if is_local_sports_headline(title):
-            weight = 0.2  # Relegado al fondo de la canasta
+            weight = 0.1  # Relegado al fondo de la canasta
 
         cleaned.append((weight, h))
 
@@ -272,19 +321,21 @@ def analyze_headlines_heuristic(
         relevant_headlines = headlines  # Fallback si todo fue filtrado
 
     titles = [h.get("title", "") for h in relevant_headlines]
+    title_to_rank = {h.get("title", ""): h.get("position_rank", 4) for h in relevant_headlines}
     full_text = " ".join(titles).lower()
     
     pos_drivers = []
     neg_drivers = []
 
-    # Paso 1: Evaluación vectorial proposicional previa con ponderación de impacto
+    # Paso 1: Evaluación vectorial proposicional previa con ponderación de impacto y saliencia
     for t in titles:
         # Omitir resultados de liga local de fútbol en los drivers
         if is_local_sports_headline(t):
             continue
 
         v_score, _ = evaluate_headline_vector(t)
-        weight = compute_headline_significance_weight(t)
+        rank = title_to_rank.get(t, 4)
+        weight = compute_headline_significance_weight(t, position_rank=rank)
 
         if v_score < 0 and weight >= 1.0:
             if t not in neg_drivers and len(neg_drivers) < 3:
@@ -298,11 +349,12 @@ def analyze_headlines_heuristic(
         pos_weighted = 0.0
         neg_weighted = 0.0
 
-        # Sumar pesos de los vectores direccionales ponderados por severidad
+        # Sumar pesos de los vectores direccionales ponderados por severidad y saliencia
         if is_economic:
             for t in titles:
                 v_score, _ = evaluate_headline_vector(t)
-                w = compute_headline_significance_weight(t)
+                rank = title_to_rank.get(t, 4)
+                w = compute_headline_significance_weight(t, position_rank=rank)
                 if v_score > 0:
                     pos_weighted += 2.0 * w
                 elif v_score < 0:
@@ -315,7 +367,8 @@ def analyze_headlines_heuristic(
                 if is_joy and is_local_sports_headline(m):
                     continue
 
-                w = compute_headline_significance_weight(m)
+                rank = title_to_rank.get(m, 4)
+                w = compute_headline_significance_weight(m, position_rank=rank)
                 # Evitar falso positivo si el vector determinó que es negativo
                 v_sc, _ = evaluate_headline_vector(m)
                 if v_sc < 0:
@@ -329,7 +382,8 @@ def analyze_headlines_heuristic(
         for term in neg_terms:
             matches = [t for t in titles if term in t.lower()]
             for m in matches:
-                w = compute_headline_significance_weight(m)
+                rank = title_to_rank.get(m, 4)
+                w = compute_headline_significance_weight(m, position_rank=rank)
                 neg_weighted += 1.0 * w
                 if w >= 1.5 and m not in neg_drivers and len(neg_drivers) < 3:
                     neg_drivers.append(m)
@@ -389,7 +443,18 @@ def analyze_source_with_llm(
     if not GEMINI_API_KEY:
         return analyze_headlines_heuristic(source_id, source_name, headlines)
 
-    titles_text = "\n".join([f"- {h.get('title', '')}" for h in headlines[:25]])
+    formatted_titles = []
+    for idx, h in enumerate(headlines[:25]):
+        t = h.get('title', '')
+        pos = h.get('position_rank', idx + 1)
+        if pos == 1:
+            formatted_titles.append(f"- [PORTADA PRINCIPAL / LEAD STORY]: {t}")
+        elif pos in (2, 3):
+            formatted_titles.append(f"- [DESTACADO DE APERTURA]: {t}")
+        else:
+            formatted_titles.append(f"- {t}")
+
+    titles_text = "\n".join(formatted_titles)
     prompt = f"""
 Eres un sociólogo y analista de opinión pública experto en medios de comunicación argentinos.
 Debes evaluar con máxima neutralidad, rigor y objetividad el HUMOR SOCIAL que transmiten los titulares de hoy de: {source_name}.
@@ -407,7 +472,9 @@ REGLAS SOCIOLÓGICAS DE PONDERACIÓN:
 A. JERARQUÍA DE IMPACTO: 
    - Pondera con máxima prioridad las noticias que afectan el BOLSILLO DIRECTO del 100% de la ciudadanía (inflación de alimentos, tarifas, salarios, jubilaciones, mora crediticia) y las TRAGEDIAS HUMANAS MASIVAS.
    - Un choque vial ordinario o una discusión menor tienen peso reducido; una catástrofe o una medida de poder adquisitivo mueven la aguja nacional.
-B. TRATAMIENTO DEL FÚTBOL LOCAL (SUMA CERO):
+B. SALIENCIA VISUAL (VISUAL SALIENCE):
+   - Otorga prioridad de análisis e influencia a los titulares identificados como [PORTADA PRINCIPAL / LEAD STORY] y [DESTACADO DE APERTURA], ya que marcan la pauta cognitiva del lector sobre los titulares secundarios.
+C. TRATAMIENTO DEL FÚTBOL LOCAL (SUMA CERO):
    - El resultado de un partido de la liga local (ej. Boca, River, Central, Independiente) NO altera el humor social nacional porque la alegría de una hinchada se cancela con la tristeza o indiferencia del resto. Es un juego de suma cero. NUNCA lo elijas como "positive_driver" del humor nacional.
    - Solo los hitos deportivos internacionales que unen unívocamente a toda la nación (ej. Selección Argentina, Colapinto en F1, medallas olímpicas) computan como alegría colectiva genuina.
 
