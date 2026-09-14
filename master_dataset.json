@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Índice de Humor Social Argentino (IHSA)",
-    "updated_at": "2026-09-13T23:25:07.451947",
+    "updated_at": "2026-09-13T23:35:23.830004",
     "latest_date": "2026-09-13",
     "total_days": 31,
     "sources_count": 12
@@ -187,6 +187,25 @@
       "created_at": "2026-09-13 23:21:08",
       "editorial_divergence": 2.2,
       "decompression_buffer": 9.8,
+      "icb": -39.1,
+      "igi": -33.6,
+      "icps": 3.1,
+      "stress": 21.3,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [
+        {
+          "source_id": "clarin",
+          "name": "Clarín",
+          "path": "data/covers/2026-09-13/clarin.jpg"
+        },
+        {
+          "source_id": "lanacion",
+          "name": "La Nación",
+          "path": "data/covers/2026-09-13/lanacion.jpg"
+        }
+      ],
       "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-09-13\n\n**Índice IHSA Consolidado:** **`-15.8 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** -48.7 pts respecto a ayer (32.9 pts)  \n\n> [!WARNING]\n> **ALERTA DE VOLATILIDAD SOCIAL BRUSCA**  \n> Se detectó un movimiento de **48.7 puntos** en 24 horas. \n> Un shock de crispación / pesimismo abrupto ha impactado de forma directa en el clima de opinión pública.\n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-5.5`\n- **🕊️ Calma vs. Conflicto / Bronca:** `+2.0`\n- **⚓ Confianza vs. Incertidumbre:** `-6.7`\n- **☀️ Alegría vs. Tristeza / Duelo:** `+3.7`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `2.2 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+9.8 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -15.8 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -5.5, Calma +2.0, Confianza -6.7, Alegría +3.7.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **Página/12** | `political_left` | **+23.1** | Sin focos destacados | Sin focos destacados |\n| **Infobae** | `general` | **+21.7** | Paz expresa sus \"sentidas condolencias\" por b | Sin focos destacados |\n| **TN (Todo Noticias)** | `general` | **+10.1** | Después de reunirse con el papa en Roma, la C | El Senado comienza a debatir la reforma elect |\n| **Cadena 3** | `federal` | **-6.8** | Un debut especial en la Fórmula 1. “Hiciste f | Sin focos destacados |\n| **El Cronista Comercial** | `economy` | **-20.8** | Informe. La otra inflación: el costo invisibl | Inversión. Vaca Muerta busca dar el salto exp |\n| **Ámbito Financiero** | `economy` | **-28.2** | Franco Colapinto tuvo una gran actuación y te | La mora en los créditos a las familias alcanz |\n| **Clarín** | `general` | **-35.8** | Sin focos destacados | Tras reunirse con el Papa, un líder de la CGT |\n| **El Destape** | `political_opposition` | **-36.8** | Colapinto terminó 7° en Madrid y cerró un bri | La morosidad familiar volvió a aumentar en ju |\n| **C5N** | `political_opposition` | **-42.0** | Nancy Pazos reveló el pacto secreto de Milei  | La mora en los créditos a las familias alcanz |\n| **La Nación** | `general` | **-48.1** | Briatore llenó de elogios a Colapinto por su  | La pobreza habría vuelto a subir y calculan q |\n| **Crónica** | `popular` | **-70.6** | Sin focos destacados | Un sondeo muestra que sólo 3 de cada 10 están |\n| **Perfil** | `general` | **-79.2** | Sin focos destacados | Créditos en mora: el \"problema entre privados |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Zverev, ##GELP, #Shelton, #Perruzzi, #Arrayago, #Pascual Di Tella, #Sinner, #US Open\n- **Mayor Aceleración en Google Trends:** virgen del milagro, macarena ceballos, jugador, libertad fc - independiente del valle, barcelona sc - delfín, brics, juan miguel arrayago, concierto\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
     },
     "2026-09-12": {
@@ -212,6 +231,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 12.7,
       "decompression_buffer": 5.1,
+      "icb": 28.8,
+      "igi": 20.7,
+      "icps": 21.2,
+      "stress": 7.6,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-11": {
@@ -237,6 +264,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 18.6,
       "decompression_buffer": 5.2,
+      "icb": 28.6,
+      "igi": 21.7,
+      "icps": 21.0,
+      "stress": 11.2,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-10": {
@@ -262,6 +297,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 12.7,
       "decompression_buffer": 0.0,
+      "icb": 47.0,
+      "igi": 38.7,
+      "icps": 33.5,
+      "stress": 7.6,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-09": {
@@ -287,6 +330,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 14.1,
       "decompression_buffer": 2.9,
+      "icb": -48.4,
+      "igi": -43.2,
+      "icps": -41.9,
+      "stress": 41.1,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-08": {
@@ -312,6 +363,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 13.2,
       "decompression_buffer": 0.0,
+      "icb": 43.6,
+      "igi": 36.5,
+      "icps": 32.3,
+      "stress": 7.9,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-07": {
@@ -337,6 +396,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 16.9,
       "decompression_buffer": 1.8,
+      "icb": -41.0,
+      "igi": -38.0,
+      "icps": -50.7,
+      "stress": 43.9,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-06": {
@@ -362,6 +429,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 15.0,
       "decompression_buffer": 5.1,
+      "icb": 29.9,
+      "igi": 21.6,
+      "icps": 22.5,
+      "stress": 9.0,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-05": {
@@ -387,6 +462,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 14.1,
       "decompression_buffer": 5.1,
+      "icb": 28.6,
+      "igi": 21.6,
+      "icps": 22.8,
+      "stress": 8.5,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-04": {
@@ -412,6 +495,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 13.3,
       "decompression_buffer": 2.8,
+      "icb": -50.4,
+      "igi": -43.8,
+      "icps": -42.9,
+      "stress": 41.4,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-03": {
@@ -437,6 +528,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 14.1,
       "decompression_buffer": 0.0,
+      "icb": 42.1,
+      "igi": 34.3,
+      "icps": 28.5,
+      "stress": 8.5,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-02": {
@@ -462,6 +561,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 12.4,
       "decompression_buffer": 1.8,
+      "icb": -44.6,
+      "igi": -39.9,
+      "icps": -50.1,
+      "stress": 41.4,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-09-01": {
@@ -487,6 +594,14 @@
       "created_at": "2026-09-13 21:43:19",
       "editorial_divergence": 11.5,
       "decompression_buffer": 5.1,
+      "icb": 30.6,
+      "igi": 22.4,
+      "icps": 22.7,
+      "stress": 6.9,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-31": {
@@ -512,6 +627,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 15.3,
       "decompression_buffer": 0.0,
+      "icb": 48.7,
+      "igi": 40.5,
+      "icps": 34.0,
+      "stress": 9.2,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-30": {
@@ -537,6 +660,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 14.1,
       "decompression_buffer": 5.2,
+      "icb": 29.5,
+      "igi": 20.2,
+      "icps": 21.5,
+      "stress": 8.5,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-29": {
@@ -562,6 +693,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 17.8,
       "decompression_buffer": 5.2,
+      "icb": 30.4,
+      "igi": 22.0,
+      "icps": 23.4,
+      "stress": 10.7,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-28": {
@@ -587,6 +726,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 15.3,
       "decompression_buffer": 1.7,
+      "icb": -41.5,
+      "igi": -37.7,
+      "icps": -49.4,
+      "stress": 42.0,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-27": {
@@ -612,6 +759,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 12.1,
       "decompression_buffer": 5.2,
+      "icb": 29.1,
+      "igi": 19.3,
+      "icps": 21.5,
+      "stress": 7.3,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-26": {
@@ -637,6 +792,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 15.6,
       "decompression_buffer": 0.0,
+      "icb": 46.5,
+      "igi": 38.6,
+      "icps": 31.5,
+      "stress": 9.4,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-25": {
@@ -662,6 +825,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 12.5,
       "decompression_buffer": 2.8,
+      "icb": -47.8,
+      "igi": -41.8,
+      "icps": -41.4,
+      "stress": 39.4,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-24": {
@@ -687,6 +858,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 15.1,
       "decompression_buffer": 0.0,
+      "icb": 43.2,
+      "igi": 36.6,
+      "icps": 28.9,
+      "stress": 9.1,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-23": {
@@ -712,6 +891,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 16.9,
       "decompression_buffer": 5.2,
+      "icb": 28.8,
+      "igi": 21.3,
+      "icps": 22.2,
+      "stress": 10.1,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-22": {
@@ -737,6 +924,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 17.1,
       "decompression_buffer": 5.1,
+      "icb": 29.8,
+      "igi": 24.1,
+      "icps": 21.8,
+      "stress": 10.3,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-21": {
@@ -762,6 +957,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 14.4,
       "decompression_buffer": 0.0,
+      "icb": 46.3,
+      "igi": 39.4,
+      "icps": 32.8,
+      "stress": 8.6,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-20": {
@@ -787,6 +990,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 13.8,
       "decompression_buffer": 2.7,
+      "icb": -46.4,
+      "igi": -40.8,
+      "icps": -39.8,
+      "stress": 39.1,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-19": {
@@ -812,6 +1023,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 12.3,
       "decompression_buffer": 0.0,
+      "icb": 42.6,
+      "igi": 36.2,
+      "icps": 31.9,
+      "stress": 7.4,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-18": {
@@ -837,6 +1056,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 17.1,
       "decompression_buffer": 1.7,
+      "icb": -40.8,
+      "igi": -38.2,
+      "icps": -49.3,
+      "stress": 43.2,
+      "stress_category": "Tensión Latente / Cautela",
+      "stress_badge": "🟡 Cautela",
+      "stress_color": "yellow",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-17": {
@@ -862,6 +1089,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 18.5,
       "decompression_buffer": 5.2,
+      "icb": 28.9,
+      "igi": 22.4,
+      "icps": 22.8,
+      "stress": 11.1,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-16": {
@@ -887,6 +1122,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 12.7,
       "decompression_buffer": 5.1,
+      "icb": 29.2,
+      "igi": 20.5,
+      "icps": 21.5,
+      "stress": 7.6,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-15": {
@@ -912,6 +1155,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 12.7,
       "decompression_buffer": 5.1,
+      "icb": 29.6,
+      "igi": 21.3,
+      "icps": 22.7,
+      "stress": 7.6,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     },
     "2026-08-14": {
@@ -937,6 +1188,14 @@
       "created_at": "2026-09-13 21:43:18",
       "editorial_divergence": 17.8,
       "decompression_buffer": 0.0,
+      "icb": 42.1,
+      "igi": 34.2,
+      "icps": 29.8,
+      "stress": 10.7,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [],
       "report_md": ""
     }
   },
@@ -29478,8 +29737,12 @@
       "top_trends_x": "[\"InflacionBaja\", \"DolarBlue\", \"Caputo\", \"Mercados\"]",
       "top_trends_google": "[\"plazo fijo rendimiento\", \"precio dolar mep\", \"aumento jubilaciones anses\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 17.8,
+      "decompression_buffer": 0.0,
+      "icb": 42.1,
+      "igi": 34.2,
+      "icps": 29.8,
+      "stress": 10.7
     },
     {
       "date": "2026-08-15",
@@ -29493,8 +29756,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.7,
+      "decompression_buffer": 5.1,
+      "icb": 29.6,
+      "igi": 21.3,
+      "icps": 22.7,
+      "stress": 7.6
     },
     {
       "date": "2026-08-16",
@@ -29508,8 +29775,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.7,
+      "decompression_buffer": 5.1,
+      "icb": 29.2,
+      "igi": 20.5,
+      "icps": 21.5,
+      "stress": 7.6
     },
     {
       "date": "2026-08-17",
@@ -29523,8 +29794,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 18.5,
+      "decompression_buffer": 5.2,
+      "icb": 28.9,
+      "igi": 22.4,
+      "icps": 22.8,
+      "stress": 11.1
     },
     {
       "date": "2026-08-18",
@@ -29538,8 +29813,12 @@
       "top_trends_x": "[\"Congreso\", \"Jubilados\", \"VetoPresidencial\", \"GasesEnPlazaCongreso\"]",
       "top_trends_google": "[\"marcha al congreso hoy\", \"cortes caba\", \"votacion en diputados en vivo\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 17.1,
+      "decompression_buffer": 1.7,
+      "icb": -40.8,
+      "igi": -38.2,
+      "icps": -49.3,
+      "stress": 43.2
     },
     {
       "date": "2026-08-19",
@@ -29553,8 +29832,12 @@
       "top_trends_x": "[\"InflacionBaja\", \"DolarBlue\", \"Caputo\", \"Mercados\"]",
       "top_trends_google": "[\"plazo fijo rendimiento\", \"precio dolar mep\", \"aumento jubilaciones anses\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.3,
+      "decompression_buffer": 0.0,
+      "icb": 42.6,
+      "igi": 36.2,
+      "icps": 31.9,
+      "stress": 7.4
     },
     {
       "date": "2026-08-20",
@@ -29568,8 +29851,12 @@
       "top_trends_x": "[\"AumentoTarifas\", \"BoletoColectivo\", \"LuzYGás\", \"ParoDeTransporte\"]",
       "top_trends_google": "[\"cuanto sale el boleto de colectivo\", \"subsidios luz rase\", \"aumento gas septiembre\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 13.8,
+      "decompression_buffer": 2.7,
+      "icb": -46.4,
+      "igi": -40.8,
+      "icps": -39.8,
+      "stress": 39.1
     },
     {
       "date": "2026-08-21",
@@ -29583,8 +29870,12 @@
       "top_trends_x": "[\"RiesgoPaisMinimo\", \"SuperavitComercial\", \"VacaMuerta\", \"Caputo\"]",
       "top_trends_google": "[\"bonos soberanos cotizacion\", \"que es el riesgo pais\", \"inversion en pesos\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 14.4,
+      "decompression_buffer": 0.0,
+      "icb": 46.3,
+      "igi": 39.4,
+      "icps": 32.8,
+      "stress": 8.6
     },
     {
       "date": "2026-08-22",
@@ -29598,8 +29889,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 17.1,
+      "decompression_buffer": 5.1,
+      "icb": 29.8,
+      "igi": 24.1,
+      "icps": 21.8,
+      "stress": 10.3
     },
     {
       "date": "2026-08-23",
@@ -29613,8 +29908,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 16.9,
+      "decompression_buffer": 5.2,
+      "icb": 28.8,
+      "igi": 21.3,
+      "icps": 22.2,
+      "stress": 10.1
     },
     {
       "date": "2026-08-24",
@@ -29628,8 +29927,12 @@
       "top_trends_x": "[\"InflacionBaja\", \"DolarBlue\", \"Caputo\", \"Mercados\"]",
       "top_trends_google": "[\"plazo fijo rendimiento\", \"precio dolar mep\", \"aumento jubilaciones anses\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 15.1,
+      "decompression_buffer": 0.0,
+      "icb": 43.2,
+      "igi": 36.6,
+      "icps": 28.9,
+      "stress": 9.1
     },
     {
       "date": "2026-08-25",
@@ -29643,8 +29946,12 @@
       "top_trends_x": "[\"AumentoTarifas\", \"BoletoColectivo\", \"LuzYGás\", \"ParoDeTransporte\"]",
       "top_trends_google": "[\"cuanto sale el boleto de colectivo\", \"subsidios luz rase\", \"aumento gas septiembre\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.5,
+      "decompression_buffer": 2.8,
+      "icb": -47.8,
+      "igi": -41.8,
+      "icps": -41.4,
+      "stress": 39.4
     },
     {
       "date": "2026-08-26",
@@ -29658,8 +29965,12 @@
       "top_trends_x": "[\"RiesgoPaisMinimo\", \"SuperavitComercial\", \"VacaMuerta\", \"Caputo\"]",
       "top_trends_google": "[\"bonos soberanos cotizacion\", \"que es el riesgo pais\", \"inversion en pesos\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 15.6,
+      "decompression_buffer": 0.0,
+      "icb": 46.5,
+      "igi": 38.6,
+      "icps": 31.5,
+      "stress": 9.4
     },
     {
       "date": "2026-08-27",
@@ -29673,8 +29984,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.1,
+      "decompression_buffer": 5.2,
+      "icb": 29.1,
+      "igi": 19.3,
+      "icps": 21.5,
+      "stress": 7.3
     },
     {
       "date": "2026-08-28",
@@ -29688,8 +30003,12 @@
       "top_trends_x": "[\"Congreso\", \"Jubilados\", \"VetoPresidencial\", \"GasesEnPlazaCongreso\"]",
       "top_trends_google": "[\"marcha al congreso hoy\", \"cortes caba\", \"votacion en diputados en vivo\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 15.3,
+      "decompression_buffer": 1.7,
+      "icb": -41.5,
+      "igi": -37.7,
+      "icps": -49.4,
+      "stress": 42.0
     },
     {
       "date": "2026-08-29",
@@ -29703,8 +30022,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 17.8,
+      "decompression_buffer": 5.2,
+      "icb": 30.4,
+      "igi": 22.0,
+      "icps": 23.4,
+      "stress": 10.7
     },
     {
       "date": "2026-08-30",
@@ -29718,8 +30041,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 14.1,
+      "decompression_buffer": 5.2,
+      "icb": 29.5,
+      "igi": 20.2,
+      "icps": 21.5,
+      "stress": 8.5
     },
     {
       "date": "2026-08-31",
@@ -29733,8 +30060,12 @@
       "top_trends_x": "[\"RiesgoPaisMinimo\", \"SuperavitComercial\", \"VacaMuerta\", \"Caputo\"]",
       "top_trends_google": "[\"bonos soberanos cotizacion\", \"que es el riesgo pais\", \"inversion en pesos\"]",
       "created_at": "2026-09-13 21:43:18",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 15.3,
+      "decompression_buffer": 0.0,
+      "icb": 48.7,
+      "igi": 40.5,
+      "icps": 34.0,
+      "stress": 9.2
     },
     {
       "date": "2026-09-01",
@@ -29748,8 +30079,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 11.5,
+      "decompression_buffer": 5.1,
+      "icb": 30.6,
+      "igi": 22.4,
+      "icps": 22.7,
+      "stress": 6.9
     },
     {
       "date": "2026-09-02",
@@ -29763,8 +30098,12 @@
       "top_trends_x": "[\"Congreso\", \"Jubilados\", \"VetoPresidencial\", \"GasesEnPlazaCongreso\"]",
       "top_trends_google": "[\"marcha al congreso hoy\", \"cortes caba\", \"votacion en diputados en vivo\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.4,
+      "decompression_buffer": 1.8,
+      "icb": -44.6,
+      "igi": -39.9,
+      "icps": -50.1,
+      "stress": 41.4
     },
     {
       "date": "2026-09-03",
@@ -29778,8 +30117,12 @@
       "top_trends_x": "[\"InflacionBaja\", \"DolarBlue\", \"Caputo\", \"Mercados\"]",
       "top_trends_google": "[\"plazo fijo rendimiento\", \"precio dolar mep\", \"aumento jubilaciones anses\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 14.1,
+      "decompression_buffer": 0.0,
+      "icb": 42.1,
+      "igi": 34.3,
+      "icps": 28.5,
+      "stress": 8.5
     },
     {
       "date": "2026-09-04",
@@ -29793,8 +30136,12 @@
       "top_trends_x": "[\"AumentoTarifas\", \"BoletoColectivo\", \"LuzYGás\", \"ParoDeTransporte\"]",
       "top_trends_google": "[\"cuanto sale el boleto de colectivo\", \"subsidios luz rase\", \"aumento gas septiembre\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 13.3,
+      "decompression_buffer": 2.8,
+      "icb": -50.4,
+      "igi": -43.8,
+      "icps": -42.9,
+      "stress": 41.4
     },
     {
       "date": "2026-09-05",
@@ -29808,8 +30155,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 14.1,
+      "decompression_buffer": 5.1,
+      "icb": 28.6,
+      "igi": 21.6,
+      "icps": 22.8,
+      "stress": 8.5
     },
     {
       "date": "2026-09-06",
@@ -29823,8 +30174,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 15.0,
+      "decompression_buffer": 5.1,
+      "icb": 29.9,
+      "igi": 21.6,
+      "icps": 22.5,
+      "stress": 9.0
     },
     {
       "date": "2026-09-07",
@@ -29838,8 +30193,12 @@
       "top_trends_x": "[\"Congreso\", \"Jubilados\", \"VetoPresidencial\", \"GasesEnPlazaCongreso\"]",
       "top_trends_google": "[\"marcha al congreso hoy\", \"cortes caba\", \"votacion en diputados en vivo\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 16.9,
+      "decompression_buffer": 1.8,
+      "icb": -41.0,
+      "igi": -38.0,
+      "icps": -50.7,
+      "stress": 43.9
     },
     {
       "date": "2026-09-08",
@@ -29853,8 +30212,12 @@
       "top_trends_x": "[\"InflacionBaja\", \"DolarBlue\", \"Caputo\", \"Mercados\"]",
       "top_trends_google": "[\"plazo fijo rendimiento\", \"precio dolar mep\", \"aumento jubilaciones anses\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 13.2,
+      "decompression_buffer": 0.0,
+      "icb": 43.6,
+      "igi": 36.5,
+      "icps": 32.3,
+      "stress": 7.9
     },
     {
       "date": "2026-09-09",
@@ -29868,8 +30231,12 @@
       "top_trends_x": "[\"AumentoTarifas\", \"BoletoColectivo\", \"LuzYGás\", \"ParoDeTransporte\"]",
       "top_trends_google": "[\"cuanto sale el boleto de colectivo\", \"subsidios luz rase\", \"aumento gas septiembre\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 14.1,
+      "decompression_buffer": 2.9,
+      "icb": -48.4,
+      "igi": -43.2,
+      "icps": -41.9,
+      "stress": 41.1
     },
     {
       "date": "2026-09-10",
@@ -29883,8 +30250,12 @@
       "top_trends_x": "[\"RiesgoPaisMinimo\", \"SuperavitComercial\", \"VacaMuerta\", \"Caputo\"]",
       "top_trends_google": "[\"bonos soberanos cotizacion\", \"que es el riesgo pais\", \"inversion en pesos\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.7,
+      "decompression_buffer": 0.0,
+      "icb": 47.0,
+      "igi": 38.7,
+      "icps": 33.5,
+      "stress": 7.6
     },
     {
       "date": "2026-09-11",
@@ -29898,8 +30269,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 18.6,
+      "decompression_buffer": 5.2,
+      "icb": 28.6,
+      "igi": 21.7,
+      "icps": 21.0,
+      "stress": 11.2
     },
     {
       "date": "2026-09-12",
@@ -29913,8 +30288,12 @@
       "top_trends_x": "[\"Colapinto\", \"FrancoEnF1\", \"Superclasico\", \"WilliamsRacing\"]",
       "top_trends_google": "[\"colapinto posiciones carrera\", \"clasico resultado goles\", \"tabla formula 1\"]",
       "created_at": "2026-09-13 21:43:19",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 12.7,
+      "decompression_buffer": 5.1,
+      "icb": 28.8,
+      "igi": 20.7,
+      "icps": 21.2,
+      "stress": 7.6
     },
     {
       "date": "2026-09-13",
@@ -29928,8 +30307,12 @@
       "top_trends_x": "[\"Zverev\", \"#GELP\", \"Shelton\", \"Perruzzi\", \"Arrayago\", \"Pascual Di Tella\", \"Sinner\", \"US Open\", \"#AAAJ\", \"La Paternal\"]",
       "top_trends_google": "[\"virgen del milagro\", \"macarena ceballos\", \"jugador\", \"libertad fc - independiente del valle\", \"barcelona sc - delfín\", \"brics\", \"juan miguel arrayago\", \"concierto\", \"peñarol - albion\", \"trinity rodman\"]",
       "created_at": "2026-09-13 23:21:08",
-      "editorial_divergence": 0.0,
-      "decompression_buffer": 0.0
+      "editorial_divergence": 2.2,
+      "decompression_buffer": 9.8,
+      "icb": -39.1,
+      "igi": -33.6,
+      "icps": 3.1,
+      "stress": 21.3
     }
   ]
 }
