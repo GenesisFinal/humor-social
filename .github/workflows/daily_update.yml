@@ -2,8 +2,10 @@ name: Medición Diaria del Humor Social Argentino (IHSA)
 
 on:
   schedule:
-    # Ejecución 2 veces al día: 08:00 AM y 20:00 PM ART (11:00 y 23:00 UTC)
-    - cron: '0 11,23 * * *'
+    # Edición Matutina: 09:00 ART (12:00 UTC)
+    - cron: '0 12 * * *'
+    # Cierre de Jornada: 21:30 ART (00:30 UTC del día siguiente)
+    - cron: '30 0 * * *'
   workflow_dispatch:
 
 permissions:
@@ -14,6 +16,8 @@ permissions:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      TZ: 'America/Argentina/Buenos_Aires'
     steps:
       - name: Checkout del Repositorio
         uses: actions/checkout@v4
