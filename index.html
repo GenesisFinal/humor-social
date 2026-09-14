@@ -306,31 +306,39 @@
       </div>
     </div>
 
-    <!-- TABS DE NAVEGACIÓN -->
-    <div class="border-b border-slate-800 flex space-x-2 overflow-x-auto pb-1 text-xs">
-      <button class="tab-btn active px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-media')">
-        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de Medios & Tapas
+    <!-- TABS DE NAVEGACIÓN (Grid responsivo de 2 filas en desktop / adaptable sin scroll horizontal) -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-slate-900/60 p-2 rounded-2xl border border-slate-800 text-xs">
+      <button class="tab-btn active px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-media')" title="Matriz de Medios y Kiosco Digital de Tapas">
+        <i data-lucide="layout-grid" class="w-4 h-4 text-blue-400 shrink-0"></i>
+        <span class="truncate">Medios & Tapas</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-quadrants')">
-        <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Matriz 2D de Encuadre
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-quadrants')" title="Matriz 2D de Encuadre Mediático (Optimismo vs Calma)">
+        <i data-lucide="target" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+        <span class="truncate">Matriz 2D</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-history')">
-        <i data-lucide="line-chart" class="w-4 h-4"></i> Serie Histórica (30D)
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-history')" title="Serie Histórica y Evolución Temporal (30 Días)">
+        <i data-lucide="line-chart" class="w-4 h-4 text-amber-400 shrink-0"></i>
+        <span class="truncate">Histórico (30D)</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-compare')">
-        <i data-lucide="git-compare" class="w-4 h-4 text-purple-400"></i> Comparador «Día vs Día»
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-compare')" title="Comparador Interactivo Día vs Día">
+        <i data-lucide="git-compare" class="w-4 h-4 text-purple-400 shrink-0"></i>
+        <span class="truncate">Comparador</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-report')">
-        <i data-lucide="pie-chart" class="w-4 h-4 text-blue-400"></i> Boletín Ejecutivo Avanzado
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-report')" title="Boletín Ejecutivo Analítico y Diagnóstico Integral">
+        <i data-lucide="file-text" class="w-4 h-4 text-blue-400 shrink-0"></i>
+        <span class="truncate">Boletín Ejecutivo</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-trends')">
-        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-trends')" title="Tendencias y Pulso Social en X / Google Trends">
+        <i data-lucide="trending-up" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+        <span class="truncate">Redes & Clima</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-audit')">
-        <i data-lucide="search" class="w-4 h-4"></i> Auditoría de Titulares
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-audit')" title="Auditoría de Titulares y Cobertura Noticiosa">
+        <i data-lucide="search" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+        <span class="truncate">Auditoría</span>
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-methodology')">
-        <i data-lucide="book-open" class="w-4 h-4 text-emerald-400"></i> Metodología Científica
+      <button class="tab-btn px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition flex items-center justify-center gap-1.5 text-center font-medium" onclick="switchTab('tab-methodology')" title="Metodología Científica y Algoritmos">
+        <i data-lucide="book-open" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+        <span class="truncate">Metodología</span>
       </button>
     </div>
 
