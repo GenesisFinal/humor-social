@@ -34,9 +34,21 @@ def init_db():
         summary TEXT,
         top_trends_x TEXT,
         top_trends_google TEXT,
+        editorial_divergence REAL DEFAULT 0.0,
+        decompression_buffer REAL DEFAULT 0.0,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
     """)
+
+    # Migraciones seguras si la tabla ya existía previamente
+    try:
+        cursor.execute("ALTER TABLE daily_snapshots ADD COLUMN editorial_divergence REAL DEFAULT 0.0")
+    except Exception:
+        pass
+    try:
+        cursor.execute("ALTER TABLE daily_snapshots ADD COLUMN decompression_buffer REAL DEFAULT 0.0")
+    except Exception:
+        pass
 
     # Tabla de evaluaciones desglosadas por medio
     cursor.execute("""
@@ -92,8 +104,8 @@ def save_snapshot(
         cursor.execute("""
         INSERT OR REPLACE INTO daily_snapshots (
             date, ihsa_score, ihsa_category, optimismo, calma, confianza, alegria,
-            summary, top_trends_x, top_trends_google
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            summary, top_trends_x, top_trends_google, editorial_divergence, decompression_buffer
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             snapshot.date,
             snapshot.ihsa_score,
@@ -104,7 +116,9 @@ def save_snapshot(
             snapshot.axes_averages.alegria,
             snapshot.summary_of_the_day,
             json.dumps(snapshot.top_trends_x, ensure_ascii=False),
-            json.dumps(snapshot.top_trends_google, ensure_ascii=False)
+            json.dumps(snapshot.top_trends_google, ensure_ascii=False),
+            snapshot.editorial_divergence or 0.0,
+            snapshot.decompression_buffer or 0.0
         ))
 
         # 2. Insertar evaluaciones por medio
