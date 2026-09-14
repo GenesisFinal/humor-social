@@ -58,6 +58,55 @@ def build_dataset() -> Path:
             snap["editorial_divergence"] = gap
             snap["decompression_buffer"] = buff
 
+            # 3 Subíndices Especializados y Termómetro de Estrés Colectivo
+            from engine.scoring import compute_specialized_subindices
+            from engine.models import EmotionalAxesScores
+            axes_obj = EmotionalAxesScores(
+                optimismo=snap.get("optimismo", 0.0),
+                calma=snap.get("calma", 0.0),
+                confianza=snap.get("confianza", 0.0),
+                alegria=snap.get("alegria", 0.0)
+            )
+            # Recrear SourceSentimentScore mínimos para el cálculo si hace falta
+            from engine.models import SourceSentimentScore
+            eval_objs = [
+                SourceSentimentScore(
+                    source_id=e.get("source_id", ""),
+                    source_name=e.get("source_name", ""),
+                    category=e.get("category", "general"),
+                    scores=EmotionalAxesScores(
+                        optimismo=e.get("optimismo", 0.0),
+                        calma=e.get("calma", 0.0),
+                        confianza=e.get("confianza", 0.0),
+                        alegria=e.get("alegria", 0.0)
+                    ),
+                    composite_score=e.get("composite_score", 0.0),
+                    key_themes=e.get("key_themes", []),
+                    positive_drivers=e.get("positive_drivers", []),
+                    negative_drivers=e.get("negative_drivers", []),
+                    editorial_bias_detected="",
+                    justification=e.get("justification", "")
+                )
+                for e in evals
+            ]
+            subindices_data = compute_specialized_subindices(axes_obj, eval_objs, gap)
+            snap.update(subindices_data)
+
+            # Adjuntar tapas impresas si existen en disco
+            covers_dir = BASE_DIR / "data" / "covers" / d
+            covers_list = []
+            if covers_dir.exists():
+                for cf in sorted(covers_dir.iterdir()):
+                    if cf.suffix.lower() in [".jpg", ".jpeg", ".png", ".webp"]:
+                        src_id = cf.stem.lower()
+                        src_meta = MEDIA_SOURCES.get(src_id, {})
+                        covers_list.append({
+                            "source_id": src_id,
+                            "name": src_meta.get("name", src_id.capitalize()),
+                            "path": f"data/covers/{d}/{cf.name}"
+                        })
+            snap["covers"] = covers_list
+
             # Adjuntar reporte diario en markdown si existe
             rep_file = REPORTS_DIR / f"informe_{d}.md"
             if rep_file.exists():
@@ -75,7 +124,20 @@ def build_dataset() -> Path:
             for h in heads
         ]
 
-    history_series = get_historical_snapshots(days=60)
+    # Enriquecer serie histórica con los nuevos subíndices
+    raw_history = get_historical_snapshots(days=60)
+    history_series = []
+    for h in raw_history:
+        d = h.get("date")
+        s = snapshots_map.get(d, {})
+        h_copy = dict(h)
+        h_copy["editorial_divergence"] = s.get("editorial_divergence", 0.0)
+        h_copy["decompression_buffer"] = s.get("decompression_buffer", 0.0)
+        h_copy["icb"] = s.get("icb", 0.0)
+        h_copy["igi"] = s.get("igi", 0.0)
+        h_copy["icps"] = s.get("icps", 0.0)
+        h_copy["stress"] = s.get("stress", 0.0)
+        history_series.append(h_copy)
 
     dataset = {
         "metadata": {
