@@ -67,6 +67,7 @@ def fetch_portal_headlines(source_id: str, source_name: str, web_url: str, max_i
 
             seen_titles.add(title_text)
             full_url = urljoin(web_url, link_url) if link_url else web_url
+            position_rank = len(items) + 1
 
             items.append({
                 "source_id": source_id,
@@ -75,7 +76,8 @@ def fetch_portal_headlines(source_id: str, source_name: str, web_url: str, max_i
                 "summary": "",
                 "url": full_url,
                 "published_at": datetime.now().isoformat(),
-                "channel": "web_scrape"
+                "channel": "web_scrape",
+                "position_rank": position_rank
             })
 
             if len(items) >= max_items:
