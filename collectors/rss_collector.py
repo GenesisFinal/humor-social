@@ -63,6 +63,7 @@ def fetch_rss_feed(source_id: str, source_name: str, rss_url: str, max_items: in
             if pub_date_elem is None:
                 pub_date_elem = elem.find("{http://www.w3.org/2005/Atom}updated")
             pub_date = pub_date_elem.text.strip() if pub_date_elem is not None and pub_date_elem.text else datetime.now().isoformat()
+            position_rank = len(items) + 1
 
             items.append({
                 "source_id": source_id,
@@ -71,7 +72,8 @@ def fetch_rss_feed(source_id: str, source_name: str, rss_url: str, max_items: in
                 "summary": summary[:300] if summary else "",
                 "url": link,
                 "published_at": pub_date,
-                "channel": "rss"
+                "channel": "rss",
+                "position_rank": position_rank
             })
 
     except Exception as exc:
