@@ -50,6 +50,25 @@
     .live-dot {
       animation: pulse-dot 2s infinite ease-in-out;
     }
+    @media print {
+      body {
+        background-color: #0b0f19 !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      header, .tab-btn, button, #searchInput, #filterMedia, select, footer {
+        display: none !important;
+      }
+      .tab-content {
+        display: block !important;
+      }
+      .glass-card {
+        border: 1px solid #334155 !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
@@ -67,8 +86,8 @@
         </div>
       </div>
 
-      <!-- CONTROLES DERECHA: SELECTOR DE FECHA & DESCARGA -->
-      <div class="flex items-center space-x-3">
+      <!-- CONTROLES DERECHA: SELECTOR DE FECHA, IMPRIMIR Y DESCARGA -->
+      <div class="flex items-center space-x-2 sm:space-x-3">
         <!-- SELECTOR CON CONTRASTE MÁXIMO -->
         <div class="flex items-center bg-slate-900 border-2 border-blue-500/50 hover:border-blue-500 rounded-xl px-3 py-1.5 shadow-lg transition">
           <i data-lucide="calendar" class="w-4 h-4 mr-2 text-blue-400 shrink-0"></i>
@@ -77,8 +96,12 @@
           </select>
         </div>
 
-        <button id="btnDownloadCsv" class="hidden sm:flex items-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-xl text-xs font-semibold shadow transition">
-          <i data-lucide="download" class="w-3.5 h-3.5 mr-1.5 text-emerald-400"></i> Exportar CSV
+        <button onclick="window.print()" class="hidden sm:flex items-center bg-blue-600/25 hover:bg-blue-600/40 text-blue-200 border border-blue-500/40 px-3 py-1.5 rounded-xl text-xs font-semibold shadow transition gap-1.5" title="Exportar o imprimir informe en PDF">
+          <i data-lucide="printer" class="w-3.5 h-3.5 text-blue-400"></i> Imprimir PDF
+        </button>
+
+        <button id="btnDownloadCsv" class="hidden md:flex items-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-xl text-xs font-semibold shadow transition">
+          <i data-lucide="download" class="w-3.5 h-3.5 mr-1.5 text-emerald-400"></i> CSV
         </button>
       </div>
     </div>
@@ -174,19 +197,134 @@
 
     </div>
 
+    <!-- SUBÍNDICES TEMÁTICOS ESTRATÉGICOS & TERMÓMETRO DE PRESIÓN SOCIAL -->
+    <div class="glass-card rounded-2xl p-5 border border-slate-700/70 shadow-xl space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <h2 class="text-sm uppercase tracking-wider font-extrabold text-white flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Subíndices Especializados & Termómetro de Presión Social
+          </h2>
+          <p class="text-xs text-slate-400 mt-0.5">Desagregación analítica: Bolsillo Familiar • Gobernabilidad • Paz en Calles • Estrés Colectivo</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700 font-mono">
+            Escala Subíndices: -100 a +100 | Estrés: 0 a 100
+          </span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- SUBÍNDICE 1: BOLSILLO -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-slate-700 transition shadow">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                🛒 Clima de Bolsillo (ICB)
+              </span>
+              <span id="icbBadge" class="text-[10px] font-bold px-2 py-0.5 rounded border bg-slate-800 text-slate-400 border-slate-700">--</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span id="icbScore" class="text-2xl font-black font-mono text-white">0.0</span>
+              <span class="text-[11px] text-slate-400">/ 100</span>
+            </div>
+            <div class="w-full bg-slate-950 rounded-full h-2 mt-2 overflow-hidden border border-slate-800">
+              <div id="icbBar" class="h-full rounded-full transition-all duration-500 bg-blue-500" style="width: 50%;"></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-3 pt-2 border-t border-slate-800/80 leading-tight">
+            ℹ️ Salarios, jubilaciones, inflación de alimentos, tarifas y mora familiar.
+          </p>
+        </div>
+
+        <!-- SUBÍNDICE 2: GOBERNABILIDAD -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-slate-700 transition shadow">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                🏛️ Gobernabilidad (IGI)
+              </span>
+              <span id="igiBadge" class="text-[10px] font-bold px-2 py-0.5 rounded border bg-slate-800 text-slate-400 border-slate-700">--</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span id="igiScore" class="text-2xl font-black font-mono text-white">0.0</span>
+              <span class="text-[11px] text-slate-400">/ 100</span>
+            </div>
+            <div class="w-full bg-slate-950 rounded-full h-2 mt-2 overflow-hidden border border-slate-800">
+              <div id="igiBar" class="h-full rounded-full transition-all duration-500 bg-purple-500" style="width: 50%;"></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-3 pt-2 border-t border-slate-800/80 leading-tight">
+            ℹ️ Vínculo Congreso-Ejecutivo, vetos, reservas BCRA y previsibilidad institucional.
+          </p>
+        </div>
+
+        <!-- SUBÍNDICE 3: PAZ SOCIAL -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-slate-700 transition shadow">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                🕊️ Paz y Convivencia (ICPS)
+              </span>
+              <span id="icpsBadge" class="text-[10px] font-bold px-2 py-0.5 rounded border bg-slate-800 text-slate-400 border-slate-700">--</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span id="icpsScore" class="text-2xl font-black font-mono text-white">0.0</span>
+              <span class="text-[11px] text-slate-400">/ 100</span>
+            </div>
+            <div class="w-full bg-slate-950 rounded-full h-2 mt-2 overflow-hidden border border-slate-800">
+              <div id="icpsBar" class="h-full rounded-full transition-all duration-500 bg-emerald-500" style="width: 50%;"></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-3 pt-2 border-t border-slate-800/80 leading-tight">
+            ℹ️ Conflictividad gremial, marchas, piquetes y nivel de seguridad cívica.
+          </p>
+        </div>
+
+        <!-- TERMÓMETRO: ESTRÉS COLECTIVO -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-slate-700 transition shadow">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                🌡️ Estrés Colectivo
+              </span>
+              <span id="stressBadge" class="text-[10px] font-bold px-2 py-0.5 rounded border bg-slate-800 text-slate-400 border-slate-700">--</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span id="stressScore" class="text-2xl font-black font-mono text-white">0.0</span>
+              <span class="text-[11px] text-slate-400">/ 100</span>
+            </div>
+            <div class="w-full bg-slate-950 rounded-full h-2 mt-2 overflow-hidden border border-slate-800">
+              <div id="stressBar" class="h-full rounded-full transition-all duration-500 bg-emerald-400" style="width: 20%;"></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-3 pt-2 border-t border-slate-800/80 leading-tight">
+            ℹ️ Presión acumulada: crispación en calles + temor cambiario + polarización.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
     <!-- TABS DE NAVEGACIÓN -->
     <div class="border-b border-slate-800 flex space-x-2 overflow-x-auto pb-1 text-xs">
       <button class="tab-btn active px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-media')">
-        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de Medios
+        <i data-lucide="layout-grid" class="w-4 h-4"></i> Matriz de Medios & Tapas
       </button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-trends')">
-        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-quadrants')">
+        <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Matriz 2D de Encuadre
       </button>
       <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-history')">
         <i data-lucide="line-chart" class="w-4 h-4"></i> Serie Histórica (30D)
       </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-compare')">
+        <i data-lucide="git-compare" class="w-4 h-4 text-purple-400"></i> Comparador «Día vs Día»
+      </button>
       <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-report')">
         <i data-lucide="pie-chart" class="w-4 h-4 text-blue-400"></i> Boletín Ejecutivo Avanzado
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-trends')">
+        <i data-lucide="trending-up" class="w-4 h-4"></i> Pulso en Redes
       </button>
       <button class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-2 shrink-0" onclick="switchTab('tab-audit')">
         <i data-lucide="search" class="w-4 h-4"></i> Auditoría de Titulares
@@ -217,8 +355,113 @@
         </div>
       </div>
 
+      <!-- KIOSCO DIGITAL DE TAPAS IMPRESAS -->
+      <div id="kioscoTapasSection" class="hidden glass-card p-4 rounded-xl border border-slate-700/60 shadow-md space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="image" class="w-4 h-4 text-emerald-400"></i> Kiosco Digital: Portadas Impresas en Papel Relevadas
+          </h4>
+          <span class="text-[10px] bg-slate-800 text-slate-300 font-mono px-2 py-0.5 rounded border border-slate-700">Ediciones matutinas impresas</span>
+        </div>
+        <div id="coversGallery" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
+          <!-- Miniaturas dinámicas -->
+        </div>
+      </div>
+
       <div id="mediaCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- Generado dinámicamente -->
+      </div>
+    </div>
+
+    <!-- TAB NUEVO: MATRIZ 2D DE ENCUADRE MEDIÁTICO -->
+    <div id="tab-quadrants" class="tab-content hidden space-y-4">
+      <div class="glass-card rounded-2xl p-6 shadow-xl space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+          <div>
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Matriz 2D de Posicionamiento y Encuadre Editorial
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">
+              Mapeo de los 12 medios en el plano cartesiano: <strong>Eje X (Optimismo vs. Pesimismo)</strong> vs <strong>Eje Y (Calma Social vs. Conflicto)</strong>.
+            </p>
+          </div>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-lg">
+            Día: <strong id="lblQuadrantDate">--</strong>
+          </span>
+        </div>
+
+        <!-- 4 CUADRANTES GUÍA -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-[11px]">
+          <div class="p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-emerald-200">
+            <strong>Cuadrante I (↗️):</strong><br>Esperanza & Consenso Institucional
+          </div>
+          <div class="p-2.5 rounded-lg bg-amber-950/30 border border-amber-500/30 text-amber-200">
+            <strong>Cuadrante II (↖️):</strong><br>Preocupación con Calma Cívica
+          </div>
+          <div class="p-2.5 rounded-lg bg-rose-950/30 border border-rose-500/30 text-rose-200">
+            <strong>Cuadrante III (↙️):</strong><br>Alarma, Crisis & Conflicto Activo
+          </div>
+          <div class="p-2.5 rounded-lg bg-blue-950/30 border border-blue-500/30 text-blue-200">
+            <strong>Cuadrante IV (↘️):</strong><br>Tensión con Expectativa Positiva
+          </div>
+        </div>
+
+        <div class="relative w-full h-96">
+          <canvas id="quadrantsChart"></canvas>
+        </div>
+
+        <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span>💡 <strong>Interacción:</strong> Pasa el cursor sobre la burbuja de cualquier medio para inspeccionar su encuadre.</span>
+          <span class="text-[10px] font-mono text-slate-500">Rango: -10.0 a +10.0 por eje</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB NUEVO: COMPARADOR HISTÓRICO «DÍA VS DÍA» -->
+    <div id="tab-compare" class="tab-content hidden space-y-4">
+      <div class="glass-card rounded-2xl p-6 shadow-xl space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+          <div>
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="git-compare" class="w-4 h-4 text-purple-400"></i> Comparador de Jornadas: Análisis Diferencial (Δ)
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Compara dos fechas cualquiera para observar giros de opinión, desacoples y virajes editoriales.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <div class="flex items-center gap-1.5 bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg">
+              <span class="text-slate-400 font-bold">Fecha A (Base):</span>
+              <select id="compareSelectA" class="bg-slate-900 text-white font-bold outline-none cursor-pointer" onchange="runComparison()"></select>
+            </div>
+            <span class="text-slate-500 font-bold">vs</span>
+            <div class="flex items-center gap-1.5 bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg">
+              <span class="text-slate-400 font-bold">Fecha B (Cotejo):</span>
+              <select id="compareSelectB" class="bg-slate-900 text-white font-bold outline-none cursor-pointer" onchange="runComparison()"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARJETAS DE DIFERENCIA MACRO -->
+        <div id="compareCardsGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <!-- Dinámico -->
+        </div>
+
+        <!-- TABLA DIFERENCIAL POR MEDIO -->
+        <div class="overflow-x-auto rounded-lg border border-slate-800">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="bg-slate-900/90 text-slate-400 uppercase text-[10px] tracking-wider">
+              <tr>
+                <th class="p-3">Medio</th>
+                <th class="p-3 text-center">Score Fecha A</th>
+                <th class="p-3 text-center">Score Fecha B</th>
+                <th class="p-3 text-center">Variación Neta (Δ)</th>
+                <th class="p-3">Giro de Encuadre Observado</th>
+              </tr>
+            </thead>
+            <tbody id="compareTableBody" class="divide-y divide-slate-800 font-mono text-[11px]">
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -266,10 +509,10 @@
     <!-- TAB 3: SERIE HISTÓRICA INTERACTIVA -->
     <div id="tab-history" class="tab-content hidden space-y-4">
       <div class="glass-card rounded-2xl p-6 shadow-xl">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
           <div>
             <h4 class="text-sm font-bold text-white flex items-center gap-2">
-              <i data-lucide="line-chart" class="w-4 h-4 text-blue-400"></i> Trayectoria Histórica (Últimos 30 Días)
+              <i data-lucide="line-chart" class="w-4 h-4 text-blue-400"></i> Trayectoria Histórica y Evolución de Variables (30 Días)
             </h4>
             <p class="text-xs text-blue-400 font-semibold mt-0.5">💡 Haz clic en cualquier punto del gráfico para viajar a ese día en el dashboard</p>
           </div>
@@ -277,7 +520,25 @@
             Día actual seleccionado: <strong id="lblActiveDate">--</strong>
           </span>
         </div>
-        <div class="w-full h-80">
+
+        <!-- SELECTOR DE MÉTRICA HISTÓRICA -->
+        <div class="flex flex-wrap items-center gap-2 pb-2 border-b border-slate-800/80 text-xs">
+          <span class="text-slate-400 text-[11px] font-bold">Métrica:</span>
+          <button id="btnHistIhsa" class="hist-metric-btn active bg-blue-600 text-white font-bold px-3 py-1 rounded-lg transition" onclick="setHistoryMetric('ihsa')">
+            IHSA Consolidado
+          </button>
+          <button id="btnHistDual" class="hist-metric-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition" onclick="setHistoryMetric('dual')">
+            ⚡ Vista Dual: IHSA vs. Brecha de Grieta
+          </button>
+          <button id="btnHistIcb" class="hist-metric-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition" onclick="setHistoryMetric('icb')">
+            🛒 Clima de Bolsillo (ICB)
+          </button>
+          <button id="btnHistStress" class="hist-metric-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition" onclick="setHistoryMetric('stress')">
+            🌡️ Estrés Colectivo
+          </button>
+        </div>
+
+        <div class="w-full h-80 pt-2">
           <canvas id="historyChart"></canvas>
         </div>
       </div>
@@ -686,10 +947,58 @@
           </div>
         </div>
 
+        <!-- FORMULACIÓN DE LOS 3 SUBÍNDICES Y TERMÓMETRO DE ESTRÉS -->
+        <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-purple-400"></i> Desagregación Temática: Los 3 Subíndices & Estrés Colectivo
+            </h4>
+            <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-mono border border-purple-500/30">Diagnóstico Multidimensional</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+            <div class="space-y-1">
+              <span class="font-bold text-blue-400">🛒 1. Clima de Bolsillo (ICB):</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Pondera un 60% la prensa económica especializada y un 40% la combinación de Confianza y Optimismo socioeconómico. Diagnostica si las familias sienten alivio financiero o ahogo en el poder de compra.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <span class="font-bold text-purple-400">🏛️ 2. Gobernabilidad e Instituciones (IGI):</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Integra la prensa de análisis institucional con los ejes de Confianza y Calma cívica. Mide la certidumbre sobre el rumbo político, vetos presidenciales y gobernabilidad.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <span class="font-bold text-emerald-400">🕊️ 3. Convivencia y Paz Social (ICPS):</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Combina el eje Calma (60%) con el pulso de los medios de alcance popular y masivo (40%). Monitorea paros, movilizaciones y tensión en las calles versus distensión social.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <span class="font-bold text-amber-400">🌡️ 4. Termómetro de Estrés Colectivo (0 a 100):</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Indicador sintético de fricción social. Penaliza la pérdida de calma cívica (hasta 40 pts), el miedo o desconfianza (hasta 30 pts) y la polarización de grieta (hasta 30 pts). Calibra el riesgo de desborde social.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
   </main>
+
+  <!-- MODAL ZOOM DE TAPAS IMPRESAS -->
+  <div id="coverModal" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeCoverModal()">
+    <div class="relative max-w-2xl max-h-[90vh] bg-slate-900 border border-slate-700 rounded-2xl p-4 flex flex-col items-center" onclick="event.stopPropagation()">
+      <button onclick="closeCoverModal()" class="absolute top-3 right-3 text-slate-400 hover:text-white bg-slate-800 rounded-full p-1.5 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h4 id="coverModalTitle" class="text-sm font-bold text-white mb-2">Tapa del Diario</h4>
+      <img id="coverModalImg" src="" alt="Portada" class="max-h-[75vh] object-contain rounded-lg border border-slate-800 shadow-2xl">
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
@@ -738,6 +1047,9 @@
         opt.innerText = meta.name;
         mediaFilter.appendChild(opt);
       }
+
+      // Inicializar comparador histórico
+      initComparisonSelectors();
 
       select.addEventListener('change', () => renderDate(select.value));
       document.getElementById('searchInput').addEventListener('input', () => renderHeadlinesTable(select.value));
@@ -794,7 +1106,7 @@
       document.getElementById('ihsaCategory').innerText = snap.ihsa_category;
       document.getElementById('daySummary').innerText = snap.summary_of_the_day || snap.summary || "Sin observaciones.";
 
-      // 5) CÁLCULO DINÁMICO DE VARIACIÓN 24h SIN "---"
+      // CÁLCULO DINÁMICO DE VARIACIÓN 24h
       const dateIdx = DATASET.available_dates.indexOf(dateStr);
       if (dateIdx >= 0 && dateIdx < DATASET.available_dates.length - 1) {
         const prevDate = DATASET.available_dates[dateIdx + 1];
@@ -813,7 +1125,7 @@
       const angle = (ihsa / 100) * 90;
       document.getElementById('gaugeNeedle').style.transform = `rotate(${angle}deg)`;
 
-      // Ejes Emocionales (sin "---")
+      // Ejes Emocionales
       const opt = snap.axes_averages ? snap.axes_averages.optimismo : snap.optimismo;
       const cal = snap.axes_averages ? snap.axes_averages.calma : snap.calma;
       const conf = snap.axes_averages ? snap.axes_averages.confianza : snap.confianza;
@@ -824,6 +1136,10 @@
       document.getElementById('axisConf').innerText = (conf >= 0 ? "+" : "") + conf.toFixed(1);
       document.getElementById('axisAle').innerText = (ale >= 0 ? "+" : "") + ale.toFixed(1);
 
+      // Render de Subíndices y Estrés
+      renderSubindices(snap);
+      // Render Kiosco de tapas
+      renderKioscoTapas(snap);
       // Render matriz de medios
       renderMediaCards(dateStr);
       // Render trends
@@ -832,6 +1148,8 @@
       renderHeadlinesTable(dateStr);
       // Render reporte
       renderReport(snap);
+      // Render matriz 2D
+      renderQuadrantsChart(dateStr);
 
       lucide.createIcons();
     }
@@ -1266,50 +1584,503 @@
       });
     }
 
-    // 1) GRÁFICO INTERACTIVO: CLIC EN UN PUNTO VIAJA A ESE DÍA
-    function renderHistoryChart() {
-      const ctx = document.getElementById('historyChart');
-      if (!ctx) return;
-
-      const series = DATASET.history_series || [];
-      const labels = series.map(s => s.date);
-      const dataValues = series.map(s => s.ihsa_score);
-
-      if (historyChartInstance) {
-        historyChartInstance.destroy();
+    // RENDER DE SUBÍNDICES ESPECIALIZADOS Y TERMÓMETRO DE ESTRÉS
+    function renderSubindices(snap) {
+      // 1. Clima de Bolsillo (ICB)
+      const icb = snap.icb !== undefined ? snap.icb : 0.0;
+      const icbElem = document.getElementById('icbScore');
+      const icbBadge = document.getElementById('icbBadge');
+      const icbBar = document.getElementById('icbBar');
+      if (icbElem) {
+        icbElem.innerText = (icb >= 0 ? "+" : "") + icb.toFixed(1);
+        if (icb >= 10) {
+          icbElem.className = "text-2xl font-black font-mono text-emerald-400";
+          icbBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+          icbBadge.innerText = "Alivio Familiar";
+          icbBar.className = "h-full rounded-full transition-all duration-500 bg-emerald-400";
+        } else if (icb >= -15) {
+          icbElem.className = "text-2xl font-black font-mono text-amber-400";
+          icbBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-amber-500/20 text-amber-300 border-amber-500/30";
+          icbBadge.innerText = "Presión Moderada";
+          icbBar.className = "h-full rounded-full transition-all duration-500 bg-amber-400";
+        } else {
+          icbElem.className = "text-2xl font-black font-mono text-rose-400";
+          icbBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-rose-500/20 text-rose-300 border-rose-500/30";
+          icbBadge.innerText = "Preocupación Severa";
+          icbBar.className = "h-full rounded-full transition-all duration-500 bg-rose-500";
+        }
+        const pctIcb = Math.max(0, Math.min(100, ((icb + 100) / 200) * 100));
+        icbBar.style.width = pctIcb + "%";
       }
 
-      historyChartInstance = new Chart(ctx, {
-        type: 'line',
+      // 2. Gobernabilidad e Instituciones (IGI)
+      const igi = snap.igi !== undefined ? snap.igi : 0.0;
+      const igiElem = document.getElementById('igiScore');
+      const igiBadge = document.getElementById('igiBadge');
+      const igiBar = document.getElementById('igiBar');
+      if (igiElem) {
+        igiElem.innerText = (igi >= 0 ? "+" : "") + igi.toFixed(1);
+        if (igi >= 10) {
+          igiElem.className = "text-2xl font-black font-mono text-emerald-400";
+          igiBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+          igiBadge.innerText = "Previsibilidad Alta";
+          igiBar.className = "h-full rounded-full transition-all duration-500 bg-emerald-400";
+        } else if (igi >= -15) {
+          igiElem.className = "text-2xl font-black font-mono text-purple-400";
+          igiBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-purple-500/20 text-purple-300 border-purple-500/30";
+          igiBadge.innerText = "Tensión Política Media";
+          igiBar.className = "h-full rounded-full transition-all duration-500 bg-purple-400";
+        } else {
+          igiElem.className = "text-2xl font-black font-mono text-rose-400";
+          igiBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-rose-500/20 text-rose-300 border-rose-500/30";
+          igiBadge.innerText = "Fricción Institucional";
+          igiBar.className = "h-full rounded-full transition-all duration-500 bg-rose-500";
+        }
+        const pctIgi = Math.max(0, Math.min(100, ((igi + 100) / 200) * 100));
+        igiBar.style.width = pctIgi + "%";
+      }
+
+      // 3. Convivencia y Paz Social (ICPS)
+      const icps = snap.icps !== undefined ? snap.icps : 0.0;
+      const icpsElem = document.getElementById('icpsScore');
+      const icpsBadge = document.getElementById('icpsBadge');
+      const icpsBar = document.getElementById('icpsBar');
+      if (icpsElem) {
+        icpsElem.innerText = (icps >= 0 ? "+" : "") + icps.toFixed(1);
+        if (icps >= 10) {
+          icpsElem.className = "text-2xl font-black font-mono text-emerald-400";
+          icpsBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+          icpsBadge.innerText = "Calles en Calma";
+          icpsBar.className = "h-full rounded-full transition-all duration-500 bg-emerald-400";
+        } else if (icps >= -15) {
+          icpsElem.className = "text-2xl font-black font-mono text-amber-400";
+          icpsBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-amber-500/20 text-amber-300 border-amber-500/30";
+          icpsBadge.innerText = "Equilibrio / Cautela";
+          icpsBar.className = "h-full rounded-full transition-all duration-500 bg-amber-400";
+        } else {
+          icpsElem.className = "text-2xl font-black font-mono text-rose-400";
+          icpsBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-rose-500/20 text-rose-300 border-rose-500/30";
+          icpsBadge.innerText = "Conflicto en Calles";
+          icpsBar.className = "h-full rounded-full transition-all duration-500 bg-rose-500";
+        }
+        const pctIcps = Math.max(0, Math.min(100, ((icps + 100) / 200) * 100));
+        icpsBar.style.width = pctIcps + "%";
+      }
+
+      // 4. Termómetro de Estrés Colectivo
+      const stress = snap.stress !== undefined ? snap.stress : 25.0;
+      const stressElem = document.getElementById('stressScore');
+      const stressBadge = document.getElementById('stressBadge');
+      const stressBar = document.getElementById('stressBar');
+      if (stressElem) {
+        stressElem.innerText = stress.toFixed(1) + " pts";
+        if (stress < 25.0) {
+          stressElem.className = "text-2xl font-black font-mono text-emerald-400";
+          stressBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-emerald-500/20 text-emerald-300 border-emerald-500/30";
+          stressBadge.innerText = "🟢 Calma Cívica";
+          stressBar.className = "h-full rounded-full transition-all duration-500 bg-emerald-400";
+        } else if (stress < 50.0) {
+          stressElem.className = "text-2xl font-black font-mono text-amber-400";
+          stressBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-amber-500/20 text-amber-300 border-amber-500/30";
+          stressBadge.innerText = "🟡 Tensión Latente";
+          stressBar.className = "h-full rounded-full transition-all duration-500 bg-amber-400";
+        } else if (stress < 75.0) {
+          stressElem.className = "text-2xl font-black font-mono text-orange-400";
+          stressBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-orange-500/20 text-orange-300 border-orange-500/30";
+          stressBadge.innerText = "🟠 Crispación Activa";
+          stressBar.className = "h-full rounded-full transition-all duration-500 bg-orange-500";
+        } else {
+          stressElem.className = "text-2xl font-black font-mono text-rose-500";
+          stressBadge.className = "text-[10px] font-bold px-2 py-0.5 rounded border bg-rose-500/20 text-rose-300 border-rose-500/30";
+          stressBadge.innerText = "🔴 Alarma Colectiva";
+          stressBar.className = "h-full rounded-full transition-all duration-500 bg-rose-600";
+        }
+        stressBar.style.width = Math.min(100, Math.max(5, stress)) + "%";
+      }
+    }
+
+    // KIOSCO DIGITAL DE TAPAS IMPRESAS
+    function renderKioscoTapas(snap) {
+      const sec = document.getElementById('kioscoTapasSection');
+      const gallery = document.getElementById('coversGallery');
+      if (!sec || !gallery) return;
+
+      const covers = snap.covers || [];
+      if (covers.length === 0) {
+        sec.classList.add('hidden');
+        return;
+      }
+      sec.classList.remove('hidden');
+      gallery.innerHTML = '';
+
+      covers.forEach(c => {
+        const div = document.createElement('div');
+        div.className = "group relative cursor-pointer overflow-hidden rounded-xl border border-slate-700/80 bg-slate-900 shadow hover:border-blue-500 transition";
+        div.onclick = () => openCoverModal(`${c.name} — ${snap.date}`, c.path);
+        div.innerHTML = `
+          <div class="aspect-[3/4] overflow-hidden bg-slate-950 flex items-center justify-center">
+            <img src="${c.path}" alt="${c.name}" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300" onerror="this.parentElement.innerHTML='<div class=\\'p-3 text-[10px] text-slate-500 text-center\\'>Tapa no disponible</div>'">
+          </div>
+          <div class="p-2 bg-slate-900/90 border-t border-slate-800 flex items-center justify-between text-xs">
+            <span class="font-bold text-white text-[11px] truncate">${c.name}</span>
+            <i data-lucide="zoom-in" class="w-3.5 h-3.5 text-blue-400 group-hover:scale-110 transition shrink-0"></i>
+          </div>
+        `;
+        gallery.appendChild(div);
+      });
+      lucide.createIcons();
+    }
+
+    function openCoverModal(title, imgUrl) {
+      document.getElementById('coverModalTitle').innerText = title;
+      document.getElementById('coverModalImg').src = imgUrl;
+      document.getElementById('coverModal').classList.remove('hidden');
+    }
+
+    function closeCoverModal() {
+      document.getElementById('coverModal').classList.add('hidden');
+    }
+
+    // MATRIZ 2D DE ENCUADRE MEDIÁTICO (SCATTER PLOT)
+    let quadrantsChartInstance = null;
+
+    function renderQuadrantsChart(dateStr) {
+      const ctx = document.getElementById('quadrantsChart');
+      if (!ctx) return;
+
+      const lblQDate = document.getElementById('lblQuadrantDate');
+      if (lblQDate) lblQDate.innerText = dateStr;
+
+      const evals = DATASET.evaluations[dateStr] || [];
+
+      const catColors = {
+        general: "#3b82f6",
+        economy: "#10b981",
+        popular: "#f59e0b",
+        political_opposition: "#ef4444",
+        political_left: "#ec4899",
+        investigative_press: "#8b5cf6",
+        federal: "#06b6d4"
+      };
+
+      const points = evals.map(e => ({
+        x: e.scores ? e.scores.optimismo : (e.optimismo || 0),
+        y: e.scores ? e.scores.calma : (e.calma || 0),
+        name: e.source_name,
+        score: e.composite_score,
+        category: e.category,
+        posDriver: e.positive_drivers && e.positive_drivers.length ? e.positive_drivers[0] : "",
+        negDriver: e.negative_drivers && e.negative_drivers.length ? e.negative_drivers[0] : ""
+      }));
+
+      if (quadrantsChartInstance) {
+        quadrantsChartInstance.destroy();
+      }
+
+      quadrantsChartInstance = new Chart(ctx, {
+        type: 'scatter',
         data: {
-          labels: labels,
           datasets: [{
-            label: 'IHSA Consolidado (-100 a +100)',
-            data: dataValues,
-            borderColor: '#3b82f6',
-            backgroundColor: 'rgba(59, 130, 246, 0.12)',
-            borderWidth: 2.5,
-            fill: true,
-            tension: 0.35,
-            pointRadius: 4,
-            pointHoverRadius: 8,
-            pointBackgroundColor: '#3b82f6'
+            label: 'Medios Monitoreados',
+            data: points,
+            backgroundColor: points.map(p => catColors[p.category] || "#94a3b8"),
+            borderColor: '#ffffff',
+            borderWidth: 1.5,
+            pointRadius: 8,
+            pointHoverRadius: 12
           }]
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color: '#94a3b8' } },
+            legend: { display: false },
             tooltip: {
               callbacks: {
-                afterLabel: function() {
-                  return '👉 Haz clic para cargar este día';
+                label: function(context) {
+                  const p = context.raw;
+                  return [
+                    ` 📰 ${p.name} (IHSA: ${(p.score >= 0 ? '+' : '')}${p.score.toFixed(1)})`,
+                    `   🌱 Optimismo: ${(p.x >= 0 ? '+' : '')}${p.x.toFixed(1)} | 🕊️ Calma: ${(p.y >= 0 ? '+' : '')}${p.y.toFixed(1)}`,
+                    p.posDriver ? `   🟢 Foco: ${p.posDriver.slice(0, 45)}...` : '',
+                    p.negDriver ? `   🔴 Alerta: ${p.negDriver.slice(0, 45)}...` : ''
+                  ].filter(Boolean);
                 }
               }
             }
           },
-          // 1) CLIC EN CUALQUIER PUNTO ACTUALIZA EL DÍA SELECCIONADO
+          scales: {
+            x: {
+              min: -10,
+              max: 10,
+              title: {
+                display: true,
+                text: '← Más Pesimismo | Optimismo →',
+                color: '#94a3b8',
+                font: { size: 11, weight: 'bold' }
+              },
+              grid: {
+                color: function(c) {
+                  return c.tick.value === 0 ? 'rgba(255, 255, 255, 0.4)' : 'rgba(255, 255, 255, 0.06)';
+                },
+                lineWidth: function(c) {
+                  return c.tick.value === 0 ? 2 : 1;
+                }
+              },
+              ticks: { color: '#64748b' }
+            },
+            y: {
+              min: -10,
+              max: 10,
+              title: {
+                display: true,
+                text: '← Mayor Conflicto | Calma Social →',
+                color: '#94a3b8',
+                font: { size: 11, weight: 'bold' }
+              },
+              grid: {
+                color: function(c) {
+                  return c.tick.value === 0 ? 'rgba(255, 255, 255, 0.4)' : 'rgba(255, 255, 255, 0.06)';
+                },
+                lineWidth: function(c) {
+                  return c.tick.value === 0 ? 2 : 1;
+                }
+              },
+              ticks: { color: '#64748b' }
+            }
+          }
+        }
+      });
+    }
+
+    // COMPARADOR «DÍA VS DÍA»
+    function initComparisonSelectors() {
+      const dates = DATASET.available_dates || [];
+      const selA = document.getElementById('compareSelectA');
+      const selB = document.getElementById('compareSelectB');
+      if (!selA || !selB) return;
+
+      selA.innerHTML = '';
+      selB.innerHTML = '';
+      dates.forEach(d => {
+        selA.appendChild(new Option(d, d));
+        selB.appendChild(new Option(d, d));
+      });
+
+      if (dates.length >= 2) {
+        selA.value = dates[1];
+        selB.value = dates[0];
+      }
+      runComparison();
+    }
+
+    function runComparison() {
+      const selA = document.getElementById('compareSelectA');
+      const selB = document.getElementById('compareSelectB');
+      if (!selA || !selB) return;
+
+      const dateA = selA.value;
+      const dateB = selB.value;
+      const snapA = DATASET.snapshots[dateA];
+      const snapB = DATASET.snapshots[dateB];
+      if (!snapA || !snapB) return;
+
+      const diffIhsa = snapB.ihsa_score - snapA.ihsa_score;
+      const diffIcb = (snapB.icb || 0) - (snapA.icb || 0);
+      const diffIgi = (snapB.igi || 0) - (snapA.igi || 0);
+      const diffStress = (snapB.stress || 0) - (snapA.stress || 0);
+
+      const grid = document.getElementById('compareCardsGrid');
+      grid.innerHTML = `
+        <div class="glass-card p-3 rounded-xl border border-slate-800">
+          <span class="text-[11px] text-slate-400">Δ IHSA Consolidado</span>
+          <p class="text-xl font-black font-mono ${(diffIhsa >= 0 ? 'text-emerald-400' : 'text-rose-400')} mt-1">
+            ${(diffIhsa >= 0 ? '+' : '')}${diffIhsa.toFixed(1)} pts
+          </p>
+          <span class="text-[10px] text-slate-500 font-mono">${dateA} (${snapA.ihsa_score.toFixed(1)}) → ${dateB} (${snapB.ihsa_score.toFixed(1)})</span>
+        </div>
+        <div class="glass-card p-3 rounded-xl border border-slate-800">
+          <span class="text-[11px] text-slate-400">Δ Clima de Bolsillo (ICB)</span>
+          <p class="text-xl font-black font-mono ${(diffIcb >= 0 ? 'text-emerald-400' : 'text-rose-400')} mt-1">
+            ${(diffIcb >= 0 ? '+' : '')}${diffIcb.toFixed(1)} pts
+          </p>
+          <span class="text-[10px] text-slate-500 font-mono">${(snapA.icb || 0).toFixed(1)} → ${(snapB.icb || 0).toFixed(1)}</span>
+        </div>
+        <div class="glass-card p-3 rounded-xl border border-slate-800">
+          <span class="text-[11px] text-slate-400">Δ Gobernabilidad (IGI)</span>
+          <p class="text-xl font-black font-mono ${(diffIgi >= 0 ? 'text-emerald-400' : 'text-rose-400')} mt-1">
+            ${(diffIgi >= 0 ? '+' : '')}${diffIgi.toFixed(1)} pts
+          </p>
+          <span class="text-[10px] text-slate-500 font-mono">${(snapA.igi || 0).toFixed(1)} → ${(snapB.igi || 0).toFixed(1)}</span>
+        </div>
+        <div class="glass-card p-3 rounded-xl border border-slate-800">
+          <span class="text-[11px] text-slate-400">Δ Estrés Colectivo</span>
+          <p class="text-xl font-black font-mono ${(diffStress <= 0 ? 'text-emerald-400' : 'text-rose-400')} mt-1">
+            ${(diffStress >= 0 ? '+' : '')}${diffStress.toFixed(1)} pts
+          </p>
+          <span class="text-[10px] text-slate-500 font-mono">${(snapA.stress || 0).toFixed(1)} → ${(snapB.stress || 0).toFixed(1)}</span>
+        </div>
+      `;
+
+      const evalsA = DATASET.evaluations[dateA] || [];
+      const evalsB = DATASET.evaluations[dateB] || [];
+      const mapA = Object.fromEntries(evalsA.map(e => [e.source_id, e]));
+      const mapB = Object.fromEntries(evalsB.map(e => [e.source_id, e]));
+
+      const tbody = document.getElementById('compareTableBody');
+      tbody.innerHTML = '';
+
+      Object.keys(DATASET.media_catalog).forEach(srcId => {
+        const ea = mapA[srcId];
+        const eb = mapB[srcId];
+        if (!ea && !eb) return;
+
+        const name = (eb && eb.source_name) || (ea && ea.source_name) || srcId;
+        const scA = ea ? ea.composite_score : 0.0;
+        const scB = eb ? eb.composite_score : 0.0;
+        const diff = scB - scA;
+
+        let shiftNote = "Sin variaciones significativas";
+        if (diff >= 20.0) shiftNote = "🟢 Giro marcado hacia el optimismo / alivio";
+        else if (diff >= 8.0) shiftNote = "🟢 Leve mejora de encuadre";
+        else if (diff <= -20.0) shiftNote = "🔴 Giro marcado hacia la crispación o alarma";
+        else if (diff <= -8.0) shiftNote = "🔴 Deterioro de expectativas";
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40 transition";
+        tr.innerHTML = `
+          <td class="p-3 text-white font-bold whitespace-nowrap">${name}</td>
+          <td class="p-3 text-center text-slate-300 font-mono">${ea ? (scA >= 0 ? '+' : '') + scA.toFixed(1) : '-'}</td>
+          <td class="p-3 text-center text-slate-300 font-mono">${eb ? (scB >= 0 ? '+' : '') + scB.toFixed(1) : '-'}</td>
+          <td class="p-3 text-center whitespace-nowrap">
+            <span class="px-2 py-0.5 rounded font-mono font-bold ${(diff >= 0 ? 'text-emerald-400 bg-emerald-950/40 border border-emerald-500/30' : 'text-rose-400 bg-rose-950/40 border border-rose-500/30')}">
+              ${(diff >= 0 ? '+' : '')}${diff.toFixed(1)} pts
+            </span>
+          </td>
+          <td class="p-3 text-slate-300 text-xs">${shiftNote}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+      lucide.createIcons();
+    }
+
+    // GESTIÓN DE MÉTRICAS HISTÓRICAS
+    let currentHistMetric = 'ihsa';
+
+    function setHistoryMetric(metric) {
+      currentHistMetric = metric;
+      document.querySelectorAll('.hist-metric-btn').forEach(b => {
+        b.className = "hist-metric-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition";
+      });
+      const idMap = {
+        ihsa: 'btnHistIhsa',
+        dual: 'btnHistDual',
+        icb: 'btnHistIcb',
+        stress: 'btnHistStress'
+      };
+      const activeBtn = document.getElementById(idMap[metric]);
+      if (activeBtn) {
+        activeBtn.className = "hist-metric-btn active bg-blue-600 text-white font-bold px-3 py-1 rounded-lg transition";
+      }
+      renderHistoryChart();
+    }
+
+    // GRÁFICO HISTÓRICO CON SELECTOR DE MÉTRICAS
+    function renderHistoryChart() {
+      const ctx = document.getElementById('historyChart');
+      if (!ctx) return;
+
+      const series = DATASET.history_series || [];
+      const labels = series.map(s => s.date);
+
+      let datasets = [];
+
+      if (currentHistMetric === 'ihsa') {
+        datasets.push({
+          label: 'IHSA Consolidado (-100 a +100)',
+          data: series.map(s => s.ihsa_score),
+          borderColor: '#3b82f6',
+          backgroundColor: 'rgba(59, 130, 246, 0.12)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.35,
+          pointRadius: 4,
+          pointHoverRadius: 8,
+          pointBackgroundColor: '#3b82f6'
+        });
+      } else if (currentHistMetric === 'dual') {
+        datasets.push({
+          label: 'IHSA Consolidado (-100 a +100)',
+          data: series.map(s => s.ihsa_score),
+          borderColor: '#3b82f6',
+          backgroundColor: 'rgba(59, 130, 246, 0.08)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.35,
+          pointRadius: 3,
+          pointBackgroundColor: '#3b82f6'
+        });
+        datasets.push({
+          label: 'Brecha de Grieta / Polarización (pts)',
+          data: series.map(s => s.editorial_divergence || 0.0),
+          borderColor: '#c084fc',
+          backgroundColor: 'transparent',
+          borderWidth: 2.0,
+          borderDash: [5, 5],
+          pointRadius: 3,
+          pointBackgroundColor: '#c084fc'
+        });
+      } else if (currentHistMetric === 'icb') {
+        datasets.push({
+          label: 'Clima de Bolsillo (ICB) (-100 a +100)',
+          data: series.map(s => s.icb !== undefined ? s.icb : 0.0),
+          borderColor: '#10b981',
+          backgroundColor: 'rgba(16, 185, 129, 0.12)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.35,
+          pointRadius: 4,
+          pointHoverRadius: 8,
+          pointBackgroundColor: '#10b981'
+        });
+      } else if (currentHistMetric === 'stress') {
+        datasets.push({
+          label: 'Termómetro de Estrés Colectivo (0 a 100)',
+          data: series.map(s => s.stress !== undefined ? s.stress : 25.0),
+          borderColor: '#f97316',
+          backgroundColor: 'rgba(249, 115, 22, 0.15)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.35,
+          pointRadius: 4,
+          pointHoverRadius: 8,
+          pointBackgroundColor: '#f97316'
+        });
+      }
+
+      if (historyChartInstance) {
+        historyChartInstance.destroy();
+      }
+
+      const yMin = currentHistMetric === 'stress' ? 0 : -100;
+      const yMax = 100;
+
+      historyChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: { labels: labels, datasets: datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: '#cbd5e1' } },
+            tooltip: {
+              callbacks: {
+                afterLabel: function() {
+                  return '👉 Haz clic para viajar a este día';
+                }
+              }
+            }
+          },
           onClick: (evt, elements) => {
             if (elements && elements.length > 0) {
               const index = elements[0].index;
@@ -1317,7 +2088,6 @@
               if (clickedDate) {
                 document.getElementById('dateSelect').value = clickedDate;
                 renderDate(clickedDate);
-                // Notificación visual y cambio de pestaña
                 switchTab('tab-media');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }
@@ -1332,8 +2102,8 @@
               ticks: { color: '#64748b', maxTicksLimit: 12 }
             },
             y: {
-              min: -100,
-              max: 100,
+              min: yMin,
+              max: yMax,
               grid: { color: 'rgba(255, 255, 255, 0.08)' },
               ticks: { color: '#64748b' }
             }
@@ -1346,14 +2116,20 @@
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
       
-      const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+      const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
       if (activeBtn) activeBtn.classList.add('active');
 
-      document.getElementById(tabId).classList.remove('hidden');
+      const targetElem = document.getElementById(tabId);
+      if (targetElem) targetElem.classList.remove('hidden');
+
+      const currentDate = document.getElementById('dateSelect').value;
       if (tabId === 'tab-history') {
         renderHistoryChart();
+      } else if (tabId === 'tab-quadrants') {
+        renderQuadrantsChart(currentDate);
+      } else if (tabId === 'tab-compare') {
+        runComparison();
       } else if (tabId === 'tab-report' && DATASET) {
-        const currentDate = document.getElementById('dateSelect').value;
         const snap = DATASET.snapshots[currentDate];
         if (snap) renderReport(snap);
       }
