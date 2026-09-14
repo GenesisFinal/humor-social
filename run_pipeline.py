@@ -17,7 +17,7 @@ from collectors.web_collector import fetch_portal_headlines
 from collectors.trends_collector import fetch_google_trends, fetch_x_trends
 from collectors.covers_collector import download_all_front_pages
 from engine.analyzer import analyze_source_with_llm, analyze_digital_trends
-from engine.scoring import compute_daily_ihsa
+from engine.scoring import compute_daily_ihsa, calculate_editorial_divergence, calculate_sports_decompression_buffer
 from engine.models import DailySnapshot, EmotionalAxesScores, SourceSentimentScore
 from storage.db import init_db, save_snapshot
 
@@ -96,6 +96,11 @@ def run_pipeline(target_date_str: str = None) -> DailySnapshot:
         digital_scores=digital_analysis
     )
 
+    divergence_gap, div_status = calculate_editorial_divergence(source_evaluations)
+    decomp_buffer = calculate_sports_decompression_buffer(axes_avg, source_evaluations)
+    print(f"      -> Brecha Editorial (Grieta): {divergence_gap:.1f} pts ({div_status})")
+    print(f"      -> Amortiguador Deportivo Patriótico: +{decomp_buffer:.1f} pts")
+
     summary_text = (
         f"El Humor Social del día se ubica en {ihsa_score:+0.1f} pts ({category_label}). "
         f"Ejes promedio: Optimismo {axes_avg.optimismo:+0.1f}, Calma {axes_avg.calma:+0.1f}, "
@@ -110,7 +115,9 @@ def run_pipeline(target_date_str: str = None) -> DailySnapshot:
         sources=source_evaluations,
         top_trends_x=[x.get("term", "") for x in x_trends[:10]],
         top_trends_google=[g.get("term", "") for g in g_trends[:10]],
-        summary_of_the_day=summary_text
+        summary_of_the_day=summary_text,
+        editorial_divergence=divergence_gap,
+        decompression_buffer=decomp_buffer
     )
 
     # Guardar en Base de Datos
