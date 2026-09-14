@@ -2,7 +2,7 @@
 Cálculos matemáticos, ponderación y clasificación para el Índice de Humor Social Argentino (IHSA).
 """
 
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Any
 from engine.models import EmotionalAxesScores, SourceSentimentScore
 from config import EMOTIONAL_AXES, MACRO_WEIGHTS, MEDIA_SOURCES
 
@@ -146,3 +146,70 @@ def calculate_sports_decompression_buffer(
     socioeconomic_baseline = (axes_avg.optimismo + axes_avg.confianza) / 2.0
     buffer = max(0.0, axes_avg.alegria - socioeconomic_baseline)
     return round(float(buffer), 1)
+
+def compute_specialized_subindices(
+    axes_avg: EmotionalAxesScores,
+    source_evaluations: List[SourceSentimentScore],
+    editorial_gap: float
+) -> Dict[str, Any]:
+    """
+    Calcula los 3 subíndices temáticos estratégicos y el Termómetro de Estrés Colectivo:
+    1. ICB: Clima de Bolsillo (-100 a +100)
+    2. IGI: Gobernabilidad e Instituciones (-100 a +100)
+    3. ICPS: Convivencia y Paz Social (-100 a +100)
+    4. Estrés Colectivo (0 a 100)
+    """
+    opt = axes_avg.optimismo
+    cal = axes_avg.calma
+    conf = axes_avg.confianza
+
+    # 1. Clima de Bolsillo (ICB)
+    econ_scores = [e.composite_score for e in source_evaluations if e.category == "economy"]
+    avg_econ = (sum(econ_scores) / len(econ_scores)) if econ_scores else ((opt + conf) * 5.0)
+    icb = round(0.6 * avg_econ + 0.4 * ((conf * 0.5 + opt * 0.5) * 10.0), 1)
+    icb = max(-100.0, min(100.0, icb))
+
+    # 2. Gobernabilidad e Instituciones (IGI)
+    trad_scores = [e.composite_score for e in source_evaluations if e.source_id in {"lanacion", "clarin", "perfil", "infobae"}]
+    avg_trad = (sum(trad_scores) / len(trad_scores)) if trad_scores else ((conf * 0.6 + cal * 0.4) * 10.0)
+    igi = round(0.5 * avg_trad + 0.5 * ((conf * 0.6 + cal * 0.4) * 10.0), 1)
+    igi = max(-100.0, min(100.0, igi))
+
+    # 3. Convivencia y Paz Social (ICPS)
+    pop_scores = [e.composite_score for e in source_evaluations if e.category == "popular" or e.source_id in {"cronica", "cadena3", "tn"}]
+    avg_pop = (sum(pop_scores) / len(pop_scores)) if pop_scores else (cal * 10.0)
+    icps = round(0.6 * (cal * 10.0) + 0.4 * avg_pop, 1)
+    icps = max(-100.0, min(100.0, icps))
+
+    # 4. Termómetro de Estrés Colectivo (0 a 100)
+    calm_penalty = max(0.0, -cal) * 4.0
+    conf_penalty = max(0.0, -conf) * 3.0
+    grieta_penalty = min(30.0, editorial_gap * 0.6)
+    stress = min(100.0, max(0.0, round(calm_penalty + conf_penalty + grieta_penalty, 1)))
+
+    if stress < 25.0:
+        stress_cat = "Calma Cívica / Distensión"
+        stress_badge = "🟢 Distensión"
+        stress_color = "emerald"
+    elif stress < 50.0:
+        stress_cat = "Tensión Latente / Cautela"
+        stress_badge = "🟡 Cautela"
+        stress_color = "yellow"
+    elif stress < 75.0:
+        stress_cat = "Crispación Activa / Alerta"
+        stress_badge = "🟠 Alerta Activa"
+        stress_color = "orange"
+    else:
+        stress_cat = "Ebullición / Alarma Colectiva"
+        stress_badge = "🔴 Alarma Social"
+        stress_color = "rose"
+
+    return {
+        "icb": icb,
+        "igi": igi,
+        "icps": icps,
+        "stress": stress,
+        "stress_category": stress_cat,
+        "stress_badge": stress_badge,
+        "stress_color": stress_color
+    }
