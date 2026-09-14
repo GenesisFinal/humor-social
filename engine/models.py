@@ -43,3 +43,5 @@ class DailySnapshot(BaseModel):
     top_trends_x: List[str] = Field(default_factory=list)
     top_trends_google: List[str] = Field(default_factory=list)
     summary_of_the_day: str
+    editorial_divergence: Optional[float] = Field(default=0.0, description="Brecha de polarización entre medios tradicionales y de oposición")
+    decompression_buffer: Optional[float] = Field(default=0.0, description="Amortiguador de descompresión deportiva o de orgullo nacional")
