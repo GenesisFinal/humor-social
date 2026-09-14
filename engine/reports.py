@@ -63,6 +63,10 @@ def generate_daily_report(
 - **⚓ Confianza vs. Incertidumbre:** `{snapshot.axes_averages.confianza:+.1f}`
 - **☀️ Alegría vs. Tristeza / Duelo:** `{snapshot.axes_averages.alegria:+.1f}`
 
+### 🔬 Indicadores Avanzados y Metodología Internacional
+- **⚡ Brecha de Polarización Editorial ("Brecha de Grieta"):** `{snapshot.editorial_divergence or 0.0:.1f} pts` {'— *(Alerta: Fuerte polarización ideológica)*' if (snapshot.editorial_divergence or 0.0) >= 40.0 else '— *(Banda de convergencia normal)*'}
+- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+{snapshot.decompression_buffer or 0.0:.1f} pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*
+
 ### 💡 Diagnóstico y Síntesis Analítica
 {snapshot.summary_of_the_day}
 
