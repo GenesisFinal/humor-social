@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Índice de Humor Social Argentino (IHSA)",
-    "updated_at": "2026-09-20T02:16:39.805225",
+    "updated_at": "2026-09-20T12:44:32.887149",
     "latest_date": "2026-09-20",
     "total_days": 38,
     "sources_count": 12
@@ -160,49 +160,60 @@
   "snapshots": {
     "2026-09-20": {
       "date": "2026-09-20",
-      "ihsa_score": -13.93,
+      "ihsa_score": -11.91,
       "ihsa_category": "Levemente Negativo / Preocupación",
-      "optimismo": -2.98,
-      "calma": -3.02,
-      "confianza": -0.83,
-      "alegria": 1.07,
-      "summary": "El Humor Social del día se ubica en -13.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.0, Calma -3.0, Confianza -0.8, Alegría +1.1.",
+      "optimismo": -3.9,
+      "calma": -1.67,
+      "confianza": -1.39,
+      "alegria": 1.94,
+      "summary": "El Humor Social del día se ubica en -11.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.9, Calma -1.7, Confianza -1.4, Alegría +1.9.",
       "top_trends_x": [
-        "#SolAbrahamEnPH",
-        "River",
-        "Ponzio",
         "Beltrán",
-        "Talleres",
-        "Edenor",
-        "Instituto",
-        "#EnOffAwards",
-        "Arambarri",
-        "Pantoja"
+        "#SolAbrahamEnPH",
+        "Ponzio",
+        "River",
+        "Sunderland",
+        "Huracán",
+        "Blondel",
+        "Enzo",
+        "Pereyra",
+        "Andrada"
       ],
       "top_trends_google": [
+        "city",
+        "atletico madrid",
+        "real madrid",
+        "manchester city",
+        "apagón eléctrico",
+        "smn",
+        "la nacion",
         "ufc",
         "instituto",
-        "corte de luz",
-        "river plate - huracán",
-        "roma fc",
-        "arsenal",
-        "telefe",
-        "weather tomorrow",
-        "play store",
-        "tottenham"
+        "pelota"
       ],
-      "created_at": "2026-09-20 05:16:39",
-      "editorial_divergence": 15.6,
-      "decompression_buffer": 3.0,
-      "icb": -25.5,
-      "igi": -13.9,
-      "icps": -20.2,
-      "stress": 23.9,
+      "created_at": "2026-09-20 15:44:32",
+      "editorial_divergence": 15.0,
+      "decompression_buffer": 4.6,
+      "icb": -26.1,
+      "igi": -18.7,
+      "icps": -8.4,
+      "stress": 19.9,
       "stress_category": "Calma Cívica / Distensión",
       "stress_badge": "🟢 Distensión",
       "stress_color": "emerald",
-      "covers": [],
-      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-09-20\n\n**Índice IHSA Consolidado:** **`-13.9 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** +0.3 pts respecto a ayer (-14.2 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-3.0`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-3.0`\n- **⚓ Confianza vs. Incertidumbre:** `-0.8`\n- **☀️ Alegría vs. Tristeza / Duelo:** `+1.1`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `15.6 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+3.0 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -13.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.0, Calma -3.0, Confianza -0.8, Alegría +1.1.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **Cadena 3** | `federal` | **+13.1** | Acuerdo salarial. Transporte urbano en Córdob | Sin focos destacados |\n| **Crónica** | `popular` | **+10.2** | Las CTA impugnaron la resolución que fijó el  | Marcha de la Bronca: la izquierda organizó mo |\n| **Infobae** | `general` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **Perfil** | `general` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **Página/12** | `political_left` | **-4.7** | Sin focos destacados | Sin focos destacados |\n| **La Nación** | `general` | **-18.2** | Sin focos destacados | Onganía, Milei y una bronca que no cesa |\n| **El Cronista Comercial** | `economy` | **-24.6** | Sin focos destacados | Trámites. Se congelan los alquileres en Nueva |\n| **Clarín** | `general` | **-25.0** | Sin focos destacados | Marcha de la Bronca: la izquierda se movilizó |\n| **C5N** | `political_opposition` | **-30.3** | Los Neuss, en la mira: la polémica maniobra p | \"Roña\" Castro apuntó contra Milei por la cris |\n| **Ámbito Financiero** | `economy` | **-34.9** | Presupuesto nacional 2027: el superávit del I | La suba de tasas de la Fed aleja la vuelta de |\n| **TN (Todo Noticias)** | `general` | **-39.2** | Sin focos destacados | Sin focos destacados |\n| **El Destape** | `political_opposition` | **-55.0** | Sin focos destacados | Milei atrapado: el loop de la recesión con un |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** ##SolAbrahamEnPH, #River, #Ponzio, #Beltrán, #Talleres, #Edenor, #Instituto, ##EnOffAwards\n- **Mayor Aceleración en Google Trends:** ufc, instituto, corte de luz, river plate - huracán, roma fc, arsenal, telefe, weather tomorrow\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
+      "covers": [
+        {
+          "source_id": "clarin",
+          "name": "Clarín",
+          "path": "data/covers/2026-09-20/clarin.jpg"
+        },
+        {
+          "source_id": "lanacion",
+          "name": "La Nación",
+          "path": "data/covers/2026-09-20/lanacion.jpg"
+        }
+      ],
+      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-09-20\n\n**Índice IHSA Consolidado:** **`-11.9 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** +2.3 pts respecto a ayer (-14.2 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-3.9`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-1.7`\n- **⚓ Confianza vs. Incertidumbre:** `-1.4`\n- **☀️ Alegría vs. Tristeza / Duelo:** `+1.9`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `15.0 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+4.6 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -11.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.9, Calma -1.7, Confianza -1.4, Alegría +1.9.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **Cadena 3** | `federal` | **+27.1** | Acuerdo salarial. Transporte urbano en Córdob | Agenda presidencial. Milei viajará a Nueva Yo |\n| **Crónica** | `popular` | **+15.0** | A qué hora corre Colapinto en el GP de Azerba | Sin focos destacados |\n| **Infobae** | `general` | **-2.9** | Guatemala, 17 años sin ley de ciberseguridad: | Guatemala, 17 años sin ley de ciberseguridad: |\n| **La Nación** | `general` | **-3.6** | Sin focos destacados | Dolores Fonzi y Mercedes Morán exhibieron tap |\n| **Página/12** | `political_left` | **-4.7** | Sin focos destacados | Sin focos destacados |\n| **C5N** | `political_opposition` | **-16.9** | Los Neuss, en la mira: la polémica maniobra p | Crisis de ingresos: 7 de cada 10 argentinos s |\n| **El Cronista Comercial** | `economy` | **-24.6** | Sin focos destacados | Trámites. Se congelan los alquileres en Nueva |\n| **Clarín** | `general` | **-25.0** | Sin focos destacados | Marcha de la Bronca: la izquierda se movilizó |\n| **Ámbito Financiero** | `economy` | **-27.0** | Martín Rossi, exfuncionario de Javier Milei:  | La suba de tasas de la Fed aleja la vuelta de |\n| **TN (Todo Noticias)** | `general` | **-30.1** | Sin focos destacados | Sin focos destacados |\n| **El Destape** | `political_opposition` | **-55.0** | Sin focos destacados | Milei atrapado: el loop de la recesión con un |\n| **Perfil** | `general` | **-58.0** | Sin focos destacados | Mercedes Morán: “La familiaridad con los muer |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Beltrán, ##SolAbrahamEnPH, #Ponzio, #River, #Sunderland, #Huracán, #Blondel, #Enzo\n- **Mayor Aceleración en Google Trends:** city, atletico madrid, real madrid, manchester city, apagón eléctrico, smn, la nacion, ufc\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
     },
     "2026-09-19": {
       "date": "2026-09-19",
@@ -1622,105 +1633,112 @@
   "evaluations": {
     "2026-09-20": [
       {
-        "id": 921,
+        "id": 933,
         "date": "2026-09-20",
         "source_id": "cadena3",
         "source_name": "Cadena 3",
         "category": "federal",
-        "composite_score": 13.1,
-        "optimismo": 2.7,
-        "calma": 2.0,
+        "composite_score": 27.15,
+        "optimismo": 3.8,
+        "calma": 0.3,
         "confianza": 0.0,
-        "alegria": 0.0,
+        "alegria": 10.0,
         "key_themes": [
-          "Suramericanos",
           "Córdoba",
-          "Juegos",
-          "Fútbol",
-          "Entradas"
+          "Domingo",
+          "Suramericanos",
+          "Nueva",
+          "Ante"
         ],
         "positive_drivers": [
-          "Acuerdo salarial. Transporte urbano en Córdoba: acordaron una suba del 10,5% y pagos extraordinarios"
+          "Acuerdo salarial. Transporte urbano en Córdoba: acordaron una suba del 10,5% y pagos extraordinarios",
+          "Juegos Suramericanos. Cuatro medallas rosarinas en un sábado memorable de podios en los Suramericanos"
         ],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de Cadena 3. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Suramericanos, Córdoba, Juegos, Fútbol, Entradas.",
+        "negative_drivers": [
+          "Agenda presidencial. Milei viajará a Nueva York: hablará ante la ONU en medio de la tensión geopolítica por Malvinas"
+        ],
+        "justification": "Evaluación heurística de 22 titulares de Cadena 3. Se detectaron 2 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Córdoba, Domingo, Suramericanos, Nueva, Ante.",
         "cover_path": ""
       },
       {
-        "id": 914,
+        "id": 926,
         "date": "2026-09-20",
         "source_id": "cronica",
         "source_name": "Crónica",
         "category": "popular",
-        "composite_score": 10.2,
+        "composite_score": 15.0,
         "optimismo": 0.0,
-        "calma": 2.1,
+        "calma": 0.0,
         "confianza": 0.0,
-        "alegria": 3.3,
+        "alegria": 10.0,
         "key_themes": [
-          "Argentina",
-          "Horas",
-          "Gobierno",
-          "Milei",
-          "Anunció"
+          "Buenos",
+          "Aires",
+          "Vivo",
+          "Masivo",
+          "Cómo"
         ],
         "positive_drivers": [
-          "Las CTA impugnaron la resolución que fijó el salario mínimo y dieron 48 horas al Gobierno para reabrir la negociación"
+          "A qué hora corre Colapinto en el GP de Azerbaiyán: horarios y VIVO"
         ],
-        "negative_drivers": [
-          "Marcha de la Bronca: la izquierda organizó movilizaciones en distintos puntos del país contra la gestión de Milei"
-        ],
-        "justification": "Evaluación heurística de 24 titulares de Crónica. Se detectaron 1 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Argentina, Horas, Gobierno, Milei, Anunció.",
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 24 titulares de Crónica. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Buenos, Aires, Vivo, Masivo, Cómo.",
         "cover_path": ""
       },
       {
-        "id": 913,
+        "id": 925,
         "date": "2026-09-20",
         "source_id": "infobae",
         "source_name": "Infobae",
         "category": "general",
-        "composite_score": 0.0,
-        "optimismo": 0.0,
+        "composite_score": -2.85,
+        "optimismo": -1.6,
         "calma": 0.0,
         "confianza": 0.0,
-        "alegria": 0.0,
+        "alegria": 1.3,
         "key_themes": [
-          "Último",
-          "Elecciones",
-          "Puede",
-          "Productor",
-          "Vida"
+          "Madrid",
+          "Fuerte",
+          "Investigan",
+          "Atlético",
+          "Partido"
         ],
-        "positive_drivers": [],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de Infobae. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Último, Elecciones, Puede, Productor, Vida.",
+        "positive_drivers": [
+          "Guatemala, 17 años sin ley de ciberseguridad: AmCham alerta sobre ataques invisibles, robo de datos e incertidumbre para nuevas inversiones"
+        ],
+        "negative_drivers": [
+          "Guatemala, 17 años sin ley de ciberseguridad: AmCham alerta sobre ataques invisibles, robo de datos e incertidumbre para nuevas inversiones"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de Infobae. Se detectaron 1 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Madrid, Fuerte, Investigan, Atlético, Partido.",
         "cover_path": ""
       },
       {
-        "id": 920,
+        "id": 924,
         "date": "2026-09-20",
-        "source_id": "perfil",
-        "source_name": "Perfil",
+        "source_id": "lanacion",
+        "source_name": "La Nación",
         "category": "general",
-        "composite_score": 0.0,
+        "composite_score": -3.6,
         "optimismo": 0.0,
         "calma": 0.0,
         "confianza": 0.0,
-        "alegria": 0.0,
+        "alegria": -2.4,
         "key_themes": [
-          "Apocalipsis",
-          "Ante",
-          "Argentina",
-          "Estamos",
-          "Bullrich"
+          "Oficial",
+          "Nueva",
+          "Años",
+          "Texas",
+          "Confirmado"
         ],
         "positive_drivers": [],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 22 titulares de Perfil. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Apocalipsis, Ante, Argentina, Estamos, Bullrich.",
-        "cover_path": ""
+        "negative_drivers": [
+          "Dolores Fonzi y Mercedes Morán exhibieron tapados con un mensaje por Malvinas en el Festival de San Sebastián"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de La Nación. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Oficial, Nueva, Años, Texas, Confirmado.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-09-20/lanacion.jpg"
       },
       {
-        "id": 917,
+        "id": 929,
         "date": "2026-09-20",
         "source_id": "pagina12",
         "source_name": "Página/12",
@@ -1731,44 +1749,49 @@
         "confianza": 0.0,
         "alegria": 4.7,
         "key_themes": [
-          "Fuego",
-          "Cruzado",
-          "Cuarteles",
-          "Desfalco",
-          "Millonario"
+          "Milei",
+          "Avanza",
+          "Blindaje",
+          "Side",
+          "Jefes"
         ],
         "positive_drivers": [],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 6 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Fuego, Cruzado, Cuarteles, Desfalco, Millonario.",
+        "justification": "Evaluación heurística de 9 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Milei, Avanza, Blindaje, Side, Jefes.",
         "cover_path": ""
       },
       {
-        "id": 912,
+        "id": 934,
         "date": "2026-09-20",
-        "source_id": "lanacion",
-        "source_name": "La Nación",
-        "category": "general",
-        "composite_score": -18.25,
-        "optimismo": 0.0,
-        "calma": -7.3,
+        "source_id": "c5n",
+        "source_name": "C5N",
+        "category": "political_opposition",
+        "composite_score": -16.85,
+        "optimismo": -8.1,
+        "calma": 7.3,
         "confianza": 0.0,
-        "alegria": 0.0,
+        "alegria": -7.2,
         "key_themes": [
-          "Está",
-          "Jorge",
-          "Tartaglione",
-          "Médico",
-          "Mejor"
+          "Milei",
+          "Buenos",
+          "Aires",
+          "Crisis",
+          "Aprieta"
         ],
-        "positive_drivers": [],
+        "positive_drivers": [
+          "Los Neuss, en la mira: la polémica maniobra para financiar la compra de Transener con reservas de la empresa",
+          "Nancy Pazos puso sobre la mesa los crudos números del ajuste de Milei: \"El modelo fracasó\""
+        ],
         "negative_drivers": [
-          "Onganía, Milei y una bronca que no cesa"
+          "Crisis de ingresos: 7 de cada 10 argentinos se endeudan para pagar alimentos, tarifas y servicios",
+          "\"Roña\" Castro apuntó contra Milei por la crisis: \"Es doloroso lo que pasa con la gente\"",
+          "Nancy Pazos puso sobre la mesa los crudos números del ajuste de Milei: \"El modelo fracasó\""
         ],
-        "justification": "Evaluación heurística de 25 titulares de La Nación. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Está, Jorge, Tartaglione, Médico, Mejor.",
+        "justification": "Evaluación heurística de 24 titulares de C5N. Se detectaron 2 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Milei, Buenos, Aires, Crisis, Aprieta.",
         "cover_path": ""
       },
       {
-        "id": 919,
+        "id": 931,
         "date": "2026-09-20",
         "source_id": "cronista",
         "source_name": "El Cronista Comercial",
@@ -1779,10 +1802,10 @@
         "confianza": 0.0,
         "alegria": 0.0,
         "key_themes": [
-          "Nueva",
           "Oficial",
           "Estados",
           "Unidos",
+          "Nueva",
           "Medida"
         ],
         "positive_drivers": [],
@@ -1791,11 +1814,11 @@
           "Medida. Se congelan los alquileres en Nueva York: Mamdani confirma un 0% de ajustes permitidos a partir de octubre 2026",
           "Cambios. Entra en vigor el nuevo Formulario I-485 en Estados Unidos para solicitar residencia permanente o ajuste de estatus legal"
         ],
-        "justification": "Evaluación heurística de 24 titulares de El Cronista Comercial. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Nueva, Oficial, Estados, Unidos, Medida.",
+        "justification": "Evaluación heurística de 23 titulares de El Cronista Comercial. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Oficial, Estados, Unidos, Nueva, Medida.",
         "cover_path": ""
       },
       {
-        "id": 911,
+        "id": 923,
         "date": "2026-09-20",
         "source_id": "clarin",
         "source_name": "Clarín",
@@ -1808,7 +1831,7 @@
         "key_themes": [
           "Milei",
           "Kicillof",
-          "Operativo",
+          "Viaje",
           "Axel",
           "Elecciones"
         ],
@@ -1816,93 +1839,64 @@
         "negative_drivers": [
           "Marcha de la Bronca: la izquierda se movilizó a Plaza de Mayo para protestar contra Milei y le reclamó un paro nacional a la CGT"
         ],
-        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Milei, Kicillof, Operativo, Axel, Elecciones.",
-        "cover_path": ""
+        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Milei, Kicillof, Viaje, Axel, Elecciones.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-09-20/clarin.jpg"
       },
       {
-        "id": 922,
-        "date": "2026-09-20",
-        "source_id": "c5n",
-        "source_name": "C5N",
-        "category": "political_opposition",
-        "composite_score": -30.3,
-        "optimismo": -4.2,
-        "calma": 0.0,
-        "confianza": -3.3,
-        "alegria": -5.2,
-        "key_themes": [
-          "Contra",
-          "Milei",
-          "Apuntó",
-          "Aprieta",
-          "Visita"
-        ],
-        "positive_drivers": [
-          "Los Neuss, en la mira: la polémica maniobra para financiar la compra de Transener con reservas de la empresa",
-          "Nancy Pazos puso sobre la mesa los crudos números del ajuste de Milei: \"El modelo fracasó\""
-        ],
-        "negative_drivers": [
-          "\"Roña\" Castro apuntó contra Milei por la crisis: \"Es doloroso lo que pasa con la gente\"",
-          "Nancy Pazos puso sobre la mesa los crudos números del ajuste de Milei: \"El modelo fracasó\"",
-          "Caso Agostina Vega: familiares y amigos marcharon en Córdoba en reclamo de justicia"
-        ],
-        "justification": "Evaluación heurística de 25 titulares de C5N. Se detectaron 2 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Contra, Milei, Apuntó, Aprieta, Visita.",
-        "cover_path": ""
-      },
-      {
-        "id": 918,
+        "id": 930,
         "date": "2026-09-20",
         "source_id": "ambito",
         "source_name": "Ámbito Financiero",
         "category": "economy",
-        "composite_score": -34.85,
-        "optimismo": -6.0,
-        "calma": -4.7,
+        "composite_score": -27.0,
+        "optimismo": -7.7,
+        "calma": 5.1,
         "confianza": -6.7,
-        "alegria": 10.0,
+        "alegria": 2.3,
         "key_themes": [
-          "Argentina",
           "Milei",
-          "Cuando",
-          "Alcanza",
-          "Recaudación"
+          "Eeuu",
+          "Javier",
+          "Medio",
+          "Oriente"
         ],
         "positive_drivers": [
-          "Presupuesto nacional 2027: el superávit del INTA se utilizará con fines financieros",
+          "Martín Rossi, exfuncionario de Javier Milei: \"El país lleva tres años ordenando la macro, pero el crecimiento no vendrá solo”",
           "Pobreza, informalidad y recaudación: advierten un \"círculo vicioso\" que golpea al modelo de Javier Milei"
         ],
         "negative_drivers": [
           "La suba de tasas de la Fed aleja la vuelta de Argentina a los mercados: ¿se complican los próximos pagos de deuda?",
+          "Crisis de ingresos: 6 de cada 10 argentinos se endeudaron y el 76% lo hizo para para pagar alimentos, salud, tarifas y servicios",
           "Pobreza, informalidad y recaudación: advierten un \"círculo vicioso\" que golpea al modelo de Javier Milei"
         ],
-        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 2 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: Argentina, Milei, Cuando, Alcanza, Recaudación.",
+        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 2 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Milei, Eeuu, Javier, Medio, Oriente.",
         "cover_path": ""
       },
       {
-        "id": 916,
+        "id": 928,
         "date": "2026-09-20",
         "source_id": "tn",
         "source_name": "TN (Todo Noticias)",
         "category": "general",
-        "composite_score": -39.25,
-        "optimismo": -10.0,
-        "calma": -3.7,
+        "composite_score": -30.05,
+        "optimismo": -5.0,
+        "calma": -8.0,
         "confianza": 0.0,
-        "alegria": 0.0,
+        "alegria": 3.3,
         "key_themes": [
-          "Vivo",
           "Fecha",
-          "Hora",
-          "Dónde",
-          "Formaciones"
+          "Ganó",
+          "Vivo",
+          "Domingo",
+          "Septiembre"
         ],
         "positive_drivers": [],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 25 titulares de TN (Todo Noticias). Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Vivo, Fecha, Hora, Dónde, Formaciones.",
+        "justification": "Evaluación heurística de 25 titulares de TN (Todo Noticias). Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Fecha, Ganó, Vivo, Domingo, Septiembre.",
         "cover_path": ""
       },
       {
-        "id": 915,
+        "id": 927,
         "date": "2026-09-20",
         "source_id": "eldestape",
         "source_name": "El Destape",
@@ -1915,17 +1909,42 @@
         "key_themes": [
           "Milei",
           "Masivo",
-          "País",
-          "Bullrich",
-          "Caputo"
+          "Argentina",
+          "Kicillof",
+          "Encuentro"
         ],
         "positive_drivers": [],
         "negative_drivers": [
           "Milei atrapado: el loop de la recesión con un único culpable",
-          "La Marcha de la Bronca retumbó contra Milei en todo el país",
+          "Milei vuelve a Estados Unidos y crece la tensión por su discurso en ONU",
           "Brotes verde oliva: Milei empodera a Fuerzas Armadas minadas por escándalos"
         ],
-        "justification": "Evaluación heurística de 18 titulares de El Destape. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Milei, Masivo, País, Bullrich, Caputo.",
+        "justification": "Evaluación heurística de 19 titulares de El Destape. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Milei, Masivo, Argentina, Kicillof, Encuentro.",
+        "cover_path": ""
+      },
+      {
+        "id": 932,
+        "date": "2026-09-20",
+        "source_id": "perfil",
+        "source_name": "Perfil",
+        "category": "general",
+        "composite_score": -58.05,
+        "optimismo": -10.0,
+        "calma": 0.0,
+        "confianza": -10.0,
+        "alegria": 1.3,
+        "key_themes": [
+          "Muertos",
+          "Milei",
+          "Maratón",
+          "Buenos",
+          "Aires"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [
+          "Mercedes Morán: “La familiaridad con los muertos no me costó para nada”"
+        ],
+        "justification": "Evaluación heurística de 22 titulares de Perfil. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Muertos, Milei, Maratón, Buenos, Aires.",
         "cover_path": ""
       }
     ],
@@ -14064,6 +14083,126 @@
         "u": "https://www.ambito.com/finanzas/fal-las-alycs-afinan-estrategias-captar-empresas-mientras-la-cnv-facilita-el-ingreso-nuevos-jugadores-n6324197"
       },
       {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Crisis de ingresos: 6 de cada 10 argentinos se endeudaron y el 76% lo hizo para para pagar alimentos, salud, tarifas y servicios",
+        "u": "https://www.ambito.com/economia/crisis-ingresos-6-cada-10-argentinos-se-endeudaron-y-el-76-lo-hizo-para-pagar-alimentos-salud-tarifas-y-servicios-n6324445"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Martín Rossi, exfuncionario de Javier Milei: \"El país lleva tres años ordenando la macro, pero el crecimiento no vendrá solo”",
+        "u": "https://www.ambito.com/economia/martin-rossi-exfuncionario-javier-milei-el-pais-lleva-tres-anos-ordenando-la-macro-pero-el-crecimiento-no-vendra-solo-n6324342"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Milei, atrapado entre los datos y la política: cuando la planilla no alcanza",
+        "u": "https://www.ambito.com/politica/milei-atrapado-los-datos-y-la-cuando-la-planilla-no-alcanza-n6324396"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Medio Oriente, al límite: EEUU advirtió por una rápida escalada de la guerra tras el ataque a Riad",
+        "u": "https://www.ambito.com/mundo/medio-oriente-al-limite-eeuu-advirtio-una-rapida-escalada-la-guerra-el-ataque-riad-n6324467"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "La AGN detecta irregularidades y peligra la prórroga de Aeropuertos Argentina: el contrato debe vencer en 2028",
+        "u": "https://www.ambito.com/politica/la-agn-detecta-irregularidades-y-peligra-la-prorroga-aeropuertos-argentina-el-contrato-debe-vencer-2028-n6323273"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Alarma en Medio Oriente: Irán presiona con sus exigencias, EEUU advierte y crece el temor a una guerra sin límites",
+        "u": "https://www.ambito.com/mundo/alarma-medio-oriente-iran-presiona-sus-exigencias-eeuu-advierte-y-crece-el-temor-una-guerra-limites-n6324435"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Javier Milei vuelve a viajar a EEUU: la agenda completa del Presidente en Nueva York",
+        "u": "https://www.ambito.com/politica/javier-milei-vuelve-viajar-eeuu-la-agenda-completa-del-presidente-nueva-york-n6324230"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Pobreza, informalidad y recaudación: advierten un \"círculo vicioso\" que golpea al modelo de Javier Milei",
+        "u": "https://www.ambito.com/economia/pobreza-informalidad-y-recaudacion-advierten-un-circulo-vicioso-que-golpea-al-modelo-javier-milei-n6324284"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "La suba de tasas de la Fed aleja la vuelta de Argentina a los mercados: ¿se complican los próximos pagos de deuda?",
+        "u": "https://www.ambito.com/finanzas/la-suba-tasas-la-fed-aleja-la-vuelta-argentina-los-mercados-se-complican-los-proximos-pagos-deuda-n6324090"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Conmoción en Perú: mataron a tiros a una candidata al Gobierno Regional de Áncash en un acto de campaña",
+        "u": "https://www.ambito.com/mundo/conmocion-peru-mataron-tiros-una-candidata-al-gobierno-regional-ancash-un-acto-campana-n6324430"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Congreso: semana clave para el Gobierno con la interna libertaria como telón de fondo",
+        "u": "https://www.ambito.com/politica/congreso-semana-clave-el-gobierno-la-interna-libertaria-como-telon-fondo-n6324034"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Tensión en Medio Oriente: alerta de EEUU a sus ciudadanos en la zona y hay temor por la vuelta de la guerra",
+        "u": "https://www.ambito.com/mundo/tension-medio-oriente-alerta-eeuu-sus-ciudadanos-la-zona-y-hay-temor-la-vuelta-la-guerra-n6324419"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Elecciones en la ONU: cómo se define al nuevo secretario genera y quiénes son los candidatos que siguen en carrera",
+        "u": "https://www.ambito.com/mundo/elecciones-la-onu-como-se-define-al-nuevo-secretario-genera-y-quienes-son-los-candidatos-que-siguen-carrera-n6324454"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "En modo candidato, Axel Kicillof anunció una gira por todo el país y pidió salir de la interna: \"Con el peronismo solo no alcanza\"",
+        "u": "https://www.ambito.com/politica/axel-kicillof-reune-al-movimiento-derecho-al-futuro-avellaneda-y-busca-darle-alcance-nacional-su-espacio-n6324298"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Sismo en Tucumán: un temblor de magnitud 5 sacudió el norte argentino",
+        "u": "https://www.ambito.com/informacion-general/sismo-tucuman-un-temblor-magnitud-5-sacudio-el-norte-argentino-n6324458"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Alerta meteorológica para el AMBA y 17 provincias: cuándo llueve y cómo seguirá el clima en el inicio de la primavera",
+        "u": "https://www.ambito.com/informacion-general/alerta-meteorologica-el-amba-y-17-provincias-cuando-llueve-y-como-seguira-el-clima-el-inicio-la-primavera-n6324432"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Nuevo libro revela un casillero geopolítico oculto: \"El mercado africano representa una potencialidad para lo que Argentina ya hace\"",
+        "u": "https://www.ambito.com/mundo/nuevo-libro-revela-un-casillero-geopolitico-oculto-el-mercado-africano-representa-una-potencialidad-lo-que-argentina-ya-hace-n6324405"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Cómo sigue la salud de Mirtha Legrand tras su nueva internación: qué se sabe y el último parte médico",
+        "u": "https://www.ambito.com/espectaculos/como-sigue-la-salud-mirtha-legrand-su-nueva-internacion-que-se-sabe-y-el-ultimo-parte-medico-n6324442"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "FAL: las ALyCs afinan estrategias para captar empresas mientras la CNV facilita el ingreso de nuevos jugadores",
+        "u": "https://www.ambito.com/finanzas/fal-las-alycs-afinan-estrategias-captar-empresas-mientras-la-cnv-facilita-el-ingreso-nuevos-jugadores-n6324197"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Librerías piden declarar la emergencia para el sector por una caída del 41,5% de la facturación",
+        "u": "https://www.ambito.com/economia/librerias-piden-declarar-la-emergencia-el-sector-una-caida-del-415-la-facturacion-n6324376"
+      },
+      {
         "s": "c5n",
         "n": "C5N",
         "t": "Los detalles de la visita del papa León XIV, entre la preocupación por los jóvenes, el trabajo y \"la necesidad de encuentro\"",
@@ -14211,6 +14350,156 @@
         "s": "c5n",
         "n": "C5N",
         "t": "Lali Espósito apuntó contra el Gobierno desde San Sebastián: \"El cine argentino ha sido muy atacado\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Crisis de ingresos: 7 de cada 10 argentinos se endeudan para pagar alimentos, tarifas y servicios",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "¿Por qué Buenos Aires no forma parte de Buenos Aires? La cruenta historia de la Capital",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "El oficialismo minimiza el enojo de Bullrich, pero reconoce: \"No es lo mejor salir y decirlo en los medios\"",
+        "u": "https://www.c5n.com/politica/el-oficialismo-minimiza-el-enojo-patricia-bullrich-pero-reconoce-no-es-lo-mejor-salir-y-decirlo-los-medios-n249402"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Los detalles de la visita del papa León XIV, entre la preocupación por los jóvenes, el trabajo y \"la necesidad de encuentro\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Ucrania bombardeó una refinería y una instalación logística en Moscú: al menos dos muertos",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "El keniata Bethwel Kibet Chumba es el ganador de los 42K de Buenos Aires",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Asesinaron a tiros a una candidata en Perú durante un acto de campaña: hay un detenido y 5 heridos",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Cuando la realidad aprieta, Milei aprieta más",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La revolución de la IA en los próximos 10 años: convivencia con robots, reconversión laboral y aulas inteligentes",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Peligra la prórroga de Aeropuertos Argentina: un informe de la AGN halló irregularidades en un contrato de 2020",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Los Neuss, en la mira: la polémica maniobra para financiar la compra de Transener con reservas de la empresa",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Alerta naranja en el AMBA y 9 provincias: se esperan lluvias y tormentas fuertes ante de la llegada de la primavera",
+        "u": "https://www.c5n.com/sociedad/alerta-naranja-el-amba-y-9-provincias-se-esperan-lluvias-y-tormentas-fuertes-la-llegada-la-primavera-n249387"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "¿Messi vuelve al Barcelona? Joan Laporta confirmó cuándo sería y qué tiene que pasar para que suceda",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Video: Enzo Fernández convirtió un golazo, su primer grito con la camiseta del Manchester City",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "A 15 años del escándalo que sacudió a la farándula: el mail prohibido que destapó una infidelidad",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Insólito: futbolista fue atropellado por un rodillo en el calentamiento y se salvó de una fractura",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Los Tres Santos Reidores: el cuento para aprender a celebrar la vida y perderle el miedo a la muerte",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "\"Roña\" Castro apuntó contra Milei por la crisis: \"Es doloroso lo que pasa con la gente\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Los pacientes oncológicos, la cara más dramática del brutal ajuste en Salud",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Nancy Pazos puso sobre la mesa los crudos números del ajuste de Milei: \"El modelo fracasó\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Tini Stoessel rompió en llanto en pleno recital ante el apoyo del público: \"Me están acompañando en el duelo\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Qué dijo Camila Galante sobre los rumores de relación abierta con Leandro Paredes",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Dolor por la muerte del actor colombiano José Oriol Hernández",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Quién es Gala Nisenson, la actriz que debutó en el cine junto a Luisana Lopilato: \"Estoy dispuesta a correr los límites\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Juana Viale contó cómo sigue Mirtha Legrand después de una nueva internación: qué dijo",
         "u": "https://www.c5n.com"
       },
       {
@@ -14364,6 +14653,156 @@
         "u": "https://www.cadena3.com"
       },
       {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Maratón de clásicos",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Ranking de la semana",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Rodolfo Barili",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Pablo Sirvén",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La quinta pata del gato",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Los editoriales de Alberto Lotuf",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Cuadro de Situación",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Agenda presidencial. Milei viajará a Nueva York: hablará ante la ONU en medio de la tensión geopolítica por Malvinas",
+        "u": "https://www.cadena3.com/noticia/politica-y-economia/milei-viajara-a-nueva-york-hablara-ante-la-onu-en-medio-de-la-tension-geopolitica-por-malvinas_595978"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Domingo deportivo. Se corre la Maratón Internacional de Buenos Aires: participan más de 16 mil atletas",
+        "u": "https://www.cadena3.com/noticia/sociedad/se-corre-la-maraton-internacional-de-buenos-aires-participan-mas-de-16-mil-atletas_595922"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Domingo deportivo. El keniata Bethwel Kibet Chumba ganó la maratón de Buenos Aires con un tiempo récord",
+        "u": "https://www.cadena3.com/noticia/deportes/el-keniata-bethwel-kibet-chumba-gano-la-maraton-de-buenos-aires-con-un-tiempo-record_595958"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Tenis. Copa Davis: Argentina busca cerrar la serie ante Turquía y volver a los Qualifiers",
+        "u": "https://www.cadena3.com/noticia/tenis/copa-davis-argentina-busca-cerrar-la-serie-ante-turquia-y-volver-a-los-qualifiers_595925"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Interna en el oficialismo. Santilli bajó la tensión con Bullrich y habló del video con música de Lali: \"Estuvo divertido\"",
+        "u": "https://www.cadena3.com/noticia/politica-y-economia/santilli-bajo-la-tension-con-bullrich-y-hablo-del-video-con-musica-de-lali-estuvo-divertido_595871"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Cambio de estación. Villa Carlos Paz celebra este domingo una nueva edición de su clásica Fiesta de la Primavera",
+        "u": "https://www.cadena3.com/noticia/sociedad/villa-carlos-paz-celebra-este-domingo-una-nueva-edicion-de-su-clasica-fiesta-de-la-primavera_595939"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Torneo Clausura. Boca busca prolongar su buen momento ante San Lorenzo en una nueva edición del clásico",
+        "u": "https://www.cadena3.com/noticia/boca-juniors/boca-busca-prolongar-su-buen-momento-ante-san-lorenzo-en-una-nueva-edicion-del-clasico_595938"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Torneo Clausura. Instituto, más puntero que nunca: le ganó 3-1 el clásico a Talleres y Alta Córdoba es un carnaval",
+        "u": "https://www.cadena3.com/noticia/futbol/instituto-mas-puntero-que-nunca-le-gano-3-1-el-clasico-a-talleres-y-alta-cordoba-es-un-carnaval_595785"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La furia de la naturaleza. Fuerte caída de granizo en Córdoba: los videos de la intensa tormenta que sorprendió a los vecinos",
+        "u": "https://www.cadena3.com/noticia/sociedad/fuerte-caida-de-granizo-en-cordoba-los-videos-de-la-intensa-tormenta-que-sorprendio-a-los-vecinos_595853"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Preocupación. Mirtha Legrand mostró una mejoría: encontraron la bacteria y comenzó un tratamiento con antibióticos",
+        "u": "https://www.cadena3.com/noticia/espectaculos/mirtha-legrand-mostro-una-mejoria-encontraron-la-bacteria-y-comenzo-un-tratamiento-con-antibioticos_595789"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Corte de luz en la capital. Apagón masivo en Buenos Aires: más de 600 mil usuarios quedaron sin luz en varios barrios",
+        "u": "https://www.cadena3.com/noticia/sociedad/apagon-masivo-en-buenos-aires-mas-de-600-mil-usuarios-quedaron-sin-luz-en-varios-barrios_595890"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Operativo policial. Detuvieron en Córdoba a un joven sindicado como sicario de dos adolescentes en Rosario",
+        "u": "https://www.cadena3.com/noticia/sociedad/detuvieron-en-cordoba-a-un-joven-sindicado-como-sicario-de-dos-adolescentes-en-rosario_595953"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Torneo Clausura. Belgrano recibe a Estudiantes de Río Cuarto con el objetivo de volver al triunfo",
+        "u": "https://www.cadena3.com/noticia/belgrano/belgrano-recibe-a-estudiantes-de-rio-cuarto-con-el-objetivo-de-volver-al-triunfo_595966"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "El tiempo. Alerta por fuertes ráfagas y nuevas tormentas: cómo estará este domingo en Córdoba",
+        "u": "https://www.cadena3.com/noticia/sociedad/alerta-por-fuertes-rafagas-y-nuevas-tormentas-como-estara-este-domingo-en-cordoba_595856"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Amamos los Domingos. Cementerios de Córdoba: un paseo distinto para descubrir la historia y la cultura",
+        "u": "https://www.cadena3.com/noticia/amamos-los-domingos/cementerios-de-cordoba-un-paseo-distinto-para-descubrir-la-historia-y-la-cultura_595976"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Acuerdo salarial. Transporte urbano en Córdoba: acordaron una suba del 10,5% y pagos extraordinarios",
+        "u": "https://www.cadena3.com/noticia/una-manana-para-todos/transporte-urbano-en-cordoba-acordaron-una-suba-del-105-y-pagos-extraordinarios_595796"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Juegos Suramericanos. La rosarina Martina Bednarek celebró la plata con Las Panteras: “Rosario es mi casa”",
+        "u": "https://www.cadena3.com/noticia/juegos-suramericanos/la-rosarina-martina-bednarek-celebro-la-plata-con-las-panteras-rosario-es-mi-casa_595982"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Juegos Suramericanos. Cuatro medallas rosarinas en un sábado memorable de podios en los Suramericanos",
+        "u": "https://www.cadena3.com/noticia/juegos-suramericanos/cuatro-medallas-rosarinas-en-un-sabado-memorable-de-podios-en-los-suramericanos_595973"
+      },
+      {
         "s": "clarin",
         "n": "Clarín",
         "t": "Con el Congreso convulsionado y el fantasma del balotaje, Milei suma a más gobernadores a su viaje a París",
@@ -14422,6 +14861,66 @@
         "n": "Clarín",
         "t": "\"Dictadura o libertad\": en Formosa, un intendente de Milei ploteó un salón municipal como si fuera un búnker y armó un operativo de ANSES y PAMI",
         "u": "https://www.clarin.com/politica/dictadura-libertad-formosa-intendente-milei-ploteo-salon-municipal-local-partidario-desato-polemica_0_obmulBM8tg.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Un temblor de magnitud 5 generó preocupación en la madrugada de Tucumán",
+        "u": "https://www.clarin.com/sociedad/temblor-magnitud-5-genero-preocupacion-madrugada-tucuman_0_j16Q3lgz37.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Javier Milei y sus medidas, EN VIVO: el Presidente se prepara para un nuevo viaje a Nueva York",
+        "u": "https://www.clarin.com/politica/javier-milei-medidas-vivo-presidente-prepara-nuevo-viaje-nueva-york_0_6jBpSF1vbJ.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "El huracán Patricia: las horas de confusión y enojo en la cima de La Libertad Avanza",
+        "u": "https://www.clarin.com/politica/huracan-patricia-horas-confusion-enojo-cima-libertad-avanza_0_j22ugaq22d.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Con el Congreso convulsionado y el fantasma del balotaje, Milei suma a más gobernadores a su viaje a París",
+        "u": "https://www.clarin.com/politica/mostrar-apoyos-consensos-milei-lleva-docena-gobernadores-viaje-paris_0_vHePcLsci7.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "\"Cuenten conmigo para el año que viene\": Axel Kicillof se anotó para las elecciones 2027 y convocó a distintos sectores para derrotar a Milei",
+        "u": "https://www.clarin.com/politica/cuenten-conmigo-ano-viene-axel-kicillof-anoto-elecciones-2027-convoco-distintos-sectores-derrotar-milei_0_zadGSrXR04.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Patricia Bullrich activa otra semana explosiva en el Senado con proyectos clave para el Gobierno",
+        "u": "https://www.clarin.com/politica/patricia-bullrich-activa-semana-explosiva-senado-proyectos-clave-gobierno_0_otCCGskL1h.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Cristina, Malvinas, las elecciones 2027 y un posible slogan de campaña: las 10 frases más fuertes de Axel Kicillof en Villa Domínico",
+        "u": "https://www.clarin.com/politica/fuerte-discurso-kicillof-tono-electoral-plena-interna-maximo-kirchner-nuevas-canciones-componen-abajo-arriba_0_kvaURMRWaq.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Marcha de la Bronca: la izquierda se movilizó a Plaza de Mayo para protestar contra Milei y le reclamó un paro nacional a la CGT",
+        "u": "https://www.clarin.com/politica/marcha-bronca-izquierda-concentra-marchar-plaza-mayo-protestar-milei_0_gkXg6g5b0L.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Milei en la ONU: el gesto que espera de Trump, el encuentro con Netanyahu y la coincidencia con Kicillof",
+        "u": "https://www.clarin.com/politica/preparan-encuentro-milei-netanyahu-viaje-nueva-york-hablara-naciones-unidas_0_adstyGSdxp.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "La justicia comenzó a investigar los mil millones de pesos de sobresueldos en la Armada",
+        "u": "https://www.clarin.com/politica/justicia-comenzo-investigar-mil-millones-pesos-sobresueldos-armada_0_baaLENWNDr.html"
       },
       {
         "s": "cronica",
@@ -14574,6 +15073,156 @@
         "u": "https://www.cronica.com.ar/sociedad/la-renga-versus-milei-por-el-uso-de-panic-show-enojo-por-la-apropiacion-politica-de-la-cancion/"
       },
       {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¡Se viene el diluvio en Buenos Aires! ¿Qué pasa con la temperatura?",
+        "u": "https://www.cronica.com.ar/sociedad/se-viene-el-diluvio-cuando-llegan-las-tormentas-a-buenos-aires-y-que-pasa-con-la-temperatura/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Trump y Burnham preparan un cara a cara en Nueva York mientras Milei pondrá el foco en Malvinas en la ONU",
+        "u": "https://www.cronica.com.ar/mundo/trump-y-burnham-preparan-un-cara-a-cara-en-nueva-york-mientras-milei-pondra-el-foco-en-malvinas-en-la-onu-2151/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Milei reúne al Gabinete y vuelve a verse con Bullrich tras las polémicas por discapacidad y el video de Lali",
+        "u": "https://www.cronica.com.ar/politica/milei-reune-al-gabinete-y-vuelve-a-verse-con-bullrich-tras-las-polemicas-por-discapacidad-y-el-video-de-lali/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Video: ¿Un OVNI sobrevoló Buenos Aires durante el apagón masivo en AMBA?",
+        "u": "https://www.cronica.com.ar/paranormal/video-un-ovni-sobrevolo-buenos-aires-durante-el-apagon-masivo-en-amba/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Día del Jubilado: volver a trabajar después de los 65, la triste solución de los mayores para sobrevivir a la motosierra",
+        "u": "https://www.cronica.com.ar/sociedad/dia-del-jubilado-volver-a-trabajar-despues-de-los-65-la-triste-solucion-de-los-mayores-para-sobrevivir-a-la-motosierra/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Juana Viale rompió el silencio tras la nueva internación de Mirtha Legrand: \"La abuela...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/farandula/juana-viale-rompio-el-silencio-sobre-mirtha-legrand-tras-su-nueva-internacion-la-abuela/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Copa Davis: Arda Azkara y Yanki Erel dieron el batacazo en dobles y estiraron la serie ante Argentina.",
+        "u": "https://www.cronica.com.ar/depo/tenis/argentina-turquia-copa-davis-en-vivo-minuto-a-minuto/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Una mujer se tiró a nadar al Lago Lácar y murió tras sufrir una descompensación",
+        "u": "https://www.cronica.com.ar/policiales/una-mujer-se-tiro-a-nadar-al-lago-lacar-y-murio-tras-sufrir-una-descompensacion/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La ganadora de Gran Hermano reveló cómo reaccionó su hija al enterarse de que su papá era gay",
+        "u": "https://www.cronica.com.ar/diarioshow/farandula/ph-podemos-hablar-sol-abraham-revelo-como-reacciono-su-hija-al-enterarse-de-que-su-papa-era-gay/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La espectacular remontada de Marco Morelli en Moto3: largó 23º y terminó octavo en Austria",
+        "u": "https://www.cronica.com.ar/depo/polideportivo/marco-morelli-moto3-gp-austria-remontada/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Arranca el debate sobre morosidad y la oposición va a la carga con otros problemas",
+        "u": "https://www.cronica.com.ar/politica/arranca-el-debate-en-comisiones-sobre-morosidad-y-la-oposicion-va-a-la-carga-con-otros-problemas/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Gol del Atlético de Madrid vs. Real Madrid: David anota el 2 a 0",
+        "u": "https://www.cronica.com.ar/depo/laliga/atletico-de-madrid-real-madrid-clasico-en-vivo-por-laliga-de-espana-segui-el-minuto-a-minuto/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "A qué hora corre Colapinto en el GP de Azerbaiyán: horarios y VIVO",
+        "u": "https://www.cronica.com.ar/depo/polideportivo/franco-colapinto-gp-azerbaiyan-f1-2026-horarios-donde-ver-en-vivo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¡No te pierdas Crónica TV en vivo!",
+        "u": "https://www.cronica.com.ar/cronicahd/no-te-pierdas-cronica-tv-en-vivo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Escándalo en Brasil: Lula denunció \"fiestas y orgías\" con jueces del Tribunal Supremo",
+        "u": "https://www.cronica.com.ar/mundo/escandalo-en-brasil-lula-denuncio-fiestas-y-orgias-con-jueces-del-tribunal-supremo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Ucrania lanzó un ataque masivo con más de 1000 drones contra Rusia en medio de las elecciones",
+        "u": "https://www.cronica.com.ar/mundo/ucrania-lanzo-un-ataque-masivo-con-mas-de-1000-drones-contra-rusia-en-medio-de-las-elecciones-9986/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "San Lorenzo vs. Boca, por el Torneo Clausura 2026 de la Liga Profesional: hora, formaciones y cómo verlo en vivo",
+        "u": "https://www.cronica.com.ar/depo/ligaprofesional/san-lorenzo-boca-en-vivo-clasico-caliente-minuto-a-minuto-torneo-apertura-2026-liga-profesional/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Tras el apagón masivo en el AMBA, se restableció el servicio eléctrico",
+        "u": "https://www.cronica.com.ar/sociedad/tras-el-apagon-masivo-en-el-amba-se-restablecio-el-servicio-electrico-1554/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Bethwel Kibet Chumba ganó el Maratón de Buenos Aires 2026: Ignacio Erario fue el mejor argentino",
+        "u": "https://www.cronica.com.ar/depo/polideportivo/bethwel-kibet-chumba-gano-el-maraton-de-buenos-aires-2026-ignacio-erario-fue-el-mejor-argentino/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Hallaron muerta a una mujer con cáncer y la autopsia reveló un escabroso femicidio: la familia acusó a la pareja",
+        "u": "https://www.cronica.com.ar/policiales/dijo-que-habia-encontrado-muerta-a-su-pareja-con-cancer-pero-la-autopsia-revelo-un-escabroso-femicidio/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Saborido y la \"interna\" de las IA: \"ChatGPT y Claude hablaron muy mal de Gemini, se están peronizando\"",
+        "u": "https://www.cronica.com.ar/cronicahd/saborido-y-la-interna-de-las-ia-chatgpt-y-claude-hablaron-muy-mal-de-gemini-se-estan-peronizando/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Ponzio habló tras la derrota de River y confirmó qué hará el equipo durante el parate",
+        "u": "https://www.cronica.com.ar/depo/actualidad/ponzio-hablo-tras-la-derrota-de-river-y-confirmo-que-hara-el-equipo-durante-el-parate-4635/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Descubrieron el planeta más joven conocido y dos científicos argentinos participaron del histórico hallazgo",
+        "u": "https://www.cronica.com.ar/sociedad/descubrieron-el-planeta-mas-joven-conocido-y-un-cientifico-argentino-participo-del-historico-hallazgo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Cómo se formó el Reino Unido y cuán cerca está su disolución",
+        "u": "https://www.cronica.com.ar/internacionales/como-se-formo-el-reino-unido-y-cuan-cerca-esta-su-disolucion/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "TE PUEDE INTERESAR",
+        "u": "https://www.cronica.com.ar"
+      },
+      {
         "s": "cronista",
         "n": "El Cronista Comercial",
         "t": "Cambios. Entra en vigor el nuevo Formulario I-485 en Estados Unidos para solicitar residencia permanente o ajuste de estatus legal",
@@ -14722,6 +15371,156 @@
         "n": "El Cronista Comercial",
         "t": "Cambios. WhatsApp deja de ser gratis: a partir del mes de octubre van a cobrar por mensaje individual a cada uno de los usuarios de Bussiness API",
         "u": "https://www.cronista.com/usa/pc-y-mobile/whatsapp-deja-de-ser-gratis-a-partir-del-mes-de-octubre-van-a-cobrar-por-mensaje-individual-a-cada-uno-de-estos-usuarios/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Cambios. Entra en vigor el nuevo Formulario I-485 en Estados Unidos para solicitar residencia permanente o ajuste de estatus legal",
+        "u": "https://www.cronista.com/usa/inmigracion/entra-en-vigor-el-nuevo-formulario-i-485-en-estados-unidos-para-solicitar-residencia-permanente-o-ajuste-de-estatus-legal/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámites. Se congelan los alquileres en Nueva York: Mamdani confirma un 0% de ajustes permitidos a partir de octubre 2026",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/se-congelan-los-alquileres-en-nueva-york-mamdani-confirma-un-0-de-ajustes-permitidos-a-partir-de-octubre-2026/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Fallo. Trump avanza con el cierre del Kennedy Center mientras continúa la disputa ante la Justicia: qué ocurrió y cuánto tiempo podría permanecer cerrado",
+        "u": "https://www.cronista.com/usa/trending/trump-avanza-con-el-cierre-del-kennedy-center-mientras-continua-la-disputa-ante-la-justicia-que-ocurrio-y-cuanto-tiempo-podria-permanecer-cerrado/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Hallazgo. La NASA descubre que un asteroide o cometa impactó en la Luna: científicos afirman que el cráter detectado es producto de un evento único en el siglo",
+        "u": "https://www.cronista.com/usa/ciencia-salud/la-nasa-descubre-que-un-asteroide-o-cometa-impacto-en-la-luna-cientificos-afirman-que-el-crater-detectado-es-producto-de-un-evento-unico-en-el-siglo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Avance militar. Estados Unidos despliega armas en el espacio y advierten que tropas estadounidenses podrían combatir alrededor de la Luna",
+        "u": "https://www.cronista.com/usa/trending/estados-unidos-despliega-armas-en-el-espacio-y-advierten-que-tropas-estadounidenses-podrian-combatir-alrededor-de-la-luna/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Inversión. Construyen un río artificial en América Latina: tendrá un recorrido de 145 km y proyectan que estará terminado para junio de 2027",
+        "u": "https://www.cronista.com/usa/trending/construyen-un-rio-artificial-en-america-latina-tendra-un-recorrido-de-145-km-y-proyectan-que-estara-terminado-para-junio-de-2027/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trucos caseros. Rociar vinagre blanco en la base del inodoro una vez por semana: para qué sirve y cómo usarlo de forma segura",
+        "u": "https://www.cronista.com/usa/lifestyle/rociar-vinagre-blanco-en-la-base-del-inodoro-una-vez-por-semana-para-que-sirve-y-como-usarlo-de-forma-segura/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Documento. El Gobierno cancelará las licencias de conducir comerciales para no domiciliados de quienes no puedan acreditar estatus migratorio legal",
+        "u": "https://www.cronista.com/usa/trending/el-gobierno-cancelara-las-licencias-de-conducir-comerciales-para-no-domiciliados-de-quienes-no-puedan-acreditar-estatus-migratorio-legal/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Atención. El Gobierno embarga los bienes, vehículos y cuentas bancarias de todos los ciudadanos y extranjeros que no respondieron al Aviso Final de Intención de Embargo",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/el-gobierno-embarga-los-bienes-vehiculos-y-cuentas-bancarias-de-todos-los-ciudadanos-y-extranjeros-que-no-respondieron-al-aviso-final-de-intencion-de-embargo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medida. El IRS depositará reembolsos de hasta 1,700 dólares por hijo en las cuentas bancarias de todas las personas que obtengan el Formulario 1040 y completen los requisitos del CTC",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/el-irs-depositara-reembolsos-de-hasta-1700-dolares-por-hijo-en-las-cuentas-bancarias-de-todas-las-personas-que-obtengan-el-formulario-1040-y-completen-los-requisitos-del-ctc/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Documentos. Estados Unidos prohíbe el ingreso y egreso al país de los mexicanos que no puedan renovar el pasaporte por deber manutención infantil",
+        "u": "https://www.cronista.com/usa/inmigracion/estados-unidos-prohibe-el-ingreso-y-egreso-al-pais-de-los-mexicanos-que-no-puedan-renovar-el-pasaporte-por-deber-manutencion-infantil/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Pronóstico. Fuertes lluvias llegan a Nueva York, Pensilvania y Nueva Jersey este domingo 20 de septiembre: hay riesgo de inundaciones",
+        "u": "https://www.cronista.com/usa/trending/fuertes-lluvias-llegan-a-nueva-york-pensilvania-y-nueva-jersey-este-domingo-20-de-septiembre-hay-riesgo-de-inundaciones/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medida. La nueva norma para solicitar Residencia Permanente en Estados Unidos que ya entró en vigor: de qué se trata y a qué solicitantes afectará",
+        "u": "https://www.cronista.com/usa/inmigracion/la-nueva-norma-para-solicitar-residencia-permanente-en-estados-unidos-que-ya-entro-en-vigor-de-que-se-trata-y-a-que-solicitantes-afectara/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Finanzas y Economía",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Castigos financieros. Oficial | IRS multará con el 20% de lo no declarado más intereses diarios a los contribuyentes que hayan demorado su respuesta al Aviso CP2000",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-irs-multara-con-el-20-de-lo-no-declarado-mas-intereses-diarios-a-los-contribuyentes-que-hayan-demorado-su-respuesta-al-aviso-cp2000/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medida. Se congelan los alquileres en Nueva York: Mamdani confirma un 0% de ajustes permitidos a partir de octubre 2026",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/se-congelan-los-alquileres-en-nueva-york-mamdani-confirma-un-0-de-ajustes-permitidos-a-partir-de-octubre-2026/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Atención. IRS puede embargar los bienes y cuentas bancarias de todos los ciudadanos y extranjeros que hayan atrasado este trámite y no respondieron al Aviso Final de Intención de Embargo",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/irs-puede-embargar-los-bienes-y-cuentas-bancarias-de-todos-los-ciudadanos-y-extranjeros-que-hayan-atrasado-este-tramite-y-no-respondieron-al-aviso-final-de-intencion-de-embargo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Dinero. Oficial | El Gobierno de EE.UU. deposita dinero todos los meses en la cuenta de las familias que califiquen para el TANF: quiénes pueden pedirlo",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-el-gobierno-de-eeuu-deposita-dinero-todos-los-meses-en-la-cuenta-de-las-familias-que-califiquen-para-el-tanf-quienes-pueden-pedirlo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Salud. Oficial | Los beneficiarios de Medicaid deben renovar su elegibilidad para mantener la cobertura médica",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-los-beneficiarios-de-medicaid-deben-renovar-su-elegibilidad-para-mantener-la-cobertura-medica/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "SSA. Oficial | Los jubilados que reciben el Seguro Social desde el exterior deberán informar cambios y actualizaciones en su información para evitar la suspensión de sus pagos",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-los-jubilados-que-reciben-el-seguro-social-desde-el-exterior-deberan-informar-cambios-y-actualizaciones-en-su-informacion-para-evitar-la-suspension-de-sus-pagos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medidas. Es oficial: Estados Unidos deportará a todos los inmigrantes con Green Card que no hagan esto y deberán abandonar el país",
+        "u": "https://www.cronista.com/usa/inmigracion/es-oficial-estados-unidos-deportara-a-todos-los-inmigrantes-con-green-card-que-no-hagan-esto-y-deberan-abandonar-el-pais/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medida. Oficial | Estados Unidos revocará las residencias permanentes de todas las personas que viajen al exterior y no cumplan estas normas migratorias",
+        "u": "https://www.cronista.com/usa/inmigracion/oficial-estados-unidos-revocara-las-residencias-permanentes-de-todas-las-personas-que-viajen-al-exterior-y-no-cumplan-estas-normas-migratorias/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 series de Amazon Prime más vistas este 29 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-series-de-amazon-prime-mas-vistas-este-29-de-julio/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 películas de HBO más vistas este 26 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-peliculas-de-hbo-mas-vistas-este-26-de-julio/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué mirar?. Acción, amor y suspenso: las 10 películas de Disney+ más vistas este 26 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-peliculas-de-disney-mas-vistas-este-26-de-julio/"
       },
       {
         "s": "eldestape",
@@ -14874,6 +15673,156 @@
         "u": "https://www.eldestapeweb.com/perfil/sofia-solari-arena"
       },
       {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Destape - Sigamos Haciendo Historia",
+        "u": "https://www.eldestapeweb.com"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "La trama detrás de la impunidad en Comodoro Caputo",
+        "u": "https://www.eldestapeweb.com/politica/trama-detras-impunidad-comodoro-caputo-2026919203056"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los maestros del error",
+        "u": "https://www.eldestapeweb.com/economia/milei-realidad-arruina-pronosticos-city-20269200556"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Con Milei, la realidad arruina los pronósticos de la city",
+        "u": "https://www.eldestapeweb.com/economia/milei-realidad-arruina-pronosticos-city-20269200556"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Milei atrapado: el loop de la recesión con un único culpable",
+        "u": "https://www.eldestapeweb.com/politica/milei-atrapado-loop-recesion-unico-culpable-20269200556"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Kicillof se mostró como candidato en un encuentro masivo con militantes de todo el país",
+        "u": "https://www.eldestapeweb.com/politica/kicillof-mostro-candidato-encuentro-masivo-militantes-todo-pais-20269200557"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Fernando Cibeira",
+        "u": "https://www.eldestapeweb.com/perfil/fernando-cibeira"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "La Argentina de Milei, final de juego",
+        "u": "https://www.eldestapeweb.com/opinion/argentina-milei-final-juego-20269200557"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Claudio Scaletta",
+        "u": "https://www.eldestapeweb.com/perfil/claudio-scaletta"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Kicillof aludió a una virtual candidatura en un masivo acto federal: \"Cuenten conmigo”",
+        "u": "https://www.eldestapeweb.com/politica/kicillof-aludio-virtual-candidatura-masivo-acto-federal-cuenten-conmigo-2026919193816"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Patear el tablero sin romper: enojo de Bullrich, reaparición de Macri y rosca bonaerense",
+        "u": "https://www.eldestapeweb.com/politica/patear-tablero-romper-enojo-bullrich-reaparicion-macri-rosca-bonaerense-2026919193410"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El modelo changa de Milei: más de 800 mil personas sumadas a la precariedad",
+        "u": "https://www.eldestapeweb.com/economia/modelo-changa-milei-numeros-exponen-impacto-plan-economico-milei-trabajo-2026919142649"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Sebastián Premici",
+        "u": "https://www.eldestapeweb.com/perfil/sebastian-premici"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Brotes verde oliva: Milei empodera a Fuerzas Armadas minadas por escándalos",
+        "u": "https://www.eldestapeweb.com/politica/brotes-verde-oliva-milei-empodera-fuerzas-armadas-minadas-escandalos-corrupcion-2026919104547"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Elecciones en Brasil",
+        "u": "https://www.eldestapeweb.com/internacionales/continente-mundo-alertas-elecciones-brasil-2026919181429"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El continente y el mundo alertas por las elecciones en Brasil",
+        "u": "https://www.eldestapeweb.com/internacionales/continente-mundo-alertas-elecciones-brasil-2026919181429"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Guerra Rusia Ucrania",
+        "u": "https://www.eldestapeweb.com/internacionales/ucrania-lanzo-masivo-ataque-rusia-4-muertos-refineria-llamas-202692010229"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Ucrania lanzó un masivo ataque sobre Rusia: 4 muertos y una refinería en llamas",
+        "u": "https://www.eldestapeweb.com/internacionales/ucrania-lanzo-masivo-ataque-rusia-4-muertos-refineria-llamas-202692010229"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "En la Ciudad más rica del país, el 72% de las familias pobres se endeudan para comer",
+        "u": "https://www.eldestapeweb.com/politica/ciudad-rica-pais-72-familias-barrios-populares-endeuda-comer-2026919145750"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Selección Argentina",
+        "u": "https://www.eldestapeweb.com/deportes/boca-river-estudiantes-convocados-scaloni-futbol-local-seleccion-argentina-202691915526"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Scaloni dio a conocer los convocados del fútbol local para los amistosos de Argentina",
+        "u": "https://www.eldestapeweb.com/deportes/boca-river-estudiantes-convocados-scaloni-futbol-local-seleccion-argentina-202691915526"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los precios de las entradas para ver a la Selección en la despedida de Messi",
+        "u": "https://www.eldestapeweb.com/deportes/seleccion-argentina-afa-oficializo-precios-entradas-despedida-messi-2026919144528"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Massa encabezó un encuentro con jóvenes del Frente Renovador",
+        "u": "https://www.eldestapeweb.com/politica/massa-encabezo-encuentro-jovenes-frente-renovador-2026919193319"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Seguimiento Minuto A Minuto",
+        "u": "https://www.eldestapeweb.com/politica/milei-vuelve-estados-unidos-crece-tension-discurso-onu-202692093354"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Milei vuelve a Estados Unidos y crece la tensión por su discurso en ONU",
+        "u": "https://www.eldestapeweb.com/politica/milei-vuelve-estados-unidos-crece-tension-discurso-onu-202692093354"
+      },
+      {
         "s": "infobae",
         "n": "Infobae",
         "t": "América vs Chivas EN VIVO: Las Águilas empatan 2-2 el Clásico Nacional",
@@ -15022,6 +15971,156 @@
         "n": "Infobae",
         "t": "Cortes y desvíos por la Maratón de Buenos Aires: cierran accesos a la autopista Illia y avenidas clave",
         "u": "https://www.infobae.com/tendencias/2026/09/20/cortes-y-desvios-por-la-maraton-de-buenos-aires-cierran-accesos-a-la-autopista-illia-y-avenidas-clave/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "“Ni cinco dólares”: la queja de los abogados de Nick Reiner sobre el fideicomiso familiar",
+        "u": "https://www.infobae.com/entretenimiento/2026/09/20/ni-cinco-dolares-la-queja-de-los-abogados-de-nick-reiner-sobre-el-fideicomiso-familiar/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Atlético de Madrid - Real Madrid, en directo: el VAR decanta el partido y el Atlético de Madrid se adelanta en el encuentro",
+        "u": "https://www.infobae.com/espana/deportes/2026/09/20/atletico-de-madrid-real-madrid-en-directo-mourinho-busca-conquistar-el-metropolitano-en-su-reestreno-en-los-derbis/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La revelación de Andy Carroll sobre Wayne Rooney en las concentraciones de Inglaterra y la respuesta del exgoleador",
+        "u": "https://www.infobae.com/deportes/2026/09/20/la-revelacion-de-andy-carroll-sobre-wayne-rooney-en-las-concentraciones-de-inglaterra-y-la-respuesta-del-exgoleador/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Cómo instalar en casa Starlink, el internet satelital de Elon Musk",
+        "u": "https://www.infobae.com/tecno/2026/09/20/como-instalar-en-casa-starlink-el-internet-satelital-de-elon-musk/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Una persona murió en un choque  entre un taxi y una camioneta en el norte de Bogotá: uno de los vehículos colisionó contra una vivienda",
+        "u": "https://www.infobae.com/colombia/2026/09/20/una-persona-murio-en-un-choque-entre-un-taxi-y-una-camioneta-en-el-norte-de-bogota-uno-de-los-vehiculos-colisiono-contra-una-vivienda/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Una cuadrilla malagueña gana 'la Champions League de la albañilería'",
+        "u": "https://www.infobae.com/espana/agencias/2026/09/20/una-cuadrilla-malaguena-gana-la-champions-league-de-la-albanileria/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Los Javis con 'La bola negra': \"Tenemos una necesidad de validación profunda\"",
+        "u": "https://www.infobae.com/america/agencias/2026/09/20/los-javis-con-la-bola-negra-tenemos-una-necesidad-de-validacion-profunda/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Un Merz bajo fuerte presión llega a la sede de su partido para esperar los resultados",
+        "u": "https://www.infobae.com/america/agencias/2026/09/20/un-merz-bajo-fuerte-presion-llega-a-la-sede-de-su-partido-para-esperar-los-resultados/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Participación en legislativas rusas llega a casi 55 % a tres horas del cierre de colegios",
+        "u": "https://www.infobae.com/america/agencias/2026/09/20/participacion-en-legislativas-rusas-llega-a-casi-55-a-tres-horas-del-cierre-de-colegios/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Prepárase antes de salir: Este es el pronóstico del clima en Punta del Este este domingo 20 de septiembre",
+        "u": "https://www.infobae.com/noticias/2026/09/20/preparase-antes-de-salir-este-es-el-pronostico-del-clima-en-punta-del-este-este-domingo-20-de-septiembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "0-0. El Leeds sigue invicto y el Crystal Palace, sin arrancar",
+        "u": "https://www.infobae.com/espana/agencias/2026/09/20/0-0-el-leeds-sigue-invicto-y-el-crystal-palace-sin-arrancar/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Sorteo 4 de la Triplex de la Once: comprueba los resultados de hoy",
+        "u": "https://www.infobae.com/espana/2026/09/20/sorteo-4-de-la-triplex-de-la-once-comprueba-los-resultados-de-hoy/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "0-1. El Rangers asalta Celtic Park y el Old Firm",
+        "u": "https://www.infobae.com/espana/agencias/2026/09/20/0-1-el-rangers-asalta-celtic-park-y-el-old-firm/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Investigan la muerte por envenenamiento de diez leones en Tanzania",
+        "u": "https://www.infobae.com/america/agencias/2026/09/20/investigan-la-muerte-por-envenenamiento-de-diez-leones-en-tanzania/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "2-0. Nico Paz no basta ante un Frosinone que doblega al Como",
+        "u": "https://www.infobae.com/america/agencias/2026/09/20/2-0-nico-paz-no-basta-ante-un-frosinone-que-doblega-al-como/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Temblor hoy en México: más de 2 mil 600 réplicas de sismo registrado en Chiapas",
+        "u": "https://www.infobae.com/mexico/2026/09/20/temblor-hoy-en-mexico-noticias-actividad-sismica-20-de-septiembre-de-2026/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Juegos Suramericanos 2026: El medallero y las competencias de los colombianos hoy, 20 de septiembre",
+        "u": "https://www.infobae.com/colombia/deportes/2026/09/20/juegos-suramericanos-2026-asi-va-colombia-en-el-medallero-y-las-posibles-medallas-de-hoy-20-de-septiembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Ataque contra Engerberth Tapia: las hipótesis detrás de la balacera que dejó a su hijo en UCI en el Callao",
+        "u": "https://www.infobae.com/peru/2026/09/20/ataque-contra-engerberth-tapia-las-hipotesis-detras-de-la-balacera-que-dejo-a-su-hijo-en-uci-en-el-callao/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Cancillería cubana dice que Costa Rica rompió vínculos sin notificar a La Habana",
+        "u": "https://www.infobae.com/cuba/2026/09/20/cancilleria-cubana-dice-que-costa-rica-rompio-vinculos-sin-notificar-a-la-habana/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Se reporta fuerte explosión en bodega del comando de Policía de Antioquia: autoridades investigan las causas",
+        "u": "https://www.infobae.com/colombia/2026/09/20/se-reporta-fuerte-explosion-en-bodega-del-comando-de-policia-de-antioquia-autoridades-investigan-las-causas/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La maniobra secreta del régimen chino para evitar un mayor aumento del petróleo en plena guerra en Medio Oriente",
+        "u": "https://www.infobae.com/america/america-latina/2026/09/20/la-maniobra-secreta-del-regimen-chino-para-evitar-un-mayor-aumento-del-petroleo-en-plena-guerra-en-medio-oriente/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Guatemala, 17 años sin ley de ciberseguridad: AmCham alerta sobre ataques invisibles, robo de datos e incertidumbre para nuevas inversiones",
+        "u": "https://www.infobae.com/guatemala/2026/09/20/guatemala-17-anos-sin-ley-de-ciberseguridad-amcham-alerta-sobre-ataques-invisibles-robo-de-datos-e-incertidumbre-para-nuevas-inversiones/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Panamá crea un equipo para garantizar atención a mujeres en riesgo las 24 horas",
+        "u": "https://www.infobae.com/panama/2026/09/20/panama-crea-un-equipo-para-garantizar-atencion-a-mujeres-en-riesgo-las-24-horas/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "República Dominicana: piden 18 meses de prisión para 25 imputados por desviar más de 40 millones de pesos del Seguro de Salud",
+        "u": "https://www.infobae.com/republica-dominicana/2026/09/20/republica-dominicana-piden-18-meses-de-prision-para-25-imputados-por-desviar-mas-de-40-millones-de-pesos-del-seguro-de-salud/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Copa Davis: el dobles de Argentina perdió el primer set ante Turquía",
+        "u": "https://www.infobae.com/deportes/2026/09/20/copa-davis-el-dobles-ira-por-el-punto-que-le-falta-a-argentina-contra-turquia-para-la-clasificacion-a-los-qualifiers-2027/"
       },
       {
         "s": "lanacion",
@@ -15174,6 +16273,156 @@
         "u": "https://www.lanacion.com.ar/economia/pablo-pereyra-presidente-de-la-sociedad-argentina-de-garantias-reciprocas-con-un-aval-una-pyme-puede-nid20092026/"
       },
       {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Atlético de Madrid vs. Real Madrid, en vivo",
+        "u": "https://www.lanacion.com.ar/deportes/futbol/atletico-de-madrid-vs-real-madrid-en-vivo-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Dolores Fonzi y Mercedes Morán exhibieron tapados con un mensaje por Malvinas en el Festival de San Sebastián",
+        "u": "https://www.lanacion.com.ar/espectaculos/dolores-fonzi-y-mercedes-moran-exhibieron-tapados-con-un-mensaje-por-malvinas-en-el-festival-de-san-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Sin romper con el Gobierno, Bullrich hace valer su peso en las encuestas y pone a prueba la paciencia de los Milei",
+        "u": "https://www.lanacion.com.ar/politica/sin-romper-con-el-gobierno-bullrich-hace-valer-su-peso-en-las-encuestas-y-pone-a-prueba-la-paciencia-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "ICE en aeropuertos: tiene 19 años y el EAD válido, pero fue detenido antes de abordar un avión en Estados Unidos",
+        "u": "https://www.lanacion.com.ar/estados-unidos/migraciones/arrestos-en-aeropuertos-tenia-un-ead-valido-pero-aun-asi-el-ice-lo-detuvo-antes-de-abordar-el-avion-nid19092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Un jugador inglés fue atropellado por una aplanadora de pasto en plena cancha",
+        "u": "https://www.lanacion.com.ar/deportes/un-jugador-ingles-fue-atropellado-por-una-aplanadora-de-pasto-en-plena-cancha-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El keniata Bethwel Kibet Chumba ganó la Maratón de Buenos Aires",
+        "u": "https://www.lanacion.com.ar/deportes/atletismo/la-maraton-de-buenos-aires-en-vivo-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Es oficial: Don Francisco confirma su regreso desde el mismo estudio de Sábado Gigante y se estrena en octubre 2026",
+        "u": "https://www.lanacion.com.ar/estados-unidos/famosos/don-francisco-vuelve-a-univision-11-anos-despues-del-final-de-sabado-gigante-y-se-estrena-en-octubre-nid18092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Masivo corte de luz en el AMBA: hubo más de 600.000 usuarios sin servicio",
+        "u": "https://www.lanacion.com.ar/sociedad/masivo-apagon-en-la-ciudad-de-buenos-aires-miles-de-usuarios-sin-luz-nid19092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Enzo Fernández metió un golazo de tiro libre para el Manchester City ante el Sunderland",
+        "u": "https://www.lanacion.com.ar/deportes/enzo-fernandez-metio-un-golazo-de-tiro-libre-para-el-manchester-city-ante-el-sunderland-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El medallero de los Juegos Suramericanos Santa Fe 2026",
+        "u": "https://www.lanacion.com.ar/deportes/el-medallero-de-los-juegos-suramericanos-santa-fe-2026-nid16092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Oficial desde hoy: cambian los requisitos para obtener la licencia de conducir en Texas y piden nuevos formularios a migrantes",
+        "u": "https://www.lanacion.com.ar/estados-unidos/texas/oficial-desde-hoy-cambian-los-requisitos-para-obtener-la-licencia-de-conducir-en-texas-y-piden-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Una mujer cumplió 107 años y reveló el secreto de la longevidad: “Quizás sea amar al prójimo”",
+        "u": "https://www.lanacion.com.ar/lifestyle/una-mujer-cumplio-107-anos-y-revelo-el-secreto-de-la-longevidad-quizas-sea-amar-al-projimo-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Cinco años de investigación: el campo que marcó un antes y un después con la carne y abrió una nueva era",
+        "u": "https://www.lanacion.com.ar/economia/campo/cinco-anos-de-investigacion-el-campo-que-marco-un-antes-y-un-despues-con-la-carne-y-abrio-una-nueva-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Mauricio Couly, campeón mundial con un queso: “Tener una medalla de Oro es un gran logro”",
+        "u": "https://www.lanacion.com.ar/economia/campo/mauricio-couly-campeon-mundial-con-un-queso-tener-una-medalla-de-oro-es-un-gran-logro-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Biocombustibles: ¿por qué Estados Unidos y Brasil son un éxito y qué tiene para aprender la Argentina?",
+        "u": "https://www.lanacion.com.ar/economia/campo/biocombustibles-por-que-estados-unidos-y-brasil-son-un-exito-y-que-tiene-para-aprender-la-argentina-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Oficial y confirmado en Nueva York: el 1° de octubre entra en vigor el congelamiento de alquileres de Mamdani",
+        "u": "https://www.lanacion.com.ar/estados-unidos/nueva-york/oficial-y-confirmado-en-nueva-york-el-1-de-octubre-se-activa-el-congelamiento-de-alquileres-de-nid18092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Es oficial: Ron DeSantis confirma que Florida pagará un bono de US$5000 para trabajadores que cumplan los requisitos",
+        "u": "https://www.lanacion.com.ar/estados-unidos/florida/ron-desantis-confirma-que-florida-pagara-un-bono-de-us5000-para-nuevos-trabajadores-nid18092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Cuál es la frase exacta para que la IA resuma cualquier contrato o documento legal",
+        "u": "https://www.lanacion.com.ar/tecnologia/cual-es-la-frase-exacta-para-que-la-ia-resuma-cualquier-contrato-o-documento-legal-nid16092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Meloni anunció que prohibirá el burka y el niqab en las escuelas y limitará la cantidad de extranjeros por aula",
+        "u": "https://www.lanacion.com.ar/el-mundo/meloni-anuncio-que-prohibira-el-burka-y-el-niqab-en-las-escuelas-y-que-limitara-la-cantidad-de-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Tortas fritas criollas",
+        "u": "https://www.lanacion.com.ar/recetas/dulces/tortas-fritas-criollas-nid07042014/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Elecciones 2026: cómo el voto latino en Texas complica Greg Abbott y da esperanzas a Hinojosa y sus aliados",
+        "u": "https://www.lanacion.com.ar/estados-unidos/texas/elecciones-2026-como-el-voto-latino-en-texas-complica-greg-abbott-y-da-esperanzas-a-hinojosa-y-sus-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Actualización del Uscis: la nueva regla de carga pública que rige desde este 18 de septiembre y afecta la green card",
+        "u": "https://www.lanacion.com.ar/estados-unidos/migraciones/actualizacion-del-uscis-hoy-la-nueva-regla-de-carga-publica-que-rige-desde-este-18-de-septiembre-y-nid18092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Viven en Texas y lideran una demanda contra Trump para frenar la construcción del muro fronterizo",
+        "u": "https://www.lanacion.com.ar/estados-unidos/texas/viven-en-texas-y-lideran-una-demanda-contra-trump-para-frenar-la-construccion-del-muro-fronterizo-nid18092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Cuál es el pozo del Quini 6 para el sorteo de este domingo 20 de septiembre",
+        "u": "https://www.lanacion.com.ar/loterias/cual-es-el-pozo-del-quini-6-para-el-sorteo-de-este-domingo-20-de-septiembre-nid20092026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Oficial y confirmado: más de 457 mil personas no pagarán tres meses del seguro de vida desde noviembre en EE.UU.",
+        "u": "https://www.lanacion.com.ar/estados-unidos/oficial-y-confirmado-mas-de-457-mil-personas-no-pagaran-tres-meses-del-seguro-de-vida-desde-nid20092026/"
+      },
+      {
         "s": "pagina12",
         "n": "Página/12",
         "t": "La vendetta de Don Chatarrín",
@@ -15208,6 +16457,60 @@
         "n": "Página/12",
         "t": "Panorama informativo",
         "u": "https://www.pagina12.com.ar/am750/programa/panorama-informativo"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Ciclo de Podcast de Página|12",
+        "u": "https://www.pagina12.com.ar"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Cultura y Espectáculos",
+        "u": "https://www.pagina12.com.ar"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Milei avanza con un blindaje para la SIDE y los jefes militares",
+        "u": "https://www.pagina12.com.ar/2026/09/19/milei-avanza-con-un-blindaje-para-la-side-y-los-jefes-militares/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "La vendetta de Don Chatarrín",
+        "u": "https://www.pagina12.com.ar/2026/09/20/techint-busca-otro-milei-y-expone-la-crisis-sin-retorno-del-plan/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Polémica por la Marcha del Orgullo y la visita del Papa",
+        "u": "https://www.pagina12.com.ar/2026/09/19/polemica-por-la-marcha-del-orgullo-y-la-visita-del-papa/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Fuego cruzado en los cuarteles: desfalco millonario y salarios por el piso",
+        "u": "https://www.pagina12.com.ar/2026/09/19/fuego-cruzado-en-los-cuarteles-desfalco-millonario-y-salarios-por-el-piso/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "El elefante en el bazar",
+        "u": "https://www.pagina12.com.ar/2026/09/19/el-elefante-en-el-bazar/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Apagón: no se saben las causas del corte que dejó sin luz a más de 600.000 hogares",
+        "u": "https://www.pagina12.com.ar/2026/09/20/apagon-no-se-saben-las-causas-del-corte-de-luz-que-afecto-a-mas-de-600000-hogares/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Valmiro Mainetti en Radio 750",
+        "u": "https://www.pagina12.com.ar/am750/programa/valmiro-mainetti-en-radio-750"
       },
       {
         "s": "pagina12",
@@ -15366,6 +16669,156 @@
         "u": "https://www.perfil.com/noticias/sociedad/una-mision-humanitaria-argentina-llevo-60toneladas-de-ayuda-por-tres-continentes.phtml"
       },
       {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "La maratón de Buenos Aires fue un éxito arrollador",
+        "u": "https://www.perfil.com/noticias/ciudad-de-buenos-aires/llega-la-maraton-de-buenos-aires-la-mas-grande-del-pais.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Un sismo de magnitud 5 sacudió Tucumán y se sintió en otras provincias del norte argentino",
+        "u": "https://www.perfil.com/noticias/sociedad/un-sismo-de-magnitud-5-sacudio-tucuman-y-se-sintio-en-otras-provincias-del-norte-argentino.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Maratón de Buenos Aires 2026: Bethwel Kibet Chumba se consagró campeón de los 42K porteños",
+        "u": "https://www.perfil.com/noticias/sociedad/maraton-de-buenos-aires-2026-nombre-del-ganador-se-consagro-campeon-de-los-42k-portenos.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Milei llevará a más de una decena de gobernadores en su visita a París",
+        "u": "https://www.perfil.com/noticias/politica/milei-llevara-a-mas-de-una-decena-de-gobernadores-en-su-visita-a-paris.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Marcela Pagano volvió a hablar de los despidos en Olivos: \"La cuenta, como siempre, la pagamos todos\"",
+        "u": "https://www.perfil.com/noticias/politica/marcela-pagano-volvio-a-hablar-de-los-despidos-en-olivos-la-cuenta-como-siempre-la-pagamos-todos.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Encuesta: se mantiene alto el rechazo al plan económico de Milei",
+        "u": "https://www.perfil.com/noticias/politica/encuesta-cada-vez-mas-gente-siente-que-su-situacion-economica-empeoro-con-milei.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Escribir contra la muerte",
+        "u": "https://www.perfil.com/noticias/cultura/escribir-contra-la-muerte.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El libro, campo minado",
+        "u": "https://www.perfil.com/noticias/cultura/el-libro-campo-minado.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Aventuras y citas literarias",
+        "u": "https://www.perfil.com/noticias/cultura/aventuras-y-citas-literarias.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "“La serie fue dura, de mucho arrojo y una emocionalidad a flor de piel”",
+        "u": "https://www.perfil.com/noticias/espectaculos/la-serie-fue-dura-de-mucho-arrojo-y-una-emocionalidad-a-flor-de-piel.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Mercedes Morán: “La familiaridad con los muertos no me costó para nada”",
+        "u": "https://www.perfil.com/noticias/espectaculos/mercedes-moran-la-familiaridad-con-los-muertos-no-me-costo-para-nada.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Benjamin, entre la huella y el aura",
+        "u": "https://www.perfil.com/noticias/cultura/benjamin-entre-la-huella-y-el-aura.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "¿Nolan traiciona a Homero?",
+        "u": "https://www.perfil.com/noticias/elobservador/nolan-traiciona-a-homero.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Cinco enseñanzas universales de IomKipur para mejorar la vida",
+        "u": "https://www.perfil.com/noticias/opinion/cinco-ensenanzas-universales-de-iomkipur-para-mejorar-la-vida.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Ataque contra Moscú: dos muertos, 338 drones derribados y una refinería petrolera incendiada",
+        "u": "https://www.perfil.com/noticias/internacional/ataque-contra-moscu-dos-muertos-338-drones-derribados-y-una-refineria-petrolera-incendiada.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Bienvenidos a la oclotiranía",
+        "u": "https://www.perfil.com/noticias/elobservador/bienvenidos-a-la-oclotirania.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Integrar sin converger",
+        "u": "https://www.perfil.com/noticias/elobservador/integrar-sin-converger.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Disputadas en las urnas, minoritarias en el poder: las mujeres en las elecciones",
+        "u": "https://www.perfil.com/noticias/elobservador/disputadas-en-las-urnas-minoritarias-en-el-poder-las-mujeres-en-las-elecciones.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "1926, Arlt, Güiraldes y el país literario",
+        "u": "https://www.perfil.com/noticias/cultura/1926-arlt-guiraldes-y-el-pais-literario.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Reflexiones frente a la Ley Penal Juvenil: sí o no",
+        "u": "https://www.perfil.com/noticias/columnistas/reflexiones-frente-a-la-ley-penal-juvenil-si-o-no.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Revolución y después",
+        "u": "https://www.perfil.com/noticias/columnistas/revolucion-y-despues.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Unas palabras",
+        "u": "https://www.perfil.com/noticias/columnistas/unas-palabras.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Las traducciones de Meleagro",
+        "u": "https://www.perfil.com/noticias/columnistas/las-traducciones-de-meleagro.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Conexión neuronal",
+        "u": "https://www.perfil.com/noticias/columnistas/conexion-neuronal.phtml"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "La política internacional ya no se articula solo entre cancillerías: las ciudades también participan",
+        "u": "https://www.perfil.com/noticias/politica/la-politica-internacional-ya-no-se-articula-solo-entre-cancillerias-las-ciudades-tambien-participan-por-fulvio-pompeo.phtml"
+      },
+      {
         "s": "tn",
         "n": "TN (Todo Noticias)",
         "t": "Frosinone vs Como 1907 en vivo por la fecha 5 de la Serie A de Italia: hora, dónde ver y formaciones",
@@ -15514,6 +16967,156 @@
         "n": "TN (Todo Noticias)",
         "t": "Hay alerta amarilla por viento zonda para este domingo 20 de septiembre en Salta: las zonas afectadas",
         "u": "https://tn.com.ar/clima/alertas/2026/09/20/hay-alerta-amarilla-por-viento-zonda-para-este-domingo-20-de-septiembre-en-salta-las-zonas-afectadas/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "En vivo - Fulham vs. Man. United: 0 - 0, por la fecha 5 de la Premier League",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/fulham-vs-man-united-en-vivo-por-la-fecha-5-de-la-premier-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Vélez vs Tigre en vivo por la fase de grupos de la Liga Profesional: hora, dónde ver y formaciones",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/velez-vs-tigre-en-vivo-por-la-fase-de-grupos-de-la-liga-profesional-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Mientras buscan bajar la tensión interna, desde el oficialismo reconocen el malestar que generaron las declaraciones de Bullrich",
+        "u": "https://tn.com.ar/politica/2026/09/20/mientras-buscan-bajar-la-tension-interna-desde-el-oficialismo-reconocen-el-malestar-que-generaron-las-declaraciones-de-bullrich/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "En vivo - Atl. Madrid vs. Real Madrid: 1 - 0, por la fecha 7 de La Liga de España",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/atl-madrid-vs-real-madrid-en-vivo-por-la-fecha-7-de-la-liga-de-espana-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "🔴 Dólar oficial hoy y dólar blue: a cuánto cotizan este domingo 20 de septiembre",
+        "u": "https://tn.com.ar/economia/2026/09/20/dolar-oficial-hoy-y-dolar-blue-a-cuanto-cotizan-este-domingo-20-de-septiembre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "En vivo - Schalke 04 vs. Elversberg: 0 - 0, por la fecha 4 de la Bundesliga de Alemania",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/schalke-04-vs-elversberg-en-vivo-por-la-fecha-4-de-la-bundesliga-de-alemania-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Alerta naranja por tormentas para este domingo 20 de septiembre en Paraná, Entre Ríos",
+        "u": "https://tn.com.ar/clima/alertas/2026/09/20/alerta-naranja-por-tormentas-para-este-domingo-20-de-septiembre-en-parana-entre-rios/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Alerta naranja por tormentas para este domingo 20 de septiembre en La Plata, Buenos Aires",
+        "u": "https://tn.com.ar/clima/alertas/2026/09/20/alerta-naranja-por-tormentas-para-este-domingo-20-de-septiembre-en-la-plata-buenos-aires/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Volkswagen presentó un eléctrico que sorprende por su eficiencia y bate récords mundiales",
+        "u": "https://tn.com.ar/autos/novedades/2026/09/20/volkswagen-presento-un-electrico-que-sorprende-por-su-eficiencia-y-bate-records-mundiales/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Manchester City le ganó a Sunderland 5 a 3 por la fecha 5 de la Premier League",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/manchester-city-vs-sunderland-en-vivo-por-la-fecha-5-de-la-premier-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Amagó el centro y la clavó al ángulo: la genialidad de Enzo Fernández para marcar su primer gol en la victoria del Mancheser City",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/amago-el-centro-y-la-clavo-al-angulo-la-genialidad-de-enzo-fernandez-para-marcar-su-primer-gol-en-el-mancheser-city/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "B. Leverkusen le ganó a RB Leipzig 2 a 0 por la fecha 4 de la Bundesliga de Alemania",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/b-leverkusen-vs-rb-leipzig-en-vivo-por-la-fecha-4-de-la-bundesliga-de-alemania-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Turquía le ganó el primer set a la Argentina en el dobles de la Copa Davis y la clasificación se hace esperar",
+        "u": "https://tn.com.ar/deportes/tenis/2026/09/20/copa-davis-el-dobles-argentino-se-enfrenta-a-turquia-en-busca-del-punto-decisivo-para-mantenerse-en-la-maxima-categoria-del-tenis/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Con Messi, Inter Miami recibe a San Diego FC por la MLS: hora, formación y TV",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/con-messi-inter-miami-recibe-a-san-diego-fc-por-la-mls-hora-formacion-y-tv/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "¡Alerta, fugitivo emplumado!",
+        "u": "https://tn.com.ar/videos/internacional/2026/09/20/alerta-fugitivo-emplumado/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Eliana Guercio recordó lo peor que le hizo a Sergio “Chiquito” Romero por celos: “Fue un papelón”",
+        "u": "https://tn.com.ar/videos/show/famosos/2026/09/20/eliana-guercio-recordo-lo-peor-que-le-hizo-a-sergio-chiquito-romero-por-celos-fue-un-papelon/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Eliana Guercio recordó lo peor que le hizo a Sergio “Chiquito” Romero por celos: “Fue un papelón”",
+        "u": "https://tn.com.ar/show/famosos/2026/09/20/eliana-guercio-recordo-lo-peor-que-le-hizo-a-sergio-chiquito-romero-por-celos-fue-un-papelon/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Parma le ganó a Genoa 2 a 1 por la fecha 5 de la Serie A de Italia",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/parma-vs-genoa-en-vivo-por-la-fecha-5-de-la-serie-a-de-italia-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Fiorentina empató con Napoli 1 a 1 por la fecha 5 de la Serie A de Italia",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/fiorentina-vs-napoli-en-vivo-por-la-fecha-5-de-la-serie-a-de-italia-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Video: un futbolista fue atropellado por una aplanadora de césped mientras hacía la entrada en calor",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/video-un-futbolista-fue-atropellado-por-una-aplanadora-de-cesped-mientras-hacia-la-entrada-en-calor/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Renault estaría preparando un nuevo Arkana: sería híbrido enchufable y producido en Brasil",
+        "u": "https://tn.com.ar/autos/novedades/2026/09/20/renault-estaria-preparando-un-nuevo-arkana-tendria-sistema-hibrido-enchufable-y-produccion-en-brasil/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Un conductor chocó contra tres autos estacionados y terminó arriba de la vereda en Palermo",
+        "u": "https://tn.com.ar/sociedad/2026/09/20/un-conductor-choco-contra-tres-autos-estacionados-y-termino-arriba-de-la-vereda-en-palermo/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Liverpool le ganó a Bournemouth 1 a 0 por la fecha 5 de la Premier League",
+        "u": "https://tn.com.ar/deportes/futbol/2026/09/20/bournemouth-vs-liverpool-en-vivo-por-la-fecha-5-de-la-premier-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Las cautivas correntinas: cuatro años de encierro, una muerte y un misterio que perdura desde la Guerra del Paraguay",
+        "u": "https://tn.com.ar/cultura/2026/09/20/las-cautivas-correntinas-cuatro-anos-de-encierro-una-muerte-y-un-misterio-que-perdura-desde-la-guerra-del-paraguay/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Se corrió la Maratón de Buenos Aires: participaron más de 16.000 atletas de 64 países",
+        "u": "https://tn.com.ar/deportes/polideportivo/2026/09/20/se-corre-la-maraton-de-buenos-aires-participan-mas-de-16000-corredores-de-64-paises/"
       }
     ],
     "2026-09-19": [
@@ -51913,22 +53516,22 @@
     },
     {
       "date": "2026-09-20",
-      "ihsa_score": -13.93,
+      "ihsa_score": -11.91,
       "ihsa_category": "Levemente Negativo / Preocupación",
-      "optimismo": -2.98,
-      "calma": -3.02,
-      "confianza": -0.83,
-      "alegria": 1.07,
-      "summary": "El Humor Social del día se ubica en -13.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.0, Calma -3.0, Confianza -0.8, Alegría +1.1.",
-      "top_trends_x": "[\"#SolAbrahamEnPH\", \"River\", \"Ponzio\", \"Beltrán\", \"Talleres\", \"Edenor\", \"Instituto\", \"#EnOffAwards\", \"Arambarri\", \"Pantoja\"]",
-      "top_trends_google": "[\"ufc\", \"instituto\", \"corte de luz\", \"river plate - huracán\", \"roma fc\", \"arsenal\", \"telefe\", \"weather tomorrow\", \"play store\", \"tottenham\"]",
-      "created_at": "2026-09-20 05:16:39",
-      "editorial_divergence": 15.6,
-      "decompression_buffer": 3.0,
-      "icb": -25.5,
-      "igi": -13.9,
-      "icps": -20.2,
-      "stress": 23.9
+      "optimismo": -3.9,
+      "calma": -1.67,
+      "confianza": -1.39,
+      "alegria": 1.94,
+      "summary": "El Humor Social del día se ubica en -11.9 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.9, Calma -1.7, Confianza -1.4, Alegría +1.9.",
+      "top_trends_x": "[\"Beltrán\", \"#SolAbrahamEnPH\", \"Ponzio\", \"River\", \"Sunderland\", \"Huracán\", \"Blondel\", \"Enzo\", \"Pereyra\", \"Andrada\"]",
+      "top_trends_google": "[\"city\", \"atletico madrid\", \"real madrid\", \"manchester city\", \"apagón eléctrico\", \"smn\", \"la nacion\", \"ufc\", \"instituto\", \"pelota\"]",
+      "created_at": "2026-09-20 15:44:32",
+      "editorial_divergence": 15.0,
+      "decompression_buffer": 4.6,
+      "icb": -26.1,
+      "igi": -18.7,
+      "icps": -8.4,
+      "stress": 19.9
     }
   ]
 }
