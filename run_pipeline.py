@@ -90,16 +90,32 @@ def run_pipeline(target_date_str: str = None) -> DailySnapshot:
     digital_analysis = analyze_digital_trends(x_trends, g_trends)
     print(f"      -> Pulso Digital (Redes): {digital_analysis['composite']:+0.1f}")
 
-    # Cálculo consolidado
+    # Recuperar snapshot anterior para cálculo de inercia psicológica (EMA)
+    from storage.db import get_previous_snapshot
+    prev_snap = get_previous_snapshot(date_str)
+    prev_score = prev_snap["ihsa_score"] if prev_snap else None
+    if prev_score is not None:
+        print(f"      -> Inercia Previa Detectada (Día Anterior): {prev_score:+.1f} pts (Factor EMA alpha={0.65})")
+
+    # Cálculo consolidado con EMA inercial
     ihsa_score, axes_avg, category_label = compute_daily_ihsa(
         source_evaluations=source_evaluations,
-        digital_scores=digital_analysis
+        digital_scores=digital_analysis,
+        previous_day_score=prev_score
     )
 
     divergence_gap, div_status = calculate_editorial_divergence(source_evaluations)
-    decomp_buffer = calculate_sports_decompression_buffer(axes_avg, source_evaluations)
+    
+    # Calcular subíndices temáticos (ICB, IGI, ICPS) para validar alerta de bolsillo
+    from engine.scoring import compute_specialized_subindices
+    subindices = compute_specialized_subindices(axes_avg, source_evaluations, divergence_gap)
+    icb_score = subindices.get("icb", 0.0)
+
+    # Amortiguador deportivo condicionado al clima de bolsillo
+    decomp_buffer = calculate_sports_decompression_buffer(axes_avg, source_evaluations, pocket_climate_score=icb_score)
     print(f"      -> Brecha Editorial (Grieta): {divergence_gap:.1f} pts ({div_status})")
-    print(f"      -> Amortiguador Deportivo Patriótico: +{decomp_buffer:.1f} pts")
+    print(f"      -> Clima de Bolsillo (ICB): {icb_score:+.1f} pts")
+    print(f"      -> Amortiguador Deportivo Patriótico: +{decomp_buffer:.1f} pts (Topado si ICB crítico)")
 
     summary_text = (
         f"El Humor Social del día se ubica en {ihsa_score:+0.1f} pts ({category_label}). "
