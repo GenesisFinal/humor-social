@@ -124,7 +124,7 @@ MEDIA_SOURCES = {
         "cover_code": "perfil",
         "weight": 0.04,
     },
-    # Medios complementarios de expansión federal y digital (Fase 3)
+    # Medios complementarios de expansión federal y digital (Fase 3 & Fase 4 Federal)
     "cadena3": {
         "name": "Cadena 3",
         "category": "federal",
@@ -132,7 +132,25 @@ MEDIA_SOURCES = {
         "rss": None,
         "web": "https://www.cadena3.com",
         "cover_code": None,
-        "weight": 0.06,
+        "weight": 0.05,
+    },
+    "lavoz": {
+        "name": "La Voz del Interior",
+        "category": "federal",
+        "type": "federal_press",
+        "rss": "https://www.lavoz.com.ar/arc/outboundfeeds/rss/?outputType=xml",
+        "web": "https://www.lavoz.com.ar",
+        "cover_code": "ar_lavoz",
+        "weight": 0.04,
+    },
+    "lacapital": {
+        "name": "La Capital (Rosario)",
+        "category": "federal",
+        "type": "federal_press",
+        "rss": "https://www.lacapital.com.ar/rss/home.xml",
+        "web": "https://www.lacapital.com.ar",
+        "cover_code": "ar_lacapital",
+        "weight": 0.04,
     },
     "c5n": {
         "name": "C5N",
@@ -141,9 +159,22 @@ MEDIA_SOURCES = {
         "rss": None,
         "web": "https://www.c5n.com",
         "cover_code": None,
-        "weight": 0.06,
+        "weight": 0.05,
     },
 }
+
+# ---------------------------------------------------------
+# PARÁMETROS METODOLÓGICOS AVANZADOS (INERCIA Y CALIBRACIÓN)
+# ---------------------------------------------------------
+# Factor alfa para la Media Móvil Exponencial (EMA): 65% pulso del día, 35% inercia acumulada
+IHSA_EMA_ALPHA = 0.65
+
+# Términos excluidos de tendencias digitales para evitar distorsiones por entretenimiento/farándula
+DIGITAL_TRENDS_EXCLUSION_TERMS = [
+    "gran hermano", "gh", "granhermano", "bake off", "masterchef", "chape", "bizarrap",
+    "wanda", "tinelli", "stream", "streamer", "streamers", "twitch", "tiktok", "tiktoker",
+    "ghvip", "eliminado", "gala", "nominados", "repechaje", "chisme", "romance", "espectaculo"
+]
 
 # ---------------------------------------------------------
 # FUENTES DE TENDENCIAS Y CONVERSACIÓN DIGITAL
