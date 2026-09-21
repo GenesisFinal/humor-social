@@ -949,7 +949,25 @@
                 <span>🏎️</span> Sports Decompression Buffer Index (Alivio Patrio)
               </span>
               <p class="text-[11px] text-slate-300 leading-relaxed">
-                Mide el desacople positivo inyectado por gestas unívocas de representación nacional (Franco Colapinto en F1, Selección Argentina). Modela matemáticamente cómo la euforia deportiva colectiva amortigua transitoriamente la percepción de malestar socioeconómico.
+                Mide el desacople positivo inyectado por gestas unívocas de representación nacional (Franco Colapinto en F1, Selección Argentina). Modela matemáticamente cómo la euforia deportiva colectiva amortigua transitoriamente la percepción de malestar socioeconómico. <em>Condicionamiento sociológico:</em> Si el Clima de Bolsillo (ICB) está en zona crítica, este amortiguador se topa automáticamente a un máximo de +5.0 pts para evitar distorsionar la subsistencia real.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-cyan-400 flex items-center gap-1.5">
+                <span>⏳</span> Inercia Psicológica y Suavizado Exponencial (EMA &alpha;=0.65)
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                El humor social colectivo posee inercia y no vira bruscamente de euforia a alarma en 24 horas salvo cataclismo. El modelo consolida el 65% del shock informativo del día con el 35% de la inercia psicológica acumulada de la jornada previa, eliminando saltos bipolares espurios.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800/80 space-y-1.5">
+              <span class="font-bold text-emerald-400 flex items-center gap-1.5">
+                <span>🗺️</span> Representación Federal Ponderada (Canasta de 14 Medios)
+              </span>
+              <p class="text-[11px] text-slate-300 leading-relaxed">
+                El índice integra el pulso del interior productivo, agropecuario e industrial sumando a <strong>Cadena 3</strong>, <strong>La Voz del Interior</strong> (Córdoba) y <strong>La Capital</strong> (Rosario/Litoral), garantizando una medición auténticamente nacional.
               </p>
             </div>
           </div>
@@ -1048,7 +1066,8 @@
 
       // Rellenar select de filtro de medios
       const mediaFilter = document.getElementById('filterMedia');
-      mediaFilter.innerHTML = '<option value="ALL">Todos los medios (12)</option>';
+      const totalCatalogSources = Object.keys(DATASET.media_catalog || {}).length || 14;
+      mediaFilter.innerHTML = `<option value="ALL">Todos los medios (${totalCatalogSources})</option>`;
       for (const [key, meta] of Object.entries(DATASET.media_catalog)) {
         const opt = document.createElement('option');
         opt.value = key;
