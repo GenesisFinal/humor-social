@@ -4,7 +4,7 @@ Cálculos matemáticos, ponderación y clasificación para el Índice de Humor S
 
 from typing import List, Dict, Tuple, Any
 from engine.models import EmotionalAxesScores, SourceSentimentScore
-from config import EMOTIONAL_AXES, MACRO_WEIGHTS, MEDIA_SOURCES
+from config import EMOTIONAL_AXES, MACRO_WEIGHTS, MEDIA_SOURCES, IHSA_EMA_ALPHA
 
 def calculate_source_composite(scores: EmotionalAxesScores) -> float:
     """
@@ -40,13 +40,16 @@ def classify_ihsa(score: float) -> str:
 
 def compute_daily_ihsa(
     source_evaluations: List[SourceSentimentScore],
-    digital_scores: Dict[str, float]
+    digital_scores: Dict[str, float],
+    previous_day_score: float = None
 ) -> Tuple[float, EmotionalAxesScores, str]:
     """
     Calcula el IHSA global consolidado ponderando:
     1. Medios de prensa general y popular (50%)
     2. Medios económicos y de bolsillo (20%)
     3. Pulso digital y redes (Google Trends + X) (30%)
+    Aplica suavizado inercial exponencial (EMA) si se proporciona el día previo:
+    IHSA = alpha * shock_diario + (1 - alpha) * IHSA_previo
     """
     if not source_evaluations:
         neutral = EmotionalAxesScores(optimismo=0.0, calma=0.0, confianza=0.0, alegria=0.0)
@@ -88,13 +91,20 @@ def compute_daily_ihsa(
     # Pulso digital consolidado (X y Google Trends)
     digital_val = digital_scores.get("composite", 0.0)
 
-    # Consolidación Macro
-    ihsa_final = (
+    # Consolidación Macro del shock del día (Raw Daily Shock)
+    ihsa_raw = (
         avg_general * MACRO_WEIGHTS["media_headlines"] +
         avg_economy * MACRO_WEIGHTS["economy_headlines"] +
         digital_val * MACRO_WEIGHTS["digital_trends"]
     )
-    ihsa_final = max(-100.0, min(100.0, round(ihsa_final, 2)))
+    ihsa_raw = max(-100.0, min(100.0, round(ihsa_raw, 2)))
+
+    # Aplicación de Suavizado Exponencial Inercial (EMA) si hay día previo registrado
+    if previous_day_score is not None:
+        ihsa_final = (IHSA_EMA_ALPHA * ihsa_raw) + ((1.0 - IHSA_EMA_ALPHA) * previous_day_score)
+        ihsa_final = max(-100.0, min(100.0, round(ihsa_final, 1)))
+    else:
+        ihsa_final = ihsa_raw
 
     # Promedio de ejes individuales
     n_sources = len(source_evaluations)
@@ -136,16 +146,23 @@ def calculate_editorial_divergence(source_evaluations: List[SourceSentimentScore
 
 def calculate_sports_decompression_buffer(
     axes_avg: EmotionalAxesScores,
-    source_evaluations: List[SourceSentimentScore]
+    source_evaluations: List[SourceSentimentScore],
+    pocket_climate_score: float = None
 ) -> float:
     """
     Calcula el Índice de Amortiguador Deportivo / Patriótico (Sports Decompression Buffer):
-    Mide cuántos puntos netos de amortiguación o alivio emocional inyectan los logros patrios
-    (ej. Colapinto en F1, Selección Argentina) respecto a la línea de base socioeconómica.
+    Mide cuántos puntos netos de amortiguación inyectan los logros patrios frente a la tensión socioeconómica.
+    Regla sociológica: Si el Clima de Bolsillo (ICB) está en zona de alarma crítica (ICB < 35 o < -15),
+    la alegría deportiva no puede eclipsar la subsistencia y su impacto se topa a un máximo de +5.0 pts.
     """
     socioeconomic_baseline = (axes_avg.optimismo + axes_avg.confianza) / 2.0
-    buffer = max(0.0, axes_avg.alegria - socioeconomic_baseline)
-    return round(float(buffer), 1)
+    raw_buffer = max(0.0, axes_avg.alegria - socioeconomic_baseline)
+    
+    # Si el bolsillo familiar está en crisis severa, topar el buffer
+    if pocket_climate_score is not None and pocket_climate_score < -15.0:
+        raw_buffer = min(5.0, raw_buffer)
+        
+    return round(float(raw_buffer), 1)
 
 def compute_specialized_subindices(
     axes_avg: EmotionalAxesScores,
@@ -176,7 +193,7 @@ def compute_specialized_subindices(
     igi = max(-100.0, min(100.0, igi))
 
     # 3. Convivencia y Paz Social (ICPS)
-    pop_scores = [e.composite_score for e in source_evaluations if e.category == "popular" or e.source_id in {"cronica", "cadena3", "tn"}]
+    pop_scores = [e.composite_score for e in source_evaluations if e.category in ("popular", "federal") or e.source_id in {"cronica", "cadena3", "lavoz", "lacapital", "tn"}]
     avg_pop = (sum(pop_scores) / len(pop_scores)) if pop_scores else (cal * 10.0)
     icps = round(0.6 * (cal * 10.0) + 0.4 * avg_pop, 1)
     icps = max(-100.0, min(100.0, icps))
