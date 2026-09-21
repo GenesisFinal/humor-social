@@ -453,22 +453,42 @@
           <!-- Dinámico -->
         </div>
 
+        <!-- EXPLICACIÓN CUALITATIVA DE CAUSAS Y TEMAS DIRECTORES DEL CAMBIO -->
+        <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i> ¿Qué Noticias y Temas Explicaron el Cambio de Clima Social?
+            </h4>
+            <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-mono border border-purple-500/30">Diagnóstico Causal de la Variación</span>
+          </div>
+
+          <div id="compareDriversAnalysis" class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <!-- Renderizado dinámico de factores causales de IHSA, ICB y Estrés -->
+          </div>
+        </div>
+
         <!-- TABLA DIFERENCIAL POR MEDIO -->
-        <div class="overflow-x-auto rounded-lg border border-slate-800">
-          <table class="w-full text-left text-xs text-slate-300">
-            <thead class="bg-slate-900/90 text-slate-400 uppercase text-[10px] tracking-wider">
-              <tr>
-                <th class="p-3">Medio</th>
-                <th class="p-3 text-center">Score Fecha A</th>
-                <th class="p-3 text-center">Score Fecha B</th>
-                <th class="p-3 text-center">Variación Neta (Δ)</th>
-                <th class="p-3">Giro de Encuadre Observado</th>
-              </tr>
-            </thead>
-            <tbody id="compareTableBody" class="divide-y divide-slate-800 font-mono text-[11px]">
-              <!-- Filas dinámicas -->
-            </tbody>
-          </table>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="layers" class="w-3.5 h-3.5 text-blue-400"></i> Comportamiento y Viraje Editorial Medio por Medio
+          </h4>
+          <div class="overflow-x-auto rounded-lg border border-slate-800">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-slate-900/90 text-slate-400 uppercase text-[10px] tracking-wider">
+                <tr>
+                  <th class="p-3">Medio</th>
+                  <th class="p-3 text-center">Score Fecha A</th>
+                  <th class="p-3 text-center">Score Fecha B</th>
+                  <th class="p-3 text-center">Variación Neta (Δ)</th>
+                  <th class="p-3">Giro de Encuadre Observado</th>
+                  <th class="p-3">Titular Conductor en Fecha B</th>
+                </tr>
+              </thead>
+              <tbody id="compareTableBody" class="divide-y divide-slate-800 font-mono text-[11px]">
+                <!-- Filas dinámicas -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -1949,10 +1969,118 @@
         </div>
       `;
 
+      // EXPLICACIÓN CUALITATIVA DE FACTORES DIRECTORES DEL CAMBIO (IHSA, ICB, ESTRÉS)
       const evalsA = DATASET.evaluations[dateA] || [];
       const evalsB = DATASET.evaluations[dateB] || [];
       const mapA = Object.fromEntries(evalsA.map(e => [e.source_id, e]));
       const mapB = Object.fromEntries(evalsB.map(e => [e.source_id, e]));
+
+      // 1. Extraer titulares clave de Fecha B que impulsaron o deprimieron el humor
+      const keyPosB = [];
+      const keyNegB = [];
+      evalsB.forEach(e => {
+        if (e.positive_drivers && e.positive_drivers.length) {
+          e.positive_drivers.forEach(t => { if (t && !keyPosB.includes(t)) keyPosB.push(t); });
+        }
+        if (e.negative_drivers && e.negative_drivers.length) {
+          e.negative_drivers.forEach(t => { if (t && !keyNegB.includes(t)) keyNegB.push(t); });
+        }
+      });
+
+      // 2. Extraer titulares económicos clave (ICB)
+      const econEvalsB = evalsB.filter(e => e.category === 'economy');
+      const econPos = [];
+      const econNeg = [];
+      econEvalsB.forEach(e => {
+        (e.positive_drivers || []).forEach(t => { if (t && !econPos.includes(t)) econPos.push(t); });
+        (e.negative_drivers || []).forEach(t => { if (t && !econNeg.includes(t)) econNeg.push(t); });
+      });
+
+      // 3. Renderizar las 3 tarjetas de factores explicativos
+      const driversPanel = document.getElementById('compareDriversAnalysis');
+      if (driversPanel) {
+        driversPanel.innerHTML = `
+          <!-- FACTOR 1: IHSA GLOBAL -->
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-1.5">
+              <span class="font-bold text-white flex items-center gap-1.5">
+                📊 Giro en IHSA (${(diffIhsa >= 0 ? '+' : '')}${diffIhsa.toFixed(1)} pts)
+              </span>
+              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${(diffIhsa >= 0 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/20 text-rose-300')}">
+                ${diffIhsa >= 0 ? 'Mejora' : 'Deterioro'}
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              ${diffIhsa >= 0 
+                ? `El clima social experimentó un impulso positivo de <strong>+${diffIhsa.toFixed(1)} pts</strong> motivado por distensión política y noticias favorables:` 
+                : `El humor social se replegó <strong>${diffIhsa.toFixed(1)} pts</strong> debido a la concentración de focos de preocupación ciudadana:`}
+            </p>
+            <div class="space-y-1 mt-1">
+              ${(diffIhsa >= 0 ? keyPosB : keyNegB).slice(0, 2).map(h => `
+                <div class="flex items-start gap-1.5 text-[11px] ${(diffIhsa >= 0 ? 'text-emerald-300' : 'text-rose-300')}">
+                  <span class="shrink-0 mt-0.5">${diffIhsa >= 0 ? '🟢' : '🔴'}</span>
+                  <span class="line-clamp-2">${h}</span>
+                </div>
+              `).join('') || '<span class="text-slate-500 text-[11px]">Agenda equilibrada sin noticias disruptivas.</span>'}
+            </div>
+          </div>
+
+          <!-- FACTOR 2: CLIMA DE BOLSILLO (ICB) -->
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-1.5">
+              <span class="font-bold text-blue-400 flex items-center gap-1.5">
+                🛒 Impacto en Bolsillo (${(diffIcb >= 0 ? '+' : '')}${diffIcb.toFixed(1)} pts)
+              </span>
+              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${(diffIcb >= 0 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/20 text-rose-300')}">
+                Microeconomía
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              ${diffIcb >= 0 
+                ? `Mayor sensación de alivio en precios y expectativas financieras domésticas:` 
+                : `Mayor presión sobre ingresos familiares, inflación de canasta o endeudamiento:`}
+            </p>
+            <div class="space-y-1 mt-1">
+              ${(diffIcb >= 0 ? econPos : econNeg).slice(0, 2).map(h => `
+                <div class="flex items-start gap-1.5 text-[11px] ${(diffIcb >= 0 ? 'text-emerald-300' : 'text-rose-300')}">
+                  <span class="shrink-0 mt-0.5">${diffIcb >= 0 ? '🛒' : '⚠️'}</span>
+                  <span class="line-clamp-2">${h}</span>
+                </div>
+              `).join('') || (keyNegB.slice(0, 1).map(h => `
+                <div class="flex items-start gap-1.5 text-[11px] text-slate-300">
+                  <span class="shrink-0 mt-0.5">ℹ️</span>
+                  <span class="line-clamp-2">${h}</span>
+                </div>
+              `).join('') || '<span class="text-slate-500 text-[11px]">Sin variaciones bruscas en indicadores de precios.</span>')}
+            </div>
+          </div>
+
+          <!-- FACTOR 3: ESTRÉS COLECTIVO -->
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-1.5">
+              <span class="font-bold text-amber-400 flex items-center gap-1.5">
+                🌡️ Variación de Estrés (${(diffStress >= 0 ? '+' : '')}${diffStress.toFixed(1)} pts)
+              </span>
+              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${(diffStress <= 0 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300')}">
+                ${diffStress <= 0 ? 'Distensión' : 'Presión Social'}
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              ${diffStress > 0 
+                ? `Aceleración del estrés por fricciones callejeras, polarización política o temor cambiario:` 
+                : `Descompresión de la tensión social gracias a acuerdos, distensión o logros colectivos:`}
+            </p>
+            <div class="space-y-1 mt-1">
+              ${(diffStress > 0 ? keyNegB : keyPosB).slice(0, 2).map(h => `
+                <div class="flex items-start gap-1.5 text-[11px] ${(diffStress > 0 ? 'text-amber-300' : 'text-emerald-300')}">
+                  <span class="shrink-0 mt-0.5">${diffStress > 0 ? '⚡' : '🕊️'}</span>
+                  <span class="line-clamp-2">${h}</span>
+                </div>
+              `).join('') || '<span class="text-slate-500 text-[11px]">Niveles de fricción cívica estables.</span>'}
+            </div>
+          </div>
+        `;
+      }
 
       const tbody = document.getElementById('compareTableBody');
       tbody.innerHTML = '';
@@ -1973,6 +2101,20 @@
         else if (diff <= -20.0) shiftNote = "🔴 Giro marcado hacia la crispación o alarma";
         else if (diff <= -8.0) shiftNote = "🔴 Deterioro de expectativas";
 
+        // Titular conductor en Fecha B (positivo si subió, negativo si bajó)
+        let driverHeadline = "-";
+        if (eb) {
+          if (diff >= 0 && eb.positive_drivers && eb.positive_drivers.length) {
+            driverHeadline = `🟢 ${eb.positive_drivers[0]}`;
+          } else if (diff < 0 && eb.negative_drivers && eb.negative_drivers.length) {
+            driverHeadline = `🔴 ${eb.negative_drivers[0]}`;
+          } else if (eb.positive_drivers && eb.positive_drivers.length) {
+            driverHeadline = eb.positive_drivers[0];
+          } else if (eb.negative_drivers && eb.negative_drivers.length) {
+            driverHeadline = eb.negative_drivers[0];
+          }
+        }
+
         const tr = document.createElement('tr');
         tr.className = "hover:bg-slate-800/40 transition";
         tr.innerHTML = `
@@ -1985,6 +2127,7 @@
             </span>
           </td>
           <td class="p-3 text-slate-300 text-xs">${shiftNote}</td>
+          <td class="p-3 text-slate-400 text-xs max-w-xs truncate" title="${driverHeadline}">${driverHeadline}</td>
         `;
         tbody.appendChild(tr);
       });
