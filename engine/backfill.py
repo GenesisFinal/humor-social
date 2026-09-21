@@ -17,7 +17,7 @@ DAILY_NEWS_AGENDAS = [
     {
         "theme": "Desaceleración de inflación y estabilidad cambiaria",
         "summary": "Jornada dominada por el optimismo financiero: consultoras y el INDEC anticiparon una nueva baja de la inflación mensual, mientras el Banco Central continuó sumando reservas y el dólar financiero se mantuvo calmo.",
-        "opt_bias": 4.5, "cal_bias": 3.0, "conf_bias": 4.5, "ale_bias": 1.0,
+        "opt_bias": 2.0, "cal_bias": 1.2, "conf_bias": 1.8, "ale_bias": 0.5,
         "x": ["InflacionBaja", "DolarBlue", "Caputo", "Mercados"],
         "google": ["plazo fijo rendimiento", "precio dolar mep", "aumento jubilaciones anses"],
         "media_news": {
@@ -74,7 +74,7 @@ DAILY_NEWS_AGENDAS = [
     {
         "theme": "Debate legislativo por veto presidencial y marchas en Congreso",
         "summary": "Jornada de marcada tensión política y social: el Congreso debatió el veto a la ley jubilatoria en medio de masivas movilizaciones de sindicatos y organizaciones sociales frente al Palacio Legislativo.",
-        "opt_bias": -3.5, "cal_bias": -5.5, "conf_bias": -2.5, "ale_bias": -2.0,
+        "opt_bias": -1.8, "cal_bias": -2.5, "conf_bias": -1.5, "ale_bias": -1.0,
         "x": ["Congreso", "Jubilados", "VetoPresidencial", "GasesEnPlazaCongreso"],
         "google": ["marcha al congreso hoy", "cortes caba", "votacion en diputados en vivo"],
         "media_news": {
@@ -131,7 +131,7 @@ DAILY_NEWS_AGENDAS = [
     {
         "theme": "Fin de semana deportivo con gran carrera de Colapinto y fútbol",
         "summary": "Clima de algarabía y alivio social impulsado por el deporte: Franco Colapinto sumó puntos históricos en la Fórmula 1 y se vivió una vibrante fecha de fútbol nacional que descomprimió la agenda política.",
-        "opt_bias": 3.0, "cal_bias": 2.0, "conf_bias": 1.5, "ale_bias": 7.0,
+        "opt_bias": 1.5, "cal_bias": 1.2, "conf_bias": 0.8, "ale_bias": 3.8,
         "x": ["Colapinto", "FrancoEnF1", "Superclasico", "WilliamsRacing"],
         "google": ["colapinto posiciones carrera", "clasico resultado goles", "tabla formula 1"],
         "media_news": {
@@ -188,7 +188,7 @@ DAILY_NEWS_AGENDAS = [
     {
         "theme": "Superávit comercial récord y baja del riesgo país",
         "summary": "Jornada de alivio macroeconómico impulsada por la liquidación de exportaciones agropecuarias, el superávit de la balanza comercial y la colocación exitosa de bonos en el mercado internacional.",
-        "opt_bias": 5.0, "cal_bias": 3.0, "conf_bias": 5.0, "ale_bias": 2.0,
+        "opt_bias": 2.2, "cal_bias": 1.4, "conf_bias": 2.0, "ale_bias": 0.8,
         "x": ["RiesgoPaisMinimo", "SuperavitComercial", "VacaMuerta", "Caputo"],
         "google": ["bonos soberanos cotizacion", "que es el riesgo pais", "inversion en pesos"],
         "media_news": {
@@ -245,7 +245,7 @@ DAILY_NEWS_AGENDAS = [
     {
         "theme": "Aumento de tarifas de servicios y tensión en el transporte",
         "summary": "Jornada signada por la preocupación económica doméstica: entraron en vigencia los nuevos cuadros tarifarios de electricidad y transporte, generando quejas de usuarios y advertencias gremiales.",
-        "opt_bias": -4.0, "cal_bias": -4.0, "conf_bias": -4.0, "ale_bias": -2.0,
+        "opt_bias": -1.9, "cal_bias": -1.8, "conf_bias": -2.0, "ale_bias": -0.8,
         "x": ["AumentoTarifas", "BoletoColectivo", "LuzYGás", "ParoDeTransporte"],
         "google": ["cuanto sale el boleto de colectivo", "subsidios luz rase", "aumento gas septiembre"],
         "media_news": {
