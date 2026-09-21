@@ -308,6 +308,7 @@ def generate_backfill_data(days_back: int = 30):
     random.seed(1234)
 
     print(f"[BACKFILL] Generando serie temporal retrospectiva de {days_back} días con titulares específicos...")
+    running_previous_score = None
 
     for i in range(days_back, 0, -1):
         target_date = today - timedelta(days=i)
@@ -383,7 +384,13 @@ def generate_backfill_data(days_back: int = 30):
         digital_val = round((agenda["opt_bias"] + agenda["ale_bias"]) * 4.5, 2)
         digital_scores = {"composite": digital_val}
 
-        ihsa_val, axes_avg, cat_label = compute_daily_ihsa(source_evaluations, digital_scores)
+        # Aplicar suavizado inercial exponencial en la serie histórica
+        ihsa_val, axes_avg, cat_label = compute_daily_ihsa(
+            source_evaluations=source_evaluations,
+            digital_scores=digital_scores,
+            previous_day_score=running_previous_score
+        )
+        running_previous_score = ihsa_val
 
         snapshot = DailySnapshot(
             date=date_str,
