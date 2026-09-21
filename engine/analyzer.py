@@ -377,7 +377,10 @@ def analyze_headlines_heuristic(
 
                 pos_weighted += 1.0 * w
                 if w >= 1.5 and m not in pos_drivers and len(pos_drivers) < 3 and not is_local_sports_headline(m):
-                    pos_drivers.append(m)
+                    # Doble verificación: jamás agregar a pos_drivers si contiene indicadores adversos o vector negativo
+                    v_check, _ = evaluate_headline_vector(m)
+                    if v_check >= 0:
+                        pos_drivers.append(m)
                         
         for term in neg_terms:
             matches = [t for t in titles if term in t.lower()]
