@@ -11,6 +11,26 @@ from datetime import datetime
 from typing import List, Dict, Any
 import re
 import html
+from config import DIGITAL_TRENDS_EXCLUSION_TERMS
+from engine.analyzer import LOCAL_SPORTS_CLUBS, NATIONAL_SPORTS_REPRESENTATION
+
+def is_excluded_trend(term: str, extra_text: str = "") -> bool:
+    """Verifica si una tendencia corresponde a farándula, entretenimiento o partidos de fútbol doméstico (suma cero)."""
+    combined = f"{term} {extra_text}".lower()
+    
+    # 1. Chequear términos de exclusión de farándula / entretenimiento
+    if any(exc in combined for exc in DIGITAL_TRENDS_EXCLUSION_TERMS):
+        return True
+
+    # 2. Si es logro de representación nacional (Selección, Colapinto, Messi), NO excluir
+    if any(nat in combined for nat in NATIONAL_SPORTS_REPRESENTATION):
+        return False
+
+    # 3. Excluir clubes de fútbol doméstico o liga local (suma cero)
+    if any(club in combined for club in LOCAL_SPORTS_CLUBS):
+        return True
+
+    return False
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -46,7 +66,7 @@ def fetch_google_trends(max_items: int = 15) -> List[Dict[str, Any]]:
                 if nt_elem is not None and nt_elem.text:
                     news_title = html.unescape(nt_elem.text.strip())
 
-            if title:
+            if title and not is_excluded_trend(title, news_title):
                 trends.append({
                     "platform": "google_trends",
                     "term": title,
@@ -80,6 +100,9 @@ def fetch_x_trends(max_items: int = 25) -> List[Dict[str, Any]]:
             term = a_tag.text.strip()
             if term and term not in seen:
                 seen.add(term)
+                if is_excluded_trend(term):
+                    continue
+
                 li = a_tag.find_parent("li")
                 span_count = li.find(class_=re.compile("count", re.I)) if li else None
                 tweet_count = span_count.text.strip() if span_count else ""
