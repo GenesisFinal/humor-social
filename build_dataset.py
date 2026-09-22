@@ -24,9 +24,25 @@ def build_dataset() -> Path:
     evaluations_map = {}
     headlines_map = {}
 
+    from engine.analyzer import is_irrelevant_or_foreign_headline, is_local_sports_headline
+
     for d in dates:
         snap = get_snapshot_by_date(d)
         evals = get_source_evaluations(d)
+
+        # Sanitizar retroactivamente drivers para eliminar noticias foráneas o clickbait
+        for e in evals:
+            if "positive_drivers" in e and isinstance(e["positive_drivers"], list):
+                e["positive_drivers"] = [
+                    t for t in e["positive_drivers"]
+                    if not is_irrelevant_or_foreign_headline(t) and not is_local_sports_headline(t)
+                ]
+            if "negative_drivers" in e and isinstance(e["negative_drivers"], list):
+                e["negative_drivers"] = [
+                    t for t in e["negative_drivers"]
+                    if not is_irrelevant_or_foreign_headline(t)
+                ]
+
         evaluations_map[d] = evals
 
         if snap:
