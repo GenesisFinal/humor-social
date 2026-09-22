@@ -221,11 +221,61 @@ def check_baker_bloom_davis_nexus(title: str) -> bool:
     has_u = any(w in low for w in EPU_UNCERTAINTY_DIRECTION_TERMS)
     return has_e and has_p and has_u
 
+# ---------------------------------------------------------
+# FILTROS DE EXCLUSIÓN: ESTILO DE VIDA, SALUD, CLICKBAIT Y POLÍTICA LOCAL FORÁNEA
+# ---------------------------------------------------------
+LIFESTYLE_HEALTH_JUNK_PATTERNS = [
+    "estudio cientifico", "estudio cientfico", "un estudio revel", "un estudio vincul",
+    "estudio demostr", "segun un estudio", "cientificos revel", "cientificos descubr",
+    "investigadores revel", "alimentos procesados", "ultraprocesados", "conservantes",
+    "hipertension", "colesterol", "calorias", "nutricionistas", "antioxidantes",
+    "suplementos", "dormir 8 horas", "a que edad", "edad una persona es considerada",
+    "habito saludable", "beneficios de tomar", "para que sirve tomar", "remedio casero",
+    "remedio natural", "propiedades curativas", "significado de sonar", "que significa sonar",
+    "horoscopo", "astrologia", "signos del zodiaco", "carta astral", "los perros huelen",
+    "por que los gatos", "la planta que limpia", "el truco definitivo", "truco casero",
+    "como limpiar", "papel aluminio", "receta", "recetas", "look de", "en bikini",
+    "chimento", "separacion de", "romance entre", "farandula", "belleza", "descuentos en zapatillas"
+]
+
+FOREIGN_LOCAL_PATTERNS = [
+    "nueva york", "new york", "gracie mansion", "mamdani", "alcalde de", "alcaldia de",
+    "gobernador de florida", "gobernador de texas", "en espana", "en madrid", "en barcelona",
+    "en valencia", "en paris", "en londres", "en miami", "tribunal supremo de espana",
+    "sanchez y guterres", "gaza", "beirut", "tel aviv", "ucrania", "zelenski", "putin",
+    "tiroteo en", "temporal en espana"
+]
+
+ARGENTINE_NATIONAL_LINK = [
+    "argentin", "milei", "caputo", "fmi", "malvinas", "bcra", "indec", "cancilleria",
+    "embajada", "soja", "vaca muerta", "colapinto", "seleccion", "aerolineas"
+]
+
+def is_irrelevant_or_foreign_headline(title: str) -> bool:
+    """Detecta si un titular no pertenece a la realidad social/económica argentina o es clickbait/salud."""
+    low = normalize_text(title)
+
+    # 1. Descartar notas de nutrición, salud médica, curiosidades y clickbait
+    if any(pat in low for pat in LIFESTYLE_HEALTH_JUNK_PATTERNS):
+        return True
+
+    # 2. Descartar política y sucesos locales extranjeros sin vínculo directo con Argentina
+    for f_pat in FOREIGN_LOCAL_PATTERNS:
+        if f_pat in low:
+            # Si tiene mención explícita a Argentina / autoridades nacionales, se admite
+            if not any(arg in low for arg in ARGENTINE_NATIONAL_LINK):
+                return True
+
+    return False
+
 def compute_headline_significance_weight(title: str, position_rank: int = 4) -> float:
     """
     Calcula el peso de impacto relativo de la noticia según su severidad social,
     el estándar Baker-Bloom-Davis (EPU) y su saliencia visual en portada (Visual Salience Index).
     """
+    if is_irrelevant_or_foreign_headline(title):
+        return 0.0
+
     low = normalize_text(title)
 
     # Deporte local de suma cero: peso atenuado a casi cero sin importar la portada
@@ -249,9 +299,11 @@ def compute_headline_significance_weight(title: str, position_rank: int = 4) -> 
             base = HIERARCHICAL_IMPACT_TIERS["tier_1_catastrophes"]["weight"]
             return round(base * salience_mult, 2)
 
-    # Tier 2: Economía de Bolsillo Directo
+    # Tier 2: Economía de Bolsillo Directo (con desambiguación contextual estricta de 'alimentos')
     for kw in HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["keywords"]:
         if kw in low:
+            if kw == "alimentos" and not any(c in low for c in ["precio", "inflacion", "canasta", "suba", "aumento", "costo", "consumo", "indec", "supermercado", "almacen"]):
+                continue
             base = HIERARCHICAL_IMPACT_TIERS["tier_2_pocket_economy"]["weight"]
             return round(base * salience_mult, 2)
 
@@ -275,30 +327,23 @@ def compute_headline_significance_weight(title: str, position_rank: int = 4) -> 
     # Peso base para sucesos ordinarios
     return round(1.0 * salience_mult, 2)
 
-# Palabras clave de relleno, trucos domésticos y clickbait que NO inciden en el humor social nacional
-JUNK_KEYWORDS = [
-    "papel aluminio", "receta", "recetas", "truco casero", "trucos caseros", "cómo limpiar",
-    "horóscopo", "signo", "zodíaco", "astrología", "viral", "look", "moda", "dieta",
-    "belleza", "consejos para", "cómo hacer para", "descuentos", "ofertas", "farándula",
-    "romance", "separación", "novia de", "novio de", "chimento", "astrológico"
-]
-
 def filter_relevant_headlines(headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Filtra titulares irrelevantes y los ordena estrictamente por jerarquía de severidad, nexo EPU y saliencia visual."""
     cleaned = []
     for idx, h in enumerate(headlines):
         title = h.get("title", "")
         pos_rank = h.get("position_rank", idx + 1)
-        low = title.lower()
 
-        # 1. Descartar basura evidente (recetas, trucos caseros, farándula secundaria)
-        if any(junk in low for junk in JUNK_KEYWORDS):
+        # 1. Descartar basura evidente, estudios clickbait y política local foránea
+        if is_irrelevant_or_foreign_headline(title):
             continue
-        if len(title.strip()) < 22:
+        if len(title.strip()) < 20:
             continue
 
         # 2. Asignar peso jerárquico según severidad, EPU y posición visual
         weight = compute_headline_significance_weight(title, position_rank=pos_rank)
+        if weight <= 0.0:
+            continue
 
         # 3. Excluir como foco prioritario el fútbol de clubes local
         if is_local_sports_headline(title):
@@ -446,8 +491,13 @@ def analyze_source_with_llm(
     if not GEMINI_API_KEY:
         return analyze_headlines_heuristic(source_id, source_name, headlines)
 
+    # Filtrar titulares antes de enviarlos al LLM para no consumir tokens en noticias irrelevantes o foráneas
+    filtered_headlines = filter_relevant_headlines(headlines)
+    if not filtered_headlines:
+        filtered_headlines = headlines[:15]
+
     formatted_titles = []
-    for idx, h in enumerate(headlines[:25]):
+    for idx, h in enumerate(filtered_headlines[:25]):
         t = h.get('title', '')
         pos = h.get('position_rank', idx + 1)
         if pos == 1:
@@ -475,9 +525,14 @@ REGLAS SOCIOLÓGICAS DE PONDERACIÓN:
 A. JERARQUÍA DE IMPACTO: 
    - Pondera con máxima prioridad las noticias que afectan el BOLSILLO DIRECTO del 100% de la ciudadanía (inflación de alimentos, tarifas, salarios, jubilaciones, mora crediticia) y las TRAGEDIAS HUMANAS MASIVAS.
    - Un choque vial ordinario o una discusión menor tienen peso reducido; una catástrofe o una medida de poder adquisitivo mueven la aguja nacional.
-B. SALIENCIA VISUAL (VISUAL SALIENCE):
+B. FILTRADO TERRITORIAL ESTRICTO (ÁMBITO ARGENTINO):
+   - Descarta terminantemente noticias de política local o sucesos internos de otros países (ej: alquileres en Nueva York, alcaldes o elecciones en EE.UU./Europa, tiroteos o juicios foráneos). Solo considera noticias del exterior si afectan directamente a la Argentina (ej: gira de Milei, Caputo con inversores, FMI, Malvinas, exportaciones).
+   - NUNCA selecciones como "positive_driver" o "negative_driver" un suceso local foráneo.
+C. DESCARTE DE CLICKBAIT DE SALUD, ESTUDIOS Y NUTRICIÓN:
+   - Descarta notas sobre nutrición, hábitos de sueño, conservantes, hipertensión, recetas o curiosidades científicas ("un estudio vinculó...", "a qué edad..."). NO son eventos de humor social nacional.
+D. SALIENCIA VISUAL (VISUAL SALIENCE):
    - Otorga prioridad de análisis e influencia a los titulares identificados como [PORTADA PRINCIPAL / LEAD STORY] y [DESTACADO DE APERTURA], ya que marcan la pauta cognitiva del lector sobre los titulares secundarios.
-C. TRATAMIENTO DEL FÚTBOL LOCAL (SUMA CERO):
+E. TRATAMIENTO DEL FÚTBOL LOCAL (SUMA CERO):
    - El resultado de un partido de la liga local (ej. Boca, River, Central, Independiente) NO altera el humor social nacional porque la alegría de una hinchada se cancela con la tristeza o indiferencia del resto. Es un juego de suma cero. NUNCA lo elijas como "positive_driver" del humor nacional.
    - Solo los hitos deportivos internacionales que unen unívocamente a toda la nación (ej. Selección Argentina, Colapinto en F1, medallas olímpicas) computan como alegría colectiva genuina.
 
@@ -516,6 +571,10 @@ Responde EXCLUSIVAMENTE con un JSON válido con este formato exacto:
         composite = calculate_source_composite(scores)
         category = MEDIA_SOURCES.get(source_id, {}).get("category", "general")
 
+        # Sanitizar drivers entregados por el LLM para impedir fugas internacionales o clickbait
+        clean_pos = [d for d in data.get("positive_drivers", []) if not is_irrelevant_or_foreign_headline(d) and not is_local_sports_headline(d)]
+        clean_neg = [d for d in data.get("negative_drivers", []) if not is_irrelevant_or_foreign_headline(d)]
+
         return SourceSentimentScore(
             source_id=source_id,
             source_name=source_name,
@@ -523,8 +582,8 @@ Responde EXCLUSIVAMENTE con un JSON válido con este formato exacto:
             scores=scores,
             composite_score=composite,
             key_themes=data.get("key_themes", []),
-            positive_drivers=data.get("positive_drivers", []),
-            negative_drivers=data.get("negative_drivers", []),
+            positive_drivers=clean_pos,
+            negative_drivers=clean_neg,
             editorial_bias_detected=data.get("editorial_bias_detected", ""),
             justification=data.get("justification", "")
         )
