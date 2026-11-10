@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Índice de Humor Social Argentino (IHSA)",
-    "updated_at": "2026-11-10T04:40:04.189147",
+    "updated_at": "2026-11-10T16:29:28.962709",
     "latest_date": "2026-11-10",
     "total_days": 88,
     "sources_count": 14
@@ -228,48 +228,60 @@
   "snapshots": {
     "2026-11-10": {
       "date": "2026-11-10",
-      "ihsa_score": -14.1,
-      "ihsa_category": "Levemente Negativo / Preocupación",
-      "optimismo": -3.19,
-      "calma": -2.16,
-      "confianza": -2.29,
-      "alegria": -2.08,
-      "summary": "El Humor Social del día se ubica en -14.1 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.2, Calma -2.2, Confianza -2.3, Alegría -2.1.",
+      "ihsa_score": -1.6,
+      "ihsa_category": "Neutro / Equilibrio",
+      "optimismo": -0.54,
+      "calma": -3.41,
+      "confianza": 1.33,
+      "alegria": -0.04,
+      "summary": "El Humor Social del día se ubica en -1.6 pts (Neutro / Equilibrio). Ejes promedio: Optimismo -0.5, Calma -3.4, Confianza +1.3, Alegría -0.0.",
       "top_trends_x": [
-        "Papa",
-        "Iglesia",
-        "Santo Padre",
-        "Cottolengo Don Orione",
-        "Palacio Libertad",
-        "Uruguay",
-        "Vaticano",
-        "Monumento",
-        "Jesús",
-        "Yanina Latorre"
+        "Córdoba",
+        "Jorge Macri",
+        "Carpa VIP",
+        "#Intrusos",
+        "Fabiola",
+        "Yanina Latorre",
+        "FAdeA",
+        "Nefasto",
+        "Luján",
+        "#ESPNF90"
       ],
       "top_trends_google": [
-        "empresario",
-        "aguinaldo",
-        "vórtice polar",
-        "gta vi",
-        "getafe club de fútbol",
-        "warriors - pelicans",
-        "verano",
+        "chelsea femenino",
+        "real madrid femenino",
+        "islas malvinas",
+        "avión cisterna",
+        "aumento jubilados",
         "karina mazzocco",
-        "rocio robles"
+        "natalia pastorutti",
+        "monseñor aguer",
+        "stranger things",
+        "lujan"
       ],
-      "created_at": "2026-11-10 07:40:03",
-      "editorial_divergence": 15.8,
-      "decompression_buffer": 0.7,
-      "icb": -16.5,
-      "igi": -25.3,
-      "icps": -26.5,
-      "stress": 25.0,
-      "stress_category": "Tensión Latente / Cautela",
-      "stress_badge": "🟡 Cautela",
-      "stress_color": "yellow",
-      "covers": [],
-      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-11-10\n\n**Índice IHSA Consolidado:** **`-14.1 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** -4.2 pts respecto a ayer (-9.9 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-3.2`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-2.2`\n- **⚓ Confianza vs. Incertidumbre:** `-2.3`\n- **☀️ Alegría vs. Tristeza / Duelo:** `-2.1`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `15.8 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+0.7 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -14.1 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -3.2, Calma -2.2, Confianza -2.3, Alegría -2.1.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **El Cronista Comercial** | `economy` | **+54.6** | Beneficios fiscales. IRS lo confirmó | El Gob | DHS. El Gobierno de Donald Trump confirmó el  |\n| **C5N** | `political_opposition` | **+16.1** | Sin focos destacados | Villarruel denunció que no fue invitada a la  |\n| **La Capital (Rosario)** | `federal` | **+13.2** | Sin focos destacados | Sin focos destacados |\n| **Página/12** | `political_left` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **TN (Todo Noticias)** | `general` | **-15.2** | Sin focos destacados | Sin focos destacados |\n| **Perfil** | `general` | **-16.8** | Sin focos destacados | Sin focos destacados |\n| **Infobae** | `general` | **-20.7** | Sin focos destacados | Valeria Racu, portavoz del Sindicato de Inqui |\n| **La Nación** | `general` | **-26.3** | Una multitud capaz de abrazar a Messi y a un  | Sin focos destacados |\n| **Crónica** | `popular` | **-46.9** | Sin focos destacados | León XIV trae un mensaje social contundente,  |\n| **Clarín** | `general` | **-49.2** | Tras las quejas de Victoria Villarruel por su | Ante empresarios y sindicalistas, el Papa cue |\n| **La Voz del Interior** | `federal` | **-50.2** | Sin focos destacados | En la UCA. León XIV abogó por el pleno empleo |\n| **El Destape** | `political_opposition` | **-65.0** | Sin focos destacados | Frente a Milei, León XIV habló de salarios, j |\n| **Cadena 3** | `federal` | **-70.0** | Sin focos destacados | Histórica visita. León XIV habló en la UCA de |\n| **Ámbito Financiero** | `economy` | **-73.2** | Sin focos destacados | León XIV retomó en la UCA una agenda incómoda |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Papa, #Iglesia, #Santo Padre, #Cottolengo Don Orione, #Palacio Libertad, #Uruguay, #Vaticano, #Monumento\n- **Mayor Aceleración en Google Trends:** empresario, aguinaldo, vórtice polar, gta vi, getafe club de fútbol, warriors - pelicans, verano, karina mazzocco\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
+      "created_at": "2026-11-10 19:29:27",
+      "editorial_divergence": 15.1,
+      "decompression_buffer": 0.0,
+      "icb": 29.7,
+      "igi": -13.2,
+      "icps": -25.0,
+      "stress": 22.7,
+      "stress_category": "Calma Cívica / Distensión",
+      "stress_badge": "🟢 Distensión",
+      "stress_color": "emerald",
+      "covers": [
+        {
+          "source_id": "clarin",
+          "name": "Clarín",
+          "path": "data/covers/2026-11-10/clarin.jpg"
+        },
+        {
+          "source_id": "lanacion",
+          "name": "La Nación",
+          "path": "data/covers/2026-11-10/lanacion.jpg"
+        }
+      ],
+      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-11-10\n\n**Índice IHSA Consolidado:** **`-1.6 / 100`**  \n**Diagnóstico:** **Neutro / Equilibrio**  \n**Variación 24h:** +8.3 pts respecto a ayer (-9.9 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-0.5`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-3.4`\n- **⚓ Confianza vs. Incertidumbre:** `+1.3`\n- **☀️ Alegría vs. Tristeza / Duelo:** `-0.0`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `15.1 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+0.0 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -1.6 pts (Neutro / Equilibrio). Ejes promedio: Optimismo -0.5, Calma -3.4, Confianza +1.3, Alegría -0.0.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **El Cronista Comercial** | `economy` | **+57.4** | Impuestos. Confirmado por el IRS | El crédito | DHS. El Gobierno de Donald Trump confirmó el  |\n| **Ámbito Financiero** | `economy` | **+36.2** | El riesgo país vuelve a ceder y perfora los 8 | Sin focos destacados |\n| **TN (Todo Noticias)** | `general` | **+25.1** | En otro día sin mercado local, el riesgo país | Sin focos destacados |\n| **Infobae** | `general` | **+14.4** | Perú coloca 4.500 millones en bonos sostenibl | Fiscalía de Ecuador y FBI firman un memorando |\n| **Perfil** | `general` | **+3.0** | Sin focos destacados | Con respaldo de Karina Milei en medio de la d |\n| **Página/12** | `political_left` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **Cadena 3** | `federal` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **El Destape** | `political_opposition` | **-1.9** | El detrás del diálogo sobre el desguace de Mi | Sin focos destacados |\n| **Crónica** | `popular` | **-8.2** | Sin focos destacados | Sin focos destacados |\n| **La Voz del Interior** | `federal` | **-14.1** | Temporada 2026. La Fórmula 1 ratificó los dos | Sin focos destacados |\n| **C5N** | `political_opposition` | **-38.6** | Sin focos destacados | El Gobierno volvió a exigir el freno de la ex |\n| **La Nación** | `general` | **-50.0** | Sin focos destacados | Hasta US$4 millones: se conocieron los precio |\n| **Clarín** | `general` | **-50.1** | Sin focos destacados | Petróleo en Malvinas: Argentina pidió cuatro  |\n| **La Capital (Rosario)** | `federal` | **-60.0** | Sin focos destacados | Un informe advierte que la pobreza volvió a c |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Córdoba, #Jorge Macri, #Carpa VIP, ##Intrusos, #Fabiola, #Yanina Latorre, #FAdeA, #Nefasto\n- **Mayor Aceleración en Google Trends:** chelsea femenino, real madrid femenino, islas malvinas, avión cisterna, aumento jubilados, karina mazzocco, natalia pastorutti, monseñor aguer\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
     },
     "2026-11-09": {
       "date": "2026-11-09",
@@ -4497,83 +4509,162 @@
   "evaluations": {
     "2026-11-10": [
       {
-        "id": 3097,
+        "id": 3111,
         "date": "2026-11-10",
         "source_id": "cronista",
         "source_name": "El Cronista Comercial",
         "category": "economy",
-        "composite_score": 54.6,
-        "optimismo": 8.2,
-        "calma": 0.0,
-        "confianza": 10.0,
+        "composite_score": 57.4,
+        "optimismo": 10.0,
+        "calma": -0.2,
+        "confianza": 9.3,
         "alegria": 0.0,
         "key_themes": [
-          "Gobierno",
-          "Confirmado",
-          "Nueva",
           "Estados",
-          "Confirmó"
+          "Unidos",
+          "Gobierno",
+          "Hasta",
+          "Deben"
         ],
         "positive_drivers": [
-          "Beneficios fiscales. IRS lo confirmó | El Gobierno aumenta el monto del Crédito Tributario por Hijo: de cuánto será el valor ahora y cuándo entrará en vigencia",
-          "Leyes. Por orden de la sección 322.2615 | Inhabilitan la licencia de conducir por seis meses a quienes conduzcan con 0,08% de alcohol o más en Florida"
+          "Impuestos. Confirmado por el IRS | El crédito por hijo aumentará a US$2,300 en 2027 y los contribuyentes podrán recibir hasta US$1,800 como reembolso",
+          "Alivio fiscal. Confirmado por el IRS | El Gobierno otorgará y depositará hasta US$1,800 en las cuentas bancarias a quienes cumplan los requisitos del Crédito Tributario Adicional por Hijo en 2027",
+          "Medida. Por orden del Gobierno, se hacen inspecciones casa por casa a las personas que tengan estas propiedades: hay que pagarlas y son absolutamente obligatorias en Boston"
         ],
         "negative_drivers": [
           "DHS. El Gobierno de Donald Trump confirmó el fin de la extensión automática del permiso de trabajo: qué deben hacer los inmigrantes para renovar su EAD"
         ],
-        "justification": "Evaluación heurística de 23 titulares de El Cronista Comercial. Se detectaron 2 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Gobierno, Confirmado, Nueva, Estados, Confirmó.",
+        "justification": "Evaluación heurística de 23 titulares de El Cronista Comercial. Se detectaron 3 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Estados, Unidos, Gobierno, Hasta, Deben.",
         "cover_path": ""
       },
       {
-        "id": 3102,
+        "id": 3110,
         "date": "2026-11-10",
-        "source_id": "c5n",
-        "source_name": "C5N",
-        "category": "political_opposition",
-        "composite_score": 16.15,
-        "optimismo": 8.0,
-        "calma": -6.8,
-        "confianza": 4.7,
+        "source_id": "ambito",
+        "source_name": "Ámbito Financiero",
+        "category": "economy",
+        "composite_score": 36.2,
+        "optimismo": 10.0,
+        "calma": -6.7,
+        "confianza": 9.3,
         "alegria": -3.3,
         "key_themes": [
           "León",
           "Papa",
+          "Argentina",
           "Misa",
-          "Palermo",
-          "Visita"
+          "Córdoba"
+        ],
+        "positive_drivers": [
+          "El riesgo país vuelve a ceder y perfora los 860 puntos, pero los ADRs caen ante el repliegue de Wall Street"
+        ],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Papa, Argentina, Misa, Córdoba.",
+        "cover_path": ""
+      },
+      {
+        "id": 3108,
+        "date": "2026-11-10",
+        "source_id": "tn",
+        "source_name": "TN (Todo Noticias)",
+        "category": "general",
+        "composite_score": 25.1,
+        "optimismo": 10.0,
+        "calma": -10.0,
+        "confianza": 6.7,
+        "alegria": 0.0,
+        "key_themes": [
+          "Papa",
+          "Cómo",
+          "León",
+          "Argentina",
+          "Ante"
+        ],
+        "positive_drivers": [
+          "En otro día sin mercado local, el riesgo país vuelve a bajar y se aleja de los 900 puntos"
+        ],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 23 titulares de TN (Todo Noticias). Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, Cómo, León, Argentina, Ante.",
+        "cover_path": ""
+      },
+      {
+        "id": 3105,
+        "date": "2026-11-10",
+        "source_id": "infobae",
+        "source_name": "Infobae",
+        "category": "general",
+        "composite_score": 14.45,
+        "optimismo": 6.5,
+        "calma": -10.0,
+        "confianza": 10.0,
+        "alegria": -6.7,
+        "key_themes": [
+          "Noviembre",
+          "Cotización",
+          "Cierre",
+          "Precio",
+          "Transporte"
+        ],
+        "positive_drivers": [
+          "Perú coloca 4.500 millones en bonos sostenibles, récord para un país latinoamericano"
+        ],
+        "negative_drivers": [
+          "Fiscalía de Ecuador y FBI firman un memorando de entendimiento contra el crimen organizado",
+          "Dolor en Santa Olaja (León), el pueblo del agente fallecido en una explosión en Oviedo"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de Infobae. Se detectaron 1 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: Noviembre, Cotización, Cierre, Precio, Transporte.",
+        "cover_path": ""
+      },
+      {
+        "id": 3112,
+        "date": "2026-11-10",
+        "source_id": "perfil",
+        "source_name": "Perfil",
+        "category": "general",
+        "composite_score": 2.95,
+        "optimismo": 3.3,
+        "calma": -6.8,
+        "confianza": 0.0,
+        "alegria": 6.7,
+        "key_themes": [
+          "León",
+          "Papa",
+          "Milei",
+          "Carpa",
+          "Gobierno"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "Villarruel denunció que no fue invitada a la misa de León XIV y subió la tensión con Milei"
+          "Con respaldo de Karina Milei en medio de la denuncia por su patrimonio, Pareja estará en la comitiva del Gobierno a Luján"
         ],
-        "justification": "Evaluación heurística de 25 titulares de C5N. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Misa, Palermo, Visita.",
+        "justification": "Evaluación heurística de 25 titulares de Perfil. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Milei, Carpa, Gobierno.",
         "cover_path": ""
       },
       {
-        "id": 3101,
+        "id": 3113,
         "date": "2026-11-10",
-        "source_id": "lacapital",
-        "source_name": "La Capital (Rosario)",
+        "source_id": "cadena3",
+        "source_name": "Cadena 3",
         "category": "federal",
-        "composite_score": 13.2,
+        "composite_score": 0.0,
         "optimismo": 0.0,
-        "calma": 3.3,
+        "calma": 0.0,
         "confianza": 0.0,
-        "alegria": 3.3,
+        "alegria": 0.0,
         "key_themes": [
+          "Visita",
+          "Histórica",
           "Papa",
           "León",
-          "Misa",
-          "Rosario",
-          "Millones"
+          "Córdoba"
         ],
         "positive_drivers": [],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 25 titulares de La Capital (Rosario). Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, León, Misa, Rosario, Millones.",
+        "justification": "Evaluación heurística de 24 titulares de Cadena 3. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Visita, Histórica, Papa, León, Córdoba.",
         "cover_path": ""
       },
       {
-        "id": 3095,
+        "id": 3109,
         "date": "2026-11-10",
         "source_id": "pagina12",
         "source_name": "Página/12",
@@ -4584,264 +4675,188 @@
         "confianza": 0.0,
         "alegria": 0.0,
         "key_themes": [
+          "Papa",
           "León",
-          "Justicia",
-          "Social",
-          "Millones",
-          "Celebró"
+          "Visita",
+          "Buscamos",
+          "Nuestros"
         ],
         "positive_drivers": [],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 5 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Justicia, Social, Millones, Celebró.",
+        "justification": "Evaluación heurística de 7 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, León, Visita, Buscamos, Nuestros.",
         "cover_path": ""
       },
       {
-        "id": 3094,
+        "id": 3107,
         "date": "2026-11-10",
-        "source_id": "tn",
-        "source_name": "TN (Todo Noticias)",
-        "category": "general",
-        "composite_score": -15.15,
+        "source_id": "eldestape",
+        "source_name": "El Destape",
+        "category": "political_opposition",
+        "composite_score": -1.85,
         "optimismo": -6.7,
-        "calma": 0.0,
+        "calma": 7.3,
         "confianza": 0.0,
-        "alegria": 3.3,
+        "alegria": 0.0,
         "key_themes": [
           "León",
-          "Dólar",
-          "Noviembre",
           "Papa",
-          "Años"
+          "Milei",
+          "Misa",
+          "Argentina"
         ],
-        "positive_drivers": [],
+        "positive_drivers": [
+          "El detrás del diálogo sobre el desguace de Milei entre León XIV y una referenta"
+        ],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 25 titulares de TN (Todo Noticias). Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Dólar, Noviembre, Papa, Años.",
+        "justification": "Evaluación heurística de 25 titulares de El Destape. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Papa, Milei, Misa, Argentina.",
         "cover_path": ""
       },
       {
-        "id": 3098,
+        "id": 3106,
         "date": "2026-11-10",
-        "source_id": "perfil",
-        "source_name": "Perfil",
-        "category": "general",
-        "composite_score": -16.75,
+        "source_id": "cronica",
+        "source_name": "Crónica",
+        "category": "popular",
+        "composite_score": -8.25,
         "optimismo": 0.0,
+        "calma": -3.3,
+        "confianza": 0.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "León",
+          "Córdoba",
+          "Papa",
+          "Argentina",
+          "Misa"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 25 titulares de Crónica. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Córdoba, Papa, Argentina, Misa.",
+        "cover_path": ""
+      },
+      {
+        "id": 3114,
+        "date": "2026-11-10",
+        "source_id": "lavoz",
+        "source_name": "La Voz del Interior",
+        "category": "federal",
+        "composite_score": -14.1,
+        "optimismo": -3.3,
+        "calma": -3.3,
+        "confianza": 0.0,
+        "alegria": 2.7,
+        "key_themes": [
+          "León",
+          "Papa",
+          "Córdoba",
+          "Fadea",
+          "Misa"
+        ],
+        "positive_drivers": [
+          "Temporada 2026. La Fórmula 1 ratificó los dos circuitos que cerrarán el calendario: cuáles son"
+        ],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 25 titulares de La Voz del Interior. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Papa, Córdoba, Fadea, Misa.",
+        "cover_path": ""
+      },
+      {
+        "id": 3116,
+        "date": "2026-11-10",
+        "source_id": "c5n",
+        "source_name": "C5N",
+        "category": "political_opposition",
+        "composite_score": -38.65,
+        "optimismo": -7.3,
         "calma": -6.7,
+        "confianza": 0.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "León",
+          "Papa",
+          "Córdoba",
+          "Argentina",
+          "Misa"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [
+          "El Gobierno volvió a exigir el freno de la explotación petrolera británica en Malvinas"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de C5N. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Córdoba, Argentina, Misa.",
+        "cover_path": ""
+      },
+      {
+        "id": 3104,
+        "date": "2026-11-10",
+        "source_id": "lanacion",
+        "source_name": "La Nación",
+        "category": "general",
+        "composite_score": -50.0,
+        "optimismo": -10.0,
+        "calma": -8.0,
         "confianza": 0.0,
         "alegria": 0.0,
         "key_themes": [
           "Papa",
           "León",
-          "Misa",
-          "Visita",
-          "Detalles"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de Perfil. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, León, Misa, Visita, Detalles.",
-        "cover_path": ""
-      },
-      {
-        "id": 3091,
-        "date": "2026-11-10",
-        "source_id": "infobae",
-        "source_name": "Infobae",
-        "category": "general",
-        "composite_score": -20.7,
-        "optimismo": 0.0,
-        "calma": -6.3,
-        "confianza": 0.0,
-        "alegria": -3.3,
-        "key_themes": [
-          "Huelga",
-          "Proyecto",
-          "Cómo",
           "Córdoba",
-          "Martes"
+          "Dólar",
+          "Vivo"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "Valeria Racu, portavoz del Sindicato de Inquilinas, ante la huelga: “Ya no bastan los parches. Hay que poner la vida por encima del lucro y cambiar radicalmente el modelo”"
+          "Hasta US$4 millones: se conocieron los precios de referencia para comprar los inmuebles de una textil en quiebra"
         ],
-        "justification": "Evaluación heurística de 24 titulares de Infobae. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Huelga, Proyecto, Cómo, Córdoba, Martes.",
-        "cover_path": ""
+        "justification": "Evaluación heurística de 24 titulares de La Nación. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Papa, León, Córdoba, Dólar, Vivo.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-11-10/lanacion.jpg"
       },
       {
-        "id": 3090,
-        "date": "2026-11-10",
-        "source_id": "lanacion",
-        "source_name": "La Nación",
-        "category": "general",
-        "composite_score": -26.3,
-        "optimismo": -6.7,
-        "calma": -0.5,
-        "confianza": 0.0,
-        "alegria": -3.3,
-        "key_themes": [
-          "Papa",
-          "León",
-          "Argentina",
-          "Uscis",
-          "Trabajo"
-        ],
-        "positive_drivers": [
-          "Una multitud capaz de abrazar a Messi y a un papa"
-        ],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de La Nación. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, León, Argentina, Uscis, Trabajo.",
-        "cover_path": ""
-      },
-      {
-        "id": 3092,
-        "date": "2026-11-10",
-        "source_id": "cronica",
-        "source_name": "Crónica",
-        "category": "popular",
-        "composite_score": -46.9,
-        "optimismo": -3.3,
-        "calma": -10.0,
-        "confianza": 0.0,
-        "alegria": -8.0,
-        "key_themes": [
-          "León",
-          "Papa",
-          "Misa",
-          "Palermo",
-          "Argentina"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [
-          "León XIV trae un mensaje social contundente, pero en el Gobierno celebran cómo marcha su visita"
-        ],
-        "justification": "Evaluación heurística de 25 titulares de Crónica. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Misa, Palermo, Argentina.",
-        "cover_path": ""
-      },
-      {
-        "id": 3089,
+        "id": 3103,
         "date": "2026-11-10",
         "source_id": "clarin",
         "source_name": "Clarín",
         "category": "general",
-        "composite_score": -49.2,
-        "optimismo": -7.5,
-        "calma": 0.0,
-        "confianza": -10.0,
-        "alegria": 2.2,
-        "key_themes": [
-          "Papa",
-          "León",
-          "Ante",
-          "Karina",
-          "Milei"
-        ],
-        "positive_drivers": [
-          "Tras las quejas de Victoria Villarruel por su ausencia en la misa del Papa, Karina Milei la desmiente y viaja a Córdoba"
-        ],
-        "negative_drivers": [
-          "Ante empresarios y sindicalistas, el Papa cuestionó el \"drama\" del desempleo y recordó que el Estado debe velar por el \"acceso al mundo del trabajo\""
-        ],
-        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 1 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Papa, León, Ante, Karina, Milei.",
-        "cover_path": ""
-      },
-      {
-        "id": 3100,
-        "date": "2026-11-10",
-        "source_id": "lavoz",
-        "source_name": "La Voz del Interior",
-        "category": "federal",
-        "composite_score": -50.25,
-        "optimismo": -6.7,
+        "composite_score": -50.1,
+        "optimismo": -10.0,
         "calma": 0.0,
         "confianza": -6.7,
-        "alegria": -6.7,
+        "alegria": 0.0,
         "key_themes": [
-          "León",
-          "Papa",
-          "Córdoba",
-          "Visita",
-          "Fadea"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [
-          "En la UCA. León XIV abogó por el pleno empleo: “Privar a una persona de trabajo es herir su dignidad”"
-        ],
-        "justification": "Evaluación heurística de 25 titulares de La Voz del Interior. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Córdoba, Visita, Fadea.",
-        "cover_path": ""
-      },
-      {
-        "id": 3093,
-        "date": "2026-11-10",
-        "source_id": "eldestape",
-        "source_name": "El Destape",
-        "category": "political_opposition",
-        "composite_score": -64.95,
-        "optimismo": -10.0,
-        "calma": 0.0,
-        "confianza": -10.0,
-        "alegria": -3.3,
-        "key_themes": [
-          "León",
-          "Papa",
           "Milei",
-          "Gobierno",
-          "Misa"
+          "Papa",
+          "Medidas",
+          "Misa",
+          "Argentina"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "Frente a Milei, León XIV habló de salarios, jubilados, discapacidad y universidades"
+          "Petróleo en Malvinas: Argentina pidió cuatro medidas para frenar las inversiones y Gran Bretaña dijo que tienen derecho a la autodeterminación"
         ],
-        "justification": "Evaluación heurística de 25 titulares de El Destape. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Milei, Gobierno, Misa.",
-        "cover_path": ""
+        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Milei, Papa, Medidas, Misa, Argentina.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-11-10/clarin.jpg"
       },
       {
-        "id": 3099,
+        "id": 3115,
         "date": "2026-11-10",
-        "source_id": "cadena3",
-        "source_name": "Cadena 3",
+        "source_id": "lacapital",
+        "source_name": "La Capital (Rosario)",
         "category": "federal",
-        "composite_score": -70.05,
+        "composite_score": -60.0,
         "optimismo": -10.0,
         "calma": 0.0,
         "confianza": -10.0,
-        "alegria": -6.7,
-        "key_themes": [
-          "Papa",
-          "Visita",
-          "León",
-          "Córdoba",
-          "Histórica"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [
-          "Histórica visita. León XIV habló en la UCA del \"drama\" del desempleo: \"El acceso al trabajo debe ser una prioridad\""
-        ],
-        "justification": "Evaluación heurística de 24 titulares de Cadena 3. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Papa, Visita, León, Córdoba, Histórica.",
-        "cover_path": ""
-      },
-      {
-        "id": 3096,
-        "date": "2026-11-10",
-        "source_id": "ambito",
-        "source_name": "Ámbito Financiero",
-        "category": "economy",
-        "composite_score": -73.2,
-        "optimismo": -10.0,
-        "calma": -3.3,
-        "confianza": -10.0,
-        "alegria": -3.3,
+        "alegria": 0.0,
         "key_themes": [
           "León",
           "Papa",
-          "Argentina",
-          "Pidió",
-          "Donald"
+          "Misa",
+          "Rosario",
+          "Dios"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "León XIV retomó en la UCA una agenda incómoda para el Gobierno: recordó a Francisco y se refirió a la justicia social, el desempleo y los trabajadores informales",
-          "Las expectativas de desempleo en Estados Unidos subieron a niveles 2020, reveló la Fed"
+          "Un informe advierte que la pobreza volvió a crecer en Argentina: 3,4 millones de personas más en un año"
         ],
-        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: León, Papa, Argentina, Pidió, Donald.",
+        "justification": "Evaluación heurística de 25 titulares de La Capital (Rosario). Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Papa, Misa, Rosario, Dios.",
         "cover_path": ""
       }
     ],
@@ -37381,6 +37396,126 @@
         "u": "https://www.ambito.com/mundo/que-debe-entender-donald-trump-china-y-taiwan-n6343392"
       },
       {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "El oro se hunde más de 2% ante apuesta por alza de tasas de un funcionario de la Fed",
+        "u": "https://www.ambito.com/finanzas/el-oro-se-hunde-mas-2-apuesta-alza-tasas-un-funcionario-la-fed-n6343645"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "El riesgo país vuelve a ceder y perfora los 860 puntos, pero los ADRs caen ante el repliegue de Wall Street",
+        "u": "https://www.ambito.com/finanzas/los-adrs-inician-la-jornada-baja-pero-el-riesgo-pais-anota-un-nuevo-retroceso-y-marca-los-865-puntos-n6343541"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Unidad y economía al servicio de la gente, los mensajes del papa León XIV que destacaron los gobernadores",
+        "u": "https://www.ambito.com/ambito-nacional/unidad-y-economia-al-servicio-la-gente-los-mensajes-del-papa-leon-xiv-que-destacaron-los-gobernadores-n6343514"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Malvinas: Argentina llevó al Tribunal del Mar su pedido para frenar la explotación petrolera de Reino Unido",
+        "u": "https://www.ambito.com/energia/malvinas-argentina-llevo-al-tribunal-del-mar-su-pedido-frenar-la-explotacion-petrolera-reino-unido-n6343566"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Empresarios muestran sintonía con el papa León XIV y declaran su compromiso con la creación de empleo",
+        "u": "https://www.ambito.com/economia/empresarios-muestran-sintonia-el-papa-leon-xiv-y-declaran-su-compromiso-la-creacion-empleo-n6343428"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Las mejores fotos y videos del tercer día del papa León XIV en la Argentina",
+        "u": "https://www.ambito.com/informacion-general/las-mejores-fotos-y-videos-del-tercer-dia-del-papa-leon-xiv-la-argentina-n6343614"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Trabajadores del subte realizarán un paro este jueves desde las 21 al cierre por una nueva muerte por asbesto",
+        "u": "https://www.ambito.com/trabajadores-del-subte-realizaran-un-paro-este-jueves-las-21-al-cierre-una-nueva-muerte-asbesto-n6343652"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Murió monseñor Héctor Aguer, arzobispo emérito de La Plata",
+        "u": "https://www.ambito.com/politica/murio-monsenor-hector-aguer-arzobispo-emerito-la-plata-n6343601"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Cómo se prepara Luján para la misa del papa León XIV: cortes, trenes y un operativo con 30.000 personas",
+        "u": "https://www.ambito.com/como-se-prepara-lujan-la-misa-del-papa-leon-xiv-cortes-trenes-y-un-operativo-30000-personas-n6343423"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "La inflación en EEUU fue mayor a la esperada en octubre y presiona a las tasas de la Fed",
+        "u": "https://www.ambito.com/economia/la-inflacion-eeuu-subio-mas-lo-previsto-octubre-y-presiona-las-tasas-la-fed-n6343564"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "De Mama Antula y Cura Brochero a Eduardo Pironio: los santos y beatos argentinos recordados por León XIV en la misa en FAdeA en Córdoba",
+        "u": "https://www.ambito.com/informacion-general/de-mama-antula-y-cura-brochero-eduardo-pironio-los-santos-y-beatos-argentinos-recordados-leon-xiv-la-misa-fadea-cordoba-n6343495"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Papa León XIV en Argentina EN VIVO día tres: misa en Córdoba, vigilia con jóvenes y últimas noticias",
+        "u": "https://www.ambito.com/politica/papa-leon-XIV-argentina-javier-milei-iglesia-vaticano-caba-lujan-cordoba-misa-fadea-vigilia-jovenes-monumento-españoles-en-vivo-minuto-a-minuto-10-noviembre"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "León XIV convocó a 2,5 millones de fieles en la misa en CABA y marcó un récord en su pontificado",
+        "u": "https://www.ambito.com/informacion-general/leon-xiv-convoco-25-millones-fieles-la-misa-caba-y-marco-un-record-su-pontificado-n6343616"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Javier Milei se ausenta de las misas de Córdoba y Luján, mientras en Casa Rosada relativizan los mensajes del papa León XIV",
+        "u": "https://www.ambito.com/politica/javier-milei-se-ausenta-las-misas-cordoba-y-lujan-mientras-casa-rosada-relativizan-los-mensajes-del-papa-leon-xiv-n6343496"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Por qué el papa León XIV eligió Luján para su última misa: la historia de la Virgen, la Basílica y la conexión con Francisco",
+        "u": "https://www.ambito.com/informacion-general/por-que-el-papa-leon-xiv-eligio-lujan-su-ultima-misa-la-historia-la-virgen-la-basilica-y-la-conexion-francisco-n6343599"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Escándalo Ueno Bank: Paraguay busca en Argentina, EEUU y Luxemburgo el dinero desviado",
+        "u": "https://www.ambito.com/mundo/escandalo-ueno-bank-paraguay-busca-argentina-eeuu-y-luxemburgo-el-dinero-desviado-n6343547"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Malvinas: Argentina y Reino Unido se enfrentan desde hoy en el Tribunal del Mar por el petróleo y la soberanía",
+        "u": "https://www.ambito.com/energia/malvinas-argentina-y-reino-unido-se-enfrentan-hoy-el-tribunal-del-mar-el-petroleo-y-la-soberania-n6343511"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Tesla confirmó cuándo llega a la Argentina y prepara un cambio clave en su estrategia mundial",
+        "u": "https://www.ambito.com/autos/tesla-confirmo-cuando-llega-la-argentina-y-prepara-un-cambio-clave-su-estrategia-mundial-n6343445"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Crecen los rumores sobre una salida de Marco Rubio del gobierno de Donald Trump por la paliza electoral",
+        "u": "https://www.ambito.com/mundo/crecen-los-rumores-una-salida-marco-rubio-del-gobierno-donald-trump-la-paliza-electoral-n6342343"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Israel: Gadi Eisenkot se comprometió a formar un \"gobierno de emergencia\" mientras se define el futuro de Benjamín Netanyahu",
+        "u": "https://www.ambito.com/mundo/israel-gadi-eisenkot-se-comprometio-formar-un-gobierno-emergencia-mientras-se-define-el-futuro-benjamin-netanyahu-n6343593"
+      },
+      {
         "s": "c5n",
         "n": "C5N",
         "t": "León XIV insistió en la necesidad de regular la IA: \"El algoritmo no puede sustituir la ética humana\"",
@@ -37528,6 +37663,156 @@
         "s": "c5n",
         "n": "C5N",
         "t": "León XIV homenajeó a Francisco con una ofrenda floral en la Catedral Metropolitana y emocionó a todos",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV en Argentina: seguí la cobertura especial de C5N",
+        "u": "https://www.c5n.com/sociedad/cobertura-especial-c5n-visita-papa-leon-xiv-cordoba-vigilia-jovenes-10-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV evocó al papa Francisco en Córdoba: \"Los pobres tienen necesidad de Dios\"",
+        "u": "https://www.c5n.com/sociedad/santa-misa-papa-leon-xiv-cordoba-fadea-10-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Quién fue el Cura Brochero, el santo argentino que León XIV recordó durante su homilía",
+        "u": "https://www.c5n.com/sociedad/quien-fue-el-cura-brochero-el-santo-argentino-que-leon-xiv-recordo-su-homilia-cordoba-n253915"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La historia de Mama Antula, la primera santa argentina que mencionó el Papa",
+        "u": "https://www.c5n.com/sociedad/quien-fue-mama-antula-la-primera-santa-argentina-que-fue-mencionada-el-papa-leon-xiv-cordoba-n253914"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV recibirá el pedido de las Abuelas de Plaza de Mayo por el paradero de desaparecidos",
+        "u": "https://www.c5n.com/sociedad/leon-XIV-abuelas-plaza-de-mayo-reclamo-desparecidos-dictadura-militar-cordoba-10-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Tras la Santa Misa en Córdoba, León XIV recorrió la ciudad en el papamóvil y salió al balcón",
+        "u": "https://www.c5n.com/sociedad/papa-leon-papamovil-cordoba-misa-arzobispado-martes-10-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La ilusión de los jóvenes que esperan a León XIV: \"Al tenerlo acá, su mensaje llega más profundo\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV encabeza un encuentro de obispos en la Catedral de Córdoba",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV advirtió que \"la Iglesia no es un negocio\" y aseveró que \"el hambre y las injusticias reclaman una respuesta\"",
+        "u": "https://www.c5n.com/sociedad/papa-leon-xiv-catedral-cordoba-religiosos-10-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV saludó desde el balcón del Arzobispado: \"Cuando estamos unidos podemos lograr todo\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Encuentro del papa León XIV con la juventud en Palermo: quiénes conducirán y qué artistas se presentarán",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Murió monseñor Héctor Aguer a los 83 años, arzobispo de La Plata y referente del sector conservador de la Iglesia Católica",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Se conoce el veredicto al policía de la Federal acusado de gasear a una niña en una manifestación",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Causa ANDIS: acorralados por la Justicia, los Kovalivker se negaron a responder las acusaciones por corrupción",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Nueva denuncia contra una empresa de los Neuss por evadir impuestos por $6.600 millones",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Michel le solicitó a la AGN una auditoría integral de la \"privatización\" de AySA",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Hidrovía: las irregularidades denunciadas que ahora deberá revisar la AGN",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Cuándo empieza la tormenta fuerte y el frío polar que bajará 17 grados la temperatura de Buenos Aires",
+        "u": "https://www.c5n.com/sociedad/cuando-empieza-la-tormenta-fuerte-y-el-frio-polar-que-bajara-17-grados-la-temperatura-buenos-aires-n253934"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "El Gobierno volvió a exigir el freno de la explotación petrolera británica en Malvinas",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Mapa de cortes por la visita del Papa a la cárcel de Devoto",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Una multitud acompañó al papa León XIV en Córdoba: de la misa en FAdeA a su paso por el Arzobispado",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV visitará Luján: los cortes que habrá en los principales accesos",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La AGN pone la lupa sobre dos polémicas concesiones: auditará la licitación de la Hidrovía y la prórroga a Eurnekian",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "León XIV en Argentina",
+        "u": "https://www.c5n.com/tag/leon-xiv"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La homilía completa del papa León XIV en su multitudinaria misa en Córdoba",
         "u": "https://www.c5n.com"
       },
       {
@@ -37681,6 +37966,156 @@
         "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/la-vestimenta-del-papa-leon-xiv-que-significa-cada-ornamento-y-cuando-lo-utiliza_611620"
       },
       {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Camino del Papa en Argentina",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Viva la Radio Santa Fe",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Rodolfo Barili",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Pablo Sirvén",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La quinta pata del gato",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Los editoriales de Alberto Lotuf",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Cuadro de Situación",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "EL CAMINO DEL PAPA EN ARGENTINA",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Seguí en vivo la cobertura especial de Cadena 3",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. León XIV brindó su último discurso en Córdoba: \"Sigan haciendo lío como dijo el papa Francisco\"",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/leon-xiv-brindo-su-ultimo-discurso-en-cordoba-sigan-haciendo-lio-como-dijo-el-papa-francisco_611832"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. El sacerdote con discapacidad que le habló a León XIV con su voz recuperada con IA",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-sacerdote-con-discapacidad-que-le-hablo-a-leon-xiv-con-su-voz-recuperada-con-ia_611850"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. El mensaje del cardenal Rossi al Papa en la Catedral: \"No nos están permitidos los brazos cruzados\"",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-mensaje-del-cardenal-rossi-al-papa-en-la-catedral-no-nos-estan-permitidos-los-brazos-cruzados_611843"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita apostólica. \"Vayan y sean santos\": León XIV convocó a vivir la fe en su multitudinaria misa en Córdoba",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/vayan-y-sean-santos-leon-xiv-convoco-a-vivir-la-fe-en-su-multitudinaria-misa-en-cordoba_611748"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. \"Alto anillito\": la ocurrencia de un niño cordobés que recibió al Papa León XIV",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/alto-anillito-la-ocurrencia-de-un-nino-cordobes-que-recibio-al-papa-leon-xiv_611794"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Pura emoción . El histórico relato del Bocha Houriet en la llegada del papa León XIV a Córdoba",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-historico-relato-del-bocha-houriet-en-la-llegada-del-papa-leon-xiv-a-cordoba_611733"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. El papa León XIV en Córdoba: la homilía completa de su segunda misa en el país",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-papa-leon-xiv-en-cordoba-la-homilia-completa-de-su-segunda-misa-en-el-pais_611773"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Audio. La emoción de Rony Vargas por la visita papal: \"Representa el recuerdo de Jesús\"",
+        "u": "https://audio.apolomedia.com/audio/cadena3/cadena3/103/2-8-API-NG3YGF1794316414.mp3"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. El operativo especial para la llegada del papa León XIV a Luján",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-operativo-especial-para-la-llegada-del-papa-leon-xiv-a-lujan_611809"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Histórica visita. Jairo emocionó a miles de fieles con su \"Ave María\" en la previa de la misa del papa León XIV",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/jairo-emociono-a-miles-de-fieles-con-su-ave-maria-en-la-previa-de-la-misa-del-papa-leon-xiv_611763"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. El papa León XIV en Córdoba: cómo son los cortes de tránsito, el transporte y las rutas peregrinas",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/el-papa-leon-xiv-en-cordoba-como-son-los-cortes-de-transito-el-transporte-y-las-rutas-peregrinas_611395"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Postales . La histórica visita a Córdoba del papa León XIV, en fotos",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/la-historica-visita-a-cordoba-del-papa-leon-xiv-en-fotos_611807"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. La emoción de una cubana que espera ver al Papa: \"Es un día muy especial\"",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/la-emocion-de-una-cubana-que-espera-ver-al-papa-es-un-dia-muy-especial_611739"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. Su nieto llamado León murió y viajó a Córdoba para ver al Papa: \"Una caricia al corazón\"",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/su-nieto-llamado-leon-murio-y-viajo-a-cordoba-para-ver-al-papa-una-caricia-al-corazon_611745"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. León XIV brindó su último discurso en Córdoba: \"Sigan haciendo lío como dijo Francisco\"",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/leon-xiv-brindo-su-ultimo-discurso-en-cordoba-sigan-haciendo-lio-como-dijo-francisco_611832"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita histórica. León XIV en Córdoba: estiman más de 550 mil fieles en FAdeA y la Municipalidad destacó el operativo",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/leon-xiv-en-cordoba-estiman-mas-de-550-mil-fieles-en-fadea-y-la-municipalidad-destaco-el-operativo_611831"
+      },
+      {
         "s": "clarin",
         "n": "Clarín",
         "t": "Pablo Quirno resaltó los mensajes principales de León XIV: \"Tomamos nota de todos los conceptos vertidos por el Papa\"",
@@ -37739,6 +38174,66 @@
         "n": "Clarín",
         "t": "El Gobierno acelera en el Congreso, pero ya se prepara para las extraordinarias: los proyectos pendientes",
         "u": "https://www.clarin.com/politica/gobierno-acelera-congreso-prepara-extraordinarias-proyectos-pendientes_0_yZan9vH5Uk.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "\"Un lugar central\": la Justicia procesó a la madre de Ariel Vallejo y la embargó por $40.000 millones",
+        "u": "https://www.clarin.com/politica/lugar-central-justicia-proceso-madre-ariel-vallejo-embargo-40000-millones_0_7s3AYp5tEL.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "El Comité de la ONU al que acudió Cristina Kirchner para ser candidata no trató su pedido y lo pasa para el año que viene",
+        "u": "https://www.clarin.com/politica/comite-onu-acudio-cristina-kirchner-candidata-trato-pedido-pasa-ano-viene_0_7UqBlBTeAS.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "León XIV y sus raíces negras: la historia familiar del Papa que conduce a la esclavitud y a la segregación racial en Estados Unidos",
+        "u": "https://www.clarin.com/sociedad/leon-xiv-raices-negras-historia-familiar-papa-conduce-esclavitud-segregacion-racial-estados-unidos_0_mux3WhQi29.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Jorge Macri habló de la carpa VIP en la misa del Papa en Palermo y admitió: “Las medialunas y budines estuvieron de más”",
+        "u": "https://www.clarin.com/politica/jorge-macri-hablo-carpa-vip-misa-papa-palermo-admitio-medialunas-budines_0_m5b2g0bFv8.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Nueva encuesta: uno de los consultores preferidos del PJ anticipa quiénes definirán la elección en 2027",
+        "u": "https://www.clarin.com/politica/nueva-encuesta-consultores-preferidos-pj-anticipa-definiran-eleccion-2027_0_Bv6CDWJc3M.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "El reclamo a Milei de la mujer con parálisis cerebral que conmovió al Papa: \"El Presidente tendría que tener el corazón más blando\"",
+        "u": "https://www.clarin.com/politica/reclamo-milei-mujer-paralisis-cerebral-conmovio-papa-presidente-tener-corazon-blando_0_v0Ux8yN4MK.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Petróleo en Malvinas: Argentina pidió cuatro medidas para frenar las inversiones y Gran Bretaña dijo que tienen derecho a la autodeterminación",
+        "u": "https://www.clarin.com/politica/petroleo-malvinas-arrancaron-audiencias-tribunal-mar-gobierno-pidio-medidas-reino-unido_0_SsjpdLsKcV.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Javier Milei y sus medidas, EN VIVO: Karina Milei encabezó la comitiva oficial que fue a la misa del Papa en Córdoba",
+        "u": "https://www.clarin.com/politica/javier-milei-medidas-vivo-karina-milei-encabeza-comitiva-oficial-va-misa-papa-cordoba_0_fQAiy1Q5zu.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Figueroa no tuvo foto con Milei: la pelea por Vaca Muerta ya empezó en Neuquén",
+        "u": "https://www.clarin.com/politica/queda-vaca-muerta-neuquen-abre-2027-peronismo-dividido-lla-carrera_0_hrLSPngIgT.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "El mensaje del Papa en la Argentina: León XIV le tiró un centro a Milei y a la oposición",
+        "u": "https://www.clarin.com/politica/mensaje-papa-argentina-leon-xiv-tiro-centro-milei-oposicion_0_b0KKT37Q41.html"
       },
       {
         "s": "cronica",
@@ -37891,6 +38386,156 @@
         "u": "https://www.cronica.com.ar/sociedad/las-mejores-fotos-y-videos-del-papa-leon-xiv-en-el-cottolengo-don-orione-y-la-santa-misa-en-palermo/"
       },
       {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "León XIV en Córdoba: minuto a minuto de una visita histórica",
+        "u": "https://www.cronica.com.ar/cronicahd/no-te-pierdas-cronica-tv-en-vivo-8239/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "\"Cuidemos ese fuego\": el profundo mensaje del papa León XIV a sacerdotes y religiosos en la Catedral de Córdoba",
+        "u": "https://www.cronica.com.ar/sociedad/en-vivo-el-papa-leon-xiv-encabeza-encuentro-con-obispos-en-la-cated-cordoba/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Comenzó el operativo médico del SAME en Palermo para el esperado encuentro del papa León XIV con los jóvenes",
+        "u": "https://www.cronica.com.ar/sociedad/operativo-same-palermo-papa-leon-xiv/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Sin libreto y ante una multitud: las frases más emotivas del papa León XIV en su paso por el Arzobispado de Córdoba",
+        "u": "https://www.cronica.com.ar/sociedad/papa-leon-xiv-cordoba-arzobispado/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Las mejores postales de la misa del papa León XIV en Córdoba",
+        "u": "https://www.cronica.com.ar/sociedad/las-mejores-postales-de-la-misa-del-papa-leon-xiv-en-cordoba/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¡VIDEO! Los obispos cantaron el tango \"Volver\" al papa León XIV en un emotivo encuentro",
+        "u": "https://www.cronica.com.ar/sociedad/video-los-obispos-cantaron-el-tango-volver-al-papa-leon-xiv-en-un-emotivo-encuentro/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "León XIV: así fue la emotiva llegada en papamóvil a la misa en Córdoba",
+        "u": "https://www.cronica.com.ar/sociedad/el-papa-leon-xiv-recorre-cordoba-en-el-papamovil/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Murió Héctor Aguer, el histórico arzobispo emérito de La Plata que marcó una época en la Iglesia argentina",
+        "u": "https://www.cronica.com.ar/sociedad/murio-hector-aguer/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Malvinas: Argentina exigió ante un tribunal internacional frenar la explotación petrolera británica",
+        "u": "https://www.cronica.com.ar/politica/malvinas-argentina-pidio-a-un-tribunal-internacional-frenar-el-petroleo-britanico/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Supercopa Argentina: todos los campeones de la historia y quién ganó más títulos",
+        "u": "https://www.cronica.com.ar/depo/actualidad/supercopa-argentina-todos-los-campeones-de-la-historia-y-quien-gano-mas-titulos/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Arturo Puig reveló la señal que recibió de Selva Alemán a través del papa León XIV: \"Fue espectacular...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/farandula/arturo-puig-revelo-la-senal-que-recibio-de-selva-aleman-a-traves-del-papa-leon-xiv-fue-espectacular/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Tomás Natenzon será indagado tras infiltrarse en el operativo de seguridad del Papa",
+        "u": "https://www.cronica.com.ar/policiales/tomas-natenzon-sera-indagado-por-infiltrarse-en-el-operativo-del-papa-ordenaron-un-informe-sobre-su-salud-mental/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "River aprovecha el parate para cambiar el aire: Ponzio prepara una semana especial y espera recuperar a tres jugadores",
+        "u": "https://www.cronica.com.ar/depo/actualidad/river-aprovecha-el-parate-para-cambiar-el-aire-ponzio-prepara-una-semana-especial-y-espera-recuperar-a-tres-jugadores/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Diego Topa despidió a su perro Titi, que murió a los 16 años: \"El amor no se va...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/por-la-red/diego-topa-despide-a-su-perro-titi-tras-un-doloroso-duelo-de-16-anos-el-amor-no-se-va-4277/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "LEÓN XIV EN ARGENTINA",
+        "u": "https://www.cronica.com.ar/tema/leon-xiv-en-argentina/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "León XIV: \"Córdoba fue tierra de santos que dieron la vida por el Evangelio\"",
+        "u": "https://www.cronica.com.ar/sociedad/leon-xiv-en-cordoba/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Mamá Antula, Cura Brochero, Fray Mamerto Esquiú, Ceferino Namuncurá: 12 figuras religiosas que León XIV destacó por su legado de fe y compromiso social",
+        "u": "https://www.cronica.com.ar/sociedad/mama-antula-cura-brochero-fray-mamerto-esquiu-ceferino-namuncura-12-figuras-religiosas-que-leon-xiv-destaco-por-su-legado-de-fe-y-compromiso-social/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Quién fue José Brochero, el \"Cura Gaucho\" que León XIV recordó en su misa en Córdoba",
+        "u": "https://www.cronica.com.ar/sociedad/quien-fue-jose-brochero-el-cura-gaucho-que-leon-xiv-recordo-en-su-misa-en-cordoba/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Encontraron dos cadáveres, uno en un riacho y otro en un basurero",
+        "u": "https://www.cronica.com.ar/policiales/encontraron-dos-cadaveres-uno-en-un-riacho-y-otro-en-un-basurero-los-casos-se-investigan-como-homicidios/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Hallaron un camastro de juncos donde creen que mataron a la docente",
+        "u": "https://www.cronica.com.ar/policiales/femicidio-de-nancy-godoy-hallaron-un-camastro-de-juncos-donde-creen-que-mataron-a-la-docente/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Murió Dora Mils, la actriz que trabajó con Lali Espósito en \"El fin del amor\"",
+        "u": "https://www.cronica.com.ar/diarioshow/farandula/murio-dora-mils-reconocida-actriz-de-el-fin-del-amor-a-los-94-anos/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "A 24 años del crimen de María Marta García Belsunce: la trama de misterio, las seis balas en la cabeza y el encubrimiento que conmovió al país",
+        "u": "https://www.cronica.com.ar/policiales/a-24-anos-del-crimen-de-maria-marta-garcia-belsunce-la-trama-de-misterio-las-seis-balas-en-la-cabeza-y-el-encubrimiento-que-conmovio-al-pais/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¿Se viene un \"corralito\" en Paraguay?",
+        "u": "https://www.cronica.com.ar/mundo/se-viene-un-corralito-en-paraguay/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Acoso y abuso: el acusado continúa prófugo mientras tres familiares de la víctima están tras las rejas",
+        "u": "https://www.cronica.com.ar/policiales/acoso-y-abuso-el-acusado-continua-profugo-mientras-tres-familiares-de-la-victima-estan-tras-las-rejas/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Juntó a un joven haciendo dedo en la ruta, el pasajero le derritió la alfombra de la camioneta y desapareció sin dejar huellas",
+        "u": "https://www.cronica.com.ar/paranormal/alzo-a-un-joven-haciendo-dedo-en-la-ruta-el-pasajero-le-derritio-la-alfombra-de-la-camioneta-y-desaparecio-sin-dejar-huellas/"
+      },
+      {
         "s": "cronista",
         "n": "El Cronista Comercial",
         "t": "Educación. Confirmado por el calendario escolar | Cierran las escuelas este miércoles 11: cuándo vuelven las clases en jardín, primaria y secundaria en estos distritos",
@@ -38039,6 +38684,156 @@
         "n": "El Cronista Comercial",
         "t": "Cambios. WhatsApp deja de ser gratis: a partir del mes de octubre van a cobrar por mensaje individual a cada uno de los usuarios de Bussiness API",
         "u": "https://www.cronista.com/usa/pc-y-mobile/whatsapp-deja-de-ser-gratis-a-partir-del-mes-de-octubre-van-a-cobrar-por-mensaje-individual-a-cada-uno-de-estos-usuarios/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Documentos. Lo exige Estados Unidos | Todas las personas que presenten un Formulario DS-11 para tramitar su pasaporte deberán pagar “doble tarifa”: a qué corresponde cada una",
+        "u": "https://www.cronista.com/usa/trending/lo-exige-estados-unidos-todas-las-personas-que-presenten-un-formulario-ds-11-para-tramitar-su-pasaporte-deberan-pagar-doble-tarifa-a-que-corresponde-cada-una/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Medida. Por orden del Gobierno, se hacen inspecciones casa por casa a las personas que tengan estas propiedades: hay que pagarlas y son absolutamente obligatorias en Boston",
+        "u": "https://www.cronista.com/usa/trending/por-orden-del-gobierno-se-hacen-inspecciones-casa-por-casa-a-las-personas-que-tengan-estas-propiedades-hay-que-pagarlas-y-son-absolutamente-obligatorias-en-boston/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Impuestos. Confirmado por el IRS | El crédito por hijo aumentará a US$2,300 en 2027 y los contribuyentes podrán recibir hasta US$1,800 como reembolso",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/confirmado-por-el-irs-el-credito-por-hijo-aumentara-a-us2300-en-2027-y-los-contribuyentes-podran-recibir-hasta-us1800-como-reembolso/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Educación. Confirmado por el calendario escolar | Se acorta la jornada de clases este jueves 12 de noviembre: alumnos de nivel intermedio y de determinados centros de educación especial saldrán tres horas antes",
+        "u": "https://www.cronista.com/usa/trending/confirmado-por-el-calendario-escolar-se-acorta-la-jornada-de-clases-este-jueves-12-de-noviembre-alumnos-de-nivel-intermedio-y-de-determinados-centros-de-educacion-especial-saldran-tres-horas-antes/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámites. Confirmada por SSA | Esta es la lista de documentos e información que exigirán si o si a quienes quieran jubilarse en Estados Unidos",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/confirmada-por-ssa-esta-es-la-lista-de-documentos-e-informacion-que-exigiran-si-o-si-a-quienes-quieran-jubilarse-en-estados-unidos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trucos. Envolver la valija en papel film o cerrarla con candado: qué ventajas tiene cada método para proteger las pertenencias en el aeropuerto",
+        "u": "https://www.cronista.com/usa/lifestyle/envolver-la-valija-en-papel-film-o-cerrarla-con-candado-que-ventajas-tiene-cada-metodo-para-proteger-las-pertenencias-en-el-aeropuerto/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Empleo. Invertirá US$50 millones y creará 227 empleos: la empresa industrial que vuelve a ampliar sus operaciones en Tennessee",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/invertira-us50-millones-y-creara-227-empleos-la-empresa-industrial-que-vuelve-a-ampliar-sus-operaciones-en-tennessee/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Plagas. Poner papel aluminio en distintos rincones de la casa para detectar ratones: cómo funciona y qué tan efectivo es",
+        "u": "https://www.cronista.com/usa/lifestyle/poner-papel-aluminio-en-distintos-rincones-de-la-casa-para-detectar-ratones-como-funciona-y-que-tan-efectivo-es/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Vivienda. Bank of America lo confirma | Ofrece hasta US$10,000 para el pago inicial de una vivienda: quiénes pueden acceder a la ayuda que no se devuelve",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/bank-of-america-lo-confirma-ofrece-hasta-us10000-para-el-pago-inicial-de-una-vivienda-quienes-pueden-acceder-a-la-ayuda-que-no-se-devuelve/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Truco. Colocar una botella de plástico transparente llena de agua en el techo: para qué sirve y por qué se utilizó en más de 30 países",
+        "u": "https://www.cronista.com/usa/lifestyle/colocar-una-botella-de-plastico-transparente-llena-de-agua-en-el-techo-para-que-sirve-y-por-que-se-utilizo-en-mas-de-30-paises/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Seguridad. Qué significa la señal de tránsito de dos niños en un subibaja y por qué los conductores deben reducir la velocidad al verla",
+        "u": "https://www.cronista.com/usa/lifestyle/que-significa-la-senal-de-transito-de-dos-ninos-en-un-subibaja-y-por-que-los-conductores-deben-reducir-la-velocidad-al-verla/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Finanzas y Economía",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Defensa. La Armada incorporó un nuevo buque de guerra fabricado en el país: mide más de 155 metros y puede enfrentar amenazas aéreas y misiles balísticos",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/la-armada-incorporo-un-nuevo-buque-de-guerra-fabricado-en-el-pais-mide-mas-de-155-metros-y-puede-enfrentar-amenazas-aereas-y-misiles-balisticos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Gestiones fiscales. Sin Seguro Social | El IRS mantiene un trámite obligatorio para estos extranjeros: quiénes deben completar el formulario W-7",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/sin-seguro-social-el-irs-mantiene-un-tramite-obligatorio-para-estos-extranjeros-quienes-deben-completar-el-formulario-w-7/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Alivio fiscal. Confirmado por el IRS | El Gobierno otorgará y depositará hasta US$1,800 en las cuentas bancarias a quienes cumplan los requisitos del Crédito Tributario Adicional por Hijo en 2027",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/confirmado-por-el-irs-el-gobierno-otorgara-y-depositara-hasta-us1800-en-las-cuentas-bancarias-a-quienes-cumplan-los-requisitos-del-credito-tributario-adicional-por-hijo-en-2027/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Oportunidad. Oficial | Bank of America ofrece hasta US$500 por abrir una cuenta nueva: cuáles son los requisitos para cobrar el bono",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-bank-of-america-ofrece-hasta-us500-por-abrir-una-cuenta-nueva-cuales-son-los-requisitos-para-cobrar-el-bono/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Residencia. USCIS lo advierte | Volver a Estados Unidos una vez al año no alcanza para conservar la green card si vives en otro país",
+        "u": "https://www.cronista.com/usa/inmigracion/uscis-lo-advierte-volver-a-estados-unidos-una-vez-al-ano-no-alcanza-para-conservar-la-green-card-si-vives-en-otro-pais/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "DHS. El Gobierno de Donald Trump confirmó el fin de la extensión automática del permiso de trabajo: qué deben hacer los inmigrantes para renovar su EAD",
+        "u": "https://www.cronista.com/usa/inmigracion/el-gobierno-de-donald-trump-confirmo-el-fin-de-la-extension-automatica-del-permiso-de-trabajo-que-deben-hacer-los-inmigrantes-para-renovar-su-ead/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámite. Lo pide Bank of America | Los dos documentos que deben presentar los extranjeros para abrir una cuenta bancaria en Estados Unidos",
+        "u": "https://www.cronista.com/usa/inmigracion/lo-pide-bank-of-america-los-dos-documentos-que-deben-presentar-los-extranjeros-para-abrir-una-cuenta-bancaria-en-estados-unidos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Atención. El Gobierno de Donald Trump actualiza un formulario de USCIS: los empleadores deberán presentar la nueva versión del I-129 para solicitar visas de trabajo en noviembre",
+        "u": "https://www.cronista.com/usa/inmigracion/el-gobierno-de-donald-trump-actualiza-un-formulario-de-uscis-los-empleadores-deberan-presentar-la-nueva-version-del-i-129-para-solicitar-visas-de-trabajo-en-noviembre/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámite. USCIS lo confirmó | El formulario que permite cambiar de estatus migratorio y permanecer más tiempo en Estados Unidos",
+        "u": "https://www.cronista.com/usa/inmigracion/uscis-lo-confirmo-el-formulario-que-permite-cambiar-de-estatus-migratorio-y-permanecer-mas-tiempo-en-estados-unidos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Entretenimiento. Netflix agregó una película de terror de Guillermo del Toro que dura menos de 2 horas y tiene un elenco de lujo",
+        "u": "https://www.cronista.com/usa/streaming/netflix-agrego-una-pelicula-de-terror-de-guillermo-del-toro-que-dura-menos-de-2-horas-y-tiene-un-elenco-de-lujo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Estrenos. Netflix renueva su catálogo con una nueva miniserie de suspenso que esconde un misterio inquietante: tiene 6 episodios y llega esta semana",
+        "u": "https://www.cronista.com/usa/streaming/netflix-renueva-su-catalogo-con-una-nueva-miniserie-de-suspenso-que-esconde-un-misterio-inquietante-tiene-6-episodios-y-llega-esta-semana/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 series de Amazon Prime más vistas este 29 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-series-de-amazon-prime-mas-vistas-este-29-de-julio/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 películas de HBO más vistas este 26 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-peliculas-de-hbo-mas-vistas-este-26-de-julio/"
       },
       {
         "s": "eldestape",
@@ -38191,6 +38986,156 @@
         "u": "https://www.eldestapeweb.com/sociedad/descuentos-cuenta-dni-15-noviembre-octubre-2026-obtenerlos-2026111034838"
       },
       {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Destape - Sigamos Haciendo Historia",
+        "u": "https://www.eldestapeweb.com"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "León XIV en Argentina",
+        "u": "https://www.eldestapeweb.com/politica/leon-xiv-parafraseo-francisco-pidio-suenen-iglesia-siga-haciendo-lio-2026111016620"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "León XIV parafraseó a Francisco y pidió: \"Sueñen con una Iglesia que siga haciendo lío\"",
+        "u": "https://www.eldestapeweb.com/politica/leon-xiv-parafraseo-francisco-pidio-suenen-iglesia-siga-haciendo-lio-2026111016620"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Desplome de las acciones argentinas en Wall Street en otro día negro en los mercados",
+        "u": "https://www.eldestapeweb.com/economia/desploman-acciones-argentina-wall-street-otro-dia-negro-mercados-2026111013491"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El detrás del diálogo sobre el desguace de Milei entre León XIV y una referenta",
+        "u": "https://www.eldestapeweb.com/politica/revelador-cara-cara-cordoba-trastienda-dialogo-desguace-milei-leon-xiv-referenta-social-2026111015474"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Javier Peverelli",
+        "u": "https://www.eldestapeweb.com/perfil/javier-peverelli"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Papa recorre el Interior del país",
+        "u": "https://www.eldestapeweb.com/sociedad/papa-leon-xiv-argentina-vivo-dia-3-misa-cordoba-papamovil-vigilia-jovenes-palermo-202611106303"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Papa se reúne con seminaristas en la Catedral de Córdoba: \"La Iglesia no es un negocio\"",
+        "u": "https://www.eldestapeweb.com/sociedad/papa-leon-xiv-argentina-vivo-dia-3-misa-cordoba-papamovil-vigilia-jovenes-palermo-202611106303"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Informe revela que la visita del Papa complicó a Milei en las redes sociales",
+        "u": "https://www.eldestapeweb.com/sociedad/visita-papa-leon-xiv-argentina-60-menciones-milei-redes-fue-negativa-nueva-encuesta-20261110124113"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "La trastienda de la misa papal: guerra de fotos, faltazo de Macri y tensiones con Bullrich",
+        "u": "https://www.eldestapeweb.com/politica/trastienda-misa-papal-guerra-fotos-faltazo-macri-tensiones-bullrich-2026119215426"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los históricos números de la visita del papa León XIV a la Argentina",
+        "u": "https://www.eldestapeweb.com/sociedad/record-historico-devocion-masiva-impactante-cifra-fieles-movilizo-visita-papa-leon-xiv-argentina-20261110161353"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Giro por Malvinas: Argentina y el Reino Unido se enfrentaron en el Tribunal del Mar",
+        "u": "https://www.eldestapeweb.com/politica/giro-malvinas-argentina-formalizo-reclamo-sea-lion-reino-unido-2026111012545"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Murió Héctor Aguer, arzobispo emérito de La Plata",
+        "u": "https://www.eldestapeweb.com/politica/murio-hector-aguer-arzobispo-emerito-plata-20261110141939"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El sacerdote que puede dar misa gracias a la IA que conmovió a León XIV",
+        "u": "https://www.eldestapeweb.com/sociedad/testimonio-sacerdote-puede-dar-misa-gracias-ia-conmovio-leon-xiv-202611101618"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El duro reclamo a Milei de la mujer con parálisis cerebral que conmovió al Papa",
+        "u": "https://www.eldestapeweb.com/sociedad/duro-reclamo-milei-mujer-paralisis-cerebral-conmovio-papa-tendria-tener-corazon-blando-20261110103840"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Las diez frases mas fuertes del discurso del Papa León XIV en la UCA",
+        "u": "https://www.eldestapeweb.com/politica/diez-frases-fuertes-discurso-papa-leon-xiv-uca-2026119174322"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El pedido de informes en Diputados por la carpa vip en la misa del papa León XIV",
+        "u": "https://www.eldestapeweb.com/politica/pedido-informes-diputados-carpa-vip-misa-papa-monumento-espanoles-20261110111426"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Encuesta: Kicillof le gana a Milei en un balotaje y más de la mitad pide otro rumbo",
+        "u": "https://www.eldestapeweb.com/politica/encuesta-axel-kicillof-le-gana-javier-milei-balotaje-55-pide-otro-rumbo-economico-20261110121430"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "La Liga de fútbol en el Vaticano: una Selección y un torneo en tierras de León XIV",
+        "u": "https://www.eldestapeweb.com/deportes/liga-futbol-vaticano-seleccion-torneo-tierras-leon-xiv-2026119194934"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Las vidas que construyó el Cottolengo en medio de la crisis",
+        "u": "https://www.eldestapeweb.com/sociedad/vidas-construyo-cottolengo-don-orione-medio-crisis-discapacidad-papa-viene-nuestra-casa-somos-gran-familia-20261188025"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Cuánto costó la misa en Palermo y la aclaración del Gobierno sobre la \"carpa VIP\"",
+        "u": "https://www.eldestapeweb.com/politica/cuanto-costo-misa-leon-xiv-palermo-aclaracion-gobierno-carpa-vip-20261110161127"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los gestos de León XIV: seguir el legado de Francisco y su freno a Trump",
+        "u": "https://www.eldestapeweb.com/internacionales/legado-francisco-freno-trump-gestos-leon-xiv-marcan-papado-luego-muerte-argentino-20261110803"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Sofía Solari Arena",
+        "u": "https://www.eldestapeweb.com/perfil/sofia-solari-arena"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El primer discurso del Papa incomodó al Gobierno que ahora intenta matizarlo",
+        "u": "https://www.eldestapeweb.com/politica/gobierno-cayo-mal-primer-discurso-papa-intentan-matizarlo-202611993949"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Las tensiones y negociaciones rompen el modo avión del Congreso",
+        "u": "https://www.eldestapeweb.com/politica/freno-parlamentario-visita-papal-pasa-proyectos-discapacidad-ludopatia-presupuesto-2027-20261190551"
+      },
+      {
         "s": "infobae",
         "n": "Infobae",
         "t": "Valeria Racu, portavoz del Sindicato de Inquilinas, ante la huelga: “Ya no bastan los parches. Hay que poner la vida por encima del lucro y cambiar radicalmente el modelo”",
@@ -38339,6 +39284,156 @@
         "n": "Infobae",
         "t": "La buena política no se fabrica en serie",
         "u": "https://www.infobae.com/america/opinion/2026/11/10/la-buena-politica-no-se-fabrica-en-serie/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Fiscales y policías lograron abrir la misteriosa bóveda oculta en la mansión de Santiago Peña en Paraguay: qué hallaron",
+        "u": "https://www.infobae.com/america/america-latina/2026/11/10/fiscales-y-policias-lograron-abrir-la-misteriosa-boveda-oculta-en-la-mansion-de-santiago-pena-en-paraguay-que-hallaron/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Grupo Alfer incumple deuda de 31 mdp y enfrenta juicio",
+        "u": "https://www.infobae.com/mexico/2026/11/10/grupo-alfer-incumple-deuda-de-31-mdp-y-enfrenta-juicio/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "EZLN aclara agenda con familias buscadoras: habrá encuentros privados y una marcha",
+        "u": "https://www.infobae.com/mexico/2026/11/10/ezln-aclara-agenda-con-familias-buscadoras-habra-encuentros-privados-y-una-marcha/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El Festival de Cine de Almería homenajea a Landa con documental de su vida y trayectoria",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/el-festival-de-cine-de-almeria-homenajea-a-landa-con-documental-de-su-vida-y-trayectoria/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Ramon Vilalta (RCR) vaticina que la IA supondrá una mejora para la arquitectura",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/ramon-vilalta-rcr-vaticina-que-la-ia-supondra-una-mejora-para-la-arquitectura/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Extremadura cancela transporte público y actividad de centros de día en el norte cacereño",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/extremadura-cancela-transporte-publico-y-actividad-de-centros-de-dia-en-el-norte-cacereno/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "México asegura 2 medallas en boxeo en los Juegos Olímpicos de la Juventud en Dakar 2026",
+        "u": "https://www.infobae.com/mexico/deportes/2026/11/10/mexico-asegura-2-medallas-en-boxeo-en-los-juegos-olimpicos-de-la-juventud-en-dakar-2026/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Dolor en Santa Olaja (León), el pueblo del agente fallecido en una explosión en Oviedo",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/dolor-en-santa-olaja-leon-el-pueblo-del-agente-fallecido-en-una-explosion-en-oviedo/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Renfe denuncia incumplimiento de servicios mínimos y Semaf aplaza la huelga del jueves",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/renfe-denuncia-incumplimiento-de-servicios-minimos-y-semaf-aplaza-la-huelga-del-jueves/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Precio del euro hoy en Bolivia: cotización de cierre del 10 de noviembre",
+        "u": "https://www.infobae.com/noticias/2026/11/10/precio-del-euro-hoy-en-bolivia-cotizacion-de-cierre-del-10-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El Ballet Nacional Dominicano se presentará en el Festival Internacional de Ballet de Cali",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/el-ballet-nacional-dominicano-se-presentara-en-el-festival-internacional-de-ballet-de-cali/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Euro hoy en República Dominicana: cotización de cierre del 10 de noviembre",
+        "u": "https://www.infobae.com/noticias/2026/11/10/euro-hoy-en-republica-dominicana-cotizacion-de-cierre-del-10-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Perú coloca 4.500 millones en bonos sostenibles, récord para un país latinoamericano",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/peru-coloca-4500-millones-en-bonos-sostenibles-record-para-un-pais-latinoamericano/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Precio del dólar hoy en Bolivia: cotización de cierre del 10 de noviembre",
+        "u": "https://www.infobae.com/noticias/2026/11/10/precio-del-dolar-hoy-en-bolivia-cotizacion-de-cierre-del-10-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Chile inicia pruebas finales para el primer teleférico de transporte de pasajeros en 2027",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/chile-inicia-pruebas-finales-para-el-primer-teleferico-de-transporte-de-pasajeros-en-2027/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El presidente del banco central argentino, Santiago Bausili, liderará el consejo consultivo americano del BIS",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/el-presidente-del-banco-central-argentino-santiago-bausili-liderara-el-consejo-consultivo-americano-del-bis/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Precio del dólar hoy en República Dominicana: cotización de cierre del 10 de noviembre",
+        "u": "https://www.infobae.com/noticias/2026/11/10/precio-del-dolar-hoy-en-republica-dominicana-cotizacion-de-cierre-del-10-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El papa recuerda una frase de Francisco: \"Sueñen con una Iglesia que siga haciendo lio\"",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/el-papa-recuerda-una-frase-de-francisco-suenen-con-una-iglesia-que-siga-haciendo-lio/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Un nuevo desplome superior al 6% en Bolsa de Nvidia hunde las acciones del gigante de los chips",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/un-nuevo-desplome-superior-al-6-en-bolsa-de-nvidia-hunde-las-acciones-del-gigante-de-los-chips/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Fiscalía de Ecuador y FBI firman un memorando de entendimiento contra el crimen organizado",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/fiscalia-de-ecuador-y-fbi-firman-un-memorando-de-entendimiento-contra-el-crimen-organizado/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El Mecanismo de la ONU niega otra vez la libertad condicional al criminal de guerra serbobosnio Mico Stanisic",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/el-mecanismo-de-la-onu-niega-otra-vez-la-libertad-condicional-al-criminal-de-guerra-serbobosnio-mico-stanisic/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Roig pide apoyo a la afición del Villarreal en los momentos difíciles",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/10/roig-pide-apoyo-a-la-aficion-del-villarreal-en-los-momentos-dificiles/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La Comunidad recibe el aval de la Comisión Jurídica Asesora para extinguir la concesión del estadio al Rayo",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/la-comunidad-recibe-el-aval-de-la-comision-juridica-asesora-para-extinguir-la-concesion-del-estadio-al-rayo/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Votantes de California rechazan la Proposición 40 del impuesto a los multimillonarios",
+        "u": "https://www.infobae.com/america/agencias/2026/11/10/votantes-de-california-rechazan-la-proposicion-40-del-impuesto-a-los-multimillonarios/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "EN VIVO | Bloqueos, accidentes y manifestaciones hoy 10 de noviembre: camión impacta señal vial en el Circuito Exterior Mexiquense",
+        "u": "https://www.infobae.com/mexico/2026/11/10/en-vivo-bloqueos-accidentes-y-manifestaciones-hoy-10-de-noviembre/"
       },
       {
         "s": "lacapital",
@@ -38491,6 +39586,156 @@
         "u": "https://www.lacapital.com.ar/informacion-general/el-papa-leon-xiv-se-emociono-el-cottolengo-y-dejo-un-contundente-mensaje-la-discapacidad-n10291211.html"
       },
       {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "\"Sigan haciendo lío\": el mensaje de León XIV en Córdoba con el que recordó al Papa Francisco",
+        "u": "https://www.lacapital.com.ar/informacion-general/sigan-haciendo-lio-el-mensaje-leon-xiv-cordoba-el-que-recordo-al-papa-francisco-n10291474.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Barrio La Lagunita: megaoperativo de 147 agentes federales contra una banda narco ligada a Los Menores",
+        "u": "https://www.lacapital.com.ar/policiales/barrio-la-lagunita-megaoperativo-147-agentes-federales-contra-una-banda-narco-ligada-los-menores-n10291413.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "El río Paraná sigue creciendo en Rosario y quedó a solo 60 centímetros del nivel de alerta",
+        "u": "https://www.lacapital.com.ar/la-ciudad/el-rio-parana-sigue-creciendo-rosario-y-quedo-solo-60-centimetros-del-nivel-alerta-n10291460.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La rosarina que nunca pensó estar a pasos del Papa: \"Le pregunté a Dios por qué me habían elegido\"",
+        "u": "https://www.lacapital.com.ar/informacion-general/la-rosarina-que-nunca-penso-estar-pasos-del-papa-le-pregunte-dios-que-me-habian-elegido-n10291448.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Quién fue Enrique Shaw, el empresario argentino que destacó el Papa León XIV y puede ser santo",
+        "u": "https://www.lacapital.com.ar/informacion-general/quien-fue-enrique-shaw-el-empresario-argentino-que-destaco-el-papa-leon-xiv-y-puede-ser-santo-n10291397.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Un informe advierte que la pobreza volvió a crecer en Argentina: 3,4 millones de personas más en un año",
+        "u": "https://www.lacapital.com.ar/economia/un-informe-advierte-que-la-pobreza-volvio-crecer-argentina-34-millones-personas-mas-un-ano-n10291451.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Visita de León XIV: la emoción de los alumnos del San José que viajaron al encuentro con el Papa",
+        "u": "https://www.lacapital.com.ar/la-ciudad/visita-leon-xiv-la-emocion-los-alumnos-del-san-jose-que-viajaron-al-encuentro-el-papa-n10291306.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "El Papa reivindicó en Córdoba a los santos y beatos argentinos: \"Hay que enseñar con el ejemplo\"",
+        "u": "https://www.lacapital.com.ar/informacion-general/el-papa-reivindico-cordoba-los-santos-y-beatos-argentinos-hay-que-ensenar-el-ejemplo-n10291373.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Lágrimas y abrazos: León XIV conmovió a millones de fieles con la primera misa en Argentina",
+        "u": "https://www.lacapital.com.ar/informacion-general/lagrimas-abrazos-y-rosarios-leon-xiv-atraveso-millones-fieles-la-primera-misa-argentina-n10291292.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "El Papa hizo foco en el desempleo y dijo que \"es un auténtico drama\"",
+        "u": "https://www.lacapital.com.ar/economia/el-papa-hizo-foco-el-desempleo-y-dijo-que-es-un-autentico-drama-n10291300.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "León XIV en la UCA: \"Privar a una persona de trabajo es herir su dignidad\"",
+        "u": "https://www.lacapital.com.ar/informacion-general/el-papa-leon-xiv-la-uca-privar-una-persona-trabajo-es-herir-gravemente-su-dignidad-n10291279.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "El formidable presente de un ex-Newell's bicampeón: marcó 18 goles esta temporada",
+        "u": "https://www.lacapital.com.ar/ovacion/el-formidable-presente-un-ex-newells-bicampeon-marco-18-goles-esta-temporada-n10291444.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Crisis en un histórico equipo del ascenso de Rosario: se fue el presidente y asumió un vocal",
+        "u": "https://www.lacapital.com.ar/ovacion/crisis-un-historico-equipo-del-ascenso-rosario-renuncio-el-presidente-y-quedo-cargo-un-vocal-n10291455.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Estudiantes del Politécnico clasificaron a la Olimpíada Nacional de Matemática y juntan fondos para viajar",
+        "u": "https://www.lacapital.com.ar/la-ciudad/estudiantes-del-politecnico-clasificaron-la-olimpiada-nacional-matematica-y-juntan-fondos-viajar-n10291362.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Una mujer atacó a tiros una casa e hirió a una nena de 5 años delante de su abuela",
+        "u": "https://www.lacapital.com.ar/policiales/una-mujer-ataco-tiros-una-casa-e-hirio-una-nena-5-anos-delante-su-abuela-n10291352.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Colectividades en Rosario: en una decisión inédita, dos hombres fueron elegidos como embajadores",
+        "u": "https://www.lacapital.com.ar/la-ciudad/colectividades-rosario-una-decision-inedita-dos-hombres-fueron-elegidos-como-embajadores-n10291358.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Jorge Macri minimizó el VIP en la misa de León XIV: \"Las medialunas y los budines estuvieron de más\"",
+        "u": "https://www.lacapital.com.ar/informacion-general/jorge-macri-minimizo-el-vip-la-misa-leon-xiv-las-medialunas-y-los-budines-estuvieron-mas-n10291426.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Presentaron un pedido de informes sobre la carpa VIP en la misa de León XIV",
+        "u": "https://www.lacapital.com.ar/informacion-general/presentaron-un-pedido-informes-la-carpa-vip-la-misa-leon-xiv-n10291392.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Controversia por el VIP en la misa de León XIV: quiénes estaban y cómo se armó",
+        "u": "https://www.lacapital.com.ar/informacion-general/controversia-el-vip-la-misa-leon-xiv-quienes-estaban-y-como-se-armo-n10291391.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La visita del Papa León XIV, más que un mero evento litúrgico",
+        "u": "https://www.lacapital.com.ar/suscriptores/la-visita-leon-xiv-mas-que-un-mero-evento-liturgico-n10290925.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La reforma que deforma a Unidos",
+        "u": "https://www.lacapital.com.ar/suscriptores/la-reforma-que-deforma-unidos-n10291031.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Arzobispo Eduardo Martín: \"Dios no se impone, Dios se propone\"",
+        "u": "https://www.lacapital.com.ar/la-capital/arzobispo-eduardo-martin-dios-no-se-impone-dios-se-propone-n10290043.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Playoffs del Clausura: todas las llaves de octavos y la posibilidad de un clásico rosarino",
+        "u": "https://www.lacapital.com.ar/ovacion/playoffs-del-clausura-todas-las-llaves-octavos-final-y-la-posibilidad-un-clasico-rosarino-n10291415.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La dura lesión del arquero cedido por Newell's que debería regresar en enero",
+        "u": "https://www.lacapital.com.ar/ovacion/la-dura-lesion-del-arquero-cedido-newells-que-deberia-regresar-enero-n10291437.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Juveniles de Newell's y Central fueron convocados a la sub-20 y entrenarán con la selección",
+        "u": "https://www.lacapital.com.ar/ovacion/tres-juveniles-newells-y-central-fueron-convocados-la-seleccion-sub-20-n10291390.html"
+      },
+      {
         "s": "lanacion",
         "n": "La Nación",
         "t": "Noticias del DHS: el Uscis ya aplica una norma que frena miles de permisos de trabajo EAD de inmigrantes latinos",
@@ -38639,6 +39884,156 @@
         "n": "La Nación",
         "t": "Cartas de lectores: Un mensaje incómodo y necesario, cinismo e hipocresía, gestos que hablan",
         "u": "https://www.lanacion.com.ar/opinion/carta-de-lectores/cartas-de-lectores-un-mensaje-incomodo-y-necesario-cinismo-e-hipocresia-gestos-que-hablan-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Papa León XIV en la Argentina, EN VIVO: visita a la Catedral en Córdoba y todo sobre la vigilia joven en el Monumento de los Españoles",
+        "u": "https://www.lanacion.com.ar/sociedad/papa-leon-xiv-en-la-argentina-en-vivo-la-visita-a-cordoba-y-todo-sobre-la-vigilia-joven-en-monumento-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Fred Machado fue condenado a seis años de prisión en Estados Unidos por lavado de dinero y fraude",
+        "u": "https://www.lanacion.com.ar/politica/fred-machado-fue-condenado-a-seis-anos-de-prision-en-estados-unidos-por-lavado-de-dinero-y-fraude-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Asesinato en un crucero: detuvieron a un hombre tras hallar muerta a una mujer en su camarote",
+        "u": "https://www.lanacion.com.ar/el-mundo/asesinato-en-un-crucero-detuvieron-a-un-hombre-tras-hallar-muerta-a-una-mujer-en-su-camarote-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El arzobispo de Córdoba se quedó sin micrófono durante su discurso y la reacción de León XIV desató la risa de todos: “Es a propósito”",
+        "u": "https://www.lanacion.com.ar/sociedad/el-arzobispo-de-cordoba-se-quedo-sin-microfono-durante-su-discurso-y-la-reaccion-de-leon-xiv-desato-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Un policía y su perro murieron tras la explosión de una mochila en el norte de España",
+        "u": "https://www.lanacion.com.ar/el-mundo/un-policia-y-su-perro-murieron-tras-la-explosion-de-una-mochila-en-el-norte-de-espana-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Primer aporte nacional: durante 12 años evaluaron un riego usado en Israel y Estados Unidos y descubrieron importantes resultados",
+        "u": "https://www.lanacion.com.ar/economia/campo/primer-aporte-nacional-durante-12-anos-evaluaron-un-riego-usado-en-israel-y-estados-unidos-y-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Hasta US$4 millones: se conocieron los precios de referencia para comprar los inmuebles de una textil en quiebra",
+        "u": "https://www.lanacion.com.ar/economia/campo/hasta-us4-millones-se-conocieron-los-precios-de-referencia-para-la-venta-de-los-inmuebles-de-una-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El papa León XIV recordó un pedido de Francisco y llamó a soñar “con una Iglesia que siga haciendo lío”",
+        "u": "https://www.lanacion.com.ar/sociedad/el-papa-leon-xiv-recordo-un-pedido-de-francisco-y-llamo-a-sonar-con-una-iglesia-que-siga-haciendo-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Rusia, Ucrania y Estados Unidos reanudan las negociaciones en Abu Dhabi en busca de una salida a la guerra",
+        "u": "https://www.lanacion.com.ar/el-mundo/rusia-ucrania-y-estados-unidos-reanudan-las-negociaciones-en-abu-dhabi-en-busca-de-una-salida-a-la-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este martes 10 de noviembre, minuto a minuto",
+        "u": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-martes-10-de-noviembre-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "La mayoría de los estadounidenses quiere que el nuevo Congreso demócrata ponga fin a la guerra de Trump contra Irán",
+        "u": "https://www.lanacion.com.ar/estados-unidos/la-mayoria-de-los-estadounidenses-quiere-que-el-nuevo-congreso-democrata-ponga-fin-a-la-guerra-de-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Una entrevista del líder de Vox en el programa más visto de la TV española desata un terremoto político",
+        "u": "https://www.lanacion.com.ar/el-mundo/el-lider-de-vox-dio-una-entrevista-en-la-tv-espanola-llevo-a-su-publico-y-desato-revuelo-politico-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El discurso de León XIV en Córdoba: el texto completo de la visita del papa a la Catedral de Nuestra Señora de la Asunción",
+        "u": "https://www.lanacion.com.ar/politica/el-discurso-de-leon-xiv-en-cordoba-el-texto-completo-de-la-visita-del-papa-a-la-catedral-de-nuestra-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Promedios 2027: así arranca la lucha en la tabla por no descender",
+        "u": "https://www.lanacion.com.ar/deportes/futbol/promedios-2027-asi-arranca-la-lucha-en-la-tabla-por-no-descender-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Javier Milei y sus medidas, EN VIVO: el Gobierno desmiente a Villarruel por la invitación a la misa del Papa en Palermo",
+        "u": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-gobierno-desmiente-a-villarruel-por-la-invitacion-a-la-misa-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El vecino de Pilar detenido por amenazar al Papa negó haber hecho la llamada y culpó a sus compañeros de trabajo: así fue la comunicación al 911",
+        "u": "https://www.lanacion.com.ar/seguridad/el-vecino-de-pilar-detenido-por-amenazar-al-papa-nego-haber-hecho-la-llamada-y-culpo-a-sus-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Cómo usar la IA para prepararte para una entrevista de trabajo: el prompt que recomiendan los expertos",
+        "u": "https://www.lanacion.com.ar/tecnologia/como-usar-la-ia-para-prepararte-para-una-entrevista-de-trabajo-el-prompt-que-recomiendan-los-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Jimena Barón no encontraba a su hijo Arturo y cuando vio dónde estaba se quedó sin palabras",
+        "u": "https://www.lanacion.com.ar/espectaculos/jimena-baron-no-encontraba-a-su-hijo-arturo-y-cuando-vio-donde-estaba-se-quedo-sin-palabras-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "La CGT destacó el mensaje del Papa y marcó siete coincidencias con sus propuestas",
+        "u": "https://www.lanacion.com.ar/politica/la-cgt-destaco-el-mensaje-del-papa-y-marco-siete-coincidencias-con-sus-propuestas-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El Papa ya está en Sudamérica: la intimidad del viaje de León XIV",
+        "u": "https://www.lanacion.com.ar/el-mundo/el-papa-ya-esta-en-vuelo-la-intimidad-del-vuelo-del-papa-a-sudamerica-nid06112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "“No es habitual”: por qué el riesgo país se duplicó en cuatro meses, pero el dólar sigue sin reaccionar",
+        "u": "https://www.lanacion.com.ar/economia/dolar/no-es-habitual-por-que-el-riesgo-pais-se-duplico-en-cuatro-meses-pero-el-dolar-sigue-sin-reaccionar-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "“Alma misionera”: la historia detrás de la canción que es furor por la visita de León XIV a la Argentina",
+        "u": "https://www.lanacion.com.ar/sociedad/alma-misionera-la-historia-detras-de-la-cancion-que-es-furor-por-la-visita-de-leon-xiv-a-la-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El cálido encuentro entre el Papa León XIV y una joven con “piel de cristal” antes de la misa en Córdoba",
+        "u": "https://www.lanacion.com.ar/sociedad/el-calido-encuentro-entre-el-papa-leon-xiv-y-una-joven-con-piel-de-cristal-antes-de-la-misa-en-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Video: así fue el recorrido que no se vio en TV del papa León XIV por el Cottolengo Don Orione",
+        "u": "https://www.lanacion.com.ar/sociedad/video-asi-fue-el-recorrido-que-no-se-vio-en-tv-del-papa-leon-xiv-por-el-cottolengo-don-orione-nid10112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Vestimenta de León XIV: cuáles son las prendas elegidas para la misa en Córdoba y la historia que hay detrás de cada una",
+        "u": "https://www.lanacion.com.ar/sociedad/vestimenta-de-leon-xiv-cuales-son-las-prendas-elegidas-para-la-misa-en-cordoba-y-la-historia-que-hay-nid10112026/"
       },
       {
         "s": "lavoz",
@@ -38791,6 +40186,156 @@
         "u": "https://www.lavoz.com.ar/politica/leon-xiv-abogo-pleno-empleo-privar-persona-trabajo-herir-dignidad_0_LsY1nKe4ge.html"
       },
       {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "El papa León XIV en Córdoba: abandonó la Catedral y se dirige al aeropuerto",
+        "u": "https://www.lavoz.com.ar"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Predio. Cuántas personas fueron a Fadea para la misa del papa León XIV en Córdoba",
+        "u": "https://www.lavoz.com.ar/ciudadanos/cuantas-personas-fadea-misa-papa-leon-xiv-cordoba_0_IDR5jHyU6L.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Visita histórica. \"Sueñen con una Iglesia que siga haciendo lío\": el papa León XIV ya viaja al aeropuerto",
+        "u": "https://www.lavoz.com.ar/ciudadanos/papa-leon-xiv-cordoba-200000-personas-ingresaron-fadea-vigila-conmovedora_0_cxyOMrWSmA.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Visita histórica. Las 10 frases más resonantes del papa León XIV en Córdoba",
+        "u": "https://www.lavoz.com.ar/ciudadanos/10-frases-resonantes-papa-leon-xiv-cordoba_0_i4emJsB5u7.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Iglesia. “Argentina y Córdoba es su casa”: el mensaje de Ángel Rossi al papa León XIV en la misa en Fadea",
+        "u": "https://www.lavoz.com.ar/ciudadanos/argentina-cordoba-casa-mensaje-angel-rossi-papa-leon-xiv-misa-fadea_0_DHhr4AbIuq.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Visita histórica. La homilía completa del papa León XIV en su misa en Córdoba: el mensaje desde Fadea",
+        "u": "https://www.lavoz.com.ar/ciudadanos/homilia-completa-papa-leon-xiv-misa-cordoba-mensaje-fadea_0_fxr7sC2EPE.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Fadea. El papa León XIV saludó a Julieta Maldonado, la cordobesa con piel de cristal que impulsa la concientización sobre la enfermedad",
+        "u": "https://www.lavoz.com.ar/ciudadanos/papa-leon-xiv-saludo-julieta-maldonado-cordobesa-piel-cristal-impulsa-concientizacion-enfermedad_0_JKsXghUSrL.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Emoción. El histórico abrazo de León XIV con Córdoba: fe y mística popular en Alberdi",
+        "u": "https://www.lavoz.com.ar/ciudadanos/historico-abrazo-leon-xiv-cordoba-fe-emocion-mistica-popular-alberdi_0_nU0C5X2W11.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Desde las primeras horas de la mañana, miles de cordobeses colmaron las calles para presenciar un itinerario que transformó la rutina de la ciudad en un abrazo colectivo que perdurará en el recuerdo.",
+        "u": "https://www.lavoz.com.ar/ciudadanos/historico-abrazo-leon-xiv-cordoba-fe-emocion-mistica-popular-alberdi_0_nU0C5X2W11.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Reverso. Esto es lo que vio el papa León XIV desde el balcón del Arzobispado de Córdoba",
+        "u": "https://www.lavoz.com.ar/ciudadanos/vio-papa-leon-xiv-balcon-arzobispado-cordoba_0_JIIy6P8q9q.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Discurso. El papa León XIV en el balcón del Arzobispado: \"Gracias por acogerme, Dios bendiga a toda Córdoba\"",
+        "u": "https://www.lavoz.com.ar/ciudadanos/papa-leon-xiv-balcon-arzobispado-gracias-acogerme-dios-bendiga-toda-cordoba_0_oe49vaPdmp.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Pesar. Murió Héctor Aguer, arzobispo emérito de La Plata, a los 83 años",
+        "u": "https://www.lavoz.com.ar/politica/murio-hector-aguer-arzobispo-emerito-plata-83-anos_0_c4GOVly2EN.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Visita de León XIV. Fadea, una misa para la historia: Córdoba fue Argentina en la visita del papa León XIV",
+        "u": "https://www.lavoz.com.ar/ciudadanos/fadea-cordoba-argentina-multitud-espera-papa-conto-significa-cordobes_0_1sLXfBBGV9.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Visita papal. El predio de Fadea quedó grande: estaba preparado para una concurrencia mucho mayor",
+        "u": "https://www.lavoz.com.ar/ciudadanos/predio-fadea-quedo-grande-preparado-concurrencia-mayor_0_cN2Ex8bnYP.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Videos. A vuelo de drone: así se veía la multitud en Fadea durante la misa del papa León XIV en Córdoba",
+        "u": "https://www.lavoz.com.ar/ciudadanos/vuelo-drone-veia-multitud-fadea-misa-papa-leon-xiv-cordoba_0_6B71wf025L.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Iglesia. “Córdoba ha sido tierra de santos”: el mensaje del papa León XIV en su misa en Fadea",
+        "u": "https://www.lavoz.com.ar/ciudadanos/cordoba-tierra-santos-mensaje-papa-leon-xiv-misa-fadea_0_GyP24kmR84.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Temporada 2026. La Fórmula 1 ratificó los dos circuitos que cerrarán el calendario: cuáles son",
+        "u": "https://www.lavoz.com.ar/deportes/formula-1-ratifico-circuitos-cerraran-calendario_0_OYQowB6IGk.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Circuito. Etcheverry se bajó por lesión y Thiago Tirante avanzó a cuartos de final en el ATP de Estocolmo",
+        "u": "https://www.lavoz.com.ar/deportes/etcheverry-lesion-thiago-tirante-avanzo-cuartos-final-atp-estocolmo_0_OwTbkfbUiX.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Emoción. El histórico abrazo de León XIV con Córdoba: fe, emoción y mística popular en Alberdi",
+        "u": "https://www.lavoz.com.ar/ciudadanos/historico-abrazo-leon-xiv-cordoba-fe-emocion-mistica-popular-alberdi_0_nU0C5X2W11.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Ajuste nacional. El gasto cayó casi 10% y las provincias sufrieron los mayores recortes",
+        "u": "https://www.lavoz.com.ar/politica/gasto-cayo-10-provincias-sufrieron-mayores-recortes_0_NYNWqd6cy9.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Histórico. Así fue el saludo de los clubes cordobeses al papa León XIV: \"Bienvenido Padre\"",
+        "u": "https://www.lavoz.com.ar/deportes/saludo-clubes-cordobeses-papa-leon-xiv-bienvenido-padre_0_NbwKcxrebA.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Misa en Fadea. \"Estamos todos llamados a la santidad\": el Papa instó a los fieles a seguir a los virtuosos",
+        "u": "https://www.lavoz.com.ar/ciudadanos/llamados-santidad-papa-insto-fieles-seguir-virtuosos_0_3VFuvVMVh7.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Conmoción. El notable gesto de Neymar con su compañero Rony tras el asesinato de su padre",
+        "u": "https://www.lavoz.com.ar/deportes/futbol/notable-gesto-neymar-companero-rony-asesinato-padre_0_k0sww1m7Zz.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Video. Los obispos argentinos sorprendieron al papa León XIV con un tango de Gardel y lo emocionaron durante una cena en Buenos Aires",
+        "u": "https://www.lavoz.com.ar/ciudadanos/obispos-argentinos-sorprendieron-papa-leon-xiv-tango-gardel-emocionaron-cena-buenos-aires_0_bGnricf4pJ.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "La visita del Papa León XIV a Córdoba",
+        "u": "https://www.lavoz.com.ar"
+      },
+      {
         "s": "pagina12",
         "n": "Página/12",
         "t": "Justicia social para millones",
@@ -38825,6 +40370,48 @@
         "n": "Página/12",
         "t": "Las tapas de Pancho",
         "u": "https://www.pagina12.com.ar/am750/programa/las-tapas-de-pancho"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Cultura y Espectáculos",
+        "u": "https://www.pagina12.com.ar"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "“Buscamos a nuestros desaparecidos, que están acá cerca”: el encuentro entre Alba Camargo y el Papa",
+        "u": "https://www.pagina12.com.ar/2026/11/10/buscamos-a-nuestros-desaparecidos-que-estan-aca-cerca-el-encuentro-entre-alba-camargo-y-el-papa/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "\"Sueñen con una Iglesia que siga haciendo lío, como pidió Francisco\"",
+        "u": "https://www.pagina12.com.ar/2026/11/06/la-visita-del-papa-leon-xiv-a-la-argentina-su-paso-por-uruguay-y-los-preparativos-para-su-llegada-al-pais/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "El discurso completo del papa León XIV en la Catedral de Córdoba",
+        "u": "https://www.pagina12.com.ar/2026/11/10/el-discurso-completo-del-papa-leon-xiv-en-la-catedral-de-cordoba/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "La visita del papa León XIV a la Argentina, en fotos",
+        "u": "https://www.pagina12.com.ar/2026/11/09/la-visita-del-papa-leon-xiv-a-la-argentina-en-fotos/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "La visita del Papa, un negocio para un puñado de empresas",
+        "u": "https://www.pagina12.com.ar/2026/11/10/la-visita-del-papa-un-negocio-para-un-punado-de-empresas/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "El Papa León XIV valoró la identidad solidaria del país y rindió homenaje al Cura Brochero",
+        "u": "https://www.pagina12.com.ar/2026/11/10/desde-cordoba-el-papa-leon-xiv-valoro-la-identidad-solidaria-del-pais-y-rindio-homenaje-al-cura-brochero/"
       },
       {
         "s": "pagina12",
@@ -38983,6 +40570,156 @@
         "u": "https://perfil.com/entretenimiento/florencia-rodriguez-psicologa-sobre-mauro-icardi-y-su-hija-francesca-todo-el-contexto-de-violencia-previo-le-da-validez-a-la-denuncia-anZps1y8nTrx"
       },
       {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Así es el refugio de 500 hectáreas que Mónica Cahen D’Anvers construyó junto a Cesar, el amor de su vida",
+        "u": "https://perfil.com/entretenimiento/asi-es-el-refugio-de-500-hectareas-que-monica-cahen-danvers-construyo-junto-a-cesar-el-amor-de-su-vida-aVQrZ7G6GgKn"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El Papa León XIV le puso un límite al algoritmo",
+        "u": "https://perfil.com/modo-fontevecchia/el-papa-leon-xiv-le-puso-un-limite-al-algoritmo-a8ZJr4I3SnNb"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "RDI: fuertes críticas a la carpa VIP que impulsó el Gobierno nacional y CABA en la misa del Papa León XIV",
+        "u": "https://perfil.com/mas-perfil/rdi-fuertes-criticas-a-la-carpa-vip-que-impulso-el-gobierno-nacional-y-caba-en-la-misa-del-papa-leon-xiv-afZQX6O0cCCt"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Murió en Córdoba un peregrino chaqueño que esperaba la misa de León XIV",
+        "u": "https://perfil.com/nea/murio-en-cordoba-un-peregrino-chaqueno-que-esperaba-la-misa-de-leon-xiv-arDEN9S2jAiS"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Gustavo Beliz: \"Al Papa hay que leerlo sin clericalismo\"",
+        "u": "https://perfil.com/modo-fontevecchia/gustavo-beliz-al-papa-hay-que-leerlo-sin-clericalismo-at2iM9s0JyAB"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Nicole Neumann mostró los 3 vestidos boho chic que serán tendencia en verano 2027",
+        "u": "https://perfil.com/entretenimiento/nicole-neumann-mostro-los-3-vestidos-boho-chic-que-seran-tendencia-en-verano-2027-aJHKP7O4lLGe"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Anunciaron un nuevo paro en el subte y el Premetro",
+        "u": "https://perfil.com/politica/anunciaron-un-nuevo-paro-en-el-subte-y-el-premetro-awkkF0O6kqcS"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Gimena Accardi ganó su primer premio por la ficción vertical que creó y que protagoniza junto a Seven Kayne",
+        "u": "https://perfil.com/entretenimiento/gimena-accardi-gano-su-primer-premio-por-la-ficcion-vertical-que-creo-y-que-protagoniza-junto-a-seven-kayne-anX1F8O8iTgh"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "RDI: una investigación reveló movimientos por USD 300.000 vinculados a Sebastián Pareja",
+        "u": "https://perfil.com/mas-perfil/rdi-una-investigacion-revelo-movimientos-por-usd-300.000-vinculados-a-sebastian-pareja-ab8fD5D3or10"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Entramos a la casa de Valen Rizzuti: así vive una de las grandes revelaciones del streaming argentino",
+        "u": "https://perfil.com/entretenimiento/entramos-a-la-casa-de-valen-rizzuti-asi-vive-una-de-las-grandes-revelaciones-del-streaming-argentino-azy227H55XY6"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El tierno video del hijo del piloto que trasladó al Papa León XIV que se volvió viral",
+        "u": "https://perfil.com/entretenimiento/el-tierno-video-del-hijo-del-piloto-que-traslado-al-papa-leon-xiv-que-se-volvio-viral-aRaKy4h8H3JR"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Con respaldo de Karina Milei en medio de la denuncia por su patrimonio, Pareja estará en la comitiva del Gobierno a Luján",
+        "u": "https://perfil.com/politica/con-respaldo-de-karina-milei-en-medio-de-la-denuncia-por-su-patrimonio-pareja-estara-en-la-comitiva-del-gobierno-a-lujan-a6kZG1a8Sc5a"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Martín Farrel: “Fue un error de la UCR no aceptar a Massa en Cambiemos en aquel acuerdo de Gualeguaychú”",
+        "u": "https://perfil.com/modo-fontevecchia/martin-farrel-fue-un-error-de-la-ucr-no-aceptar-a-massa-en-cambiemos-en-aquel-acuerdo-de-gualeguaychu-aSvq17k2cFIV"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "La Noche de los Museos 2026: los recitales y espectáculos que se podrán disfrutar en la Ciudad de Buenos Aires",
+        "u": "https://perfil.com/ciudad-de-buenos-aires/la-noche-de-los-museos-2026-los-recitales-y-espectaculos-que-se-podran-disfrutar-en-caba-aU1Qn6B90L7X"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Paula Chaves compartió los minutos previos a su operación y quién la acompañará en este momento",
+        "u": "https://perfil.com/entretenimiento/paula-chaves-compartio-los-minutos-previos-a-su-operacion-y-quien-la-acompanara-en-este-momento-aGzp54x8S0Uu"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Thiago Tirante cerrará la temporada ATP del tenis argentino por lesión de Etcheverry",
+        "u": "https://perfil.com/deportes/thiago-tirante-cerrara-la-temporada-atp-del-tenis-argentino-por-lesion-de-etcheverry-aIqEh5H0HQtS"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El posteo que compartió Milei: \"Un león recibe a otro león\"",
+        "u": "https://perfil.com/politica/el-posteo-que-compartio-milei-un-leon-recibe-a-otro-leon-awFKC6v697yg"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El obispo de la diócesis de Perú donde ejerció León XIV antes de ser Papa: \"Aprendió quechua para hablar con su comunidad\"",
+        "u": "https://perfil.com/modo-fontevecchia/el-obispo-de-la-diocesis-de-peru-donde-ejercio-leon-xiv-antes-de-ser-papa-aprendio-quechua-para-hablar-con-su-comunidad-acq6f2v94NDI"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "La industria textil perdió 28.800 empleos y cerraron 1.090 empresas durante la gestión de Milei",
+        "u": "https://perfil.com/cordoba/la-industria-textil-perdio-28.800-empleos-y-cerraron-1.090-empresas-durante-la-gestion-de-milei-agexN3N5xjTt"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "EN VIVO | El Papa León XIV en la Catedral de Córdoba: \"Sigan haciendo lío como dijo Francisco\"",
+        "u": "https://perfil.com/sociedad/en-vivo-el-papa-leon-xiv-en-la-catedral-de-cordoba-sigan-haciendo-lio-como-dijo-francisco-ahNA22N4gI3S"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Zaira Nara mostró cómo es su vida en Uruguay: tardes de mate, playa y descanso con sus caballos y su familia",
+        "u": "https://perfil.com/entretenimiento/zaira-nara-mostro-como-es-su-vida-en-uruguay-tardes-de-mate-playa-y-descanso-con-sus-caballos-y-su-familia-atoZP9b4jl7C"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Un escándalo de amantes y espionaje chino golpea al fabricante de chips Nvidia y sacude al mundo tecnológico",
+        "u": "https://perfil.com/protagonistas/una-trama-de-sexo-espionaje-e-inteligencia-artificial-golpea-a-nvidia-a50-aLBA62T2QN2u"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Santiago Caputo dice que el encuentro del Papa con Milei cumple una profecía",
+        "u": "https://perfil.com/politica/santiago-caputo-dice-que-el-encuentro-del-papa-con-milei-cumple-una-profecia-aYusW6c4us1X"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Keiko Fujimori viajará a China en medio de la visita de León XIV a Perú y la comparan con Milei",
+        "u": "https://perfil.com/modo-fontevecchia/keiko-fujimori-viajara-a-china-en-medio-de-la-visita-de-leon-xiv-a-peru-y-la-comparan-con-milei-aT7Ip9Y6oH8v"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Jorge Macri habló tras el escándalo por la carpa VIP: \"Las medialunas y los budines estuvieron de más\"",
+        "u": "https://perfil.com/entretenimiento/jorge-macri-hablo-tras-el-escandalo-por-la-carpa-vip-las-medialunas-y-los-budines-estuvieron-de-mas-aU5dr7z2GgF9"
+      },
+      {
         "s": "tn",
         "n": "TN (Todo Noticias)",
         "t": "Santa Fe: un nene de 12 años cazaba con su familia, su tío le disparó por accidente y quedó en terapia intensiva",
@@ -39131,6 +40868,156 @@
         "n": "TN (Todo Noticias)",
         "t": "Shakira habló por primera vez en medio de la preocupación por la salud de su papá: “Una semana difícil”",
         "u": "https://tn.com.ar/show/famosos/2026/11/09/shakira-hablo-por-primera-vez-en-medio-de-la-preocupacion-por-la-salud-de-su-papa-una-semana-dificil/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Gimena Accardi mostró la cocina de su casa y generó sorpresa con un detalle en los azulejos",
+        "u": "https://tn.com.ar/show/famosos/2026/11/10/gimena-accardi-mostro-la-cocina-de-su-casa-y-genero-sorpresa-con-un-detalle-en-los-azulejos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "El Papa pidió llevar el Evangelio a todo el país y citó a Francisco: “¡Sueñen con una Iglesia que siga haciendo lío!\"",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/papa-leon-xiv-en-argentina-en-vivo-a-que-hora-es-la-santa-misa-en-cordoba-cuando-vuelve-a-buenos-aires-y-las-ultimas-noticias/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Aguinaldo 2026: cuándo se paga, cómo se calcula y quiénes lo cobran en diciembre",
+        "u": "https://tn.com.ar/economia/2026/11/10/aguinaldo-2026-cuando-se-paga-como-se-calcula-y-quienes-lo-cobran-en-diciembre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Encontraron muerto a un productor rural de 81 años en su campo en Coronel Dorrego: investigan si lo atacó un carnero",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/encontraron-muerto-a-un-productor-rural-de-81-anos-en-su-campo-en-coronel-dorrego-investigan-si-lo-ataco-un-carnero/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "🔴 Dólar oficial hoy y dólar blue: a cuánto cotizan este martes 10 de noviembre",
+        "u": "https://tn.com.ar/economia/2026/11/10/dolar-oficial-hoy-y-dolar-blue-a-cuanto-cotizan-este-martes-10-de-noviembre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Papa León XIV, en la Argentina, en vivo: dónde está ahora y el mapa para seguirlo minuto a minuto",
+        "u": "https://tn.com.ar/sociedad/2026/11/08/papa-leon-xiv-en-la-argentina-en-vivo-donde-esta-ahora-y-el-mapa-para-seguirlo-minuto-a-minuto/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "No tires los sachets de leche vacíos, son un tesoro: cómo convertirlos en pequeñas macetas para cultivar verduras",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/no-tires-los-sachets-de-leche-vacios-son-un-tesoro-como-convertirlos-en-pequenas-macetas-para-cultivar-verduras/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Por mi discapacidad me pregunté cómo seguir viviendo como discípulo de Jesús”: el testimonio de un sacerdote ante León XIV",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/por-mi-discapacidad-me-pregunte-como-seguir-viviendo-como-discipulo-de-jesus-el-testimo-de-un-sacerdote-ante-el-papa-leon-xiv/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Por mi discapacidad me pregunté cómo seguir viviendo como discípulo de Jesús”: el testimo de un sacerdote ante el papa León XIV",
+        "u": "https://tn.com.ar/videos/sociedad/2026/11/10/por-mi-discapacidad-me-pregunte-como-seguir-viviendo-como-discipulo-de-jesus-el-testimo-de-un-sacerdote-ante-el-papa-leon-xiv/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Salió a la luz la escalofriante confesión de la mujer acusada por el crimen del papá del futbolista del Santos",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/10/salio-a-la-luz-la-escalofriante-confesion-de-la-mujer-acusada-por-el-crimen-del-papa-del-futbolista-del-santos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Cede la tensión en Medio Oriente y baja el precio del petróleo: se vende a US$92",
+        "u": "https://tn.com.ar/economia/2026/11/10/el-petroleo-cae-por-debajo-de-us90-y-toca-minimos-en-mas-de-dos-meses/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "En otro día sin mercado local, el riesgo país vuelve a bajar y se aleja de los 900 puntos",
+        "u": "https://tn.com.ar/economia/2026/11/10/en-otro-dia-sin-mercado-local-el-riesgo-pais-vuelve-a-bajar-y-se-aleja-de-los-900-puntos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Valerie Tiberius, profesora de filosofía desde 1998: “La amistad necesita algo que la inteligencia artificial no puede ofrecernos”",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/valerie-tiberius-profesora-de-filosofia-desde-1998-la-amistad-necesita-algo-que-la-inteligencia-artificial-no-puede-ofrecernos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Sindicalistas se reunieron con el Papa: “Nos pidió ser instrumentos de solidaridad y un canal entre trabajadores y empresas”",
+        "u": "https://tn.com.ar/politica/2026/11/09/los-sindicalistas-llegan-a-la-uca-para-reunirse-con-el-papa-leon-xiv-y-esperan-un-mensaje-sobre-el-trabajo/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Siento angustia y bronca”: el mensaje del candidato a presidente de Vélez que se descompuso y abandonó un debate en vivo",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/10/siento-angustia-y-bronca-el-mensaje-del-candidato-a-presidente-de-velez-que-se-descompuso-y-abandono-un-debate-en-vivo/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "El chef Gordon Ramsay cumplió 60 años, publicó una foto sin camisa y sorprendió con su estado físico",
+        "u": "https://tn.com.ar/show/famosos/2026/11/10/el-chef-gordon-ramsay-cumplio-60-anos-publico-una-foto-sin-camisa-y-sorprendio-con-su-estado-fisico/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Si ves una hormiga completamente blanca, prestá atención: por qué cambia de color y qué significa",
+        "u": "https://tn.com.ar/sociedad/jardineria/2026/11/10/si-ves-una-hormiga-completamente-blanca-presta-atencion-por-que-cambia-de-color-y-que-significa/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Somos peregrinos de León XIV”: las canciones que prepararon los jóvenes para recibir al Papa en la Vigilia en Palermo",
+        "u": "https://tn.com.ar/sociedad/2026/11/10/somos-peregrinos-de-leon-xiv-las-canciones-que-prepararon-los-jovenes-para-recibir-al-papa-en-la-vigilia-en-palermo/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Cómo hacer mousse de chocolate sin harina: una receta fácil con pocos ingredientes que se hace en 20 minutos",
+        "u": "https://tn.com.ar/cocina/recetas/2026/11/10/como-hacer-mousse-de-chocolate-sin-harina-una-receta-facil-con-pocos-ingredientes-que-se-hace-en-20-minutos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Allanan propiedades de Lázaro Báez en Santa Cruz y Buenos Aires en una causa por narcotráfico y lavado de dinero",
+        "u": "https://tn.com.ar/politica/2026/11/10/allanan-propiedades-de-lazaro-baez-en-santa-cruz-y-buenos-aires-en-una-causa-por-narcotrafico-y-lavado-de-dinero/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Dibu Martínez compartió un posteo tras el entrenamiento de la Selección argentina y un detalle llamó la atención de los hinchas",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/10/dibu-martinez-compartio-un-posteo-tras-el-entrenamiento-de-la-seleccion-argentina-y-un-detalle-llamo-la-atencion-de-los-hinchas/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "La Selección argentina realizó su primer entrenamiento en la previa del amistoso ante Uruguay en la Bombonera",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/10/la-seleccion-argentina-arranca-los-entrenamientos-y-se-enfoca-en-el-primer-amistoso-ante-uruguay-en-la-bombonera/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Tini Stoessel volvió a posar como modelo: las fotos de su campaña en bikini y con looks de alto verano",
+        "u": "https://tn.com.ar/estilo/moda/2026/11/10/tini-stoessel-volvio-a-posar-como-modelo-las-fotos-de-su-campana-en-bikini-y-con-looks-de-alto-verano/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Tensión en Francia: los estudiantes volvieron a salir a las calles, bloquearon escuelas y llamaron a nuevas protestas",
+        "u": "https://tn.com.ar/internacional/2026/11/10/tension-en-francia-los-estudiantes-volvieron-a-salir-a-las-calles-bloquearon-escuelas-y-llamaron-a-nuevas-protestas/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "El Gobierno descarta reabrir el debate por la derogación de la Ley del aborto pese al mensaje del Papa",
+        "u": "https://tn.com.ar/politica/2026/11/10/el-gobierno-descarta-reabrir-el-debate-por-la-derogacion-del-aborto-legal-pese-al-mensaje-del-papa/"
       }
     ],
     "2026-11-09": [
