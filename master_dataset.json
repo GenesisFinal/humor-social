@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Índice de Humor Social Argentino (IHSA)",
-    "updated_at": "2026-11-12T04:36:06.704343",
+    "updated_at": "2026-11-12T16:42:23.758511",
     "latest_date": "2026-11-12",
     "total_days": 90,
     "sources_count": 14
@@ -230,48 +230,65 @@
   "snapshots": {
     "2026-11-12": {
       "date": "2026-11-12",
-      "ihsa_score": -5.7,
+      "ihsa_score": -19.2,
       "ihsa_category": "Levemente Negativo / Preocupación",
-      "optimismo": 0.16,
-      "calma": -1.39,
-      "confianza": -1.19,
-      "alegria": -0.09,
-      "summary": "El Humor Social del día se ubica en -5.7 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo +0.2, Calma -1.4, Confianza -1.2, Alegría -0.1.",
+      "optimismo": -4.19,
+      "calma": -4.72,
+      "confianza": -3.41,
+      "alegria": -1.31,
+      "summary": "El Humor Social del día se ubica en -19.2 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -4.2, Calma -4.7, Confianza -3.4, Alegría -1.3.",
       "top_trends_x": [
         "Papa",
         "Luján",
+        "Lionel Scaloni",
         "Perú",
-        "#LEEKNOWSOLOIST",
-        "Devoto",
-        "Santo Padre",
-        "Iglesia",
-        "Jesús",
-        "Abascal",
-        "Cristo"
+        "#IcardiEsLaVictima",
+        "Nvidia",
+        "Jensen Huang",
+        "Mundial 2030",
+        "Migueles",
+        "Paolo"
       ],
       "top_trends_google": [
-        "dolar hoy binance",
-        "canal 13",
-        "sandro mamukelashvili",
-        "es mi sueño",
-        "recompensa",
-        "paolo el rockero",
-        "trail blazers - thunder",
-        "juegos ps plus extra noviembre 2026",
-        "rockets - warriors"
+        "posiciones de selección de fútbol de turquía contra selección de fútbol de bélgica",
+        "equipo de fórmula uno",
+        "italia - francia",
+        "chequia - españa",
+        "inglaterra - croacia",
+        "indec",
+        "senegal - sudán",
+        "francisco pérez mackenna",
+        "selva alemán",
+        "outlook hotmail"
       ],
-      "created_at": "2026-11-12 07:36:05",
-      "editorial_divergence": 27.4,
-      "decompression_buffer": 0.4,
-      "icb": 5.1,
-      "igi": -13.9,
-      "icps": -0.6,
-      "stress": 25.6,
+      "created_at": "2026-11-12 19:42:22",
+      "editorial_divergence": 3.0,
+      "decompression_buffer": 2.5,
+      "icb": -34.1,
+      "igi": -38.4,
+      "icps": -42.4,
+      "stress": 30.9,
       "stress_category": "Tensión Latente / Cautela",
       "stress_badge": "🟡 Cautela",
       "stress_color": "yellow",
-      "covers": [],
-      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-11-12\n\n**Índice IHSA Consolidado:** **`-5.7 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** +2.3 pts respecto a ayer (-8.0 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `+0.2`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-1.4`\n- **⚓ Confianza vs. Incertidumbre:** `-1.2`\n- **☀️ Alegría vs. Tristeza / Duelo:** `-0.1`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `27.4 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+0.4 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -5.7 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo +0.2, Calma -1.4, Confianza -1.2, Alegría -0.1.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **El Cronista Comercial** | `economy` | **+48.2** | Calendario organizado por cumpleaños. El Gobi | Sin focos destacados |\n| **La Voz del Interior** | `federal` | **+46.7** | Análisis. Córdoba, otra vez un respiro para M | Sin focos destacados |\n| **La Capital (Rosario)** | `federal` | **+32.2** | Bonfatti rechazó un acuerdo de Unidos con Mil | La Fórmula 1 confirmó las últimas dos carrera |\n| **TN (Todo Noticias)** | `general` | **+14.5** | ANSES: quiénes cobran jubilaciones, AUH y asi | Condenaron a un agente de la Policía Federal  |\n| **Perfil** | `general` | **+11.5** | Renovación de Lionel Scaloni: los cinco récor | Condenaron al policía que gaseó a una niña du |\n| **Cadena 3** | `federal` | **+3.6** | Visita histórica. El Gobierno confirmó que la | Sin focos destacados |\n| **Crónica** | `popular` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **Página/12** | `political_left` | **+0.0** | Sin focos destacados | Sin focos destacados |\n| **La Nación** | `general` | **-19.9** | Sin focos destacados | Sin focos destacados |\n| **Clarín** | `general` | **-21.9** | Sin focos destacados | \"Hay gente dispuesta a hundir el barco\": suge |\n| **Ámbito Financiero** | `economy` | **-24.4** | Sin focos destacados | Deuda: Economía colocó bonos por $8,87 billon |\n| **Infobae** | `general` | **-29.9** | Sin focos destacados | Sin focos destacados |\n| **El Destape** | `political_opposition` | **-69.0** | Sin focos destacados | Jóvenes entre el desempleo y el rebusque: 6 d |\n| **C5N** | `political_opposition` | **-85.0** | Sin focos destacados | El Banco Central compró u$s29 millones, pero  |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Papa, #Luján, #Perú, ##LEEKNOWSOLOIST, #Devoto, #Santo Padre, #Iglesia, #Jesús\n- **Mayor Aceleración en Google Trends:** dolar hoy binance, canal 13, sandro mamukelashvili, es mi sueño, recompensa, paolo el rockero, trail blazers - thunder, juegos ps plus extra noviembre 2026\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
+      "covers": [
+        {
+          "source_id": "clarin",
+          "name": "Clarín",
+          "path": "data/covers/2026-11-12/clarin.jpg"
+        },
+        {
+          "source_id": "cronista",
+          "name": "El Cronista Comercial",
+          "path": "data/covers/2026-11-12/cronista.jpg"
+        },
+        {
+          "source_id": "lanacion",
+          "name": "La Nación",
+          "path": "data/covers/2026-11-12/lanacion.jpg"
+        }
+      ],
+      "report_md": "# 🇦🇷 Boletín Ejecutivo de Humor Social — 2026-11-12\n\n**Índice IHSA Consolidado:** **`-19.2 / 100`**  \n**Diagnóstico:** **Levemente Negativo / Preocupación**  \n**Variación 24h:** -11.2 pts respecto a ayer (-8.0 pts)  \n\n\n### 📊 Ejes Emocionales del Día (Escala -10 a +10)\n- **🌱 Optimismo vs. Pesimismo:** `-4.2`\n- **🕊️ Calma vs. Conflicto / Bronca:** `-4.7`\n- **⚓ Confianza vs. Incertidumbre:** `-3.4`\n- **☀️ Alegría vs. Tristeza / Duelo:** `-1.3`\n\n### 🔬 Indicadores Avanzados y Metodología Internacional\n- **⚡ Brecha de Polarización Editorial (\"Brecha de Grieta\"):** `3.0 pts` — *(Banda de convergencia normal)*\n- **🏎️ Amortiguador Deportivo Patriótico (Decompression Buffer):** `+2.5 pts` *(Alivio emocional provisto por hitos patrios frente a la tensión socioeconómica)*\n\n### 💡 Diagnóstico y Síntesis Analítica\nEl Humor Social del día se ubica en -19.2 pts (Levemente Negativo / Preocupación). Ejes promedio: Optimismo -4.2, Calma -4.7, Confianza -3.4, Alegría -1.3.\n\n### 📰 Matriz Comparativa de Medios Monitoreados\n| Medio | Enfoque | Score IHSA | Principal Foco Positivo | Principal Foco de Tensión |\n| :--- | :--- | :---: | :--- | :--- |\n| **Página/12** | `political_left` | **+5.8** | Sin focos destacados | Sin focos destacados |\n| **Crónica** | `popular` | **+2.2** | Autódromo de Buenos Aires: en marzo terminan  | Sin focos destacados |\n| **El Cronista Comercial** | `economy` | **-4.2** | Trámite. Por orden del Gobierno, se revocarán | Trámite. Por orden del Gobierno, se revocarán |\n| **Cadena 3** | `federal` | **-10.6** | Interna en el oficialismo. Bullrich frenó los | Sin focos destacados |\n| **La Capital (Rosario)** | `federal` | **-15.9** | Fiesta de Colectividades: demoraron a 12 cuid | Sin focos destacados |\n| **Perfil** | `general` | **-17.1** | Sin focos destacados | Sin focos destacados |\n| **Clarín** | `general` | **-25.0** | Sin focos destacados | Escándalo en Bariloche: un convencional const |\n| **La Nación** | `general` | **-52.5** | Sin focos destacados | Las canastas básicas se aceleraron en octubre |\n| **El Destape** | `political_opposition` | **-53.7** | El Gobierno abre retiros voluntarios en la ob | La inflación se aceleró en octubre y arrojó u |\n| **Infobae** | `general` | **-55.0** | Sin focos destacados | Médicos residentes en México buscan especiali |\n| **Ámbito Financiero** | `economy` | **-58.8** | Los ADRs anotan bajas de hasta el 4%, pero el | La inflación se aceleró al 2,2% en octubre y  |\n| **TN (Todo Noticias)** | `general` | **-60.0** | Sin focos destacados | La inflación de alimentos fue del 2% en octub |\n| **C5N** | `political_opposition` | **-75.5** | Sin fecha para el desembolso de u$s900 millon | La inflación de octubre subió al 2,2%, acumul |\n| **La Voz del Interior** | `federal` | **-91.7** | Sin focos destacados | Los precios aumentaron 2,2% el mes pasado. Es |\n\n### 🌐 Pulso Espontáneo en Redes y Búsquedas\n- **Tendencias en X (Twitter Argentina):** #Papa, #Luján, #Lionel Scaloni, #Perú, ##IcardiEsLaVictima, #Nvidia, #Jensen Huang, #Mundial 2030\n- **Mayor Aceleración en Google Trends:** posiciones de selección de fútbol de turquía contra selección de fútbol de bélgica, equipo de fórmula uno, italia - francia, chequia - españa, inglaterra - croacia, indec, senegal - sudán, francisco pérez mackenna\n\n*Informe generado automáticamente por el Sistema de Monitoreo de Humor Social Argentino (IHSA).*\n"
     },
     "2026-11-11": {
       "date": "2026-11-11",
@@ -4611,361 +4628,367 @@
   "evaluations": {
     "2026-11-12": [
       {
-        "id": 3153,
-        "date": "2026-11-12",
-        "source_id": "cronista",
-        "source_name": "El Cronista Comercial",
-        "category": "economy",
-        "composite_score": 48.25,
-        "optimismo": 10.0,
-        "calma": 7.3,
-        "confianza": 0.0,
-        "alegria": 0.0,
-        "key_themes": [
-          "Gobierno",
-          "Pueden",
-          "Trámite",
-          "Seguro",
-          "Social"
-        ],
-        "positive_drivers": [
-          "Calendario organizado por cumpleaños. El Gobierno ya envió el primer depósito de noviembre a los jubilados: cuándo cobran los nacidos entre el 11 y el 20",
-          "Esquema de actualización. El Gobierno propone aumentos salariales de hasta el 7% para las Fuerzas Armadas: qué militares cobrarían más y cuándo comenzaría a regir",
-          "Medida. Lo ordena la Ley de Trabajo de CA: las vacaciones no se vencen nunca y el empleador tendrá que contemplarlas sin importar el año al que correspondan"
-        ],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de El Cronista Comercial. Se detectaron 3 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Gobierno, Pueden, Trámite, Seguro, Social.",
-        "cover_path": ""
-      },
-      {
-        "id": 3156,
-        "date": "2026-11-12",
-        "source_id": "lavoz",
-        "source_name": "La Voz del Interior",
-        "category": "federal",
-        "composite_score": 46.7,
-        "optimismo": 10.0,
-        "calma": 4.7,
-        "confianza": 0.0,
-        "alegria": 3.3,
-        "key_themes": [
-          "Córdoba",
-          "León",
-          "Visita",
-          "Papa",
-          "Milei"
-        ],
-        "positive_drivers": [
-          "Análisis. Córdoba, otra vez un respiro para Milei y un aprobado para Llaryora"
-        ],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de La Voz del Interior. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Córdoba, León, Visita, Papa, Milei.",
-        "cover_path": ""
-      },
-      {
-        "id": 3157,
-        "date": "2026-11-12",
-        "source_id": "lacapital",
-        "source_name": "La Capital (Rosario)",
-        "category": "federal",
-        "composite_score": 32.2,
-        "optimismo": 1.0,
-        "calma": 7.3,
-        "confianza": 0.0,
-        "alegria": 7.3,
-        "key_themes": [
-          "Central",
-          "Newell",
-          "Rosario",
-          "Milei",
-          "Fórmula"
-        ],
-        "positive_drivers": [
-          "Bonfatti rechazó un acuerdo de Unidos con Milei: \"Somos la antípoda de lo que ocurre a nivel nacional\"",
-          "La carrera de Franco Colapinto en la Fórmula 1 podría tener un sorprendente e inesperado giro",
-          "La Fórmula 1 confirmó las últimas dos carreras del año a pesar del conflicto en Medio Oriente"
-        ],
-        "negative_drivers": [
-          "La Fórmula 1 confirmó las últimas dos carreras del año a pesar del conflicto en Medio Oriente"
-        ],
-        "justification": "Evaluación heurística de 25 titulares de La Capital (Rosario). Se detectaron 3 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Central, Newell, Rosario, Milei, Fórmula.",
-        "cover_path": ""
-      },
-      {
-        "id": 3150,
-        "date": "2026-11-12",
-        "source_id": "tn",
-        "source_name": "TN (Todo Noticias)",
-        "category": "general",
-        "composite_score": 14.5,
-        "optimismo": 2.4,
-        "calma": -1.1,
-        "confianza": 0.0,
-        "alegria": 6.7,
-        "key_themes": [
-          "Noviembre",
-          "Jueves",
-          "Papa",
-          "Dólar",
-          "León"
-        ],
-        "positive_drivers": [
-          "ANSES: quiénes cobran jubilaciones, AUH y asignaciones este jueves 12 de noviembre",
-          "Pagó las cuotas de una casa prefabricada, nunca se la construyeron y la Justicia ordenó indemnizarla con más de $82 millones"
-        ],
-        "negative_drivers": [
-          "Condenaron a un agente de la Policía Federal que roció con gas pimienta a una nena de 10 años durante una marcha de jubilados"
-        ],
-        "justification": "Evaluación heurística de 23 titulares de TN (Todo Noticias). Se detectaron 2 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Noviembre, Jueves, Papa, Dólar, León.",
-        "cover_path": ""
-      },
-      {
-        "id": 3154,
-        "date": "2026-11-12",
-        "source_id": "perfil",
-        "source_name": "Perfil",
-        "category": "general",
-        "composite_score": 11.5,
-        "optimismo": 9.3,
-        "calma": -3.5,
-        "confianza": 0.0,
-        "alegria": -5.1,
-        "key_themes": [
-          "León",
-          "Argentina",
-          "Durante",
-          "Bullrich",
-          "Nuestro"
-        ],
-        "positive_drivers": [
-          "Renovación de Lionel Scaloni: los cinco récords históricos que persigue el DT de la Selección Argentina"
-        ],
-        "negative_drivers": [
-          "Condenaron al policía que gaseó a una niña durante una marcha en Congreso: \"Ahora vamos por Bullrich\"",
-          "Falleció Ricardo “Negro” Rodríguez, referente de clubes como All Boys y Defensa y Justicia, a sus 72 años"
-        ],
-        "justification": "Evaluación heurística de 25 titulares de Perfil. Se detectaron 1 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: León, Argentina, Durante, Bullrich, Nuestro.",
-        "cover_path": ""
-      },
-      {
-        "id": 3155,
-        "date": "2026-11-12",
-        "source_id": "cadena3",
-        "source_name": "Cadena 3",
-        "category": "federal",
-        "composite_score": 3.6,
-        "optimismo": 7.3,
-        "calma": -3.3,
-        "confianza": 0.0,
-        "alegria": -6.7,
-        "key_themes": [
-          "Papa",
-          "Visita",
-          "León",
-          "Audio",
-          "Histórica"
-        ],
-        "positive_drivers": [
-          "Visita histórica. El Gobierno confirmó que la movilización para ver al Papa fue récord: cuánta gente hubo en total"
-        ],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de Cadena 3. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, Visita, León, Audio, Histórica.",
-        "cover_path": ""
-      },
-      {
-        "id": 3148,
-        "date": "2026-11-12",
-        "source_id": "cronica",
-        "source_name": "Crónica",
-        "category": "popular",
-        "composite_score": 0.0,
-        "optimismo": 0.0,
-        "calma": 0.0,
-        "confianza": 0.0,
-        "alegria": 0.0,
-        "key_themes": [
-          "León",
-          "Argentina",
-          "Papa",
-          "Luján",
-          "Durante"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 24 titulares de Crónica. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: León, Argentina, Papa, Luján, Durante.",
-        "cover_path": ""
-      },
-      {
-        "id": 3151,
+        "id": 3165,
         "date": "2026-11-12",
         "source_id": "pagina12",
         "source_name": "Página/12",
         "category": "political_left",
-        "composite_score": 0.0,
-        "optimismo": 0.0,
-        "calma": 0.0,
+        "composite_score": 5.85,
+        "optimismo": 4.7,
+        "calma": -3.3,
         "confianza": 0.0,
         "alegria": 0.0,
         "key_themes": [
-          "Conurbano",
-          "Bonaerense",
-          "Mensaje",
-          "Habla",
-          "Necesitados"
+          "Inflación",
+          "Octubre",
+          "Según",
+          "Indec",
+          "Asfixia"
         ],
         "positive_drivers": [],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 5 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Conurbano, Bonaerense, Mensaje, Habla, Necesitados.",
+        "justification": "Evaluación heurística de 7 titulares de Página/12. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Inflación, Octubre, Según, Indec, Asfixia.",
         "cover_path": ""
       },
       {
-        "id": 3146,
+        "id": 3162,
         "date": "2026-11-12",
-        "source_id": "lanacion",
-        "source_name": "La Nación",
-        "category": "general",
-        "composite_score": -19.95,
-        "optimismo": -3.3,
-        "calma": 0.0,
+        "source_id": "cronica",
+        "source_name": "Crónica",
+        "category": "popular",
+        "composite_score": 2.25,
+        "optimismo": 6.0,
+        "calma": -6.0,
         "confianza": 0.0,
-        "alegria": -6.7,
+        "alegria": -0.5,
         "key_themes": [
-          "Papa",
-          "Argentina",
+          "Ahora",
+          "Diciembre",
+          "Hasta",
           "León",
-          "Miles",
-          "Limbo"
+          "Argentina"
         ],
-        "positive_drivers": [],
+        "positive_drivers": [
+          "Autódromo de Buenos Aires: en marzo terminan las obras y crece el sueño del regreso de la Fórmula 1"
+        ],
         "negative_drivers": [],
-        "justification": "Evaluación heurística de 23 titulares de La Nación. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Papa, Argentina, León, Miles, Limbo.",
+        "justification": "Evaluación heurística de 24 titulares de Crónica. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Ahora, Diciembre, Hasta, León, Argentina.",
         "cover_path": ""
       },
       {
-        "id": 3145,
+        "id": 3167,
+        "date": "2026-11-12",
+        "source_id": "cronista",
+        "source_name": "El Cronista Comercial",
+        "category": "economy",
+        "composite_score": -4.15,
+        "optimismo": -3.8,
+        "calma": 2.9,
+        "confianza": 0.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "Quiénes",
+          "Tiene",
+          "Años",
+          "Deben",
+          "Estado"
+        ],
+        "positive_drivers": [
+          "Trámite. Por orden del Gobierno, se revocarán los pasaportes de quienes tengan una deuda por manutención infantil y superen este límite",
+          "Depósitos . Por orden de la sección 202(y) de la Ley del Seguro Social, la SSA dejará de pagar los beneficios mensuales a los extranjeros que no cumplan este requisito"
+        ],
+        "negative_drivers": [
+          "Trámite. Por orden del Gobierno, se revocarán los pasaportes de quienes tengan una deuda por manutención infantil y superen este límite"
+        ],
+        "justification": "Evaluación heurística de 22 titulares de El Cronista Comercial. Se detectaron 2 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Quiénes, Tiene, Años, Deben, Estado.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-11-12/cronista.jpg"
+      },
+      {
+        "id": 3169,
+        "date": "2026-11-12",
+        "source_id": "cadena3",
+        "source_name": "Cadena 3",
+        "category": "federal",
+        "composite_score": -10.6,
+        "optimismo": 0.0,
+        "calma": -10.0,
+        "confianza": 7.3,
+        "alegria": -5.0,
+        "key_themes": [
+          "Córdoba",
+          "Inseguridad",
+          "Argentina",
+          "Mundial",
+          "Vuelve"
+        ],
+        "positive_drivers": [
+          "Interna en el oficialismo. Bullrich frenó los cambios de la Casa Rosada y reunió apoyo para la ley de discapacidad"
+        ],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 23 titulares de Cadena 3. Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Córdoba, Inseguridad, Argentina, Mundial, Vuelve.",
+        "cover_path": ""
+      },
+      {
+        "id": 3171,
+        "date": "2026-11-12",
+        "source_id": "lacapital",
+        "source_name": "La Capital (Rosario)",
+        "category": "federal",
+        "composite_score": -15.95,
+        "optimismo": -3.3,
+        "calma": -4.7,
+        "confianza": 0.0,
+        "alegria": 3.8,
+        "key_themes": [
+          "Argentina",
+          "Papa",
+          "Central",
+          "Rosario",
+          "Volvió"
+        ],
+        "positive_drivers": [
+          "Fiesta de Colectividades: demoraron a 12 cuidacoches en operativos de control"
+        ],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 24 titulares de La Capital (Rosario). Se detectaron 1 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Argentina, Papa, Central, Rosario, Volvió.",
+        "cover_path": ""
+      },
+      {
+        "id": 3168,
+        "date": "2026-11-12",
+        "source_id": "perfil",
+        "source_name": "Perfil",
+        "category": "general",
+        "composite_score": -17.1,
+        "optimismo": -3.3,
+        "calma": -0.9,
+        "confianza": 0.0,
+        "alegria": -3.3,
+        "key_themes": [
+          "Milei",
+          "Papa",
+          "León",
+          "Cómo",
+          "Fernández"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [],
+        "justification": "Evaluación heurística de 25 titulares de Perfil. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Milei, Papa, León, Cómo, Fernández.",
+        "cover_path": ""
+      },
+      {
+        "id": 3159,
         "date": "2026-11-12",
         "source_id": "clarin",
         "source_name": "Clarín",
         "category": "general",
-        "composite_score": -21.9,
-        "optimismo": -7.3,
-        "calma": 0.0,
+        "composite_score": -25.0,
+        "optimismo": 0.0,
+        "calma": -10.0,
         "confianza": 0.0,
         "alegria": 0.0,
         "key_themes": [
-          "León",
+          "Bullrich",
           "Milei",
-          "Mensaje",
-          "Macri",
-          "Peronismo"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [
-          "\"Hay gente dispuesta a hundir el barco\": sugestivo mensaje de Milei en medio del conflicto del Gobierno con Patricia Bullrich"
-        ],
-        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: León, Milei, Mensaje, Macri, Peronismo.",
-        "cover_path": ""
-      },
-      {
-        "id": 3152,
-        "date": "2026-11-12",
-        "source_id": "ambito",
-        "source_name": "Ámbito Financiero",
-        "category": "economy",
-        "composite_score": -24.4,
-        "optimismo": -3.8,
-        "calma": -5.2,
-        "confianza": 0.0,
-        "alegria": 0.0,
-        "key_themes": [
-          "León",
           "Papa",
-          "Argentina",
-          "Axion",
-          "Javier"
+          "Gobierno",
+          "Patricia"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "Deuda: Economía colocó bonos por $8,87 billones, logró rollover del 84% e inyectó pesos al mercado",
-          "Javier Milei agitó la interna libertaria con un posteo en plena tensión con Patricia Bullrich: \"Hay gente dispuesta a hundir el barco\""
+          "Escándalo en Bariloche: un convencional constituyente que reivindicó a Videla juró entre abucheos y con un gesto obsceno",
+          "No para la interna en el Gobierno: sugestivo tuit de Patricia Bullrich y denuncia penal contra uno de los armadores clave de Karina Milei"
         ],
-        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: León, Papa, Argentina, Axion, Javier.",
-        "cover_path": ""
+        "justification": "Evaluación heurística de 10 titulares de Clarín. Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: Bullrich, Milei, Papa, Gobierno, Patricia.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-11-12/clarin.jpg"
       },
       {
-        "id": 3147,
+        "id": 3160,
         "date": "2026-11-12",
-        "source_id": "infobae",
-        "source_name": "Infobae",
+        "source_id": "lanacion",
+        "source_name": "La Nación",
         "category": "general",
-        "composite_score": -29.95,
-        "optimismo": -3.3,
-        "calma": -10.0,
-        "confianza": 3.3,
-        "alegria": -3.3,
-        "key_themes": [
-          "Millones",
-          "Campaña",
-          "Electoral",
-          "Después",
-          "Psoe"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [],
-        "justification": "Evaluación heurística de 25 titulares de Infobae. Se detectaron 0 focos positivos y 0 focos de preocupación o conflicto. Temas dominantes: Millones, Campaña, Electoral, Después, Psoe.",
-        "cover_path": ""
-      },
-      {
-        "id": 3149,
-        "date": "2026-11-12",
-        "source_id": "eldestape",
-        "source_name": "El Destape",
-        "category": "political_opposition",
-        "composite_score": -69.05,
-        "optimismo": -10.0,
-        "calma": -5.6,
-        "confianza": -10.0,
-        "alegria": 3.3,
-        "key_themes": [
-          "León",
-          "Papa",
-          "Argentina",
-          "Visita",
-          "Quiere"
-        ],
-        "positive_drivers": [],
-        "negative_drivers": [
-          "Jóvenes entre el desempleo y el rebusque: 6 de cada 10 cuentapropistas están subocupados",
-          "La pobreza volvió a subir y ya alcanza a casi 10 millones de personas",
-          "Condenaron al policía que gaseó a una nena en la marcha de jubilados"
-        ],
-        "justification": "Evaluación heurística de 24 titulares de El Destape. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: León, Papa, Argentina, Visita, Quiere.",
-        "cover_path": ""
-      },
-      {
-        "id": 3158,
-        "date": "2026-11-12",
-        "source_id": "c5n",
-        "source_name": "C5N",
-        "category": "political_opposition",
-        "composite_score": -85.0,
-        "optimismo": -10.0,
-        "calma": -10.0,
+        "composite_score": -52.5,
+        "optimismo": -7.5,
+        "calma": 0.0,
         "confianza": -10.0,
         "alegria": 0.0,
         "key_themes": [
-          "León",
-          "Papa",
           "Argentina",
-          "Milei",
+          "Minuto",
+          "León",
+          "Vivo",
           "Visita"
         ],
         "positive_drivers": [],
         "negative_drivers": [
-          "El Banco Central compró u$s29 millones, pero las reservas cayeron por pagos de deuda y factores externos",
-          "Milei sumó tensión a la interna con Patricia Bullrich: \"Hay gente dispuesta a hundir el barco\""
+          "Las canastas básicas se aceleraron en octubre y subieron por encima de la inflación"
         ],
-        "justification": "Evaluación heurística de 25 titulares de C5N. Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: León, Papa, Argentina, Milei, Visita.",
+        "justification": "Evaluación heurística de 24 titulares de La Nación. Se detectaron 0 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Argentina, Minuto, León, Vivo, Visita.",
+        "cover_path": "/home/runner/work/humor-social/humor-social/data/covers/2026-11-12/lanacion.jpg"
+      },
+      {
+        "id": 3163,
+        "date": "2026-11-12",
+        "source_id": "eldestape",
+        "source_name": "El Destape",
+        "category": "political_opposition",
+        "composite_score": -53.7,
+        "optimismo": -7.9,
+        "calma": 0.0,
+        "confianza": -10.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "Milei",
+          "Bullrich",
+          "Argentina",
+          "Apura",
+          "Paso"
+        ],
+        "positive_drivers": [
+          "El Gobierno abre retiros voluntarios en la obra social de las Fuerzas Armadas"
+        ],
+        "negative_drivers": [
+          "La inflación se aceleró en octubre y arrojó un 2,2% impulsado por el alza de servicios",
+          "Los precios se dispararon 1% solo en la primera semana de noviembre",
+          "Galperin se suma al negocio de los despidos: Mercado Pago lanza el nuevo fondo de Milei"
+        ],
+        "justification": "Evaluación heurística de 22 titulares de El Destape. Se detectaron 1 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Milei, Bullrich, Argentina, Apura, Paso.",
+        "cover_path": ""
+      },
+      {
+        "id": 3161,
+        "date": "2026-11-12",
+        "source_id": "infobae",
+        "source_name": "Infobae",
+        "category": "general",
+        "composite_score": -55.0,
+        "optimismo": -10.0,
+        "calma": -10.0,
+        "confianza": 0.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "México",
+          "Estados",
+          "Noviembre",
+          "Reduce",
+          "Meses"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [
+          "Médicos residentes en México buscan especializarse entre violencia, cansancio y desabasto: CNDH alerta por crisis estructural",
+          "La mayor empresa de transporte de Cuba reduce su estructura central de 90 a 29 puestos para evitar la quiebra"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de Infobae. Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: México, Estados, Noviembre, Reduce, Meses.",
+        "cover_path": ""
+      },
+      {
+        "id": 3166,
+        "date": "2026-11-12",
+        "source_id": "ambito",
+        "source_name": "Ámbito Financiero",
+        "category": "economy",
+        "composite_score": -58.75,
+        "optimismo": -6.5,
+        "calma": -6.7,
+        "confianza": -7.5,
+        "alegria": 0.0,
+        "key_themes": [
+          "Argentina",
+          "Octubre",
+          "Mayor",
+          "Axion",
+          "Están"
+        ],
+        "positive_drivers": [
+          "Los ADRs anotan bajas de hasta el 4%, pero el riesgo país cae fuerte y perfora los 820 puntos"
+        ],
+        "negative_drivers": [
+          "La inflación se aceleró al 2,2% en octubre y alcanzó su mayor nivel en seis meses"
+        ],
+        "justification": "Evaluación heurística de 20 titulares de Ámbito Financiero. Se detectaron 1 focos positivos y 1 focos de preocupación o conflicto. Temas dominantes: Argentina, Octubre, Mayor, Axion, Están.",
+        "cover_path": ""
+      },
+      {
+        "id": 3164,
+        "date": "2026-11-12",
+        "source_id": "tn",
+        "source_name": "TN (Todo Noticias)",
+        "category": "general",
+        "composite_score": -60.0,
+        "optimismo": -10.0,
+        "calma": 0.0,
+        "confianza": -10.0,
+        "alegria": 0.0,
+        "key_themes": [
+          "Inflación",
+          "Octubre",
+          "Dato",
+          "Fase",
+          "Grupos"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [
+          "La inflación de alimentos fue del 2% en octubre: los productos que subieron y los que bajaron de precio",
+          "Las jubilaciones y asignaciones de ANSES aumentarán un 2,2% en diciembre tras conocerse el dato de inflación"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de TN (Todo Noticias). Se detectaron 0 focos positivos y 2 focos de preocupación o conflicto. Temas dominantes: Inflación, Octubre, Dato, Fase, Grupos.",
+        "cover_path": ""
+      },
+      {
+        "id": 3172,
+        "date": "2026-11-12",
+        "source_id": "c5n",
+        "source_name": "C5N",
+        "category": "political_opposition",
+        "composite_score": -75.55,
+        "optimismo": -7.7,
+        "calma": -10.0,
+        "confianza": -7.5,
+        "alegria": -3.3,
+        "key_themes": [
+          "Scaloni",
+          "Octubre",
+          "Gobierno",
+          "Papa",
+          "Inflación"
+        ],
+        "positive_drivers": [
+          "Sin fecha para el desembolso de u$s900 millones, el FMI elogió al Gobierno por la \"estabilidad económica\""
+        ],
+        "negative_drivers": [
+          "La inflación de octubre subió al 2,2%, acumula un 26,3% en el año y complica la meta del Gobierno",
+          "Inflación de octubre: el alquiler y los servicios, los que más subieron",
+          "El riesgo país cae hasta los 813 puntos y los bonos argentinos borran sus caídas en Wall Street"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de C5N. Se detectaron 1 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Scaloni, Octubre, Gobierno, Papa, Inflación.",
+        "cover_path": ""
+      },
+      {
+        "id": 3170,
+        "date": "2026-11-12",
+        "source_id": "lavoz",
+        "source_name": "La Voz del Interior",
+        "category": "federal",
+        "composite_score": -91.7,
+        "optimismo": -9.4,
+        "calma": -7.4,
+        "confianza": -10.0,
+        "alegria": -10.0,
+        "key_themes": [
+          "Córdoba",
+          "Octubre",
+          "Inflación",
+          "Justicia",
+          "Cara"
+        ],
+        "positive_drivers": [],
+        "negative_drivers": [
+          "Los precios aumentaron 2,2% el mes pasado. Es el promedio de los 31 centros urbanos que releva el Indec. En lo que va de 2026: 26,3% y en los últimos 12 meses, 33,1%. En Córdoba, 2,7%.",
+          "En octubre. La inflación en Córdoba trepó al 2,7%, el nivel más alto desde abril",
+          "Informe. Una familia necesitó $ 1.690.000 en octubre para no caer en la pobreza: la canasta básica aumentó un 3,5 %"
+        ],
+        "justification": "Evaluación heurística de 25 titulares de La Voz del Interior. Se detectaron 0 focos positivos y 3 focos de preocupación o conflicto. Temas dominantes: Córdoba, Octubre, Inflación, Justicia, Cara.",
         "cover_path": ""
       }
     ],
@@ -38205,6 +38228,126 @@
         "u": "https://www.ambito.com/negocios/podran-los-bloques-comerciales-resistir-el-segundo-choque-chino-n6344239"
       },
       {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "La inflación se aceleró al 2,2% en octubre y alcanzó su mayor nivel en seis meses",
+        "u": "https://www.ambito.com/economia/la-inflacion-se-acelero-al-22-octubre-y-alcanzo-su-mayor-nivel-seis-meses-n6344589"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "La canasta básica trepó 3,5% en octubre, su mayor suba desde enero: ¿cuánto necesitó una familia para no ser pobre?",
+        "u": "https://www.ambito.com/economia/la-canasta-basica-trepo-35-octubre-su-mayor-suba-enero-cuanto-necesito-una-familia-no-ser-pobre-n6344587"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "El FMI destacó que se están mitigando los riesgos de refinanciación",
+        "u": "https://www.ambito.com/economia/el-fmi-destaco-que-se-estan-mitigando-los-riesgos-refinanciacion-n6344495"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Los ADRs anotan bajas de hasta el 4%, pero el riesgo país cae fuerte y perfora los 820 puntos",
+        "u": "https://www.ambito.com/los-bonos-dolares-retroceden-luego-tres-dias-repunte-y-el-riesgo-pais-se-mantiene-arriba-850-puntos-n6344388"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "El mercado pidió liquidez y Economía concedió: qué se espera para las tasas tras la licitación del Tesoro",
+        "u": "https://www.ambito.com/finanzas/el-mercado-pidio-liquidez-y-economia-concedio-que-se-espera-las-tasas-la-licitacion-del-tesoro-n6344305"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Malvinas: el Tribunal del Mar le puso fecha al fallo por el reclamo de Argentina para frenar Sea Lion",
+        "u": "https://www.ambito.com/politica/malvinas-el-tribunal-del-mar-le-puso-fecha-al-fallo-el-reclamo-argentina-frenar-sea-lion-n6344584"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Santiago Blaquier cerró la compra de otro ingenio y desafía a Ledesma con una nueva marca de azúcar",
+        "u": "https://www.ambito.com/negocios/santiago-blaquier-cerro-la-compra-otro-ingenio-y-desafia-ledesma-una-nueva-marca-azucar-n6344561"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Industria textil: la actividad cayó más de 20% en 2026 y ya se perdieron más de 29.000 puestos de trabajo",
+        "u": "https://www.ambito.com/economia/industria-textil-la-actividad-cayo-mas-20-2026-y-ya-se-perdieron-mas-29000-puestos-trabajo-n6344544"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Confirmado: Lionel Scaloni renovará con la Selección argentina hasta el Mundial 2030",
+        "u": "https://www.ambito.com/deportes/confirmado-lionel-scaloni-renovara-la-seleccion-argentina-el-mundial-2030-n6344557"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "\"Los votos ya están\": Casa Rosada acelera para eliminar las PASO pero en el Senado hay dudas",
+        "u": "https://www.ambito.com/politica/diego-santilli-reactiva-ronda-gobernadores-la-suspension-las-paso-n6344444"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Bienestar laboral: Argentina avanza en el ranking, pero persisten los problemas para retener talentos",
+        "u": "https://www.ambito.com/negocios/bienestar-laboral-argentina-avanza-el-ranking-pero-persisten-los-problemas-retener-talentos-n6344513"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Escándalo en Nvidia: Jensen Huang renunció a su cargo y ya se definió una CEO interina",
+        "u": "https://www.ambito.com/mundo/nvidia-evalua-la-continuidad-jensen-huang-como-ceo-el-escandalo-sus-vinculos-una-presunta-espia-china-n6344294"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Suspensión de las PASO: el Senado retoma el debate de la reforma electoral",
+        "u": "https://www.ambito.com/politica/suspension-las-paso-el-senado-retoma-el-debate-la-reforma-electoral-n6344453"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Se reaviva la polémica con Chile por los buques que parten hacia Malvinas: niegan tener que pedir permiso a Argentina",
+        "u": "https://www.ambito.com/mundo/se-reaviva-la-polemica-chile-los-buques-que-parten-malvinas-niegan-tener-que-pedir-permiso-argentina-n6344446"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Diputados retoma negociaciones: jefes de bloque se reúnen para delinear la agenda del Congreso",
+        "u": "https://www.ambito.com/politica/diputados-reactiva-las-negociaciones-jefes-bloque-se-reunen-delinear-la-agenda-del-congreso-n6344363"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Fidelización en 2027: datos, personalización y beneficios cotidianos, las claves que dejó LoyaltyTrends",
+        "u": "https://www.ambito.com/negocios/fidelizacion-2027-datos-personalizacion-y-beneficios-cotidianos-las-claves-que-dejo-loyaltytrends-n6341936"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "AXION energy refuerza su propuesta para el transporte y el agro con AXION DIESEL X10",
+        "u": "https://www.ambito.com/negocios/axion-energy-refuerza-su-propuesta-el-transporte-y-el-agro-axion-diesel-x10-n6342090"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Líderes de empresas analizaron los mercados y las inversiones en Ámbito Debate",
+        "u": "https://www.ambito.com/ambito-debate"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Escándalo en Nvidia: Jensen Huang debe dimitir",
+        "u": "https://www.ambito.com/negocios/escandalo-nvidia-jensen-huang-debe-dimitir-n6344298"
+      },
+      {
+        "s": "ambito",
+        "n": "Ámbito Financiero",
+        "t": "Cuando la globalización se convierte en un arma geopolítica",
+        "u": "https://www.ambito.com/negocios/cuando-la-globalizacion-se-convierte-un-arma-geopolitica-n6344242"
+      },
+      {
         "s": "c5n",
         "n": "C5N",
         "t": "Kicillof, tras la visita del Papa: \"La doctrina social de la Iglesia es un componente fuerte del peronismo\"",
@@ -38352,6 +38495,156 @@
         "s": "c5n",
         "n": "C5N",
         "t": "Karina Milei despidió al Papa: \"Estos días quedarán grabados para siempre en el corazón\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Scaloni confirmó su renovación en la Selección: \"Estoy con la misma ilusión que el primer día\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Sin fecha para el desembolso de u$s900 millones, el FMI elogió al Gobierno por la \"estabilidad económica\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La inflación de octubre subió al 2,2%, acumula un 26,3% en el año y complica la meta del Gobierno",
+        "u": "https://www.c5n.com/economia/inflacion-indec-octubre-12-noviembre-2026"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Inflación de octubre: el alquiler y los servicios, los que más subieron",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Los desafíos de Scaloni en la Selección en la era post Messi",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Canasta básica: una familia necesitó $1.690.000 para no ser pobre en octubre",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Scaloni reveló qué hará con la camiseta 10 de Messi",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Causa ANDIS: acorralados por la Justicia, los Kovalivker se negaron a responder las acusaciones por corrupción",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Nueva denuncia contra una empresa de los Neuss por evadir impuestos por $6.600 millones",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Michel le solicitó a la AGN una auditoría integral de la \"privatización\" de AySA",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Hidrovía: las irregularidades denunciadas que ahora deberá revisar la AGN",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "El dólar no cede y se mantiene en $1.570, su máximo histórico",
+        "u": "https://www.c5n.com/economia/dolar-hoy-dolar-blue-hoy-cuanto-cotiza-el-12-noviembre-n254108"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "En medio del escándalo por infidelidades renunció Jensen Huang, el CEO de Nvidia",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Las lágrimas de Lionel Scaloni en plena conferencia de prensa",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "El riesgo país cae hasta los 813 puntos y los bonos argentinos borran sus caídas en Wall Street",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Llega WELL FEST a Santiago del Estero, con la participación de reconocidos especialistas del bienestar",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La AGN pone la lupa sobre dos polémicas concesiones: auditará la licitación de la Hidrovía y la prórroga a Eurnekian",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Sigue la gira de León XIV por Sudamérica",
+        "u": "https://www.c5n.com/tag/leon-xiv"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "La emoción de un exrecluso de Devoto que le leyó una carta al Papa: \"Fue como un abrazo\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Para el Gobierno, \"no es incompatible la doctrina social de la Iglesia con una economía de mercado\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Quién es Mónica de la Canal, autora del hit \"Alma Misionera\" que cantó el Papa",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Conmoción en Rafael Castillo: atacaron a tiros a un jardín de infantes",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Así se escapó el peligroso terrorista italiano Leonardo Bertulazzi en San Telmo",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Kicillof, tras la visita del Papa: \"La doctrina social de la Iglesia es un componente fuerte del peronismo\"",
+        "u": "https://www.c5n.com"
+      },
+      {
+        "s": "c5n",
+        "n": "C5N",
+        "t": "Escándalo con Hernán Coronel de Mala Fama: su mujer estalló de celos en plena grabación de un programa",
         "u": "https://www.c5n.com"
       },
       {
@@ -38505,6 +38798,156 @@
         "u": "https://www.cadena3.com"
       },
       {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Viva la Radio Santa Fe",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Fire Time Recargado",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Rodolfo Barili",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La opinión de Pablo Sirvén",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "La quinta pata del gato",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Los editoriales de Alberto Lotuf",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Cuadro de Situación",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "EL CAMINO DEL PAPA EN ARGENTINA",
+        "u": "https://www.cadena3.com"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Datos oficiales. La inflación de octubre fue del 2,2% y acumuló 33,1% en los últimos doce meses",
+        "u": "https://www.cadena3.com/noticia/politica-y-economia/la-inflacion-de-octubre-fue-del-22-y-acumulo-331-en-los-ultimos-doce-meses_612356"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Fútbol. Scaloni renovó su contrato y seguirá en la selección hasta el Mundial 2030",
+        "u": "https://www.cadena3.com/noticia/seleccion-argentina/scaloni-renovo-su-contrato-y-seguira-en-la-seleccion-hasta-el-mundial-2030_612565"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Visita apostólica. Por qué el Vaticano eliminó de las redes sociales la despedida de León XIV a la Argentina",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/por-que-el-vaticano-elimino-de-las-redes-sociales-la-despedida-de-leon-xiv-a-la-argentina_612485"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Es oficial. Vuelve el Rally Mundial a Córdoba",
+        "u": "https://www.cadena3.com/noticia/rally-mundial-cordoba-2028/vuelve-el-rally-mundial-a-cordoba_612449"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Inseguridad en Córdoba. Mataron de un balazo en el pecho a repartidor de Pedidos Ya que frustró un arrebato en Alta Córdoba",
+        "u": "https://www.cadena3.com/noticia/radioinforme-3/mataron-de-un-balazo-en-el-pecho-a-repartidor-de-pedidos-ya-que-frustro-un-arrebato-en-alta-cordoba_612321"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Polémica abierta. Quién es la mujer que reclama la autoría de \"Alma misionera\", la canción que sonó ante León XIV",
+        "u": "https://www.cadena3.com/noticia/el-camino-de-leon-en-argentina-uruguay-y-peru/quien-es-la-mujer-que-reclama-la-autoria-de-alma-misionera-la-cancion-que-sono-ante-leon-xiv_612464"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Aviación comercial. Air Europa celebra sus 40 años y se acerca a dos décadas de vuelos a la Argentina",
+        "u": "https://www.cadena3.com/noticia/juntos/air-europa-celebra-sus-40-anos-y-se-acerca-a-dos-decadas-de-vuelos-a-la-argentina_612467"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Interna en el oficialismo. Bullrich frenó los cambios de la Casa Rosada y reunió apoyo para la ley de discapacidad",
+        "u": "https://www.cadena3.com/noticia/politica-y-economia/bullrich-freno-los-cambios-de-la-casa-rosada-y-reunio-apoyo-para-la-ley-de-discapacidad_612579"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Drama en México. Una mendocina se desvaneció, se fracturó la cadera y los médicos le hallaron un cuadro alarmante",
+        "u": "https://www.cadena3.com/noticia/sociedad/una-mendocina-se-desvanecio-se-fracturo-la-cadera-y-los-medicos-le-hallaron-un-cuadro-alarmante_612360"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Oficial de AFA. Días y horarios de los octavos de final del Torneo Clausura",
+        "u": "https://www.cadena3.com/noticia/futbol/dias-y-horarios-de-los-octavos-de-final-del-torneo-clausura_612283"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Inseguridad latente. Tensión en la manifestación de repartidores tras el crimen de Mauro: piden la presencia de Quinteros",
+        "u": "https://www.cadena3.com/noticia/radioinforme-3/tension-en-la-manifestacion-de-repartidores-tras-el-crimen-de-mauro-piden-la-presencia-de-quinteros_612379"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Inseguridad latente. \"Murió por defender a dos menores\": el dolor de la esposa del repartidor asesinado en Córdoba",
+        "u": "https://www.cadena3.com/noticia/radioinforme-3/murio-por-defender-a-dos-menores-el-dolor-de-la-esposa-del-repartidor-asesinado-en-cordoba_612387"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Conmoción en Córdoba. Crimen del repartidor: \"Mi hermana sigue en shock, Mauro intentó defenderla y lo mataron\"",
+        "u": "https://www.cadena3.com/noticia/ahora-pais/crimen-del-repartidor-mi-hermana-sigue-en-shock-mauro-intento-defenderla-y-lo-mataron_612525"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Juicio en Córdoba. Tragedia en las Altas Cumbres: el juez atribuyó el choque por igual a Oscar González y a Bengoa",
+        "u": "https://www.cadena3.com/noticia/sociedad/tragedia-en-las-altas-cumbres-el-juez-atribuyo-el-choque-por-igual-a-oscar-gonzalez-y-a-bengoa_612513"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Inseguridad en Córdoba. Condenan a otra asociación ilícita que robaba autos mientras los dueños dormían",
+        "u": "https://www.cadena3.com/noticia/sociedad/condenan-a-otra-asociacion-ilicita-que-robaba-autos-mientras-los-duenos-dormian_612476"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Las sierras vuelven a rugir. El Rally Mundial vuelve a Córdoba: mirá el programa especial de Cadena 3 Motor",
+        "u": "https://www.cadena3.com/noticia/rally-mundial-cordoba-2028/el-rally-mundial-vuelve-a-cordoba-mira-el-programa-especial-de-cadena-3-motor_612469"
+      },
+      {
+        "s": "cadena3",
+        "n": "Cadena 3",
+        "t": "Las sierras vuelven a rugir. \"Hoy vuelve el Rally a casa, es parte de nuestra sangre\": el orgullo de Llaryora tras el anuncio",
+        "u": "https://www.cadena3.com/noticia/rally-mundial-cordoba-2028/hoy-vuelve-el-rally-a-casa-es-parte-de-nuestra-sangre-el-orgullo-de-llaryora-tras-el-anuncio_612480"
+      },
+      {
         "s": "clarin",
         "n": "Clarín",
         "t": "Los milagros de León XIV: Milei se acercará a Macri y el peronismo se une a la fuerza",
@@ -38563,6 +39006,66 @@
         "n": "Clarín",
         "t": "\"Hay gente dispuesta a hundir el barco\": sugestivo mensaje de Milei en medio del conflicto del Gobierno con Patricia Bullrich",
         "u": "https://www.clarin.com/politica/gente-dispuesta-hundir-barco-sugestivo-mensaje-milei-medio-conflicto-gobierno-patricia-bullrich_0_1f174QW9qW.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Escándalo en Bariloche: un convencional constituyente que reivindicó a Videla juró entre abucheos y con un gesto obsceno",
+        "u": "https://www.clarin.com/politica/escandalo-bariloche-convencional-constituyente-reivindico-videla-juro-abucheos-gesto-obsceno_0_jpIoKypkSd.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "La foto incómoda: el clérigo pro iraní, negador del Holocausto y del atentado a la AMIA que participó de un acto oficial por la visita del Papa",
+        "u": "https://www.clarin.com/politica/foto-incomoda-clerigo-pro-irani-negador-holocausto-atentado-amia-participo-acto-oficial-visita-papa_0_4Wta74bocu.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "No para la interna en el Gobierno: sugestivo tuit de Patricia Bullrich y denuncia penal contra uno de los armadores clave de Karina Milei",
+        "u": "https://www.clarin.com/politica/interna-pleno-gobierno-sugestivo-tuit-patricia-bullrich-denuncia-penal-armadores-clave-karina-milei_0_sz9nT9cMO7.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Juraron los representantes de los abogados y de jueces y se termina de armar el nuevo Consejo de la Magistratura",
+        "u": "https://www.clarin.com/politica/juraron-representantes-abogados-jueces-termina-armar-nuevo-consejo-magistratura_0_oneZpXBM35.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Caso $LIBRA: el fiscal Eduardo Taiano defendió su decisión de haber sobreseído a Milei y ahora Martínez de Giorgi define si reabre la causa",
+        "u": "https://www.clarin.com/politica/caso-libra-fiscal-eduardo-taiano-defendio-decision-sobreseido-milei-ahora-martinez-giorgi-define-reabre-causa_0_xSrmq9zg7D.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "En sintonía con el mensaje del Papa, Bullrich dijo que impulsará la Ley de Discapacidad: \"Que nadie quede afuera\"",
+        "u": "https://www.clarin.com/politica/sintonia-mensaje-papa-bullrich-dijo-impulsara-ley-discapacidad-nadie-quede-afuera_0_p4S3pMOvJt.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Suspensión de las PASO: pese a los roces con Milei, Bullirch convoca a una comisión y el Gobierno dice que tiene los votos",
+        "u": "https://www.clarin.com/politica/reforma-electoral-bullrich-alinea-gobierno-dice-votos_0_l93OZVGQwV.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Paro de subtes hoy: a qué hora empieza y cuales son las líneas afectadas por la medida de fuerza de metrodelegados",
+        "u": "https://www.clarin.com/politica/paro-subtes-hoy-hora-empieza-lineas-afectadas-medida-fuerza-metrodelegados_0_Wt0xGXNd0T.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Martín Menem presiona a Bullrich para acelerar la suspensión de las PASO: \"En dos semanas tendríamos que avanzar con la media sanción en Senado\"",
+        "u": "https://www.clarin.com/politica/martin-menem-pidio-acelerar-suspension-paso-proximas-semanas-avanzando-media-sancion-senado_0_utke2HJkFu.html"
+      },
+      {
+        "s": "clarin",
+        "n": "Clarín",
+        "t": "Pablo Quirno habló del abrazo con los Milei y le marcó a Patricia Bullrich que no es tiempo de \"ambiciones personales\"",
+        "u": "https://www.clarin.com/politica/pablo-quirno-hablo-abrazo-milei-marco-patricia-bullrich-tiempo-ambiciones-personales_0_pGmosGiQxB.html"
       },
       {
         "s": "cronica",
@@ -38715,6 +39218,156 @@
         "u": "https://www.cronica.com.ar/cronicahd/no-te-pierdas-cronica-tv-en-vivo-8239/"
       },
       {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La inflación de octubre se aceleró al 2,2% y acumula 26,3% en el año",
+        "u": "https://www.cronica.com.ar/sociedad/la-inflacion-de-octubre-se-acelero-al-2-2-y-acumula-26-3-en-el-ano/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Scaloni renovó con la Selección y seguirá al frente hasta el Mundial 2030",
+        "u": "https://www.cronica.com.ar/depo/seleccionargentina/en-conferencia-de-prensa-se-confirmo-la-renovacion-de-scaloni-con-argent/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "\"Este país desde ahora tiene dos Papas\": por qué el Vaticano borró la despedida de León XIV a la Argentina",
+        "u": "https://www.cronica.com.ar/mundo/la-razon-detras-de-la-eliminacion-del-mensaje-del-papa-leon-xiv-tras-su-despedida-de-argentina/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Camionero reveló que lo llevó hasta Corrientes y lo describió como \"un tipazo\"",
+        "u": "https://www.cronica.com.ar/policiales/fuga-de-bertulazzi-un-camionero-revelo-que-lo-llevo-hasta-corrientes-y-lo-describio-como-un-tipazo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Autódromo de Buenos Aires: en marzo terminan las obras y crece el sueño del regreso de la Fórmula 1",
+        "u": "https://www.cronica.com.ar/depo/polideportivo/avanza-la-renovacion-del-autodromo-cuando-terminaran-las-obras-y-que-falta-para-el-regreso-de-la-formula-1/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Ahora sí: por el Decreto 274/2024 el Gobierno confirmó el aumento definitivo de diciembre en Anses",
+        "u": "https://www.cronica.com.ar/sociedad/ahora-si-por-el-decreto-274-2024-el-gobierno-confirmo-el-aumento-definitivo-de-diciembre-en-anses/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Elba Rodríguez reveló los 5 ingredientes imprescindibles de su cocina",
+        "u": "https://www.cronica.com.ar/sociedad/su-secreto-mejor-guardado-elba-rodriguez-revelo-los-5-ingredientes-imprescindibles-en-cualquier-cocina/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La picante indirecta de Luck Ra para Tiago PZK que involucra a La Joaqui: \"Ahora duermes con él...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/por-la-red/la-picante-indirecta-de-luck-ra-para-tiago-pzk-que-involucra-a-la-joaqui-ahora-duermes-con-el/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Así se desplomaron dos guardias franceses adelante de Macron en un acto oficial",
+        "u": "https://www.cronica.com.ar/mundo/asi-se-desplomaron-dos-guardias-franceses-adelante-de-macron-en-un-acto-oficial/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Quirno, tras la visita del Papa: \"No hay una confrontación entre los valores de la Iglesia y lo que estamos haciendo\"",
+        "u": "https://www.cronica.com.ar/politica/el-balance-de-quirno-tras-la-visita-del-papa-no-hay-una-confrontacion-entre-los-valores-de-la-iglesia-y-lo-que-estamos-haciendo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "El desconsuelo de Gladys \"La Bomba Tucumana\" por la muerte de su sobrino: \"Tenías apenas 12 añitos y tanto por vivir...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/por-la-red/el-desconsuelo-de-gladys-la-bomba-tucumana-por-la-muerte-de-su-sobrino-tenias-apenas-12-anitos-y-tanto-por-vivir/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Triple crimen de Florencio Varela: \"Pequeño J\" denunció amenazas de muerte en la cárcel tras la filtración del video",
+        "u": "https://www.cronica.com.ar/policiales/triple-crimen-de-florencio-varela-pequeno-j-denuncio-amenazas-de-muerte-en-la-carcel-tras-la-filtracion-del-video/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Manchester United echó a Michael Carrick y espera por Pochettino",
+        "u": "https://www.cronica.com.ar/depo/actualidad/manchester-united-echo-a-michael-carrick-y-espera-por-pochettino/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Se hacía pasar por víctima de trata y era buscada por el crimen de Magalí Levy",
+        "u": "https://www.cronica.com.ar/policiales/se-hacia-pasar-por-victima-de-trata-y-era-buscada-por-el-crimen-de-magali-levy/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Tras la visita de León XIV, la Iglesia reclamó \"mayor compromiso\" en la atención a los sectores vulnerables",
+        "u": "https://www.cronica.com.ar/sociedad/tras-la-visita-de-leon-xiv-la-iglesia-reclamo-mayor-compromiso-en-la-atencion-a-los-sectores-vulnerables/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Julieta Prandi se divorciará de Emanuel Ortega tras su breve matrimonio: \"El tiempo acomoda...\"",
+        "u": "https://www.cronica.com.ar/diarioshow/farandula/julieta-prandi-y-emanuel-ortega-enfrentan-un-inesperado-divorcio-tras-su-boda-el-tiempo-acomoda/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Tragedia en Nueva York: se derrumbó un edificio y hay al menos ocho muertos",
+        "u": "https://www.cronica.com.ar/mundo/tragedia-en-nueva-york-se-derrumbo-un-edificio-y-hay-al-menos-dos-muertos/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¡No te pierdas Crónica TV en vivo!",
+        "u": "https://www.cronica.com.ar/cronicahd/no-te-pierdas-cronica-tv-en-vivo-8239/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Para Hadad, Francisco murió \"con ganas de caminar por Argentina\"",
+        "u": "https://www.cronica.com.ar/sociedad/para-hadad-francisco-murio-con-ganas-de-caminar-por-argentina/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La emoción de los fieles en el Cottolengo Don Orione",
+        "u": "https://www.cronica.com.ar/sociedad/la-emocion-de-los-fieles-en-el-cottolengo-don-orione/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "¿Se paga \"Volver al trabajo\" en diciembre?",
+        "u": "https://www.cronica.com.ar/sociedad/se-paga-volver-al-trabajo-en-diciembre/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "El emotivo final de la vigilia de los jóvenes en Palermo",
+        "u": "https://www.cronica.com.ar/sociedad/el-emotivo-final-de-la-vigilia-de-los-jovenes-en-palermo/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Black & Decker cerró su planta de Justo Daract y despidió a 61 trabajadores",
+        "u": "https://www.cronica.com.ar/sociedad/black-decker-cerro-su-planta-de-justo-daract-y-despidio-a-61-trabajadores/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "Habrá paro total de subtes: a qué hora arranca la medida de fuerza",
+        "u": "https://www.cronica.com.ar/sociedad/habra-paro-total-de-subtes-a-que-hora-arranca-la-medida-de-fuerza/"
+      },
+      {
+        "s": "cronica",
+        "n": "Crónica",
+        "t": "La Corte ratificó la condena a un gendarme que integraba una banda narco",
+        "u": "https://www.cronica.com.ar/policiales/la-corte-ratifico-la-condena-a-un-gendarme-que-integraba-una-banda-narco/"
+      },
+      {
         "s": "cronista",
         "n": "El Cronista Comercial",
         "t": "Ni aceptar otras compensaciones. Las aerolíneas deben devolver el dinero si cambian tu llegada por tres horas o más en vuelos nacionales y decides no viajar",
@@ -38863,6 +39516,156 @@
         "n": "El Cronista Comercial",
         "t": "Cambios. WhatsApp deja de ser gratis: a partir del mes de octubre van a cobrar por mensaje individual a cada uno de los usuarios de Bussiness API",
         "u": "https://www.cronista.com/usa/pc-y-mobile/whatsapp-deja-de-ser-gratis-a-partir-del-mes-de-octubre-van-a-cobrar-por-mensaje-individual-a-cada-uno-de-estos-usuarios/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Siguen buscando desaparecidos. Derrumbe de un edificio en Nueva York: confirman al menos dos muertos y 17 heridos, incluidos siete menores de edad",
+        "u": "https://www.cronista.com/usa/trending/derrumbe-de-un-edificio-en-nueva-york-confirman-al-menos-dos-muertos-y-17-heridos-incluidos-siete-menores-de-edad/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "“¡No habrá indulgencia!”. Trump amenaza con doblar los aranceles a México si no detienen las caravanas migrantes",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/trump-amenaza-con-doblar-los-aranceles-a-mexico-si-no-detiene-caravanas-migrantes/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Logan Circle. Tiroteo en Washington: un muerto y cuatro heridos tras un ataque en un gimnasio cerca de la Casa Blanca",
+        "u": "https://www.cronista.com/usa/trending/tiroteo-en-washington-un-muerto-y-cuatro-heridos-tras-un-ataque-en-un-gimnasio-cerca-de-la-casa-blanca/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Empleo. Invertirá US$50 millones y creará 227 empleos: la empresa industrial que vuelve a ampliar sus operaciones en Tennessee",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/invertira-us50-millones-y-creara-227-empleos-la-empresa-industrial-que-vuelve-a-ampliar-sus-operaciones-en-tennessee/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Requerimientos. Cómo es el exámen del USCIS para acceder a la naturalización y quiénes están exentos",
+        "u": "https://www.cronista.com/usa/inmigracion/como-es-el-examen-del-uscis-para-acceder-a-la-naturalizacion-y-quienes-estan-exentos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Armamento. Las Fuerzas Armadas incorporarán un portaaviones nuclear de 100,000 toneladas: tiene dos reactores, puede transportar 75 aeronaves y operar durante 50 años",
+        "u": "https://www.cronista.com/usa/trending/las-fuerzas-armadas-incorporaran-un-portaaviones-nuclear-de-100000-toneladas-tiene-dos-reactores-puede-transportar-75-aeronaves-y-operar-durante-50-anos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Historias. Gana un sueldo anual de seis cifras en Walmart a los 23 años: empezó como cajera a los 16 y es la gerente más joven de la tienda",
+        "u": "https://www.cronista.com/usa/trending/gana-un-sueldo-anual-de-seis-cifras-en-walmart-a-los-23-anos-empezo-como-cajera-a-los-16-y-es-la-gerente-mas-joven-de-la-tienda/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Herencias millonarias. Fue veterano de la Segunda Guerra Mundial, trabajó como conserje y empleado de una gasolinera: aprendió a invertir leyendo el periódico y murió con una fortuna de US$8 millones",
+        "u": "https://www.cronista.com/usa/lifestyle/fue-veterano-de-la-segunda-guerra-mundial-trabajo-como-conserje-y-empleado-de-una-gasolinera-aprendio-a-invertir-leyendo-el-periodico-y-murio-con-una-fortuna-de-us8-millones/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Calendario fiscal. Confirmado | El IRS fijó fechas límite de noviembre: quiénes deben presentar declaraciones y pagar impuestos antes de fin de mes",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/confirmado-el-irs-fijo-fechas-limite-de-noviembre-quienes-deben-presentar-declaraciones-y-pagar-impuestos-antes-de-fin-de-mes/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Finanzas y Economía",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Sin discapacidad. Pensión militar | Cómo saber cuánto cobrarás al jubilarte del Ejército según tus años de servicio",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/pension-militar-como-saber-cuanto-cobraras-al-jubilarte-del-ejercito-segun-tus-anos-de-servicio/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Seguro Social. Requerido por SSA | Los tres tipos de cambios que los beneficiarios por familia deben reportar sí o sí para evitar problemas con los pagos",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/requerido-por-ssa-los-tres-tipos-de-cambios-que-los-beneficiarios-por-familia-deben-reportar-si-o-si-para-evitar-problemas-con-los-pagos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámite. Por orden del Gobierno, se revocarán los pasaportes de quienes tengan una deuda por manutención infantil y superen este límite",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/por-orden-del-gobierno-se-revocaran-los-pasaportes-de-quienes-tengan-una-deuda-por-manutencion-infantil-y-superen-este-limite/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Ganancias. IRS advierte a todos los que ganan dinero por internet: quiénes recibirán el Formulario 1099-K en 2027 y qué pasa si no declaran esos ingresos",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/irs-advierte-a-todos-los-que-ganan-dinero-por-internet-quienes-recibiran-el-formulario-1099-k-en-2027-y-que-pasa-si-no-declaran-esos-ingresos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Calendario de pagos. Oficial | Las dos fechas más importantes para estos beneficiarios de la SSA en diciembre 2026",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/oficial-las-dos-fechas-mas-importantes-para-estos-beneficiarios-de-la-ssa-en-diciembre-2026/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Depósitos . Por orden de la sección 202(y) de la Ley del Seguro Social, la SSA dejará de pagar los beneficios mensuales a los extranjeros que no cumplan este requisito",
+        "u": "https://www.cronista.com/usa/economia-y-finanzas/por-orden-de-la-seccion-202y-de-la-ley-del-seguro-social-la-ssa-dejara-de-pagar-los-beneficios-mensuales-a-los-extranjeros-que-no-cumplan-este-requisito/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Migraciones. Oficial | El número único de hasta 9 dígitos que identifica a los extranjeros para realizar trámites migratorios en Estados Unidos",
+        "u": "https://www.cronista.com/usa/inmigracion/oficial-el-numero-unico-de-hasta-9-digitos-que-identifica-a-los-extranjeros-para-realizar-tramites-migratorios-en-estados-unidos/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Documentación. El Departamento de Estado lo requiere | Una sola identificación no alcanza para tramitar el pasaporte si fue emitida en otro estado: qué documento adicional debes llevar",
+        "u": "https://www.cronista.com/usa/inmigracion/el-departamento-de-estado-lo-requiere-una-sola-identificacion-no-alcanza-para-tramitar-el-pasaporte-si-fue-emitida-en-otro-estado-que-documento-adicional-debes-llevar/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Trámites. Formulario DS-82 | Estados Unidos impide la renovación habitual del pasaporte a los ciudadanos que denunciaron su documento como perdido o robado",
+        "u": "https://www.cronista.com/usa/inmigracion/formulario-ds-82-estados-unidos-impide-la-renovacion-habitual-del-pasaporte-a-los-ciudadanos-que-denunciaron-su-documento-como-perdido-o-robado/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Ni aceptar otras compensaciones. Las aerolíneas deben devolver el dinero si cambian tu llegada por tres horas o más en vuelos nacionales y decides no viajar",
+        "u": "https://www.cronista.com/usa/inmigracion/las-aerolineas-deben-devolver-el-dinero-si-cambian-tu-llegada-por-tres-horas-o-mas-en-vuelos-nacionales-y-decides-no-viajar/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Visas. El Departamento de Estado lo establece | No aceptará fotos para tramitar la visa si llevas este accesorio: en qué casos permite una excepción médica",
+        "u": "https://www.cronista.com/usa/inmigracion/el-departamento-de-estado-lo-establece-no-aceptara-fotos-para-tramitar-la-visa-si-llevas-este-accesorio-en-que-casos-permite-una-excepcion-medica/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Entretenimiento. Netflix agregó una película de terror de Guillermo del Toro que dura menos de 2 horas y tiene un elenco de lujo",
+        "u": "https://www.cronista.com/usa/streaming/netflix-agrego-una-pelicula-de-terror-de-guillermo-del-toro-que-dura-menos-de-2-horas-y-tiene-un-elenco-de-lujo/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "Estrenos. Netflix renueva su catálogo con una nueva miniserie de suspenso que esconde un misterio inquietante: tiene 6 episodios y llega esta semana",
+        "u": "https://www.cronista.com/usa/streaming/netflix-renueva-su-catalogo-con-una-nueva-miniserie-de-suspenso-que-esconde-un-misterio-inquietante-tiene-6-episodios-y-llega-esta-semana/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 series de Amazon Prime más vistas este 29 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-series-de-amazon-prime-mas-vistas-este-29-de-julio/"
+      },
+      {
+        "s": "cronista",
+        "n": "El Cronista Comercial",
+        "t": "¿Qué ver?. Acción, amor y suspenso: las 10 películas de HBO más vistas este 26 de julio",
+        "u": "https://www.cronista.com/usa/streaming/accion-amor-y-suspenso-las-10-peliculas-de-hbo-mas-vistas-este-26-de-julio/"
       },
       {
         "s": "eldestape",
@@ -39015,6 +39818,156 @@
         "u": "https://www.eldestapeweb.com/politica/lla-quiere-reactivar-presupuesto-2027-le-piden-aliados-papa-20261111183724"
       },
       {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Destape - Sigamos Haciendo Historia",
+        "u": "https://www.eldestapeweb.com"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "La inflación se aceleró en octubre y arrojó un 2,2% impulsado por el alza de servicios",
+        "u": "https://www.eldestapeweb.com/economia/inflacion-octubre-llego-2-servicios-explican-suba-2026111216541"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El FMI advirtió que hay \"factores domésticos\" en la volatilidad de los mercados",
+        "u": "https://www.eldestapeweb.com/economia/fmi-admitio-factores-domesticos-disparada-riesgo-pais-argentino-aun-no-puso-fecha-destrabar-us-900-millones-2026111214516"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Milei apura el tema PASO para acorralar a Bullrich y la dejaron al borde de la cornisa",
+        "u": "https://www.eldestapeweb.com/politica/interna-rojo-vivo-oficialismo-hay-detras-apuro-casa-rosada-eliminar-paso-ultimatum-bullrich-20261112151048"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Jonathan Heguier",
+        "u": "https://www.eldestapeweb.com/perfil/jonathan-heguier"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Selección Argentina",
+        "u": "https://www.eldestapeweb.com/deportes/lionel-scaloni-renovo-seleccion-argentina-cuando-nuevo-contrato-20261112151319"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Lionel Scaloni renovó en la Selección hasta diciembre del 2030",
+        "u": "https://www.eldestapeweb.com/deportes/lionel-scaloni-renovo-seleccion-argentina-cuando-nuevo-contrato-20261112151319"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Galperin se suma al negocio de los despidos: Mercado Pago lanza el nuevo fondo de Milei",
+        "u": "https://www.eldestapeweb.com/economia/mercado-pago-lanzo-fondo-despidos-funciona-fal-galperin-20261112135423"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Cristian Carrillo",
+        "u": "https://www.eldestapeweb.com/perfil/cristian-carrillo"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los precios se dispararon 1% solo en la primera semana de noviembre",
+        "u": "https://www.eldestapeweb.com/economia/inflacion-noviembre-precios-dispararon-solo-siete-dias-precio-clave-aumento-casi-10-20261112115234"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Bullrich apura la Ley de Discapacidad y le envió un fuerte mensaje a Milei: \"Nadie afuera\"",
+        "u": "https://www.eldestapeweb.com/politica/bullrich-apura-aprobacion-ley-discapacidad-le-envio-fuerte-mensaje-milei-nadie-afuera-20261112162455"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Arde la interna libertaria",
+        "u": "https://www.eldestapeweb.com/politica/feroz-interna-libertaria-canciller-quirno-destrozo-bullrich-acuso-estar-ambiciones-personales-20261112133749"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Quirno acusó a Bullrich de quedarse en “cosas chiquitas” y “ambiciones personales”",
+        "u": "https://www.eldestapeweb.com/politica/feroz-interna-libertaria-canciller-quirno-destrozo-bullrich-acuso-estar-ambiciones-personales-20261112133749"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Milei avanza en la privatización del tercer principal paso fronterizo del país",
+        "u": "https://www.eldestapeweb.com/politica/milei-avanza-privatizacion-tercer-paso-fronterizo-importante-pais-2026111282632"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Peor que en 2001 y al nivel de la pandemia: empresarios textiles confrontan al Gobierno",
+        "u": "https://www.eldestapeweb.com/politica/peor-2001-nivel-pandemia-alarmantes-numeros-exponen-derrumbe-industria-nacional-20261112142414"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El creador de Evita en la 9 de Julio impulsa un Francisco gigante: \"Será Cristo Redentor\"",
+        "u": "https://www.eldestapeweb.com/sociedad/creador-evita-9-julio-impulsa-francisco-gigante-sera-nuestro-cristo-redentor-20261112113240"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Por Gino Viglianco",
+        "u": "https://www.eldestapeweb.com/perfil/gino-viglianco"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Argentina ganó el oro en los Juegos Olímpicos de la Juventud en futsal",
+        "u": "https://www.eldestapeweb.com/deportes/otra-coronacion-gloria-argentina-vencio-portugal-futsal-gano-oro-juegos-olimpicos-juventud-2026111214250"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Javier Milei presidente",
+        "u": "https://www.eldestapeweb.com/politica/gobierno-abre-retiro-voluntario-iosfa-antes-disolucion-202611128020"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "El Gobierno abre retiros voluntarios en la obra social de las Fuerzas Armadas",
+        "u": "https://www.eldestapeweb.com/politica/gobierno-abre-retiro-voluntario-iosfa-antes-disolucion-202611128020"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Murió Paolo El Rockero: así fueron sus últimas horas antes del triste final",
+        "u": "https://www.eldestapeweb.com/espectaculos/murio-paolo-rockero-68-anos-asi-fueron-ultimas-horas-antes-triste-final-2026111204235"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Derrumbe fatal en Nueva York: al menos ocho muertos tras el colapso de un edificio",
+        "u": "https://www.eldestapeweb.com/internacionales/derrumbe-fatal-new-york-ocho-muertos-colapso-edificio-2026111211654"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Ataque de mujeres trans: identificaron y detuvieron a uno de los acusados por la agresión",
+        "u": "https://www.eldestapeweb.com/sociedad/camaras-perfiles-rastros-digitales-cayo-primer-sospechoso-brutal-agresion-trabajadoras-sexuales-trans-palermo-202611129388"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "León XIV en Argentina",
+        "u": "https://www.eldestapeweb.com/politica/discursos-papa-argentina-temas-incomodos-milei-diferencias-uruguay-20261111182551"
+      },
+      {
+        "s": "eldestape",
+        "n": "El Destape",
+        "t": "Los discursos del Papa en Argentina: el impacto político y las diferencias con Uruguay",
+        "u": "https://www.eldestapeweb.com/politica/discursos-papa-argentina-temas-incomodos-milei-diferencias-uruguay-20261111182551"
+      },
+      {
         "s": "infobae",
         "n": "Infobae",
         "t": "Arranca la campaña electoral después de una precampaña de vértigo: el PP apuesta por Cataluña, el PSOE por Andalucía y Vox vuelve a Colón",
@@ -39163,6 +40116,156 @@
         "n": "Infobae",
         "t": "El 29N, sextos comicios de Sánchez y Abascal como cabezas de cartel y primeros para Colau",
         "u": "https://www.infobae.com/espana/agencias/2026/11/12/el-29n-sextos-comicios-de-sanchez-y-abascal-como-cabezas-de-cartel-y-primeros-para-colau/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Médicos residentes en México buscan especializarse entre violencia, cansancio y desabasto: CNDH alerta por crisis estructural",
+        "u": "https://www.infobae.com/mexico/2026/11/12/medicos-residentes-en-mexico-buscan-especializarse-entre-violencia-cansancio-y-desabasto-cndh-alerta-por-crisis-estructural/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "“Es argentina, nació en un pueblito y se fue por el mundo”: la historia de “Alma misionera”, la canción que León XIV cantó emocionado",
+        "u": "https://www.infobae.com/cultura/2026/11/12/es-argentina-nacio-en-un-pueblito-y-se-fue-por-el-mundo-la-historia-de-alma-misionera-la-cancion-que-leon-xiv-canto-emocionado/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La Corte Interamericana condenó a la Argentina por la destitución del ex juez Eduardo Moliné O'Connor",
+        "u": "https://www.infobae.com/politica/2026/11/12/la-corte-interamericana-condeno-a-la-argentina-por-la-destitucion-del-ex-juez-eduardo-moline-oconnor/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Las autoridades dominicanas acumulan 7,889 detenciones y 7,473 deportaciones en cinco días",
+        "u": "https://www.infobae.com/republica-dominicana/2026/11/12/las-autoridades-dominicanas-acumulan-7889-detenciones-y-7473-deportaciones-en-cinco-dias/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Begoña Gómez protagoniza el arranque de la campaña electoral del PSOE en Sevilla: “No vamos a permitir que nadie decida por nosotras”",
+        "u": "https://www.infobae.com/espana/2026/11/12/begona-gomez-protagoniza-el-arranque-de-la-campana-electoral-del-psoe-en-sevilla-no-vamos-a-permitir-que-nadie-decida-por-nosotras/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Guatemala exonera de impuestos las donaciones agrícolas de Estados Unidos por otra década",
+        "u": "https://www.infobae.com/guatemala/2026/11/12/guatemala-exonera-de-impuestos-las-donaciones-agricolas-de-estados-unidos-por-otra-decada/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Karla Souza se suma como protagonista al spin-off de Grey’s Anatomy: así ha sido su carrera desde Nosotros los Nobles",
+        "u": "https://www.infobae.com/mexico/2026/11/12/karla-souza-se-suma-como-protagonista-al-spin-off-de-greys-anatomy-asi-ha-sido-su-carrera-desde-nosotros-los-nobles/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Lego mantiene fuera de línea su mercado de piezas usadas BrickLink y no dice cuándo volverá",
+        "u": "https://www.infobae.com/tecno/2026/11/12/lego-mantiene-fuera-de-linea-su-mercado-de-piezas-usadas-bricklink-y-no-dice-cuando-volvera/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Hilda Mayol: la dominicana que sobrevivió al 11-S y murió dos meses después en el vuelo 587",
+        "u": "https://www.infobae.com/republica-dominicana/2026/11/12/hilda-mayol-la-dominicana-que-sobrevivio-al-11-s-y-murio-dos-meses-despues-en-el-vuelo-587/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "EN VIVO | Clima CDMX y resto de México hoy jueves 12 de noviembre: frente frío 5 provocará lluvias intensas en 14 estados",
+        "u": "https://www.infobae.com/mexico/2026/11/12/en-vivo-clima-cdmx-y-resto-de-mexico-hoy-12-de-noviembre-frente-frio-5-provocara-lluvias-intensas-en-14-estados/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Hallaron microplásticos en la sangre de animales silvestres en zonas remotas de Brasil",
+        "u": "https://www.infobae.com/america/medio-ambiente/2026/11/12/hallaron-microplasticos-en-la-sangre-de-animales-silvestres-en-zonas-remotas-de-brasil/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Nicaragua impone nuevos controles a remesadoras, casinos e inmobiliarias para rastrear el origen de los fondos",
+        "u": "https://www.infobae.com/nicaragua/2026/11/12/nicaragua-impone-nuevos-controles-a-remesadoras-casinos-e-inmobiliarias-para-rastrear-el-origen-de-los-fondos/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "El TAS le quitó los puntos al América y se los dio a Internacional de Bogotá por el caso de Yhormar Hurtado: hay cambios en la tabla de posiciones",
+        "u": "https://www.infobae.com/colombia/deportes/2026/11/12/el-tas-le-quito-los-puntos-al-america-y-se-los-dio-a-internacional-de-bogota-por-el-caso-de-yhormar-hurtado-hay-cambios-en-la-tabla-de-posiciones/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Visitas de menores a cárceles de Guatemala: así funciona el nuevo registro",
+        "u": "https://www.infobae.com/guatemala/2026/11/12/visitas-de-menores-a-carceles-de-guatemala-asi-funciona-el-nuevo-registro/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La mayor empresa de transporte de Cuba reduce su estructura central de 90 a 29 puestos para evitar la quiebra",
+        "u": "https://www.infobae.com/cuba/2026/11/12/la-mayor-empresa-de-transporte-de-cuba-reduce-su-estructura-central-de-90-a-29-puestos-para-evitar-la-quiebra/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "República Checa - España, en directo: Fermín López es titular tras su exhibición en el Metropolitano y Luis de la Fuente hace varios cambios",
+        "u": "https://www.infobae.com/espana/deportes/2026/11/12/republica-checa-espana-en-directo-previa-y-ultima-hora-de-la-seleccion-de-luis-de-la-fuente-en-la-nations-league/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Cómo un gen podría convertirse en una nueva estrategia para controlar los mosquitos del dengue y Zika",
+        "u": "https://www.infobae.com/america/ciencia-america/2026/11/12/como-un-gen-podria-convertirse-en-una-nueva-estrategia-para-controlar-los-mosquitos-del-dengue-y-zika/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "EN VIVO | Bloqueos, accidentes y manifestaciones hoy 12 de noviembre: se registra protesta sobre Periférico Sur",
+        "u": "https://www.infobae.com/mexico/2026/11/12/en-vivo-bloqueos-accidentes-y-manifestaciones-hoy-12-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La inflación en octubre fue de 2,2% y acumuló 33,1% en los últimos doce meses",
+        "u": "https://www.infobae.com/economia/2026/11/12/la-inflacion-en-octubre-fue-de-22-y-acumulo-331-en-los-ultimos-doce-meses/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Gobierno repartirá los 6 mil mdp que le quitó al INE para el 2027 a siete programas y dependencias",
+        "u": "https://www.infobae.com/mexico/2026/11/12/gobierno-repartira-los-6-mil-mdp-que-le-quito-al-ine-para-el-2027-a-siete-programas-y-dependencias/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Alertan por caída de aguanieve en México debido al Frente frío 5: estados afectados hoy jueves 12 y mañana viernes 13 de noviembre",
+        "u": "https://www.infobae.com/mexico/2026/11/12/alertan-por-caida-de-aguanieve-en-mexico-debido-al-frente-frio-5-estados-afectados-hoy-jueves-12-y-manana-viernes-13-de-noviembre/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "UOM: investigan viajes de Furlán y de la sindicalista que compró un departamento en el edificio donde vive CFK",
+        "u": "https://www.infobae.com/judiciales/2026/11/12/uom-investigan-viajes-de-furlan-y-de-la-sindicalista-que-compro-un-departamento-en-el-edificio-donde-vive-cfk/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Una modelo sufrió un grave accidente en México, le detectaron un tumor y ahora necesita fondos para volver al país",
+        "u": "https://www.infobae.com/sociedad/2026/11/12/una-modelo-sufrio-un-grave-accidente-en-mexico-le-detectaron-un-tumor-y-ahora-necesita-fondos-para-volver-al-pais/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "Primera denunciante de los cribados del cáncer vuelve a irrumpir en el Parlamento andaluz",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/12/primera-denunciante-de-los-cribados-del-cancer-vuelve-a-irrumpir-en-el-parlamento-andaluz/"
+      },
+      {
+        "s": "infobae",
+        "n": "Infobae",
+        "t": "La cuenca del Tajo reduce a cinco los avisos por caudales elevados, uno de ellos rojo",
+        "u": "https://www.infobae.com/espana/agencias/2026/11/12/la-cuenca-del-tajo-reduce-a-cinco-los-avisos-por-caudales-elevados-uno-de-ellos-rojo/"
       },
       {
         "s": "lacapital",
@@ -39315,6 +40418,156 @@
         "u": "https://www.lacapital.com.ar/ovacion/el-tecnico-gimnasia-el-rival-newells-octavos-entrena-todo-el-plantel-disposicion-n10291654.html"
       },
       {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Pullaro eligió el Senado para ingresar la reforma del Código Procesal Civil y Comercial",
+        "u": "https://www.lacapital.com.ar/politica/pullaro-eligio-el-senado-ingresar-la-reforma-del-codigo-procesal-civil-y-comercial-n10291878.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Lionel Scaloni seguirá al frente de la selección hasta el Mundial de 2030",
+        "u": "https://www.lacapital.com.ar/ovacion/lionel-scaloni-seguira-al-frente-la-seleccion-el-mundial-2030-n10291889.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Paro docente en la UNR: no habrá clases durante toda la próxima semana en reclamo de mejoras salariales",
+        "u": "https://www.lacapital.com.ar/la-ciudad/paro-docente-la-unr-no-habra-clases-toda-la-proxima-semana-reclamo-mejoras-salariales-n10291885.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La inflación se aceleró fuerte en octubre y volvió a superar el 2%",
+        "u": "https://www.lacapital.com.ar/economia/la-inflacion-se-acelero-fuerte-octubre-y-volvio-superar-el-2-n10291888.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La caída de Santino Alvarado, entre la herencia del padre y los vínculos con el nuevo mapa criminal",
+        "u": "https://www.lacapital.com.ar/policiales/la-caida-santino-alvarado-la-herencia-del-padre-y-los-vinculos-el-nuevo-mapa-criminal-n10291867.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Tres películas para un fin de semana a puro Netflix",
+        "u": "https://www.lacapital.com.ar/zoom/tres-peliculas-un-fin-semana-puro-netflix-n10291863.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Tras la visita del Papa, la Iglesia reclamó mayor atención a los sectores vulnerables",
+        "u": "https://www.lacapital.com.ar/politica/tras-la-visita-del-papa-la-iglesia-reclamo-mayor-atencion-los-sectores-vulnerables-n10291866.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "El tenso presente de Lo Celso en Betis que sembró rumores en España",
+        "u": "https://www.lacapital.com.ar/ovacion/el-tenso-presente-lo-celso-betis-que-sembro-rumores-espana-n10291861.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Walter Mazzantti, de Newell's, es el segundo atacante con más duelos ganados en el Clausura",
+        "u": "https://www.lacapital.com.ar/ovacion/walter-mazzantti-newells-es-el-segundo-atacante-mas-duelos-ganados-el-clausura-n10291868.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Central Córdoba se aseguró la continuidad de una de sus grandes figuras para la temporada 2027",
+        "u": "https://www.lacapital.com.ar/ovacion/central-cordoba-se-aseguro-la-continuidad-una-sus-grandes-figuras-la-temporada-2027-n10291860.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Jugó en Central, se hizo hincha y reveló una anécdota increíble: \"Viví un mes en el hotel que pagó Newell's\"",
+        "u": "https://www.lacapital.com.ar/ovacion/jugo-central-se-hizo-hincha-y-revelo-una-anecdota-increible-vivi-un-mes-el-hotel-que-pago-newells-n10290546.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Fiesta de Colectividades: demoraron a 12 cuidacoches en operativos de control",
+        "u": "https://www.lacapital.com.ar/policiales/fiesta-colectividades-demoraron-12-cuidacoches-operativos-control-n10291822.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Anuncio histórico en rally: Argentina volverá a formar parte del Campeonato Mundial de Rally en 2028",
+        "u": "https://www.lacapital.com.ar/ovacion/anuncio-historico-rally-argentina-volvera-formar-parte-del-campeonato-mundial-rally-2028-n10291847.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Ariel Holan: \"Hicimos 66 puntos con Central y en este campeonato nadie lo igualó\"",
+        "u": "https://www.lacapital.com.ar/ovacion/ariel-holan-hicimos-66-puntos-central-y-este-campeonato-nadie-lo-igualo-n10291796.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Los cascarudos volvieron a copar algunos sectores de Rosario: ¿cómo evitarlos?",
+        "u": "https://www.lacapital.com.ar/la-ciudad/los-cascarudos-volvieron-copar-algunos-sectores-rosario-como-evitarlos-n10291821.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Tras el encuentro con el Papa, La Sole admitió que evalúa grabar la canción \"Alma Misionera\"",
+        "u": "https://www.lacapital.com.ar/zoom/tras-el-encuentro-el-papa-la-sole-admitio-que-evalua-grabar-la-cancion-alma-misionera-n10291833.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Las primeras palabras del Papa León XIV en Perú tras su paso por Argentina: \"Regreso a mi patria\"",
+        "u": "https://www.lacapital.com.ar/el-mundo/las-primeras-palabras-del-papa-leon-xiv-peru-su-paso-argentina-regreso-mi-patria-n10291832.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La dolorosa pérdida de Gladys, la bomba tucumana: \"Tenías apenas 12 añitos y tanto por vivir\"",
+        "u": "https://www.lacapital.com.ar/zoom/la-dolorosa-perdida-gladys-la-bomba-tucumana-tenias-apenas-12-anitos-y-tanto-vivir-n10291838.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Drástico aumento de casos de viruela del mono en Brasil: qué deben tener en cuenta los viajeros",
+        "u": "https://www.lacapital.com.ar/la-ciudad/drastico-aumento-casos-viruela-del-mono-brasil-que-deben-tener-cuenta-los-viajeros-n10291600.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Pami lleva adelante un plan integral de reformas en los policlínicos I y II de Rosario",
+        "u": "https://www.lacapital.com.ar/la-ciudad/pami-lleva-adelante-un-plan-integral-reformas-los-policlinicos-i-y-ii-rosario-n10291828.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Volvió a la UNR después de más de medio siglo y se recibió de ingeniero a los 79 años",
+        "u": "https://www.lacapital.com.ar/la-ciudad/volvio-la-unr-despues-mas-medio-siglo-y-se-recibio-ingeniero-los-79-anos-n10291823.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Milei calienta la interna con Bullrich con una sugestiva historia en Instagram",
+        "u": "https://www.lacapital.com.ar/politica/milei-calienta-la-interna-bullrich-una-sugestiva-historia-instagram-n10291818.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "La selección argentina enfrenta a Uruguay: hora, canal y posibles formaciones del amistoso",
+        "u": "https://www.lacapital.com.ar/ovacion/la-seleccion-argentina-enfrenta-uruguay-hora-canal-y-posibles-formaciones-del-amistoso-n10291808.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Extienden Colectividades: la tradicional fiesta suma un día y termina el próximo lunes",
+        "u": "https://www.lacapital.com.ar/la-ciudad/extienden-colectividades-la-tradicional-fiesta-suma-un-dia-y-termina-el-proximo-lunes-n10291805.html"
+      },
+      {
+        "s": "lacapital",
+        "n": "La Capital (Rosario)",
+        "t": "Llega el quinto Festival de Blues Yo Nací en Rosario",
+        "u": "https://www.lacapital.com.ar/zoom/llega-el-quinto-festival-blues-yo-naci-rosario-n10291799.html"
+      },
+      {
         "s": "lanacion",
         "n": "La Nación",
         "t": "Miles de venezolanos en un limbo migratorio podrían recuperar el TPS si la Corte Suprema falla a favor el 20 de noviembre",
@@ -39463,6 +40716,156 @@
         "n": "La Nación",
         "t": "Malvinas: el valor de la prudencia",
         "u": "https://www.lanacion.com.ar/editoriales/malvinas-el-valor-de-la-prudencia-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Nations League, EN VIVO: el minuto a minuto de los partidos",
+        "u": "https://www.lanacion.com.ar/deportes/futbol/nations-league-en-vivo-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este jueves 12 de noviembre, minuto a minuto",
+        "u": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-jueves-12-de-noviembre-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Bullrich escribió otro mensaje que generó suspicacias en el oficialismo: “Es con todos los argentinos”",
+        "u": "https://www.lanacion.com.ar/politica/el-sugestivo-tuit-de-patricia-bullrich-en-medio-de-sus-cortocircuitos-con-el-gobierno-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Javier Milei y sus medidas, EN VIVO: “Argentina, faro de luz de Occidente”, dijo el Presidente tras la visita de León XIV",
+        "u": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-argentina-faro-de-luz-de-occidente-dijo-el-presidente-tras-la-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Andrés Hatum, especialista en Recursos Humanos: por qué cumplir 50 no es el final de la carrera",
+        "u": "https://www.lanacion.com.ar/lnmas/andres-hatum-especialista-en-recursos-humanos-por-que-cumplir-50-no-es-el-final-de-la-carrera-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Calor en AMBA: para cuándo se espera el pico de temperatura y a cuántos grados llegará, según el SMN",
+        "u": "https://www.lanacion.com.ar/sociedad/calor-en-amba-para-cuando-se-espera-el-pico-de-temperatura-y-a-cuantos-grados-llegara-segun-el-smn-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Daniel López Rosetti y una reflexión sobre las emociones: “No somos seres racionales”",
+        "u": "https://www.lanacion.com.ar/sociedad/daniel-lopez-rosetti-y-una-reflexion-sobre-las-emociones-no-somos-seres-racionales-nid11112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Qué es la glucemia, cómo influye en el organismo y por qué es importante controlarla",
+        "u": "https://www.lanacion.com.ar/sociedad/que-es-la-glucemia-como-influye-en-el-organismo-y-por-que-es-importante-controlarla-nid08112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Reid Wiseman, comandante de Artemis II, después de la misión: “No creo que la mente humana haya evolucionado como para entender esto”",
+        "u": "https://www.lanacion.com.ar/lnmas/reid-wiseman-comandante-de-artemis-ii-despues-de-la-mision-no-creo-que-la-mente-humana-haya-nid11112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Gabriel Rolón, psicoanalista: “Podemos alcanzar la faltacidad, la mezcla de falta y felicidad, que es una felicidad en falta”",
+        "u": "https://www.lanacion.com.ar/lnmas/gabriel-rolon-psicoanalista-podemos-alcanzar-la-faltacidad-la-mezcla-de-falta-y-felicidad-que-es-una-nid09112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Gabriel Rolón, sobre la conciencia de la muerte: “Ser humano es vivir con el sentimiento trágico de la vida”",
+        "u": "https://www.lanacion.com.ar/sociedad/gabriel-rolon-sobre-la-conciencia-de-la-muerte-ser-humano-es-vivir-con-el-sentimiento-tragico-de-la-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El mensaje de despedida del papa León XIV antes de viajar hacia Perú: “Hasta siempre, mi querida Argentina”",
+        "u": "https://www.lanacion.com.ar/sociedad/el-mensaje-de-despedida-del-papa-leon-xiv-antes-de-viajar-hacia-peru-gracias-argentina-por-recibirme-nid11112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Súper Niño 2026 en Argentina: cuándo se espera el pico de lluvias y cuáles serían las provincias más afectadas",
+        "u": "https://www.lanacion.com.ar/sociedad/super-nino-2026-en-argentina-cuando-se-espera-el-pico-de-lluvias-y-cuales-serian-las-provincias-mas-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Las frases del papa León XIV en su visita a la Argentina: “No permitan que nada ni nadie les arrebate la libertad que Dios les ha dado”",
+        "u": "https://www.lanacion.com.ar/sociedad/las-frases-del-papa-leon-xiv-en-su-visita-a-la-argentina-no-permitan-que-nada-ni-nadie-les-arrebate-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "León XIV: los cinco momentos más emotivos de la visita histórica del Papa a la Argentina y las reacciones que generó",
+        "u": "https://www.lanacion.com.ar/sociedad/leon-xiv-los-cinco-momentos-mas-emotivos-de-la-visita-historica-del-papa-a-la-argentina-y-las-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Por qué hay cada vez más infartos en gente joven, según un cardiólogo",
+        "u": "https://www.lanacion.com.ar/sociedad/por-que-hay-cada-vez-mas-infartos-en-gente-joven-segun-un-cardiologo-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Colesterol: cuáles son las nuevas formas de medirlo y cómo leer los resultados",
+        "u": "https://www.lanacion.com.ar/sociedad/colesterol-cuales-son-las-nuevas-formas-de-medirlo-y-como-leer-los-resultados-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "El pensamiento de Tony Robbins, experto en crecimiento personal: “La razón por la que sufrís es que estás enfocado en vos”",
+        "u": "https://www.lanacion.com.ar/sociedad/el-pensamiento-de-tony-robbins-experto-en-crecimiento-personal-la-razon-por-la-que-sufris-es-que-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "La frase de Séneca sobre la suerte que inspira a miles de personas: “Es donde confluyen la preparación y la oportunidad”",
+        "u": "https://www.lanacion.com.ar/sociedad/la-frase-de-seneca-sobre-la-suerte-que-inspira-a-miles-de-personas-es-donde-confluyen-la-preparacion-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Tras su inesperado triunfo, Lula viajará a España para apoyar a Pedro Sánchez en su campaña electoral",
+        "u": "https://www.lanacion.com.ar/el-mundo/tras-su-inesperado-triunfo-lula-viajara-a-espana-para-apoyar-a-pedro-sanchez-en-su-campana-electoral-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Las canastas básicas se aceleraron en octubre y subieron por encima de la inflación",
+        "u": "https://www.lanacion.com.ar/economia/las-canastas-basicas-se-aceleraron-en-octubre-y-subieron-por-encima-de-la-inflacion-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Le ganó a los íconos de California: una bodega argentina obtuvo el “Oscar” del mundo del vino",
+        "u": "https://www.lanacion.com.ar/sabado/una-bodega-argentina-gano-el-premio-oscar-del-mundo-del-vino-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Charlie Zhang, CEO de Chery: el interés por el litio, el desembarco de Omoda y Jaecoo y los planes de producción local",
+        "u": "https://www.lanacion.com.ar/autos/charlie-zhang-ceo-de-chery-el-interes-por-el-litio-argentino-una-nueva-automotriz-y-la-posibilidad-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Quedó firme la condena del gendarme que les avisaba a los narcos dónde se harían los controles antitráfico",
+        "u": "https://www.lanacion.com.ar/seguridad/quedo-firme-la-condena-del-gendarme-que-les-avisaba-a-los-narcos-donde-se-harian-los-controles-nid12112026/"
+      },
+      {
+        "s": "lanacion",
+        "n": "La Nación",
+        "t": "Gary M. Landsberg, veterinario, asegura que los gatos reconocen a las personas en las que pueden confiar",
+        "u": "https://www.lanacion.com.ar/lifestyle/mascotas/gary-m-landsberg-veterinario-asegura-que-los-gatos-reconocen-a-las-personas-en-las-que-pueden-nid12112026/"
       },
       {
         "s": "lavoz",
@@ -39615,6 +41018,156 @@
         "u": "https://www.lavoz.com.ar/autor/federico-giammaria"
       },
       {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Precios. La inflación en Argentina volvió a rebotar en octubre: 2,2%",
+        "u": "https://www.lavoz.com.ar/politica/inflacion-octubre-2026-indec-publica-indice-consultoras-preven-dato-cercano-2_0_lXTTlR4OvC.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Los precios aumentaron 2,2% el mes pasado. Es el promedio de los 31 centros urbanos que releva el Indec. En lo que va de 2026: 26,3% y en los últimos 12 meses, 33,1%. En Córdoba, 2,7%.",
+        "u": "https://www.lavoz.com.ar/politica/inflacion-octubre-2026-indec-publica-indice-consultoras-preven-dato-cercano-2_0_lXTTlR4OvC.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "En octubre. La inflación en Córdoba trepó al 2,7%, el nivel más alto desde abril",
+        "u": "https://www.lavoz.com.ar/politica/inflacion-cordoba-trepo-27-nivel-alto-abril_0_oyuOaY46vL.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Oficial. Tapia anuncio que Scaloni seguirá como DT hasta el Mundial 2030",
+        "u": "https://www.lavoz.com.ar/deportes/tapia-anuncio-scaloni-seguira-dt-mundial-2030_0_MzFW1elhn5.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Justicia. Determinan \"responsabilidad compartida\" entre González y Bengoa en la tragedia de Altas Cumbres",
+        "u": "https://www.lavoz.com.ar/sucesos/camogli-determino-responsabilidad-compartida-oscar-gonzalez-alejandra-bengoa-tragedia-altas-cumbres_0_22COYjzOVm.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Alta Córdoba. Crimen del repartidor: en la Justicia ponen en duda la participación del único detenido",
+        "u": "https://www.lavoz.com.ar/sucesos/crimen-repartidor-justicia-ponen-duda-participacion-unico-detenido_0_GScGBHwMwz.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "2027. La oposición cuestionó el Presupuesto de Passerini por el endeudamiento y la falta de controles",
+        "u": "https://www.lavoz.com.ar/politica/oposicion-cuestiono-presupuesto-passerini-endeudamiento-falta-controles_0_5t7agIi59w.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Anuncio. El regreso del Rally Mundial a Córdoba: el WRC volverá en 2028 con El Cóndor-Copina como estrella",
+        "u": "https://www.lavoz.com.ar/deportes/regreso-rally-mundial-cordoba-wrc-volvera-2028-condor-copina-estrella_0_uOMQL1SQGq.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Córdoba. Condenaron a un exdelegado del Suoem por robar barbijos y suero destinados a enfermos para ganar un “extra”",
+        "u": "https://www.lavoz.com.ar/ciudadanos/condenaron-exdelegado-suoem-robar-barbijos-suero-destinados-enfermos-ganar-extra_0_CfCUxV5Dtz.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "León XIV en Córdoba. Historias marcadas por el dolor recibieron el abrazo del Papa",
+        "u": "https://www.lavoz.com.ar/ciudadanos/historias-marcadas-dolor-recibieron-abrazo-papa_0_Te9TjGfzcv.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Indec. Lo que dijo Luis Caputo tras conocerse la inflación de octubre: el dato que resaltó el ministro",
+        "u": "https://www.lavoz.com.ar/politica/dijo-luis-caputo-conocerse-inflacion-octubre-dato-resalto-ministro_0_eLD2cuivbY.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Informe. Una familia necesitó $ 1.690.000 en octubre para no caer en la pobreza: la canasta básica aumentó un 3,5 %",
+        "u": "https://www.lavoz.com.ar/politica/familia-necesito-1690000-octubre-caer-pobreza-canasta-basica-aumento-35_0_Q2RSuhidtO.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Versionado. Dante Spinetta homenajeó a Daddy Yankee con una versión funk de uno de sus grandes éxitos",
+        "u": "https://www.lavoz.com.ar/espectaculos/musica/dante-spinetta-homenajeo-daddy-yankee-version-funk-grandes-exitos_0_ZOnVv83gG1.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Proyecto. Universidad Siglo 21 combina tecnología, talento e innovación para transformar la educación superior",
+        "u": "https://www.lavoz.com.ar/espacio-publicidad/universidad-siglo-21-combina-tecnologia-talento-innovacion-transformar-educacion-superior_0_5IvOiiLfiP.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Las Vegas. Latin Grammy 2026: nominados, horarios y todo lo que hay que saber de cara a la ceremonia de premiación",
+        "u": "https://www.lavoz.com.ar/espectaculos/latin-grammy-2026-nominados-horarios-saber-cara-ceremonia-premiacion_0_QF7A8kiySl.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Lotería. Quini 6: con pozo vacante, a cuánto se fue el acumulado para el sorteo del domingo 15 de noviembre",
+        "u": "https://www.lavoz.com.ar/servicios/quini-6-pozo-vacante-acumulado-sorteo-domingo-15-noviembre_0_M5vBxtRggS.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Vuelve en 2028. Rally Argentina: récords, máximos ganadores y el legado de Córdoba en el WRC",
+        "u": "https://www.lavoz.com.ar/deportes/rally-argentina-records-maximos-ganadores-legado-cordoba-wrc_0_YnBazT9oGs.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Lo que hay que saber",
+        "u": "https://www.lavoz.com.ar"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Gobierno. El FMI insiste en que el programa económico argentino está en el rumbo correcto",
+        "u": "https://www.lavoz.com.ar/politica/fmi-insiste-programa-economico-argentino-rumbo-correcto_0_Uk4eieVsdm.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Clima. Alerta amarilla por tormentas y calor extremo en Córdoba: cuándo llega el cambio de tiempo",
+        "u": "https://www.lavoz.com.ar/servicios/alerta-amarilla-tormentas-calor-extremo-cordoba-llega-cambio-tiempo_0_fLYpNYnvGH.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Piden justicia. \"Estamos desprotegidos\": la bronca de los deliveries en Córdoba tras el crimen de Mauro",
+        "u": "https://www.lavoz.com.ar/sucesos/cordoba-ciudad-cordoba-inseguridad-alta-cordoba_0_hGuagRPOyF.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Punto de vista. Entrevistas de doble filo: los chispazos de Santiago Abascal y Gastón Gaudio que pueden definir elecciones",
+        "u": "https://www.lavoz.com.ar/espectaculos/mira/entrevistas-doble-filo-chispazos-santiago-abascal-gaston-gaudio-pueden-definir-elecciones_0_sgV5xk4iVp.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Top 10 A. Tala y La Tablada, otra vez cara a cara por el título: la final que el rugby cordobés esperó nueve años",
+        "u": "https://www.lavoz.com.ar/deportes/tala-tablada-vez-cara-cara-titulo-final-rugby-cordobes-espero-anos_0_pu8euSpRuF.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Estatales. Llaryora discutirá salarios ahora y no en marzo",
+        "u": "https://www.lavoz.com.ar/politica/llaryora-discutira-salarios-ahora-marzo_0_0KAycbaWw5.html"
+      },
+      {
+        "s": "lavoz",
+        "n": "La Voz del Interior",
+        "t": "Judiciales. Gama cobró de más y deberá pagar 65 mil dólares: la sentencia podría quedar firme",
+        "u": "https://www.lavoz.com.ar/sucesos/gama-cobro-debera-pagar-cifra-millonaria-sentencia-podria-quedar-firme_0_qK228Y5Ifh.html"
+      },
+      {
         "s": "pagina12",
         "n": "Página/12",
         "t": "Conurbano bonaerense",
@@ -39655,6 +41208,48 @@
         "n": "Página/12",
         "t": "Las tapas de Pancho",
         "u": "https://www.pagina12.com.ar/am750/programa/las-tapas-de-pancho"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Cultura y Espectáculos",
+        "u": "https://www.pagina12.com.ar"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "La inflación de octubre fue del 2,2% según el INDEC",
+        "u": "https://www.pagina12.com.ar/2026/11/12/la-inflacion-de-octubre-fue-del-22-segun-el-indec/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Lionel Scaloni seguirá como DT de la Selección hasta 2030",
+        "u": "https://www.pagina12.com.ar/2026/11/12/lionel-scaloni-seguira-siendo-dt-de-la-seleccion-hasta-2023/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "La ola de inversiones extranjeras que no fue",
+        "u": "https://www.pagina12.com.ar/2026/11/11/retirada-multinacional-y-traspaso-a-grupos-locales/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Por la asfixia del Gobierno, la UBA lanza una subasta para equipar al Hospital de Clínicas",
+        "u": "https://www.pagina12.com.ar/2026/11/12/la-uba-sale-a-buscar-fondos-ante-el-incumplimiento-de-la-ley-de-financiamiento/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Renunció el CEO de Nvidia tras el escándalo por su romance con una supuesta espía china",
+        "u": "https://www.pagina12.com.ar/2026/11/12/renuncio-el-ceo-de-nvidia-tras-el-escandalo-por-su-romance-con-una-supuesta-espia-china/"
+      },
+      {
+        "s": "pagina12",
+        "n": "Página/12",
+        "t": "Un detenido por el ataque a las mujeres trans en Palermo",
+        "u": "https://www.pagina12.com.ar/2026/11/12/un-detenido-por-el-ataque-a-mujeres-trans-en-palermo/"
       },
       {
         "s": "pagina12",
@@ -39813,6 +41408,156 @@
         "u": "https://perfil.com/sociedad/la-profunda-trama-espiritual-que-une-a-leon-xiv-con-la-virgen-de-lujan-aygzc3v3cRy0"
       },
       {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Karina Milei y Diego Santilli llegaron a Corrientes para coordinar el operativo hídrico con Juan Pablo Valdés",
+        "u": "https://perfil.com/nea/karina-milei-y-diego-santilli-llegaron-a-corrientes-para-coordinar-el-operativo-hidrico-con-juan-pablo-valdes-a2Byq3U4kTrS"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Secretario General de la CGT: los desafíos de los sindicatos de convertir en acciones las palabras del Papa León XIV",
+        "u": "https://perfil.com/modo-fontevecchia/secretario-general-de-la-cgt-los-desafios-de-los-sindicatos-de-convertir-en-acciones-las-palabras-del-papa-leon-xiv-aoY9W6c84mI8"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Crimen del repartidor: Alta Córdoba no figuraba entre las 47 zonas peligrosas del mapa de deliverys de la ciudad",
+        "u": "https://perfil.com/cordoba/crimen-del-repartidor-alta-cordoba-no-figuraba-entre-las-47-zonas-peligrosas-del-mapa-de-deliverys-de-la-ciudad-a9JzD5L1p02Z"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Caso Bertulazzi: en RDI, su abogado denunció irregularidades en la extradición y cuestionó al gobierno de Milei",
+        "u": "https://perfil.com/mas-perfil/caso-bertulazzi-en-rdi-su-abogado-denuncio-irregularidades-en-la-extradicion-y-cuestiono-al-gobierno-de-milei-asuyH2w5wxvD"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Jorge Fernández Díaz: \"Ver llorar a Milei despidiendo al Papa me hizo pensar que finge demencia\"",
+        "u": "https://perfil.com/modo-fontevecchia/jorge-fernandez-diaz-ver-llorar-a-milei-despidiendo-al-papa-me-hizo-pensar-que-finge-demencia-aEF7M9S9Xi8j"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Alberto Ades, el economista que conmocionó al gabinete, opina sobre las consecuencias de la derrota de Trump para Argentina",
+        "u": "https://perfil.com/modo-fontevecchia/alberto-ades-el-economista-que-conmociono-al-gabinete-opina-sobre-las-consecuencias-de-la-derrota-de-trump-para-argentina-aRkun1B5JLxh"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "YPF gastó $120.000 millones en publicidad desde enero",
+        "u": "https://perfil.com/politica/ypf-gasto-120.000-millones-en-publicidad-desde-enero-a8mXq6j3R4lt"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Miguel Ángel Toma: El alto riesgo a alguna forma de antentado de Irán",
+        "u": "https://perfil.com/modo-fontevecchia/miguel-angel-toma-el-alto-riesgo-a-alguna-forma-de-antentado-de-iran-akiTW5W7BQd3"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "RDI: Argentina pidió frenar el proyecto petrolero Sea Lion en las Islas Malvinas y espera una resolución para noviembre",
+        "u": "https://perfil.com/mas-perfil/rdi-argentina-pidio-frenar-el-proyecto-petrolero-sea-lion-en-las-islas-malvinas-y-espera-una-resolucion-para-noviembre-a08F25U1bM6R"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Operación Buena Letra: Milei no insultó a nadie mientras estuvo el Papa",
+        "u": "https://perfil.com/politica/operacion-buena-letra-milei-no-insulto-a-nadie-mientras-estuvo-el-papa-aGJMg7R9k2JE"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "La inflación se aceleró al 2,2% en octubre y acumuló 26,3% en el año, según el INDEC",
+        "u": "https://perfil.com/economia/la-inflacion-se-acelero-al-22-en-octubre-segun-el-indec-aGyGd0y7SAfP"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Así fue el último adiós a Marcos Camino tras su trágica muerte: familiares y amigos desconsolados",
+        "u": "https://perfil.com/entretenimiento/asi-fue-el-ultimo-adios-a-marcos-camino-tras-su-tragica-muerte-familiares-y-amigos-desconsolados-acBbT1j4OLrE"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Fernández confirma que Córdoba tendrá el marco regulatorio: \"Necesitamos el mejor sistema de transporte que puedan pagar los cordobeses\"",
+        "u": "https://perfil.com/cordoba/fernandez-confirma-que-cordoba-tendra-el-marco-regulatorio-necesitamos-el-mejor-sistema-de-transporte-que-puedan-pagar-los-cordobeses-aamM90Y0bU8s"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Jensen Huang, exCEO de Nvidia, y su chaqueta de cuero de 960 mil dólares",
+        "u": "https://perfil.com/protagonistas/jensen-huang-exceo-de-nvidia-y-su-chaqueta-de-cuero-de-960-mil-dolares-az7JB4L03gnj"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Así fue el cumpleaños de Eva, la hija de La Joaqui: las hijas de Wanda como invitadas, castillo pelotero y torta de pajaritos",
+        "u": "https://perfil.com/entretenimiento/asi-fue-el-cumpleanos-de-eva-la-hija-de-la-joaqui-las-hijas-de-wanda-como-invitadas-castillo-pelotero-y-torta-de-pajaritos-aFydC6Z7Kmhk"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Lionel Scaloni, emocionado tras su renovación: de la 10 de Messi al recuerdo de su madre",
+        "u": "https://perfil.com/deportes/lionel-scaloni-emocionado-tras-su-renovacion-de-la-10-de-messi-al-recuerdo-de-su-madre-aVNZj0A3Ghc3"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Eva Bargiela mostró cómo fue su peregrinación para despedir a León XIV: en familia, caminando por la calle y con un regalo para Faustino",
+        "u": "https://perfil.com/entretenimiento/eva-bargiela-mostro-como-fue-su-peregrinacion-para-despedir-a-leon-xiv-en-familia-caminando-por-la-calle-y-con-un-regalo-para-faustino-agEzu3r1E57W"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Trasladan a los últimos presos de la cárcel de Devoto al penal de Marcos Paz tras la visita del papa León XIV",
+        "u": "https://perfil.com/sociedad/trasladan-a-los-ultimos-presos-de-la-carcel-de-devoto-al-penal-de-marcos-paz-tras-la-visita-del-papa-leon-xiv-a6Y5N9R5c1xH"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Castillo inflable, arte al aire libre y diversión: así fue el cumpleaños de Eva, la hija de La Joaqui",
+        "u": "https://perfil.com/entretenimiento/castillo-inflable-arte-al-aire-libre-y-diversion-asi-fue-el-cumpleanos-de-eva-la-hija-de-la-joaqui-aR16O8w8Xxfq"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "El CEO de Nvidia Jensen Huang renuncia a su cargo tras un escándalo por infidelidad: una de las mujeres es acusada de espía",
+        "u": "https://perfil.com/entretenimiento/el-ceo-de-nvidia-jensen-huang-renuncia-a-su-cargo-tras-un-escandalo-por-infidelidad-una-de-las-mujeres-es-acusada-de-espia-aRh4C5X542m0"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Cecilia Roth homenajeó a su madre, a seis años de su muerte: “Quisiera saber que estás”",
+        "u": "https://perfil.com/entretenimiento/cecilia-roth-homenajeo-a-su-madre-a-seis-anos-de-su-muerte-quisiera-saber-que-estas-aOzp46c1Wbd0"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Cómo será la cobertura de la 27ª entrega de los premios Latin GRAMMY: dónde se puede ver y a qué hora",
+        "u": "https://perfil.com/entretenimiento/como-sera-la-cobertura-de-la-27-entrega-de-los-premios-latin-grammy-donde-se-puede-ver-y-a-que-hora-aojTe5P2QqBJ"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "Gabriel Kessler: \"Creo que hoy el antiperonismo es más fuerte que el antimileísmo\"",
+        "u": "https://perfil.com/modo-fontevecchia/gabriel-kessler-creo-que-hoy-el-antiperonismo-es-mas-fuerte-que-el-antimileismo-aocyB8E2bJ5Z"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "RDI: cómo impactó la visita del Papa León XIV a la imagen digital de Javier Milei",
+        "u": "https://perfil.com/mas-perfil/rdi-como-impacto-la-visita-del-papa-leon-xiv-a-la-imagen-digital-de-javier-milei-aTW7M7r5map9"
+      },
+      {
+        "s": "perfil",
+        "n": "Perfil",
+        "t": "RDI: persiste la alerta por el fenómeno de El Niño y crece la preocupación por “probables inundaciones y crecida de ríos”",
+        "u": "https://perfil.com/mas-perfil/rdi-persiste-la-alerta-por-el-fenomeno-de-el-nino-y-crece-la-preocupacion-por-probables-inundaciones-y-crecida-de-rios-aAJOr6l66yrE"
+      },
+      {
         "s": "tn",
         "n": "TN (Todo Noticias)",
         "t": "Pagó las cuotas de una casa prefabricada, nunca se la construyeron y la Justicia ordenó indemnizarla con más de $82 millones",
@@ -39961,6 +41706,156 @@
         "n": "TN (Todo Noticias)",
         "t": "Boca empieza a preparar el partido ante Banfield por la Copa Argentina: la incógnita que debe resolver Rodolfo Arruabarrena",
         "u": "https://tn.com.ar/deportes/futbol/2026/11/11/boca-empieza-a-preparar-el-partido-ante-banfield-por-la-copa-argentina-la-incognita-que-debe-resolver-rodolfo-arruabarrena/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "República Checa vs España en vivo por la fase de grupos de la UEFA Nations League: hora, dónde ver y formaciones",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/republica-checa-vs-espana-en-vivo-por-la-fase-de-grupos-de-la-uefa-nations-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Robaron seis grabados de Picasso de un restaurante en Francia y los encontraron escondidos en una casa",
+        "u": "https://tn.com.ar/internacional/2026/11/12/robaron-seis-grabados-de-picasso-de-un-restaurante-en-francia-y-los-encontraron-escondidos-en-una-casa/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Esperamos que sea para siempre”: Scaloni contó cómo elegirá al próximo jugador que usará la camiseta número 10 de la Selección",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/esperamos-que-sea-para-siempre-scaloni-conto-como-elegira-al-proximo-jugador-que-usara-la-camiseta-numero-10-de-la-seleccion/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "La inflación de octubre fue del 2,2% y acumula 26,3% en lo que va del año",
+        "u": "https://tn.com.ar/economia/2026/11/12/la-inflacion-de-octubre-fue-de-22-y-acumula-263-en-lo-que-va-del-ano/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "En su segundo día en Perú, el papa León XIV dio una misa ante una multitud en la Catedral de Lima",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/el-mensaje-del-papa-leon-xiv-en-peru-amar-a-un-pueblo-es-desear-que-todos-puedan-vivir-dignamente/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Luego de la visita del Papa, trasladaron a los últimos 69 presos de la cárcel de Devoto a Marcos Paz",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/luego-de-la-visita-del-papa-trasladaron-a-los-ultimos-69-presos-de-la-carcel-de-devoto-a-marcos-paz/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Tras conocer el dato del INDEC, el Gobierno explicó qué factores incidieron en la inflación de octubre",
+        "u": "https://tn.com.ar/economia/2026/11/12/tras-conocer-el-dato-del-indec-el-gobierno-explico-que-factores-incidieron-en-la-inflacion-de-octubre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "La inflación de alimentos fue del 2% en octubre: los productos que subieron y los que bajaron de precio",
+        "u": "https://tn.com.ar/economia/2026/11/12/la-inflacion-de-alimentos-fue-del-2-en-octubre-los-productos-que-subieron-y-los-que-bajaron-de-precio/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Lionel Scaloni renovó su contrato: seguirá siendo el DT de la Selección argentina hasta el Mundial 2030",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/lionel-scaloni-dara-una-conferencia-y-crece-la-expectativa-por-la-renovacion-de-su-contrato-con-la-seleccion-argentina/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "La canasta básica aumentó un 3,5% en octubre y una familia necesitó casi $1.700.000 para no ser pobre",
+        "u": "https://tn.com.ar/economia/2026/11/12/la-canasta-basica-aumento-un-35-en-octubre-y-una-familia-necesito-casi-1700000-para-no-ser-pobre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Las jubilaciones y asignaciones de ANSES aumentarán un 2,2% en diciembre tras conocerse el dato de inflación",
+        "u": "https://tn.com.ar/economia/2026/11/12/las-jubilaciones-y-asignaciones-de-anses-aumentaran-un-22-en-diciembre-tras-conocerse-el-dato-de-inflacion/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "🔴 Dólar oficial hoy y dólar blue: a cuánto cotizan este jueves 12 de noviembre",
+        "u": "https://tn.com.ar/economia/2026/11/12/dolar-oficial-hoy-y-dolar-blue-a-cuanto-cotizan-este-jueves-12-de-noviembre/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Luego de la visita del Papa, trasladaron a los últimos 69 presos de la cárcel de Devoto a Marcos Paz",
+        "u": "https://tn.com.ar/videos/sociedad/2026/11/12/luego-de-la-visita-del-papa-trasladaron-a-los-ultimos-69-presos-de-la-carcel-de-devoto-a-marcos-paz/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Jensen Huang renunció a Nvidia: las cinco claves que hay que conocer sobre una de las empresas más valiosas del mundo",
+        "u": "https://tn.com.ar/tecno/novedades/2026/11/12/jensen-huang-renuncio-a-nvidia-las-cinco-claves-que-hay-que-conocer-sobre-una-de-las-empresas-mas-valiosas-del-mundo/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Inglaterra vs Croacia en vivo por la fase de grupos de la UEFA Nations League: hora, dónde ver y formaciones",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/inglaterra-vs-croacia-en-vivo-por-la-fase-de-grupos-de-la-uefa-nations-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "ARBA: mañana vence el plazo para regularizar deudas con 40% de descuento en la provincia de Buenos Aires",
+        "u": "https://tn.com.ar/economia/2026/11/12/arba-manana-vence-el-plazo-para-regularizar-deudas-con-40-de-descuento-en-la-provincia-de-buenos-aires/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Una estancia de Buenos Aires tenía 62.000 hectáreas, 8700 vacas y 8500 yeguas: hoy se transformó en un barrio privado",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/una-estancia-de-buenos-aires-tenia-62000-hectareas-8700-vacas-y-8500-yeguas-hoy-se-transformo-en-un-barrio-privado/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Inflación de octubre de 2026: cómo quedaron los números después del dato del INDEC",
+        "u": "https://tn.com.ar/economia/2026/11/12/inflacion-de-octubre-de-2026-como-quedaron-los-numeros-despues-del-dato-del-indec/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Insultos y amenazas: así habría sido el cruce entre Wanda Nara y la China Suárez en medio del escándalo en “la casa de los sueños”",
+        "u": "https://tn.com.ar/show/famosos/2026/11/12/insultos-y-amenazas-asi-habria-sido-el-cruce-entre-wanda-nara-y-la-china-suarez-en-medio-del-escandalo-en-la-casa-de-los-suenos/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Lionel Scaloni recordó a su mamá y se puso a llorar tras anunciar que seguirá como DT de la Selección argentina: “Estoy muy feliz”",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/lionel-scaloni-se-puso-a-llorar-tras-el-anuncio-de-que-seguira-como-dt-de-la-seleccion-argentina-estoy-muy-feliz/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Un productor de sandías de Chaco hizo una nueva exportación a Uruguay luego de eliminar una regulación",
+        "u": "https://tn.com.ar/campo/2026/11/12/un-productor-de-sandias-de-chaco-hizo-una-nueva-exportacion-a-uruguay-luego-de-que-se-destrabe-una-regulacion/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "“Este país desde ahora tiene dos Papas”: por qué el Vaticano borró de las redes sociales la despedida de León XIV a la Argentina",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/este-pais-desde-ahora-tiene-dos-papas-por-que-el-vaticano-borro-de-las-redes-sociales-la-despedida-de-leon-xiv-a-la-argentina/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Bélgica le ganó a Turquía 2 a 1 por la fase de grupos de la UEFA Nations League",
+        "u": "https://tn.com.ar/deportes/futbol/2026/11/12/turquia-vs-belgica-en-vivo-por-la-fase-de-grupos-de-la-uefa-nations-league-hora-donde-ver-y-formaciones/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Adiós al dorado: el color que será tendencia para decorar la casa en Año Nuevo 2027 por ser más elegante y moderno",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/adios-al-dorado-el-color-que-sera-tendencia-para-decorar-la-casa-en-ano-nuevo-2027-por-ser-mas-elegante-y-moderno/"
+      },
+      {
+        "s": "tn",
+        "n": "TN (Todo Noticias)",
+        "t": "Los albañiles coinciden: “Esta es la mejor forma de arreglar una pared con humedad y moho sin demoler toda la mampostería”",
+        "u": "https://tn.com.ar/sociedad/2026/11/12/los-albaniles-coinciden-esta-es-la-mejor-forma-de-arreglar-una-pared-con-humedad-y-moho-sin-demoler-toda-la-mamposteria/"
       }
     ],
     "2026-11-11": [
